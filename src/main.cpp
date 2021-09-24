@@ -1,5 +1,6 @@
 #include <services/databaseservice.h>
 #include <services/metricsservice.h>
+#include <utils/gui.h>
 #include <utils/misc.h>
 #include <utils/schema.h>
 #include <widgets/logwidget.h>
@@ -152,6 +153,10 @@ bool mainStartupMisc(const QStringList &arguments) {
     if (!interfaceStyle.isEmpty()) {
         QApplication::setStyle(interfaceStyle);
     }
+
+#ifdef Q_OS_WIN32
+    Utils::Gui::doWindowsDarkModeCheck();
+#endif
 
     bool systemIconTheme =
         settings.value(QStringLiteral("systemIconTheme")).toBool();
@@ -558,7 +563,9 @@ int main(int argc, char *argv[]) {
 
     // if only one app instance is allowed use SingleApplication
     if (allowOnlyOneAppInstance) {
-        SingleApplication app(argc, argv, true);
+        SingleApplication app(argc, argv, true,
+                              SingleApplication::Mode::User |
+                              SingleApplication::Mode::SecondaryNotification);
 
         // quit app if it was already started
         if (app.isSecondary()) {
@@ -599,6 +606,7 @@ int main(int argc, char *argv[]) {
 
         // receive messages from the primary app
         QObject::connect(&app, &SingleApplication::receivedMessage, [&](quint32 instanceId, QByteArray message) {
+            Q_UNUSED(instanceId)
             qDebug() << __func__ << " - 'message': " << message;
 
             // trigger the startup menu action

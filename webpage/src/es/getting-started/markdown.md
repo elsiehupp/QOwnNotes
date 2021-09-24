@@ -76,7 +76,7 @@ Hay muchas formas de crear listas.
 2. Otro articulo
    * Sublista desordenada.
 1. Los números reales no importan, solo que es un número
-   1. Sublista ordenada
+   1. Ordered sub-list (only works in the editor, not the preview)
 4. Y otro artículo.
 
 * La lista desordenada puede usar asteriscos
@@ -180,9 +180,11 @@ También hay algo de resaltado de sintaxis con bloques de código en QOwnNotes.
 bash
 # Soy un comentario
 cd notas
+```
 ~~~
-~~~
+
 Currently supported languages (and code block identifiers) are:
+
 * BASh scripting, `bash`
 * C, `c`
 * C++, `cpp`
@@ -214,7 +216,6 @@ Currently supported languages (and code block identifiers) are:
 * XML, `xml`
 * YAML, `yml`
 * YAML, `yaml`
-
 
 ## Tables
 

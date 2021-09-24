@@ -351,7 +351,7 @@ QMessageBox::StandardButton Utils::Gui::showMessageBox(
             msgBox.setDefaultButton(button);
     }
 
-    // set the checkbox in the end so it doesn't get the focus on the dialog.
+    // set the checkbox in the end, so it doesn't get the focus on the dialog
     // this would lead to accidentally checking the checkbox
     msgBox.setCheckBox(checkBox);
 
@@ -618,8 +618,19 @@ bool Utils::Gui::autoFormatTableAtCursor(QPlainTextEdit *textEdit) {
              }
 
              const QString &text = lineTextList.at(col).trimmed();
+
+             // don't count the headline separator line, so it can shrink
+             // down to 3 characters if needed
+             if (line == 1 && headlineSeparatorRegExp.match(text).hasMatch()) {
+                 continue;
+             }
+
              maxTextLength = std::max((int)text.count(), maxTextLength);
          }
+
+         // a minimum of 3 headline separator characters are needed for
+         // valid Markdown tables
+         maxTextLength = std::max(3, maxTextLength);
 
          colLength << maxTextLength;
      }
@@ -1029,4 +1040,49 @@ void Utils::Gui::setTreeWidgetItemToolTipForNote(
     item->setToolTip(0, toolTipText);
 
     // TODO: handle item widget too
+}
+
+/**
+ * Checks if Windows is in dark or light mode and if we want to switch to those modes too.
+ * This only works under Windows 10 (or newer).
+ */
+bool Utils::Gui::doWindowsDarkModeCheck() {
+    QSettings settings(R"(HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize)",
+                       QSettings::NativeFormat);
+
+    // If setting wasn't found we are not on Windows 10 (or newer)
+    if (!settings.contains("AppsUseLightTheme")) {
+        return false;
+    }
+
+    bool windowsDarkMode = settings.value("AppsUseLightTheme") == 0;
+    bool appDarkMode = QSettings().value("darkMode").toBool();
+
+    // Check for Windows dark mode and application default mode
+    if (windowsDarkMode && !appDarkMode) {
+        if (Utils::Gui::questionNoSkipOverride(
+                nullptr, QObject::tr("Dark mode detected"),
+                QObject::tr("Your Windows system seems to use the dark mode. "
+                        "Do you also want to turn on dark mode in QOwnNotes?"),
+        QStringLiteral("windows-dark-mode")) == QMessageBox::Yes) {
+            Utils::Misc::switchToDarkMode();
+
+            return true;
+        }
+    }
+
+    // Check for Windows light mode and application dark mode
+    if (!windowsDarkMode && appDarkMode) {
+        if (Utils::Gui::questionNoSkipOverride(
+                nullptr, QObject::tr("Light mode detected"),
+                QObject::tr("Your Windows system seems to use the light mode. "
+                    "Do you also want to turn off dark mode in QOwnNotes?"),
+                QStringLiteral("windows-light-mode")) == QMessageBox::Yes) {
+            Utils::Misc::switchToLightMode();
+
+            return true;
+        }
+    }
+
+    return false;
 }

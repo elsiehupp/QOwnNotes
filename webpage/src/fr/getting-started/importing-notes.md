@@ -4,6 +4,10 @@
 
 Vous pouvez accéder à une boîte de dialogue d'importation Evernote dans le menu `Note / Importer`.
 
+## Joplin
+
+Il existe une boîte de dialogue d'importation Joplin que vous pouvez atteindre dans le menu `Note / Importer`.
+
 ## Tomboy
 
 Vous pouvez importer vos notes Tomboy en utilisant un script appelé [Trombone](https://github.com/samba/trombone).
@@ -31,7 +35,7 @@ Puis cd dans le dossier où se trouvent vos notes de garçon manqué:
  cd ~/.local/share/tomboy/
 ```
 
-Ensuite, exécutez ceci:
+Then run this:
 
 ```bash
 find ./ -type f -name '*.note' -print0 | xargs -0 trombone > EXPORT.enex

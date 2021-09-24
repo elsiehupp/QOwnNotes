@@ -10,10 +10,10 @@ U kunt deze parameters gebruiken op de opdrachtregelinterface:
 | `--dump-settings`            | Print een dump van de instellingen en andere informatie over de applicatie en omgeving in GitHub Markdown en sluit de applicatie af |
 | `--session <name>`     | Voert de applicatie uit in een andere context voor instellingen en interne bestanden                                                |
 | `--allow-multiple-instances` | Maakt het mogelijk om meerdere exemplaren van QOwnNotes te starten, zelfs als dit niet is toegestaan in de instellingen             |
-| `--action <name>`      | Triggers a menu action after the application was started (see below)                                                                |
+| `--action <name>`      | Activeert een menuactie nadat de applicatie is gestart (zie hieronder)                                                              |
 
 ::: tip
-Als u problemen ondervindt bij het installeren van QOwnNotes, wilt u misschien de toepassing starten met nieuwe instellingen zonder uw huidige instellingen te verliezen door de parameter `--session` te gebruiken.
+Als u problemen ondervindt met uw installatie van QOwnNotes, wilt u misschien de toepassing starten met nieuwe instellingen zonder uw huidige instellingen te verliezen door de parameter `--session` te gebruiken.
 
 ```bash
 QOwnNotes --session test
@@ -28,28 +28,28 @@ U kunt de toepassing op de opdrachtregelinterface op verschillende besturingssys
 | macOS             | `/Applications/QOwnNotes.app/Contents/MacOS/QOwnNotes`       |
 | Windows           | `QOwnNotes.exe`                                              |
 
-## Trigger menu actions after startup
+## Menuacties activeren na opstarten
 
-With the parameter `--action <name>` you can trigger menu actions after the application was started.
+Met de parameter `--action <name>` kunt u menuacties activeren nadat de applicatie is gestart.
 
-For example to open the todo list dialog after startup use:
+Gebruik bijvoorbeeld om het dialoogvenster met de takenlijst te openen na het opstarten:
 
 ```bash
 QOwnNotes --action actionShow_Todo_List
 ```
 
 ::: tip
-You can get the object names of the menu action from [mainwindow.ui](https://github.com/pbek/QOwnNotes/blob/develop/src/mainwindow.ui). Just search for the English menu title. Note that these texts can change over time.
+U kunt de objectnamen van de menuactie ophalen van [hoofdvenster.ui](https://github.com/pbek/QOwnNotes/blob/develop/src/mainwindow.ui). Zoek gewoon naar de Engelse menutitel. Houd er rekening mee dat deze teksten in de loop van de tijd kunnen veranderen.
 :::
 
-To trigger [scripting actions](../scripting/methods-and-objects.md#registering-a-custom-action) use `customAction_` followed by the identifier of the custom action. The identifier of the custom action is the first parameter of the `script.registerCustomAction` call in the script.
+Om [scriptacties](../scripting/methods-and-objects.md#registering-a-custom-action) te activeren, gebruikt u `customAction_` gevolgd door de identifier van de aangepaste actie. De id van de aangepaste actie is de eerste parameter van de `script.registerCustomAction`-aanroep in het script.
 
-For example to run the custom action `myAction` start QOwnNotes like this:
+Om bijvoorbeeld de aangepaste actie `myAction` uit te voeren, start u QOwnNotes als volgt:
 
 ```bash
 QOwnNotes --action customAction_myAction
 ```
 
 ::: tip
-If you run QOwnNotes a second time with the action parameter and only have allowed one application instance, then the menu action will be triggered in the first instance.
+Als u QOwnNotes een tweede keer uitvoert met de actieparameter en slechts één toepassingsinstantie hebt toegestaan, wordt de menuactie in eerste instantie geactiveerd.
 :::

@@ -133,7 +133,7 @@ class MainWindow : public QMainWindow {
 
     void enableShowTrashButton();
 
-    void showStatusBarMessage(const QString &message, const int timeout = 0);
+    void showStatusBarMessage(const QString &message, const int timeout = 4000);
 
     void handleInsertingFromMimeData(const QMimeData *mimeData);
 
@@ -674,6 +674,8 @@ class MainWindow : public QMainWindow {
 
     void on_actionInsert_note_link_triggered();
 
+    void on_actionImport_notes_from_Joplin_triggered();
+
 private:
     Ui::MainWindow *ui;
     QString notesPath;
@@ -685,10 +687,11 @@ private:
     bool showSystemTray;
     QSystemTrayIcon *trayIcon;
     QDateTime currentNoteLastEdited;
+    QDateTime _lastHeartbeat;
     bool notifyAllExternalModifications;
     int noteSaveIntervalTime;
     QTimer *noteSaveTimer;
-    QTimer *todoReminderTimer;
+    QTimer *_frequentPeriodicTimer;
     QTimer *_noteViewUpdateTimer;
     QTimer *_gitCommitTimer;
     QTimer *_todoListTimer;
@@ -846,7 +849,7 @@ private:
 
     void printTextDocument(QTextDocument *textDocument);
 
-    void updateEncryptNoteButtons();
+    void updateNoteEncryptionUI();
 
     void askForEncryptedNotePasswordIfNeeded(
         const QString &additionalText = QString());
@@ -1020,7 +1023,7 @@ private:
 
     void handleNoteTreeTagColoringForNote(const Note &note);
 
-    bool showRestartNotificationIfNeeded();
+    bool showRestartNotificationIfNeeded(bool force = false);
 
     void unsetCurrentNote();
 

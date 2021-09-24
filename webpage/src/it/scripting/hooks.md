@@ -1,4 +1,4 @@
-# Ganci
+# Connessioni
 
 onNoteStored
 ------------
@@ -6,9 +6,11 @@ onNoteStored
 ### Chiamata al metodo e parametri
 ```js
 /**
-  * Questa funzione viene chiamata quando una nota viene archiviata su disco
-  * Non è possibile modificare le note memorizzate, sarebbe un disastro da allora
-  * molto probabilmente li stai modificando a mano allo stesso tempo
+  * Questa funzione viene chiamata quando una nota viene archiviata su
+  * disco
+  * Non è possibile modificare le note memorizzate, poiché sarebbe tutto
+  * complicato dal fatto che probabilmente le stai contemporaneamente
+  * anche modificando a mano
   *
   * @param {NoteApi} note - l'oggetto nota della nota memorizzata
  */
@@ -58,8 +60,12 @@ Se questa funzione è definita in più script, vince il primo script che restitu
 ### Chiamata al metodo e parametri
 ```js
 /**
-  * @param fileName stringa il percorso del file multimediale di origine prima che fosse copiato nella cartella multimediale
-  * @param markdownText stringa il testo del markdown del file multimediale, ad es. ! [mia-immagine] (media / mia-immagine-4101461585.jpg)
+  * @param fileName string il percorso del file multimediale di origine
+  *                        prima che fosse copiato nella cartella
+  *                        multimediale
+  * @param markdownText string il testo del markdown del file
+  *                            multimediale, ad es.
+  *                            ![mia-immagine](media/mia-immagine-4101461585.jpg)
   * @return string il nuovo testo di markdown del file multimediale
  */
 function insertMediaHook(fileName, markdownText);
@@ -77,9 +83,13 @@ Se questa funzione è definita in più script, vince il primo script che restitu
 ### Chiamata al metodo e parametri
 ```js
 /**
-  * @param fileName stringa il percorso del file allegato di origine prima che fosse copiato nella cartella degli allegati
-  * @param markdownText stringa il testo del markdown del file allegato, ad es. [mio-file.txt] (allegati / mio-file-4245650967.txt)
-  * @return stringa il nuovo testo di markdown del file allegato
+  * @param fileName string il percorso del file allegato di origine
+  *                        prima che fosse copiato nella cartella degli
+  *                        allegati
+  * @param markdownText string il testo del markdown del file allegato,
+  *                            ad es.
+  *                            [mio-file.txt](allegati/mio-file-4245650967.txt)
+  * @return string il nuovo testo di markdown del file allegato
  */
 function insertAttachmentHook(fileName, markdownText);
 ```
@@ -94,7 +104,7 @@ insertingFromMimeDataHook
 /**
   * Questa funzione viene chiamata quando html o un file multimediale viene incollato in una nota con `Ctrl + Maiusc + V`
   *
-  * @param text text dell'oggetto QMimeData
+  * @param text testo dell'oggetto QMimeData
   * @param html html dell'oggetto QMimeData
   * @ restituisce la stringa che deve essere inserita al posto del testo dall'oggetto QMimeData
  */
@@ -116,8 +126,8 @@ handleNoteTextFileNameHook
   * Ti permette di modificare il nome del file della nota
   * Tieni presente che devi preoccuparti tu stesso dei nomi duplicati!
  *
-  * Restituisce una stringa vuota se il nome del file della nota dovrebbe
-  * non essere modificato
+  * Restituisce una stringa vuota se il nome del file della nota non deve
+  * essere modificato
   *
   * @param {NoteApi} note - l'oggetto nota della nota memorizzata
   * @return {string} il nome del file della nota
@@ -219,7 +229,7 @@ function noteToMarkdownHtmlHook(note, html, forExport);
 
 Puoi dare un'occhiata all'esempio [example.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/example.qml) o [preview-styling.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/preview-styling.qml).
 
-Fare riferimento al [HTML supportato Documentazione del sottoinsieme](http://doc.qt.io/qt-5/richtext-html-subset.html) per un elenco di tutti gli stili CSS supportati.
+Fai riferimento al documento [Sottoinsieme di HTML supportato](http://doc.qt.io/qt-5/richtext-html-subset.html) per un elenco di tutti gli stili CSS supportati.
 
 encryptionHook
 --------------
@@ -237,7 +247,7 @@ encryptionHook
 function encryptionHook(text, password, decrypt);
 ```
 
-Puoi dare un'occhiata all'esempio [encryption-keybase.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/encryption-keybase.qml), [encryption-pgp.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/encryption-pgp.qml) or [encryption-rot13.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/encryption-rot13.qml).
+Puoi dare un'occhiata all'esempio [encryption-keybase.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/encryption-keybase.qml), [encryption-pgp.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/encryption-pgp.qml) o [encryption-rot13.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/encryption-rot13.qml).
 
 noteTaggingHook
 ---------------

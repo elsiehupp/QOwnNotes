@@ -15,6 +15,7 @@
 #include "entities/notefolder.h"
 #include "helpers/qownspellchecker.h"
 #include "mainwindow.h"
+#include "libraries/qmarkdowntextedit/linenumberarea.h"
 
 QOwnNotesMarkdownTextEdit::QOwnNotesMarkdownTextEdit(QWidget *parent)
     : QMarkdownTextEdit(parent, false) {
@@ -362,9 +363,10 @@ void QOwnNotesMarkdownTextEdit::setPaperMargins(int width) {
                 QStringLiteral("O").repeated(characterAmount));
 #endif
 
-            // apply a factor to correct the faulty calculated margin
+            // Apply a factor to correct the faulty calculated margin
+            // Use a different factor for monospaced fonts
             // TODO(pbek): I don't know better way to get around this yet
-            proposedEditorWidth /= 1.332;
+            proposedEditorWidth /= usesMonospacedFont() ? 0.95 : 1.332;
 
             // calculate the margin to be applied
             margin = (width - proposedEditorWidth) / 2;
@@ -376,14 +378,38 @@ void QOwnNotesMarkdownTextEdit::setPaperMargins(int width) {
 
         setViewportMargins(margin, 20, margin, 0);
     } else {
-        setViewportMargins(10, 10, 10, 0);
+        int lineWidthLeftMargin = lineNumberArea()->isLineNumAreaEnabled() ?
+            lineNumberArea()->lineNumAreaWidth() : 0;
+
+        setLineNumberLeftMarginOffset(10);
+        setViewportMargins(10 + lineWidthLeftMargin, 10, 10, 0);
     }
+}
+
+/**
+ * Try to determine if the used font is monospaced
+ *
+ * @return
+ */
+bool QOwnNotesMarkdownTextEdit::usesMonospacedFont() {
+    QFontMetrics metrics(font());
+
+#if QT_VERSION < QT_VERSION_CHECK(5, 11, 0)
+    int widthNarrow = metrics.width(QStringLiteral("iiiii"));
+    int widthWide = metrics.width(QStringLiteral("WWWWW"));
+#else
+    int widthNarrow = metrics.horizontalAdvance(QStringLiteral("iiiii"));
+    int widthWide = metrics.horizontalAdvance(QStringLiteral("WWWWW"));
+#endif
+
+    return widthNarrow == widthWide;
 }
 
 QMargins QOwnNotesMarkdownTextEdit::viewportMargins() {
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 5, 0))
     return QMarkdownTextEdit::viewportMargins();
 #else
+    // This most likely will break line numbers, they aren't really supported in Qt < 5.5
     return QMargins();
 #endif
 }
@@ -392,8 +418,12 @@ void QOwnNotesMarkdownTextEdit::setText(const QString &text) {
     QMarkdownTextEdit::setText(text);
 }
 
-void QOwnNotesMarkdownTextEdit::setSpellcheckingEnabled(bool enabled) {
+void QOwnNotesMarkdownTextEdit::setSpellCheckingEnabled(bool enabled) {
     QOwnSpellChecker::instance()->setActive(enabled);
+}
+
+bool QOwnNotesMarkdownTextEdit::isSpellCheckingEnabled() {
+    return QOwnSpellChecker::instance()->isActive();
 }
 
 void QOwnNotesMarkdownTextEdit::resizeEvent(QResizeEvent *event) {

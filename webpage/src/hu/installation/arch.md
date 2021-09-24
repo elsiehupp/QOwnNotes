@@ -10,7 +10,7 @@ SigLevel = Optional TrustAll
 Server = http://download.opensuse.org/repositories/home:/pbek:/QOwnNotes/Arch_Extra/$arch
 ```
 
-Futtassa a következő shell parancsokat a lerakat megbízhatóságához:
+Futtassa a következő shell parancsokat az adattár megbízhatóságához:
 
 ```bash
 wget http://download.opensuse.org/repositories/home:/pbek:/QOwnNotes/Arch_Extra/x86_64/home_pbek_QOwnNotes_Arch_Extra.key -O - | sudo pacman-key --add -
@@ -33,11 +33,13 @@ Most szinkronizálhatja a csomagadatbázist, és telepítheti a csomagot a `pacm
 sudo pacman -Syy qownnotes
 ```
 
-[Közvetlen letöltés](https://build.opensuse.org/package/binaries/home:pbek:QOwnNotes/desktop/Arch_Extra)
+[Közvetlen letöltés](https://download.opensuse.org/repositories/home:/pbek:/QOwnNotes/Arch_Extra)
 
-::: tip Természetesen ezt az adattárat használhatja más Arch Linux alapú disztribúciókkal is, például a Manjaróval. :::
+::: tip
+Természetesen ezt az adattárat használhatja más Arch Linux alapú disztribúciókkal is, például a Manjaróval.
+:::
 
-## Arch felhasználói adattár (AUR)
+## Arch Felhasználói Adattár (Arch User Repository, AUR)
 
 Alternatív megoldásként létezik egy hivatalos csomag is az AUR-on lévő QOwnNotes számára, amelyet `qownnotes` -nek hívnak.
 
@@ -49,4 +51,6 @@ Szinkronizálja a csomagadatbázist, és telepítse a csomagot a `yay` paranccsa
 yay -S qownnotes
 ```
 
-::: tip Ha fel akarja gyorsítani az építési időt, érdemes elolvasnia a [CCACHE és az AUR](https://www.reddit.com/r/archlinux/comments/6vez44/a_small_tip_if_you_compile_from_aur/) t. :::
+::: tip
+Ha fel akarja gyorsítani az építési időt, érdemes elolvasnia a [CCACHE és az AUR](https://www.reddit.com/r/archlinux/comments/6vez44/a_small_tip_if_you_compile_from_aur/) t.
+:::

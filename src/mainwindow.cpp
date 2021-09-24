@@ -18,6 +18,7 @@
 #include <dialogs/attachmentdialog.h>
 #include <dialogs/dictionarymanagerdialog.h>
 #include <dialogs/evernoteimportdialog.h>
+#include <dialogs/joplinimportdialog.h>
 #include <dialogs/filedialog.h>
 #include <dialogs/imagedialog.h>
 #include <dialogs/localtrashdialog.h>
@@ -64,6 +65,7 @@
 #include <QMessageBox>
 #include <QMimeData>
 #include <QPageSetupDialog>
+#include <QPointer>
 #include <QPrintDialog>
 #include <QPrinter>
 #include <QProcess>
@@ -317,15 +319,16 @@ MainWindow::MainWindow(QWidget *parent)
     _gitCommitTimer = new QTimer(this);
     connect(_gitCommitTimer, &QTimer::timeout, this,
             &MainWindow::gitCommitCurrentNoteFolder);
-
     _gitCommitTimer->start(_gitCommitInterval * 1000);
 
-    // check if we have a tasks reminder every minute
-    this->todoReminderTimer = new QTimer(this);
-    connect(this->todoReminderTimer, &QTimer::timeout, this,
-            &MainWindow::frequentPeriodicChecker);
+    // set last heartbeat in the past so it gets called the first time
+    _lastHeartbeat = QDateTime::currentDateTime().addDays(-1);
 
-    this->todoReminderTimer->start(60000);
+    // do some stuff periodically
+    this->_frequentPeriodicTimer = new QTimer(this);
+    connect(this->_frequentPeriodicTimer, &QTimer::timeout, this,
+            &MainWindow::frequentPeriodicChecker);
+    this->_frequentPeriodicTimer->start(60000);
 
     QObject::connect(&this->noteDirectoryWatcher,
                      SIGNAL(directoryChanged(QString)), this,
@@ -583,8 +586,11 @@ void MainWindow::triggerStartupMenuAction() {
 
     QAction *action = findAction(actionName);
 
+    // TODO: Maybe drop Debian 8 support
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
     // use a single-shot timer to prevent crashes when called by SingleApplication::receivedMessage
     QTimer::singleShot(0, this, [this, actionName, action]() {
+#endif
         if (action != nullptr) {
             qDebug() << "Running menu action: " << actionName;
             action->trigger();
@@ -595,7 +601,9 @@ void MainWindow::triggerStartupMenuAction() {
                    "Did you spell it correctly?").arg(actionName),
                 "menu-action-not-found");
         }
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
     });
+#endif
 }
 
 /**
@@ -651,49 +659,126 @@ void MainWindow::initFakeVim(QOwnNotesMarkdownTextEdit *noteTextEdit) {
     handler->installEventFilter();
     handler->setupWidget();
 
-    auto proxy = new FakeVimProxy(noteTextEdit, this, handler);
+    QPointer<FakeVimProxy> proxy = new FakeVimProxy(noteTextEdit, this, handler);
+
+    using namespace FakeVim::Internal;
 
     QSettings settings;
     bool setExpandTab = !settings.value(QStringLiteral("Editor/useTabIndent")).toBool();
-    FakeVim::Internal::theFakeVimSettings()->item("et")->setValue(setExpandTab);
-    FakeVim::Internal::theFakeVimSettings()->item("ts")->setValue(Utils::Misc::indentSize());
-    FakeVim::Internal::theFakeVimSettings()->item("sw")->setValue(Utils::Misc::indentSize());
+    fakeVimSettings()->item("et")->setValue(setExpandTab);
+    fakeVimSettings()->item("ts")->setValue(Utils::Misc::indentSize());
+    fakeVimSettings()->item("sw")->setValue(Utils::Misc::indentSize());
 
-    QObject::connect(handler,
-                     &FakeVim::Internal::FakeVimHandler::commandBufferChanged,
-                     proxy, &FakeVimProxy::changeStatusMessage);
-    QObject::connect(
-        handler, &FakeVim::Internal::FakeVimHandler::extraInformationChanged,
-        proxy, &FakeVimProxy::changeExtraInformation);
-    QObject::connect(handler,
-                     &FakeVim::Internal::FakeVimHandler::statusDataChanged,
-                     proxy, &FakeVimProxy::changeStatusData);
-    QObject::connect(handler,
-                     &FakeVim::Internal::FakeVimHandler::highlightMatches,
-                     proxy, &FakeVimProxy::highlightMatches);
-    QObject::connect(
-        handler, &FakeVim::Internal::FakeVimHandler::handleExCommandRequested,
-        proxy, &FakeVimProxy::handleExCommand);
-    QObject::connect(
-        handler, &FakeVim::Internal::FakeVimHandler::requestSetBlockSelection,
-        proxy, &FakeVimProxy::requestSetBlockSelection);
-    QObject::connect(
-        handler,
-        &FakeVim::Internal::FakeVimHandler::requestDisableBlockSelection, proxy,
-        &FakeVimProxy::requestDisableBlockSelection);
-    QObject::connect(
-        handler, &FakeVim::Internal::FakeVimHandler::requestHasBlockSelection,
-        proxy, &FakeVimProxy::requestHasBlockSelection);
+    {
+        auto h = [proxy](const QString &contents, int cursorPos, int anchorPos, int msgLvl) {
+            if (!proxy) {
+                return;
+            }
+            proxy->changeStatusMessage(contents, cursorPos, anchorPos, msgLvl);
+        };
+        handler->commandBufferChanged.connect(h);
+    }
 
-    QObject::connect(handler, &FakeVim::Internal::FakeVimHandler::indentRegion,
-                     proxy, &FakeVimProxy::indentRegion);
-    QObject::connect(
-        handler, &FakeVim::Internal::FakeVimHandler::checkForElectricCharacter,
-        proxy, &FakeVimProxy::checkForElectricCharacter);
+    {
+        auto h = [proxy](const QString &msg) {
+            if (!proxy) {
+                return;
+            }
+            proxy->changeExtraInformation(msg);
+        };
+        handler->extraInformationChanged.connect(h);
+    }
 
+    {
+        auto h = [proxy](const QString &msg) {
+            if (!proxy) {
+                return;
+            }
+            proxy->changeStatusData(msg);
+        };
+        handler->statusDataChanged.connect(h);
+    }
+
+    {
+        auto h = [proxy](const QString &msg) {
+            if (!proxy) {
+                return;
+            }
+            proxy->highlightMatches(msg);
+        };
+        handler->highlightMatches.connect(h);
+    }
+
+    {
+        auto h = [proxy](bool *handled, const ExCommand &cmd) {
+            if (!proxy) {
+                if (handled) {
+                    *handled = false;
+                }
+                return;
+            }
+            proxy->handleExCommand(handled, cmd);
+        };
+        handler->handleExCommandRequested.connect(h);
+    }
+
+    {
+        auto h = [proxy](const QTextCursor &cursor) {
+            if (!proxy) {
+                return;
+            }
+            proxy->requestSetBlockSelection(cursor);
+        };
+        handler->requestSetBlockSelection.connect(h);
+    }
+
+    {
+        auto h = [proxy]() {
+            if (!proxy) {
+                return;
+            }
+            proxy->requestDisableBlockSelection();
+        };
+        handler->requestDisableBlockSelection.connect(h);
+    }
+
+    {
+
+        auto h = [proxy](bool *on) {
+            if (!proxy) {
+                if (on)
+                    *on = false;
+                return;
+            }
+            proxy->requestHasBlockSelection(on);
+        };
+        handler->requestHasBlockSelection.connect(h);
+    }
+
+    {
+        auto h = [proxy](int beginLine, int endLine, QChar typedChar) {
+            if (!proxy) {
+                return;
+            }
+            proxy->indentRegion(beginLine, endLine, typedChar);
+        };
+        handler->indentRegion.connect(h);
+    }
+
+    {
+        auto h = [proxy](bool *result, QChar c) {
+            if (!proxy) {
+                return;
+            }
+            proxy->checkForElectricCharacter(result, c);
+        };
+        handler->checkForElectricCharacter.connect(h);
+    }
+
+    // regular signal
     QObject::connect(
-        proxy, &FakeVimProxy::handleInput, handler,
-        [handler](const QString &text) { handler->handleInput(text); });
+                proxy.data(), &FakeVimProxy::handleInput, handler,
+                [handler](const QString &text) { handler->handleInput(text); });
 }
 
 /**
@@ -1451,9 +1536,9 @@ void MainWindow::togglePanelVisibility(const QString &objectName) {
         _noteSubFolderDockWidgetVisible = newVisibility;
 
         // don't allow the note subfolder dock widget to be visible if the
-        // note folder has no subfolders activated
+        // note folder has no subfolders activated or if the note tree feature is enabled
         if (newVisibility) {
-            newVisibility = NoteFolder::isCurrentNoteTreeEnabled();
+            newVisibility = NoteFolder::isCurrentShowSubfolders() && !Utils::Misc::isEnableNoteTree();
         }
     }
 
@@ -1681,6 +1766,10 @@ void MainWindow::setDistractionFreeMode(const bool enabled) {
         // enter the distraction free mode
         //
 
+        // turn off line numbers because they would look broken in dfm
+        ui->noteTextEdit->setLineNumberEnabled(false);
+        ui->encryptedNoteTextEdit->setLineNumberEnabled(false);
+
         // store the current workspace in case we changed something
         storeCurrentWorkspace();
 
@@ -1776,6 +1865,14 @@ void MainWindow::setDistractionFreeMode(const bool enabled) {
 
         if (ui->noteEditTabWidget->count() > 1) {
             ui->noteEditTabWidget->tabBar()->show();
+        }
+
+        bool showLineNumbersInEditor = settings.value(QStringLiteral("Editor/showLineNumbers")).toBool();
+
+        // turn line numbers on again if they were enabled
+        if (showLineNumbersInEditor) {
+            ui->noteTextEdit->setLineNumberEnabled(true);
+            ui->encryptedNoteTextEdit->setLineNumberEnabled(true);
         }
     }
 
@@ -2675,6 +2772,18 @@ void MainWindow::readSettingsFromSettingsDialog(const bool isAppLaunch) {
     ui->noteTextEdit->setCursorWidth(cursorWidth);
     ui->encryptedNoteTextEdit->setCursorWidth(cursorWidth);
 
+    // turn line numbers on if enabled
+    bool showLineNumbersInEditor = settings.value(
+        QStringLiteral("Editor/showLineNumbers")).toBool();
+    ui->noteTextEdit->setLineNumberEnabled(showLineNumbersInEditor);
+    ui->encryptedNoteTextEdit->setLineNumberEnabled(showLineNumbersInEditor);
+
+    if (showLineNumbersInEditor) {
+        bool darkMode = settings.value(QStringLiteral("darkMode")).toBool();
+        ui->noteTextEdit->setLineNumbersCurrentLineColor(QColor(darkMode ?
+            QStringLiteral("#eef067") : QStringLiteral("##141414")));
+    }
+
     ui->noteTextEdit->setPaperMargins();
     ui->encryptedNoteTextEdit->setPaperMargins();
 
@@ -2754,7 +2863,7 @@ void MainWindow::updateNoteTextFromDisk(Note note) {
     note.updateNoteTextFromDisk();
     note.store();
     this->currentNote = note;
-    updateEncryptNoteButtons();
+    updateNoteEncryptionUI();
 
     {
         const QSignalBlocker blocker(this->ui->noteTextEdit);
@@ -3049,7 +3158,11 @@ void MainWindow::storeUpdatedNotesToDisk() {
 void MainWindow::frequentPeriodicChecker() {
     CalendarItem::alertTodoReminders();
     Note::expireCryptoKeys();
-    MetricsService::instance()->sendHeartbeat();
+
+    if (QDateTime::currentDateTime().addSecs(-1200) >= _lastHeartbeat) {
+        _lastHeartbeat = QDateTime::currentDateTime();
+        MetricsService::instance()->sendHeartbeat();
+    }
 
     QSettings settings;
     QDateTime lastUpdateCheck =
@@ -3160,13 +3273,10 @@ bool MainWindow::buildNotesIndex(int noteSubFolderId, bool forceRebuild) {
 
     QDir notesDir(notePath);
 
-    // only show markdown and text files
-    QStringList filters{"*.txt", "*.md"};
+    // only show certain files
+    auto filters = Note::customNoteFileExtensionList(QStringLiteral("*."));
 
-    // append the custom extensions
-    filters.append(Note::customNoteFileExtensionList(QStringLiteral("*.")));
-
-    // show newest entry first
+    // show the newest entry first
     QStringList files = notesDir.entryList(filters, QDir::Files, QDir::Time);
     //    qDebug() << __func__ << " - 'files': " << files;
 
@@ -3812,7 +3922,7 @@ void MainWindow::setCurrentNote(Note note, bool updateNoteText,
         ui->noteTextEdit->show();
     }
 
-    updateEncryptNoteButtons();
+    updateNoteEncryptionUI();
     // we also need to do this in on_noteTreeWidget_itemSelectionChanged
     // because of different timings
     reloadCurrentNoteTags();
@@ -5162,32 +5272,25 @@ void MainWindow::forceRegenerateNotePreview() {
  *
  * @return true if the applications is restarting
  */
-bool MainWindow::showRestartNotificationIfNeeded() {
-    const bool needsRestart = qApp->property("needsRestart").toBool();
+bool MainWindow::showRestartNotificationIfNeeded(bool force) {
+    const bool needsRestart = qApp->property("needsRestart").toBool() || force;
 
     if (!needsRestart) {
         return false;
     }
 
     qApp->setProperty("needsRestart", false);
-    const QString title = tr("Restart application");
-    bool singleApplication = qApp->property("singleApplication").toBool();
 
-    if (singleApplication) {
-        QMessageBox::information(
-            this, title,
-            tr("You may need to restart the application manually to let "
-               "the changes take effect."));
-    } else {
-        if (QMessageBox::information(
-                this, title,
-                tr("You may need to restart the application to let the changes "
-                   "take effect."),
-                tr("Restart"), tr("Cancel"), QString(), 0, 1) == 0) {
-            storeSettings();
-            Utils::Misc::restartApplication();
-            return true;
-        }
+    if (QMessageBox::information(
+            this, tr("Restart application"),
+            tr("You may need to restart the application to let the "
+                   "changes take effect.") +
+                Utils::Misc::appendSingleAppInstanceTextIfNeeded(),
+            tr("Restart"), tr("Cancel"), QString(), 0, 1) == 0) {
+        storeSettings();
+        Utils::Misc::restartApplication();
+
+        return true;
     }
 
     return false;
@@ -5585,7 +5688,7 @@ void MainWindow::noteTextEditTextWasUpdated() {
 
         ScriptingService::instance()->onCurrentNoteChanged(&currentNote);
 
-        updateEncryptNoteButtons();
+        updateNoteEncryptionUI();
         handleNoteTextChanged();
     }
 }
@@ -7255,13 +7358,30 @@ void MainWindow::on_action_Encrypt_note_triggered() {
 /**
  * Enables or disables the encrypt note buttons
  */
-void MainWindow::updateEncryptNoteButtons() {
+void MainWindow::updateNoteEncryptionUI() {
     currentNote.refetch();
     const bool hasEncryptedNoteText = currentNote.hasEncryptedNoteText();
 
     ui->action_Encrypt_note->setEnabled(!hasEncryptedNoteText);
     ui->actionEdit_encrypted_note->setEnabled(hasEncryptedNoteText);
     ui->actionDecrypt_note->setEnabled(hasEncryptedNoteText);
+
+    // disable spell checker for encrypted text
+    const bool checkSpellingEnabled =
+        QSettings().value(QStringLiteral("checkSpelling"), true).toBool();
+    const bool spellCheckerShouldBeActive = !hasEncryptedNoteText && checkSpellingEnabled;
+
+    // check if the spellchecking state is not as it should be
+    if (spellCheckerShouldBeActive != ui->noteTextEdit->isSpellCheckingEnabled()) {
+        ui->noteTextEdit->setSpellCheckingEnabled(spellCheckerShouldBeActive);
+        ui->noteTextEdit->highlighter()->rehighlight();
+
+        // for some reason the encryptedNoteTextEdit is also affected and needs
+        // to be set again
+        if (hasEncryptedNoteText) {
+            ui->encryptedNoteTextEdit->setSpellCheckingEnabled(checkSpellingEnabled);
+        }
+    }
 }
 
 /**
@@ -7672,14 +7792,14 @@ void MainWindow::handleInsertingFromMimeData(const QMimeData *mimeData) {
                     }
                     // only allow image files to be inserted as image
                 } else if (isValidMediaFile(file)) {
-                    showStatusBarMessage(tr("Inserting image"));
+                    showStatusBarMessage(tr("Inserting image"), 0);
 
                     // insert the image
                     insertMedia(file);
 
                     showStatusBarMessage(tr("Done inserting image"), 3000);
                 } else {
-                    showStatusBarMessage(tr("Inserting attachment"));
+                    showStatusBarMessage(tr("Inserting attachment"), 0);
 
                     // inserting the attachment
                     insertAttachment(file);
@@ -7697,6 +7817,7 @@ void MainWindow::handleInsertingFromMimeData(const QMimeData *mimeData) {
         if (successCount > 0) {
             message +=
                 tr("Copied %n note(s) to %1", "", successCount).arg(notesPath);
+            on_action_Reload_note_folder_triggered();
         }
 
         if (failureCount > 0) {
@@ -7728,7 +7849,7 @@ void MainWindow::handleInsertingFromMimeData(const QMimeData *mimeData) {
         QImage image = mimeData->imageData().value<QImage>();
 
         if (!image.isNull()) {
-            showStatusBarMessage(tr("Saving temporary image"));
+            showStatusBarMessage(tr("Saving temporary image"), 0);
 
             QTemporaryFile tempFile(
                 QDir::tempPath() + QDir::separator() +
@@ -7741,7 +7862,7 @@ void MainWindow::handleInsertingFromMimeData(const QMimeData *mimeData) {
                 // insert media into note
                 auto *file = new QFile(tempFile.fileName());
 
-                showStatusBarMessage(tr("Inserting image"));
+                showStatusBarMessage(tr("Inserting image"), 0);
                 insertMedia(file);
                 delete file;
 
@@ -7785,7 +7906,7 @@ void MainWindow::insertHtmlAsMarkdownIntoCurrentNote(QString html) {
                 continue;
             }
 
-            showStatusBarMessage(tr("Downloading %1").arg(imageUrl.toString()));
+            showStatusBarMessage(tr("Downloading %1").arg(imageUrl.toString()), 0);
 
             // download the image and get the media markdown code for it
             markdownCode = currentNote.downloadUrlToMedia(imageUrl);
@@ -7824,7 +7945,7 @@ QString MainWindow::getWorkspaceUuid(const QString &workspaceName)
  * Evaluates if file is a media file
  */
 bool MainWindow::isValidMediaFile(QFile *file) {
-    const QStringList mediaExtensions = QStringList({"jpg", "png", "gif"});
+    const QStringList mediaExtensions = QStringList({"jpg", "png", "gif", "webp"});
     const QFileInfo fileInfo(file->fileName());
     const QString extension = fileInfo.suffix();
     return mediaExtensions.contains(extension, Qt::CaseInsensitive);
@@ -7834,11 +7955,7 @@ bool MainWindow::isValidMediaFile(QFile *file) {
  * Evaluates if file is a note file
  */
 bool MainWindow::isValidNoteFile(QFile *file) {
-    QStringList mediaExtensions = QStringList({"txt", "md"});
-
-    // append the custom extensions
-    mediaExtensions.append(Note::customNoteFileExtensionList());
-
+    auto mediaExtensions = Note::customNoteFileExtensionList();
     const QFileInfo fileInfo(file->fileName());
     const QString extension = fileInfo.suffix();
     return mediaExtensions.contains(extension, Qt::CaseInsensitive);
@@ -8068,16 +8185,22 @@ void MainWindow::reloadTagTree() {
 
     QVector<int> noteIdList;
     int untaggedNoteCount = 0;
-    // get the notes from the subfolders
-    for (int noteSubFolderId : Utils::asConst(noteSubFolderIds)) {
-        // get all notes of a note sub folder
-        untaggedNoteCount += Note::countAllNotTagged(noteSubFolderId);
-        noteIdList << Note::fetchAllIdsByNoteSubFolderId(noteSubFolderId);
+
+    if (NoteFolder::isCurrentShowSubfolders()) {
+        // get the notes from the subfolders
+        for (int noteSubFolderId : Utils::asConst(noteSubFolderIds)) {
+            // get all notes of a note sub folder
+            untaggedNoteCount += Note::countAllNotTagged(noteSubFolderId);
+            noteIdList << Note::fetchAllIdsByNoteSubFolderId(noteSubFolderId);
+        }
+    } else {
+        untaggedNoteCount = Note::countAllNotTagged(0);
     }
 
     // create an item to view all notes
     int linkCount =
-        _showNotesFromAllNoteSubFolders ? Note::countAll() : noteIdList.count();
+        _showNotesFromAllNoteSubFolders || !NoteFolder::isCurrentShowSubfolders() ?
+                Note::countAll() : noteIdList.count();
     QString toolTip = tr("show all notes (%1)").arg(QString::number(linkCount));
 
     auto *allItem = new QTreeWidgetItem();
@@ -9935,6 +10058,10 @@ void MainWindow::onNavigationWidgetPositionClicked(int position) {
 
     // update the preview-slider
     noteTextSliderValueChanged(textEdit->verticalScrollBar()->value(), true);
+
+    // set focus back to the navigation widget so you can use the
+    // keyboard to navigate
+    ui->navigationWidget->setFocus();
 }
 
 /**
@@ -10275,7 +10402,7 @@ void MainWindow::on_actionExport_preview_HTML_triggered() {
  */
 void MainWindow::on_actionOpen_IRC_Channel_triggered() {
     QDesktopServices::openUrl(QUrl(QStringLiteral(
-        "https://kiwiirc.com/client/irc.freenode.net/#qownnotes")));
+        "https://web.libera.chat/#qownnotes")));
 }
 
 /**
@@ -11576,8 +11703,6 @@ void MainWindow::onWorkspaceComboBoxCurrentIndexChanged(int index) {
  * Sets a new current workspace
  */
 void MainWindow::setCurrentWorkspace(const QString &uuid) {
-    QWidget *focusWidget = qApp->focusWidget();
-
     // store the current workspace
     storeCurrentWorkspace();
 
@@ -11591,12 +11716,6 @@ void MainWindow::setCurrentWorkspace(const QString &uuid) {
 
     // update the menu and combo box (but don't rebuild it)
     updateWorkspaceLists(false);
-
-    if (focusWidget != Q_NULLPTR) {
-        // set the focus to the widget that had the focus before
-        // the workspace was restored
-        focusWidget->setFocus();
-    }
 
     // update the preview in case it was disable previously
     setNoteTextFromNote(&currentNote, true);
@@ -11623,6 +11742,7 @@ void MainWindow::storeCurrentWorkspace() {
 void MainWindow::restoreCurrentWorkspace() {
     QSettings settings;
     QStringList workspaces = getWorkspaceUuidList();
+    QWidget *focusWidget = qApp->focusWidget();
 
     // create a default workspace if there is none yet
     if (workspaces.count() == 0) {
@@ -11687,6 +11807,12 @@ void MainWindow::restoreCurrentWorkspace() {
 
         settings.remove(QStringLiteral("initialWorkspace"));
         centerAndResize();
+    }
+
+    if (focusWidget != Q_NULLPTR) {
+        // set the focus to the widget that had the focus before
+        // the workspace was restored
+        focusWidget->setFocus();
     }
 }
 
@@ -12693,6 +12819,12 @@ void MainWindow::on_actionCheck_spelling_toggled(bool checked) {
     settings.setValue(QStringLiteral("checkSpelling"), checked);
     ui->noteTextEdit->updateSettings();
     ui->encryptedNoteTextEdit->updateSettings();
+
+    // if spell checking was turned on still turn it off for the current note
+    // if encrypted text is shown
+    if (checked) {
+        updateNoteEncryptionUI();
+    }
 }
 
 void MainWindow::loadDictionaryNames() {
@@ -12796,8 +12928,7 @@ void MainWindow::onBackendChanged(QAction *action) {
     QString backend = action->data().toString();
     QSettings settings;
     settings.setValue(QStringLiteral("spellCheckBackend"), backend);
-    Utils::Misc::needRestart();
-    showRestartNotificationIfNeeded();
+    showRestartNotificationIfNeeded(true);
 }
 
 void MainWindow::on_actionManage_dictionaries_triggered() {
@@ -12999,4 +13130,19 @@ bool MainWindow::insertDataUrlAsFileIntoCurrentNote(const QString &dataUrl) {
     insertNoteText(markdownCode);
 
     return true;
+}
+
+void MainWindow::on_actionImport_notes_from_Joplin_triggered() {
+    const QSignalBlocker blocker(noteDirectoryWatcher);
+    Q_UNUSED(blocker)
+
+    auto dialog = new JoplinImportDialog(this);
+    dialog->exec();
+
+    if (dialog->getImportCount() > 0) {
+        // reload the note folder after importing new notes
+        buildNotesIndexAndLoadNoteDirectoryList(true, true);
+    }
+
+    delete (dialog);
 }

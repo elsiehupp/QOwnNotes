@@ -211,6 +211,31 @@ var markdown = script.insertMediaFile("/path/to/your/image.png");
 You may want to take a look at the example
 [scribble.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/scribble.qml).
 
+Inserting an attachment file into the attachments folder
+--------------------------------------------------------
+
+### Method call and parameters
+```cpp
+ * QML wrapper to insert an attachment file into the `attachments` folder and
+ * returning the attachment url or the markdown text of the attachment
+ * relative to the current note
+ *
+ * @param {QString} attachmentFilePath
+ * @param {QString} fileName to use in the markdown
+ * @param {bool} returnUrlOnly if true only the attachment url will be returned
+ * (default false)
+ * @return {QString} the attachment markdown or url
+ */
+QString ScriptingService::insertAttachmentFile(const QString &attachmentFilePath,
+                                               const QString &fileName,
+                                               bool returnUrlOnly);
+```
+
+### Example
+```js
+var markdown = script.insertAttachmentFile("/path/to/your/file.png");
+```
+
 Regenerating the note preview
 -----------------------------
 
@@ -757,16 +782,34 @@ script.addStyleSheet("QTreeWidget#noteTreeWidget {font-size: 30px;}");
 You may want to take a look at the example
 [custom-stylesheet.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/custom-stylesheet.qml).
 
-You can get the object names from the `*.ui` files, for example
+You can get the widget names from the `*.ui` files, for example the main window is
 [mainwindow.ui](https://github.com/pbek/QOwnNotes/blob/develop/src/mainwindow.ui).
 
-Take a look at [Style Sheet
-Reference](http://doc.qt.io/qt-5/stylesheet-reference.html) for a
+The Qt documentation (for example [QMainWindow](https://doc.qt.io/qt-5/qmainwindow.html))
+can help you to see how the widgets are related to each other (search for `Inherits`
+on the pages).
+
+The base widget for almost everything is [QWidget](https://doc.qt.io/qt-5/qwidget.html).
+So just styling `QWidget` with for example `QWidget {background-color: black; color: white;}`
+would mean everything has a black background color and a white foreground color.
+
+::: tip
+The [style.qss](https://github.com/pbek/QOwnNotes/blob/develop/src/libraries/qdarkstyle/style.qss) of
+[qdarkstyle](https://github.com/pbek/QOwnNotes/blob/develop/src/libraries/qdarkstyle)
+might also be a good reference for styles you can change.
+:::
+
+Take a look at [Style Sheet Reference](http://doc.qt.io/qt-5/stylesheet-reference.html) for a
 reference of what styles are available.
 
-If you want to inject styles into html preview to alter the way notes
-are previewed please look at
-[notetomarkdownhtmlhook](hooks.html#notetomarkdownhtmlhook).
+If you want to inject styles into html preview to alter the way notes are previewed
+please look at [notetomarkdownhtmlhook](hooks.html#notetomarkdownhtmlhook).
+
+::: tip
+If you actually want to see how the dialogs look and what the names are
+you could download [Qt Creator](https://www.qt.io/product/development-tools)
+and open the `*.ui` files in it. 
+:::
 
 Reloading the scripting engine
 ------------------------------

@@ -23,6 +23,8 @@
 #include <QStringBuilder>
 #include <QTimer>
 #include <QUrlQuery>
+#include <QDesktopServices>
+#include <QJsonDocument>
 
 // Disabled for Qt-6
 #if (QT_VERSION < QT_VERSION_CHECK(6, 0, 0))
@@ -2246,4 +2248,44 @@ QString OwnCloudService::nextcloudPreviewImageTagToInlineImageTag(
             QStringLiteral("\"/>");
 
     return inlineImageTag;
+}
+
+/**
+ * Initiates the Login flow v2 for Nextcloud
+ * https://docs.nextcloud.com/server/latest/developer_manual/client_apis/LoginFlow/index.html#login-flow-v2
+ *
+ * @param serverUrl
+ */
+bool OwnCloudService::initiateLoginFlowV2(const QString &serverUrl, QJsonObject &pollData) {
+    const QString loginFlowUrl = serverUrl + "/index.php/login/v2";
+    auto data = Utils::Misc::downloadUrl(loginFlowUrl, true);
+
+    if (data.isEmpty() || !data.startsWith('{')) {
+        QMessageBox::warning(nullptr, QObject::tr("Login flow failed"),
+            QObject::tr(
+             "Nextcloud login flow v2 could not be initiated. "
+             "Make sure the server url is correct and you are using a "
+             "Nextcloud server!<br /><br />If your are still having issues "
+             "please create an app password by hand on your server's admin page."));
+
+        return false;
+    }
+
+    // Parse data
+    auto jsonObject = QJsonDocument::fromJson(data).object();
+    auto loginUrl = jsonObject.value(QStringLiteral("login")).toString();
+
+    if (loginUrl.isEmpty()) {
+        QMessageBox::warning(nullptr, QObject::tr("Login flow failed"),
+         QObject::tr("Could not parse login url!"));
+
+        return false;
+    }
+
+    // Open browser with login url
+    QDesktopServices::openUrl(loginUrl);
+
+    pollData = jsonObject.value(QStringLiteral("poll")).toObject();
+
+    return true;
 }

@@ -46,6 +46,10 @@
 #include <QUuid>
 #include <QtGui/QIcon>
 #include <utility>
+#include <QHttpMultiPart>
+#if (QT_VERSION < QT_VERSION_CHECK(5, 6, 0))
+#include <QHostInfo>
+#endif
 
 #include "build_number.h"
 #include "libraries/sonnet/src/core/speller.h"
@@ -757,6 +761,10 @@ QString Utils::Misc::parseTaskList(const QString &html, bool clickable) {
                                QRegularExpression::CaseInsensitiveOption),
             listTag % QStringLiteral("\\1&#9744;"));
         text.replace(
+            QRegularExpression(QStringLiteral(R"(<li>(\s*(<p>)*\s*)\[-\])"),
+                               QRegularExpression::CaseInsensitiveOption),
+            listTag % QStringLiteral("\\1&#10005;"));
+        text.replace(
             QRegularExpression(QStringLiteral(R"(<li>(\s*(<p>)*\s*)\[[xX]\])"),
                                QRegularExpression::CaseInsensitiveOption),
             listTag % QStringLiteral("\\1&#9745;"));
@@ -767,6 +775,11 @@ QString Utils::Misc::parseTaskList(const QString &html, bool clickable) {
     // to ensure the clicking behavior of checkboxes,
     // line numbers of checkboxes in the original markdown text
     // should be provided by the markdown parser
+
+    text.replace(
+        QRegularExpression(QStringLiteral(R"(<li>(\s*(<p>)*\s*)\[-\])"),
+                           QRegularExpression::CaseInsensitiveOption),
+        listTag % QStringLiteral("\\1&#10005;"));
 
     const QString checkboxStart = QStringLiteral(
         R"(<a class="task-list-item-checkbox" href="checkbox://_)");
@@ -893,14 +906,70 @@ void Utils::Misc::needRestart() { qApp->setProperty("needsRestart", true); }
  * Restarts the application
  */
 void Utils::Misc::restartApplication() {
-    QStringList parameters = QApplication::arguments();
+    // QApplication::arguments() didn't contain any parameters!
+    QStringList parameters = qApp->property("arguments").toStringList();
     const QString appPath = parameters.takeFirst();
 
     // we don't want to have our settings cleared again after a restart
     parameters.removeOne(QStringLiteral("--clear-settings"));
 
+    // If only one app instance is allowed force allowing multiple for the
+    // next launch, so we can launch the application before we quit the
+    // current instance
+    if (qApp->property("singleApplication").toBool() &&
+        !parameters.contains("--allow-multiple-instances")) {
+        parameters.append("--allow-multiple-instances");
+    }
+
     startDetachedProcess(appPath, parameters);
     QApplication::quit();
+}
+
+QString Utils::Misc::appendSingleAppInstanceTextIfNeeded(QString text) {
+    if (QSettings().value("allowOnlyOneAppInstance").toBool()) {
+        text.append(QObject::tr("\n\nNote that for the next launch of "
+            "the application the single app instance mode will be disabled, "
+            "so that the application can be restarted."));
+    }
+
+    return text;
+}
+
+
+QByteArray Utils::Misc::friendlyUserAgentString() {
+    const auto pattern = QStringLiteral("%1 (QOwnNotes - %2)");
+
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 6, 0))
+    const auto userAgent = pattern.arg(QSysInfo::machineHostName(), platform());
+#else
+    const auto userAgent = pattern.arg(QHostInfo::localHostName(), platform());
+#endif
+
+    return userAgent.toUtf8();
+}
+
+QLatin1String Utils::Misc::platform() {
+#if defined(Q_OS_WIN)
+    return QLatin1String("Windows");
+#elif defined(Q_OS_MAC)
+    return QLatin1String("macOS");
+#elif defined(Q_OS_LINUX)
+    return QLatin1String("Linux");
+#elif defined(Q_OS_FREEBSD) || defined(Q_OS_FREEBSD_KERNEL)
+    return QLatin1String("FreeBSD");
+#elif defined(Q_OS_NETBSD)
+    return QLatin1String("NetBSD");
+#elif defined(Q_OS_OPENBSD)
+    return QLatin1String("OpenBSD");
+#elif defined(Q_OS_SOLARIS)
+    return QLatin1String("Solaris");
+#else
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 4, 0))
+    return QSysInfo::productType();
+#else
+    return " Qt " + QString(QT_VERSION_STR);
+#endif
+#endif
 }
 
 /**
@@ -909,7 +978,7 @@ void Utils::Misc::restartApplication() {
  * @param url
  * @return {QByteArray} the content of the downloaded url
  */
-QByteArray Utils::Misc::downloadUrl(const QUrl &url) {
+QByteArray Utils::Misc::downloadUrl(const QUrl &url, bool usePost, QByteArray postData) {
     auto *manager = new QNetworkAccessManager();
     QEventLoop loop;
     QTimer timer;
@@ -924,6 +993,8 @@ QByteArray Utils::Misc::downloadUrl(const QUrl &url) {
     timer.start(10000);
 
     QNetworkRequest networkRequest = QNetworkRequest(url);
+    networkRequest.setHeader(QNetworkRequest::UserAgentHeader,
+                             Utils::Misc::friendlyUserAgentString());
 
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)) && (QT_VERSION < QT_VERSION_CHECK(6, 0, 0))
     networkRequest.setAttribute(QNetworkRequest::FollowRedirectsAttribute,
@@ -931,7 +1002,19 @@ QByteArray Utils::Misc::downloadUrl(const QUrl &url) {
 #endif
 
     QByteArray data;
-    QNetworkReply *reply = manager->get(networkRequest);
+    QNetworkReply *reply;
+
+    if (usePost) {
+        if (postData == nullptr) {
+            postData = QByteArray();
+        }
+
+        networkRequest.setHeader(QNetworkRequest::ContentTypeHeader, "application/x-www-form-urlencoded");
+        reply = manager->post(networkRequest, postData);
+    } else {
+        reply = manager->get(networkRequest);
+    }
+
     loop.exec();
 
     // if we didn't get a timeout let us return the content
@@ -2266,9 +2349,30 @@ QString Utils::Misc::fileExtensionForMimeType(const QString &mimeType) {
         return "png";
     } else if (mimeType == "image/gif") {
         return "gif";
+    } else if (mimeType == "image/webp") {
+        return "webp";
     } else if (mimeType == "application/pdf") {
         return "pdf";
     }
 
     return "";
+}
+
+void Utils::Misc::switchToDarkOrLightMode(bool darkMode) {
+    QSettings settings;
+    settings.setValue("darkMode", darkMode);
+    settings.setValue("darkModeColors", darkMode);
+    settings.setValue("darkModeIconTheme", darkMode);
+    settings.setValue("darkModeTrayIcon", darkMode);
+    settings.setValue("Editor/CurrentSchemaKey", darkMode ?
+        "EditorColorSchema-cdbf28fc-1ddc-4d13-bb21-6a4043316a2f" :
+        "EditorColorSchema-6033d61b-cb96-46d5-a3a8-20d5172017eb");
+}
+
+void Utils::Misc::switchToDarkMode() {
+    switchToDarkOrLightMode(true);
+}
+
+void Utils::Misc::switchToLightMode() {
+    switchToDarkOrLightMode(false);
 }

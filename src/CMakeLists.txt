@@ -129,6 +129,9 @@ set(SOURCE_FILES
     dialogs/evernoteimportdialog.cpp
     dialogs/evernoteimportdialog.h
     dialogs/evernoteimportdialog.ui
+    dialogs/joplinimportdialog.cpp
+    dialogs/joplinimportdialog.h
+    dialogs/joplinimportdialog.ui
     dialogs/serverbookmarksimportdialog.cpp
     dialogs/serverbookmarksimportdialog.h
     dialogs/serverbookmarksimportdialog.ui
@@ -212,6 +215,7 @@ set(SOURCE_FILES
     libraries/md4c/md4c/md4c.c
     libraries/md4c/md2html/render_html.c
     libraries/md4c/md2html/entity.c
+    libraries/qmarkdowntextedit/linenumberarea.h
     libraries/qmarkdowntextedit/qownlanguagedata.cpp
     libraries/qmarkdowntextedit/qownlanguagedata.h
     libraries/qmarkdowntextedit/markdownhighlighter.cpp
@@ -280,6 +284,8 @@ set(SOURCE_FILES
     libraries/sonnet/src/core/tokenizer.cpp
     libraries/sonnet/src/core/tokenizer_p.h
     libraries/fuzzy/kfuzzymatcher.cpp
+    libraries/qr-code-generator/QrCode.hpp
+    libraries/qr-code-generator/QrCode.cpp
 
     threads/scriptthread.cpp
     threads/scriptthread.h
@@ -306,6 +312,8 @@ set(SOURCE_FILES
     widgets/logwidget.ui
     widgets/label.cpp
     widgets/label.h
+    widgets/qrcodewidget.cpp
+    widgets/qrcodewidget.h
     widgets/lineedit.cpp
     widgets/lineedit.h
     widgets/scriptsettingwidget.cpp
@@ -320,6 +328,8 @@ set(SOURCE_FILES
     widgets/layoutwidget.cpp
     widgets/layoutwidget.h
     widgets/layoutwidget.ui
+    widgets/todoitemtreewidget.cpp
+    widgets/todoitemtreewidget.h
     utils/misc.cpp
     utils/misc.h
     utils/git.cpp

@@ -1,6 +1,6 @@
 # Markdown
 
-Questo cheatsheet Markdown è inteso come un riferimento rapido e una vetrina della sintassi markdown in QOwnNotes.
+Questo bigino Markdown è inteso come un riferimento rapido e una vetrina della sintassi markdown in QOwnNotes.
 
 ## Intestazioni
 
@@ -38,29 +38,29 @@ Per impostazione predefinita QOwnNotes crea il **nome file di una nota** dall'in
 ```markdown
 Enfasi, alias corsivo, con *asterischi*.
 
-Forte enfasi, anche nota in grassetto, con **asterischi**.
+Forte enfasi, ovvero grassetto, con **asterischi**.
 ```
 
 ::: tip
 Puoi utilizzare la [scorciatoia](./shortcuts.md) <kbd>Ctrl + B</kbd> per rendere il testo in grassetto e <kbd>Ctrl + I</kbd> per renderlo corsivo.
 :::
 
-## Sottolinea
+## Sottolineato
 
 Esiste anche un'impostazione opzionale per abilitare il rendering sottolineato nelle *Impostazioni anteprima*.
 
 ```markdown
-_underline_
+_sottolineato_
 ```
 
 ::: tip
 Puoi utilizzare la [scorciatoia](./shortcuts.md) <kbd>Ctrl + U</kbd> per sottolineare un testo.
 :::
 
-## Strike out
+## Cancellato
 
 ```markdown
-~~strike out~~
+~~cancellato~~
 ```
 
 ::: tip
@@ -72,35 +72,35 @@ Puoi utilizzare la [scorciatoia](./shortcuts.md) <kbd>Alt + Maiusc + S</kbd> per
 Esistono molti modi per creare elenchi.
 
 ```markdown
-1. First ordered list item
-2. Another item
-  * Unordered sub-list.
-1. Actual numbers don't matter, just that it's a number
-  1. Ordered sub-list
-4. And another item.
+1. Primo elemento di una lista ordinata
+2. Un altro elemento
+  * Sotto-lista non ordinata
+1. I numeri usati non sono importanti, basta che sia un numero
+  1. Sotto-lista ordinata (funziona solo nell'editor, non nell'anteprima)
+4. E un altro elemento.
 
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
+* Le lista non ordinate possono usare gli asterichi
+- O i meno
++ o i più
 ```
 
 ::: tip
 Se si preme <kbd>Invio</kbd> alla fine di un elenco verrà creato un nuovo elemento dell'elenco.
 :::
 
-## Links
+## Collegamenti
 
 Esistono diversi modi per creare collegamenti.
 
 ```markdown
-[I'm an inline-style link](https://www.google.com)
+[Sono un collegamento in linea](https://www.google.com)
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+[Sono un collegamento in linea, con titolo](https://www.google.com "Homepage di Google")
 
-[You can use numbers for reference-style link definitions][1]
+[Puoi usare i numeri per i collegamenti a riferimenti][1]
 
-URLs and URLs in angle brackets will automatically get turned into links in the preview. 
-http://www.example.com or <http://www.example.com>
+URL e URL tra virgolette basse singole saranno automaticamente trasformati in collegamenti nell'anteprima. 
+http://www.example.com oppure <http://www.example.com>
 
 [1]: https://www.qownnotes.org
 ```
@@ -108,29 +108,29 @@ http://www.example.com or <http://www.example.com>
 ::: tip
 Puoi utilizzare la [scorciatoia](./shortcuts.md) <kbd>Ctrl + L</kbd> per **creare collegamenti a pagine web o altre note**.
 
-Utilizzando <kbd>Ctrl + Maiusc + X</kbd> verrà visualizzata una finestra di dialogo che ti aiuterà a **inserire allegati** nella nota.
+Usando <kbd>Ctrl + Maiusc + X</kbd> verrà visualizzata una finestra di dialogo che ti aiuterà a **inserire allegati** nella nota.
 
-È possibile premere <kbd>Ctrl + Spazio</kbd> mentre il cursore si trova su un collegamento nella modifica della nota per seguire il collegamento.
+Puoi premere <kbd>Ctrl + Spazio</kbd> mentre il cursore si trova su un collegamento nella modifica della nota per seguire il collegamento.
 :::
 
-### Bookmarks
+### Segnalibri
 
-I segnalibri utilizzati dall'estensione del browser [QOwnNotes Web Companion](./browser-extension.md) utilizzano collegamenti negli elenchi.
+I segnalibri usati dall'estensione del browser [QOwnNotes Web Companion](./browser-extension.md) usano collegamenti in elenchi.
 
 ```markdown
-- [Webpage name](https://www.example.com) #tag1 #tag2 some description and tags
+- [Nome pagina web](https://www.example.com) #etichetta1 #etichetta2 una descrizione e etichette
 ```
 
 ## Immagini
 
-Le immagini possono essere incorporate in QOwnNotes. Verranno mostrati nell'anteprima.
+Le immagini possono essere incorporate in QOwnNotes. Verranno mostrate nell'anteprima.
 
 ```markdown
-![alt text](media/my-image.jpg)
+![testo alternativo](media/immagine.jpg)
 ```
 
 ::: tip
-Puoi utilizzare la [scorciatoia](./shortcuts.md) <kbd>Ctrl + Maiusc + I</kbd> per inserire un'immagine in una nota. L'immagine può anche essere negli appunti, la finestra di dialogo la rileverà e mostrerà un'anteprima.
+Puoi usare la [scorciatoia](./shortcuts.md) <kbd>Ctrl + Maiusc + I</kbd> per inserire un'immagine in una nota. L'immagine può anche essere negli appunti, la finestra di dialogo la rileverà e mostrerà un'anteprima.
 
 Puoi anche incollare direttamente un'immagine dagli appunti nella tua nota con <kbd>Ctrl + Maiusc + V</kbd>.
 :::
@@ -139,50 +139,51 @@ Puoi anche incollare direttamente un'immagine dagli appunti nella tua nota con <
 ## Codice in linea e blocchi di codice
 
 ```markdown
-Il `codice` inline ha` segni di graduazione indietro 'intorno ad esso.
+Il `codice` inline ha `apici inversi` intorno ad esso.
 ```
 
 ::: tip
 Puoi utilizzare la [scorciatoia](./shortcuts.md) <kbd>Ctrl + Maiusc + C</kbd> sul testo in linea selezionato o solo all'interno del testo per creare un blocco di codice in linea.
 :::
 
-I blocchi di codice sono delimitati da linee con tre segni di graduazione posteriori o sono rientrati con quattro spazi.
+I blocchi di codice sono delimitati da linee con tre apici inversi o sono rientrati con quattro spazi.
 
-### 4-Spaces fence
+### Blocco a 4 spazi
 
 Aggiungi quattro spazi davanti al codice per contrassegnarlo come blocco di codice.
 
 ```markdown
-    s = "Code with space indent"
+    s = "Codice con rientro a spazi"
     print s
 ```
 
-### Backtick fence
+### Blocco con apice inverso
 
-Puoi anche usare tre backtick per creare un blocco di codice.
+Puoi anche usare tre apici inversi per creare un blocco di codice.
 ~~~markdown
 ```
-Code goes here
-Code goes here
+Il codice va qui
+Il codice va qui
 ```
 ~~~
 
 ::: tip
-You can use the [shortcut](./shortcuts.md) <kbd>Ctrl + Shift + C</kbd> on
-multiple selected lines of text or in an empty line to create a code block. 
+Puoi usare la [scorciatoia](./shortcuts.md) <kbd>Ctrl + Shift + C</kbd> su più linee di testo selezionate o sua una linea vuota per creare un blocco di codice. 
 :::
 
-### Backtick fence with code highlighting
+### Blocco con apice inverso con evidenziazione del codice
 
-There also is some syntax highlighting with code blocks in QOwnNotes.
+C'è anche un po' di evidenziazione della sintassi nei blocchi di codice di QOwnNotes.
 
 ~~~markdown
 ```bash
 # Questo è un commento
 cd Notes
+```
 ~~~
-~~~
-Currently supported languages (and code block identifiers) are:
+
+I linguaggi supportati al momento (e i loro identificativi di blocco) sono:
+
 * BASh scripting, `bash`
 * C, `c`
 * C++, `cpp`
@@ -215,27 +216,26 @@ Currently supported languages (and code block identifiers) are:
 * YAML, `yml`
 * YAML, `yaml`
 
+## Tabelle
 
-## Tables
-
-Tables aren't part of the core Markdown spec, but the QOwnNotes preview supports them. 
+Le tabelle non sono parte della specifica Markdown originale, ma l'anteprima QOwnNotes le supporta. 
 
 ```markdown
 I due punti possono essere utilizzati per allineare le colonne.
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+|    Tabelle     |         Sono       | Belle |
+| -------------- |:------------------:| -----:|
+|  colonna 3 è   | allineata a destra | $1600 |
+|  colonna 2 è   |      centrata      |   $12 |
+| le zebre hanno |      le strisce    |    $1 |
 
-There must be at least 3 dashes separating each header cell.
+Ci devono essere almeno 3 trattini per separare le celle di intestazione.
 
 Puoi anche utilizzare Markdown in linea.
 
-| Markdown | Less | Pretty |
+| Markdown | Meno | Carino |
 | --- | --- | --- |
-| *Still* | `renders` | **nicely** |
+| *Ma* | `reso` | **correttamente** |
 | 1 | 2 | 3 |
 ~~~
 
@@ -248,18 +248,18 @@ Usa <kbd>Ctrl + Spazio</kbd> all'interno di una tabella di markdown per formatta
 ## Citazioni in blocco
 
 ```markdown
-> Le blockquote sono molto utili nelle e-mail per emulare il testo di risposta.
+> Le citazioni in blocco sono molto utili nelle e-mail per emulare il testo di risposta.
 > Questa riga fa parte della stessa citazione.
 
 Pausa citazione.
 
-> Questa è una linea molto lunga che verrà comunque citata correttamente quando si concluderà. Oh ragazzo continuiamo a scrivere per assicurarci che sia abbastanza a lungo da concludere effettivamente per tutti. Oh, puoi *mettere* **Markdown** in una blockquote. 
+> Questa è una linea molto lunga che verrà comunque citata correttamente quando si concluderà. Oh, okay, continuiamo a scrivere per assicurarci che sia abbastanza a lungo da andare a capo davvero per tutti. Oh, puoi *mettere* **Markdown** in una citazione. 
 ```
 
 ::: tip
-Puoi dire a QOwnNotes di evidenziare completamente i blockquote o solo il carattere blockquote nelle *Impostazioni dell'editor*
+Puoi dire a QOwnNotes di evidenziare completamente le citazioni o solo il carattere della citazione nelle *Impostazioni dell'editor*
 
-Puoi utilizzare la [scorciatoia](./shortcuts.md) <kbd>Ctrl + Maiusc + B</kbd> per contrassegnare il testo come blockquote.
+Puoi usare la [scorciatoia](./shortcuts.md) <kbd>Ctrl + Maiusc + B</kbd> per segnare il testo come citazione.
 :::
 
 ## Riga orizzontale
@@ -269,15 +269,15 @@ Esistono tre modi per ottenere una regola orizzontale: trattini, asterischi o tr
 ```markdown
 Tre o più ...
 
-Hyphens
+Trattini
 
 ---
 
-Asterisks
+Asterischi
 
 ***
 
-Underscores
+Trattini bassi
 
 ___
 ```
@@ -306,9 +306,9 @@ Gli spazi finali sono evidenziati per impostazione predefinita nell'editor.
 I commenti non vengono visualizzati nell'anteprima.
 
 ```markdown
-[comment]: # (This comment will not appear in the preview)
+[comment]: # (Questo commento non apparirà nell'anteprima)
 
-<!-- HTML comments are also hidden -->
+<!-- Anche i commenti HTML sono nascosti -->
 ```
 
 ::: tip
@@ -320,27 +320,26 @@ Anche un blocco di commenti HTML iniziale in una nota verrà ignorato nella gene
 Puoi creare semplici elenchi di cose da fare con elenchi di caselle di controllo.
 
 ```markdown
-- [x] done
-- [ ] todo
+- [x] fatto
+- [ ] da fare
 ```
 
 ::: tip
 Puoi selezionare / deselezionare le caselle di controllo nell'anteprima.
 :::
 
-## Frontmatter
+## Pagine preliminari
 
 In QOwnNotes puoi usare un frontmatter (es.YAML) per aggiungere alcune meta informazioni extra. **Non verrà mostrato nell'anteprima** e **non disturberà la generazione automatica del nome del file della nota**.
 
 ```markdown
 ---
-title: Some name
-description: Some description
+title: Un qualche titolo
+description: Una descrizione
 ---
 
-# Note headline starts here
-
-Some text
+# Il titolo della nota inizia qui
+Del testo
 ```
 
 Il nome del file di questa nota di esempio sarebbe `Il titolo della nota inizia qui.md`.

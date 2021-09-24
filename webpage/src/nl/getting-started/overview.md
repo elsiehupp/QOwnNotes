@@ -149,7 +149,8 @@ Word lid van onze [Telegram Group](https://t.me/QOwnNotes) om te discussiëren, 
 
 ## Kenmerken
 - U kunt uw **bestaande tekst- of markdown-bestanden** gebruiken, meestal is importeren niet nodig
-- **Evernote import**
+- QOwnNotes is geschreven in C++ en geoptimaliseerd voor **laag verbruik van bronnen** (geen CPU en geheugenverslindende Electron-app)
+- **Evernote en Joplin importeren**
 - **Compatibel** met de Notes-applicatie van **Nextcloud / ownCloud** en **mobiel** en Nextcloud Text
 - Ondersteuning voor **het delen van notities** op uw **ownCloud** / **Nextcloud** -server
 - Beheer je Nextcloud / ownCloud **takenlijsten** (**Nextcloud-taken** of **Tasks Plus** / **Calendar Plus**) of gebruik een andere **CalDAV-server** om uw taken mee te synchroniseren
@@ -157,24 +158,26 @@ Word lid van onze [Telegram Group](https://t.me/QOwnNotes) om te discussiëren, 
 - **Notities naar prullenbak** kunnen worden **hersteld** vanaf uw **Nextcloud / ownCloud** -server
 - **Externe wijzigingen** van notitiebestanden worden **bekeken** (notities of notitielijst worden opnieuw geladen)
 - Ondersteuning voor **hiërarchische tagging van notities** en **submappen van notities**
-- Optioneel **encryption** van opmerkingen (AES-256 is ingebouwd of u kunt aangepaste versleutelingsmethoden gebruiken zoals **[Keybase.io](https://keybase.io/)** ([encryption-keybase.qml](https://github.com/pbek/QOwnNotes/blob/develop/doc/scripting/encryption-keybase.qml)) of **PGP** ([encryptie-pgp.qml](https://github.com/pbek/QOwnNotes/blob/develop/doc/scripting/encryption-pgp.qml)))
+- Optioneel **encryption** van opmerkingen (AES-256 is ingebouwd of u kunt aangepaste versleutelingsmethoden gebruiken zoals **[Keybase.io](https://keybase.io/)** ([encryption-keybase.qml](https://github.com/pbek/QOwnNotes/blob/develop/doc/scripting/encryption-keybase.qml)) of **PGP** ([encryptie-pgp.qml](https://github.com/pbek/QOwnNotes/blob/develop/doc/scripting/encryption-pgp.qml))
 - De **notitiemap** kan **vrij gekozen worden** (meerdere notitiemappen kunnen worden gebruikt)
 - **Substring zoeken** van notities is mogelijk en zoekresultaten worden gemarkeerd in de notities
-- [Browserextensie](browser-extension.md) om notities van de geselecteerde tekst toe te voegen, screenshots te maken of uw bladwijzers te beheren
+- [**Browserextensie**](browser-extension.md) om **notities uit de geselecteerde tekst toe te voegen**, **screenshots te maken** of **je bladwijzers te beheren**
 - [**Spellingcontrole**](../editor/spellchecking.md) ondersteuning
 - **Portable mode** om QOwnNotes mee te nemen op USB-sticks
 - **Ondersteuning voor scripts** en een online [**scriptrepository**](https://github.com/qownnotes/scripts) waar u scripts in de applicatie kunt installeren
 - **Vim mode**
+- [Webtoepassing](web-app.md) om **foto's van uw mobiele telefoon in te voegen** in de huidige notitie in QOwnNotes op uw bureaublad
 
 
-## Appearance
-- **Dark mode theme support**
+## Uiterlijk
+- **Markdown-markering** van notities en een **markdown-voorbeeldmodus**
+- **Thema-ondersteuning voor donkere modus**
 - **Theming support**  voor de **markdown syntaxisaccentuering **
 - Alle **panelen kunnen worden geplaatst waar u maar wilt**, ze kunnen zelfs **zweven** of **stapelen** (volledig dockbaar)
 - Ondersteuning voor **freedesktop-themapictogrammen**, u kunt QOwnNotes gebruiken met uw **native bureaubladpictogrammen** en met uw favoriete **donkere bureaubladthema**
 - **Distraction free mode**, **Full-screen mode** en **Typewriter mode**
+- **Regelnummers**
 - **Verschillen** tussen huidige notitie en extern gewijzigde notitie worden **getoond** in een dialoogvenster
-- **Markdown-markering** van notities en een **markdown-voorbeeldmodus**
 
 ## Talen
 - **Beschikbaar in meer dan 60 verschillende talen** zoals Engels, Duits, Frans, Pools, Chinees, Japans, Russisch, Portugees, Hongaars, Nederlands en Spaans

@@ -876,8 +876,163 @@
 <context>
 <name>FakeVim</name>
 <message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="84"/>
+<source>Use FakeVim</source>
+<translation type="unfinished">Use FakeVim</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="87"/>
+<source>Read .vimrc from location:</source>
+<translation type="unfinished">Read .vimrc from location:</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="89"/>
+<source>Show position of text marks</source>
+<translation type="unfinished">Show position of text marks</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="90"/>
+<source>Pass control keys</source>
+<translation type="unfinished">Pass control keys</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="91"/>
+<source>Pass keys in insert mode</source>
+<translation type="unfinished">Pass keys in insert mode</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="94"/>
+<source>Start of line</source>
+<translation type="unfinished">Start of line</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="95"/>
+<source>Tabulator size:</source>
+<translation type="unfinished">Tabulator size:</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="96"/>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="101"/>
+<source>Smart tabulators</source>
+<translation type="unfinished">Smart tabulators</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="97"/>
+<source>Highlight search results</source>
+<translation type="unfinished">Highlight search results</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="98"/>
+<source>Shift width:</source>
+<translation type="unfinished">Shift width:</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="99"/>
+<source>Expand tabulators</source>
+<translation type="unfinished">Expand tabulators</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="100"/>
+<source>Automatic indentation</source>
+<translation type="unfinished">Automatic indentation</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="102"/>
+<source>Incremental search</source>
+<translation type="unfinished">Incremental search</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="103"/>
+<source>Use search dialog</source>
+<translation type="unfinished">Use search dialog</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="104"/>
+<source>Use smartcase</source>
+<translation type="unfinished">Use smartcase</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="105"/>
+<source>Use ignorecase</source>
+<translation type="unfinished">Use ignorecase</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="106"/>
+<source>Use wrapscan</source>
+<translation type="unfinished">Use wrapscan</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="107"/>
+<source>Use tildeop</source>
+<translation type="unfinished">Use tildeop</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="108"/>
+<source>Show partial command</source>
+<translation type="unfinished">Show partial command</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="109"/>
+<source>Show line numbers relative to cursor</source>
+<translation type="unfinished">Show line numbers relative to cursor</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="110"/>
+<source>Blinking cursor</source>
+<translation type="unfinished">Blinking cursor</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="111"/>
+<source>Scroll offset:</source>
+<translation type="unfinished">Scroll offset:</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="113"/>
+<source>Backspace:</source>
+<translation type="unfinished">Backspace:</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="115"/>
+<source>Keyword characters:</source>
+<translation type="unfinished">Keyword characters:</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="127"/>
+<source>Use Vim-style Editing</source>
+<translation type="unfinished">Use Vim-style Editing</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="129"/>
+<source>Displays line numbers relative to the line containing text cursor.</source>
+<translation type="unfinished">Displays line numbers relative to the line containing text cursor.</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="132"/>
+<source>Does not interpret key sequences like Ctrl-S in FakeVim but handles them as regular shortcuts. This gives easier access to core functionality at the price of losing some features of FakeVim.</source>
+<translation type="unfinished">Does not interpret key sequences like Ctrl-S in FakeVim but handles them as regular shortcuts. This gives easier access to core functionality at the price of losing some features of FakeVim.</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="136"/>
+<source>Does not interpret some key presses in insert mode so that code can be properly completed and expanded.</source>
+<translation type="unfinished">Does not interpret some key presses in insert mode so that code can be properly completed and expanded.</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="139"/>
+<source>Vim tabstop option.</source>
+<translation type="unfinished">Vim tabstop option.</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="148"/>
+<source>Keep empty to use the default path, i.e. %USERPROFILE%\_vimrc on Windows, ~/.vimrc otherwise.</source>
+<translation type="unfinished">Keep empty to use the default path, i.e. %USERPROFILE%\_vimrc on Windows, ~/.vimrc otherwise.</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="150"/>
+<source>Default: %1</source>
+<translation type="unfinished">Default: %1</translation>
+</message>
+<message>
 <location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="166"/>
-<location filename="../libraries/fakevim/fakevim/fakevimactions.cpp" line="174"/>
 <source>Unknown option: %1</source>
 <translation>Aukera ezezaguna: %1</translation>
 </message>
@@ -887,57 +1042,62 @@
 <translation>Argumentua positiboa izan behar da: %1 = %2</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="958"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="1170"/>
 <source>Mark "%1" not set.</source>
 <translation>"%1" marka ez da ezarri.</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="2848"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="3100"/>
 <source>Recursive mapping</source>
 <translation>Kartur errekurtsiboa</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="3717"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="3992"/>
 <source>%1%2%</source>
 <translation>%1%2%</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="3719"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="3994"/>
 <source>%1All</source>
 <translation>%1All</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="3733"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="4008"/>
 <source>Not implemented in FakeVim.</source>
 <translation>Ez da FakeVim-en inplementatu.</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="4313"/>
-<source>Type Alt-V, Alt-V to quit FakeVim mode.</source>
-<translation>Idatzi Alt-V, Alt-V FakeVim modutik irteteko.</translation>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="4693"/>
+<source>Type Meta-Shift-Y, Meta-Shift-Y to quit FakeVim mode.</source>
+<translation type="unfinished">Type Meta-Shift-Y, Meta-Shift-Y to quit FakeVim mode.</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="5761"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="4695"/>
+<source>Type Alt-Y, Alt-Y to quit FakeVim mode.</source>
+<translation type="unfinished">Type Alt-Y, Alt-Y to quit FakeVim mode.</translation>
+</message>
+<message>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6290"/>
 <source>Unknown option:</source>
 <translation>Aukera ezezaguna:</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="5771"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6300"/>
 <source>Invalid argument:</source>
 <translation>Argumentu baliogabea:</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="5773"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6302"/>
 <source>Trailing characters:</source>
 <translation>Amaierako karaktereak:</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="5855"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6384"/>
 <source>Move lines into themselves.</source>
 <translation>Mugitu lerroak berez.</translation>
 </message>
 <message numerus="yes">
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="5897"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6426"/>
 <source>%n lines moved.</source>
 <translation>
 <numerusform>%n linea mugitu da.</numerusform>
@@ -945,37 +1105,37 @@
 </translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="5958"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6487"/>
 <source>File "%1" exists (add ! to override)</source>
 <translation>"%1" fitxategia badago (gehitu ! gainidazteko)</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="5972"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6501"/>
 <source>Cannot open file "%1" for writing</source>
 <translation>Ezin da "%1" fitxategia idatzi idazteko</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="5978"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6507"/>
 <source>"%1" %2 %3L, %4C written.</source>
 <translation>"%1" %2 %3L, %4C idatzia.</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="5979"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6508"/>
 <source> [New] </source>
 <translation>[Berria] </translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="5987"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6516"/>
 <source>Cannot open file "%1" for reading</source>
 <translation>Ezin da "%1" fitxategia ireki irakurtzeko</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6015"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6544"/>
 <source>"%1" %2L, %3C</source>
 <translation>"%1" %2L, %3C</translation>
 </message>
 <message numerus="yes">
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6042"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6571"/>
 <source>%n lines filtered.</source>
 <translation>
 <numerusform>%n linea iragazi da.</numerusform>
@@ -983,47 +1143,47 @@
 </translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6130"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6692"/>
 <source>Cannot open file %1</source>
 <translation>Ezin da %1 fitxategia ireki</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6203"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6765"/>
 <source>Not an editor command: %1</source>
 <translation>Ez da editore komando bat: %1</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6297"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6867"/>
 <source>Invalid regular expression: %1</source>
 <translation>Adierazpen erregular baliogabea: %1</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6333"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6903"/>
 <source>Pattern not found: %1</source>
 <translation>Ez da eredu aurkitu: %1</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6337"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6907"/>
 <source>Search hit BOTTOM, continuing at TOP.</source>
 <translation>Bilatu BOTTOM, TOP-n jarraitzen duena.</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6338"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6908"/>
 <source>Search hit TOP, continuing at BOTTOM.</source>
 <translation>Bilaketaren TOPra joan da, BOTTOM-en jarraituz.</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6343"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6913"/>
 <source>Search hit BOTTOM without match for: %1</source>
 <translation>Bilaketak BOTTOM sakatu gabe daude: %1</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6344"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6914"/>
 <source>Search hit TOP without match for: %1</source>
 <translation>Bilatu topatu gabe topatu da TOP: %1</translation>
 </message>
 <message numerus="yes">
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6451"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="7021"/>
 <source>%n lines indented.</source>
 <translation>
 <numerusform>%n lerro kosk egin da.</numerusform>
@@ -1031,16 +1191,15 @@
 </translation>
 </message>
 <message numerus="yes">
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="6507"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="7077"/>
 <source>%n lines %1ed %2 time.</source>
-<comment>%1 can be '&gt;' or '&lt;'</comment>
 <translation>
 <numerusform>%n line %1ed %2 denbora.</numerusform>
 <numerusform>%n lineak %1ed %2 denbora.</numerusform>
 </translation>
 </message>
 <message numerus="yes">
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="7045"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="7615"/>
 <source>%n lines yanked.</source>
 <translation>
 <numerusform>%n line-k yanked.</numerusform>
@@ -1048,12 +1207,12 @@
 </translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="7778"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="8514"/>
 <source>Already at oldest change.</source>
 <translation>Aldaketa zaharrena dagoeneko.</translation>
 </message>
 <message>
-<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="7779"/>
+<location filename="../libraries/fakevim/fakevim/fakevimhandler.cpp" line="8515"/>
 <source>Already at newest change.</source>
 <translation>Aldaketa berriena dagoeneko.</translation>
 </message>
@@ -1454,6 +1613,74 @@
 </message>
 </context>
 <context>
+<name>JoplinImportDialog</name>
+<message>
+<location filename="../dialogs/joplinimportdialog.ui" line="14"/>
+<source>Joplin Import</source>
+<translation type="unfinished">Joplin Import</translation>
+</message>
+<message>
+<location filename="../dialogs/joplinimportdialog.ui" line="48"/>
+<source>Import folders</source>
+<translation type="unfinished">Import folders</translation>
+</message>
+<message>
+<location filename="../dialogs/joplinimportdialog.ui" line="20"/>
+<source>Please select the "RAW - Joplin Export Directory" from which you want to import notes:</source>
+<translation type="unfinished">Please select the "RAW - Joplin Export Directory" from which you want to import notes:</translation>
+</message>
+<message>
+<location filename="../dialogs/joplinimportdialog.ui" line="37"/>
+<source>Select directory</source>
+<translation type="unfinished">Select directory</translation>
+</message>
+<message>
+<location filename="../dialogs/joplinimportdialog.ui" line="152"/>
+<source>Import images</source>
+<translation type="unfinished">Import images</translation>
+</message>
+<message>
+<location filename="../dialogs/joplinimportdialog.ui" line="30"/>
+<source>%v of %m file(s) imported</source>
+<translation type="unfinished">%v of %m file(s) imported</translation>
+</message>
+<message>
+<location filename="../dialogs/joplinimportdialog.ui" line="115"/>
+<source>Import notes</source>
+<translation type="unfinished">Import notes</translation>
+</message>
+<message>
+<location filename="../dialogs/joplinimportdialog.ui" line="162"/>
+<source>Import tags</source>
+<translation type="unfinished">Import tags</translation>
+</message>
+<message>
+<location filename="../dialogs/joplinimportdialog.ui" line="182"/>
+<source>If you just have a "JEX - Joplin Export File" please extract the content of that file to a directory and select that directory.</source>
+<translation type="unfinished">If you just have a "JEX - Joplin Export File" please extract the content of that file to a directory and select that directory.</translation>
+</message>
+<message>
+<location filename="../dialogs/joplinimportdialog.ui" line="142"/>
+<source>Import metadata</source>
+<translation type="unfinished">Import metadata</translation>
+</message>
+<message>
+<location filename="../dialogs/joplinimportdialog.ui" line="74"/>
+<source>RAW - Joplin Export Directory</source>
+<translation type="unfinished">RAW - Joplin Export Directory</translation>
+</message>
+<message>
+<location filename="../dialogs/joplinimportdialog.ui" line="172"/>
+<source>Import attachments</source>
+<translation type="unfinished">Import attachments</translation>
+</message>
+<message>
+<location filename="../dialogs/joplinimportdialog.cpp" line="89"/>
+<source>Select 'RAW - Joplin Export Directory' to import</source>
+<translation type="unfinished">Select 'RAW - Joplin Export Directory' to import</translation>
+</message>
+</context>
+<context>
 <name>LayoutWidget</name>
 <message>
 <location filename="../widgets/layoutwidget.ui" line="97"/>
@@ -1466,93 +1693,88 @@
 <translation>Gogoan izan widget zentralik ez dagoela eskatzen duten lan espazioek ez dutela behar bezala funtzionatuko zentrala widget gaituta badago.</translation>
 </message>
 <message>
-<location filename="../widgets/layoutwidget.cpp" line="86"/>
+<location filename="../widgets/layoutwidget.cpp" line="84"/>
 <source>Use new layout</source>
 <translation>Erabili diseinu berria</translation>
 </message>
 <message>
-<location filename="../widgets/layoutwidget.cpp" line="87"/>
+<location filename="../widgets/layoutwidget.cpp" line="85"/>
 <source>Do you want to use the selected layout?</source>
 <translation>Hautatutako diseinua erabili nahi al duzu?</translation>
 </message>
 <message>
-<location filename="../widgets/layoutwidget.cpp" line="90"/>
-<source>The application will be quit afterwards.</source>
-<translation>Aplikazioa gero geratuko da.</translation>
-</message>
-<message>
-<location filename="../widgets/layoutwidget.cpp" line="91"/>
+<location filename="../widgets/layoutwidget.cpp" line="87"/>
 <source>The application will be restarted afterwards.</source>
 <translation>Aplikazioa gero berrabiaraziko da.</translation>
 </message>
 <message>
-<location filename="../widgets/layoutwidget.cpp" line="158"/>
+<location filename="../widgets/layoutwidget.cpp" line="151"/>
 <source>Minimal</source>
 <comment>Layout name</comment>
 <translation>Minimal</translation>
 </message>
 <message>
-<location filename="../widgets/layoutwidget.cpp" line="160"/>
+<location filename="../widgets/layoutwidget.cpp" line="153"/>
 <source>Full</source>
 <comment>Layout name</comment>
 <translation>Osoa</translation>
 </message>
 <message>
-<location filename="../widgets/layoutwidget.cpp" line="162"/>
+<location filename="../widgets/layoutwidget.cpp" line="155"/>
 <source>Preview only</source>
 <comment>Layout name</comment>
 <translation>Aurrebista bakarrik</translation>
 </message>
 <message>
-<location filename="../widgets/layoutwidget.cpp" line="164"/>
+<location filename="../widgets/layoutwidget.cpp" line="157"/>
 <source>Full vertical</source>
 <comment>Layout name</comment>
 <translation>Full bertikala</translation>
 </message>
 <message>
-<location filename="../widgets/layoutwidget.cpp" line="166"/>
+<location filename="../widgets/layoutwidget.cpp" line="159"/>
 <source>Single column</source>
 <comment>Layout name</comment>
 <translation>Zutabe bakarra</translation>
 </message>
 <message>
-<location filename="../widgets/layoutwidget.cpp" line="174"/>
+<location filename="../widgets/layoutwidget.cpp" line="167"/>
 <source>The note edit panel is the central widget that will be resized automatically.</source>
 <comment>Layout description</comment>
 <translation>Oharrak editatzeko panelak automatikoki tamainaz aldatuko duen widget zentrala da.</translation>
 </message>
 <message>
-<location filename="../widgets/layoutwidget.cpp" line="179"/>
+<location filename="../widgets/layoutwidget.cpp" line="172"/>
 <source>Because of this there is no central widget that will be resized automatically.</source>
 <comment>Layout description</comment>
 <translation>Horregatik automatikoki tamainaz aldatuko den widget zentralik ez dago.</translation>
 </message>
 <message>
-<location filename="../widgets/layoutwidget.cpp" line="184"/>
+<location filename="../widgets/layoutwidget.cpp" line="177"/>
 <source>Just the note list on the left and the note edit panel on the right are enabled by default.</source>
 <comment>Layout description</comment>
 <translation>Lehenespenez, ezkerraldean dagoen oharren zerrenda eta eskuineko oharraren paneleko panela lehenespenez gaituta daude.</translation>
 </message>
 <message>
-<location filename="../widgets/layoutwidget.cpp" line="189"/>
+<location filename="../widgets/layoutwidget.cpp" line="182"/>
 <source>Most of the panels, like the note list on the left, the tagging panels, the note edit panel in the center and the preview panel on the right are enabled by default.</source>
 <comment>Layout description</comment>
 <translation>Panelen gehienak, ezkerraldean dauden oharren zerrenda, etiketatze panelak, erdialdeko oharren panela eta eskuineko aurrebistaren panela lehenespenez gaituta daude.</translation>
 </message>
 <message>
-<location filename="../widgets/layoutwidget.cpp" line="195"/>
+<location filename="../widgets/layoutwidget.cpp" line="188"/>
 <source>Most of the panels, like the note list on the left, the tagging panels, and only the preview panel on the right are enabled by default. You will need another workspace to actually edit notes!</source>
 <comment>Layout description</comment>
 <translation>Panel gehienak, ezkerreko ohar zerrenda bezala, etiketatze panelak eta eskuineko aurrebistaren panela soilik gaitzen dira lehenespenez. Oharrak benetan editatzeko beste lan espazio bat beharko duzu!</translation>
 </message>
 <message>
-<location filename="../widgets/layoutwidget.cpp" line="201"/>
+<location filename="../widgets/layoutwidget.cpp" line="194"/>
 <source>Most of the panels, like the note list on the left, the tagging panels, the note edit panel on the right and the preview panel on top of the note edit panel are enabled by default.</source>
 <comment>Layout description</comment>
 <translation>Panelen gehienak, ezkerreko oharren zerrenda, etiketatze panelak, eskuineko oharren panela eta ohar-panelaren goiko aldeko aurrebistaren panela lehenespenez gaituta daude.</translation>
 </message>
 <message>
-<location filename="../widgets/layoutwidget.cpp" line="208"/>
+<location filename="../widgets/layoutwidget.cpp" line="201"/>
 <source>Tiny one column layout with note search, note list and note edit on top of each other.</source>
 <comment>Layout description</comment>
 <translation>Zutabe-diseinu txiki bat ohar-bilaketa, ohar-zerrenda eta oharrak elkarren gainean.</translation>
@@ -1769,17 +1991,17 @@
 </message>
 <message>
 <location filename="../widgets/logwidget.ui" line="135"/>
-<location filename="../widgets/logwidget.cpp" line="439"/>
+<location filename="../widgets/logwidget.cpp" line="440"/>
 <source>Clear log</source>
 <translation>Garbitu erregistroa</translation>
 </message>
 <message>
-<location filename="../widgets/logwidget.cpp" line="437"/>
+<location filename="../widgets/logwidget.cpp" line="438"/>
 <source>Show options</source>
 <translation>Erakutsi aukerak</translation>
 </message>
 <message>
-<location filename="../widgets/logwidget.cpp" line="437"/>
+<location filename="../widgets/logwidget.cpp" line="438"/>
 <source>Hide options</source>
 <translation>Ezkutatu aukerak</translation>
 </message>
@@ -1793,8 +2015,8 @@
 </message>
 <message>
 <location filename="../mainwindow.ui" line="411"/>
-<location filename="../mainwindow.ui" line="911"/>
-<location filename="../mainwindow.cpp" line="845"/>
+<location filename="../mainwindow.ui" line="912"/>
+<location filename="../mainwindow.cpp" line="946"/>
 <source>Navigation</source>
 <translation>Itsasketa</translation>
 </message>
@@ -1805,7 +2027,7 @@
 </message>
 <message>
 <location filename="../mainwindow.ui" line="696"/>
-<location filename="../mainwindow.cpp" line="8921"/>
+<location filename="../mainwindow.cpp" line="9061"/>
 <source>Add a tag to the current note</source>
 <translation>Gehitu etiketa uneko oharrari</translation>
 </message>
@@ -1825,134 +2047,134 @@
 <translation>Ordenatu</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="988"/>
+<location filename="../mainwindow.ui" line="989"/>
 <source>&amp;Help</source>
 <translation>&amp;Laguntza</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1147"/>
+<location filename="../mainwindow.ui" line="1148"/>
 <source>Editor width in distraction free mode</source>
 <translation>Editorearen zabalera distrazioan doan moduan</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1150"/>
+<location filename="../mainwindow.ui" line="1151"/>
 <source>Editor width</source>
 <translation>Editorearen zabalera</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1240"/>
-<location filename="../mainwindow.cpp" line="6842"/>
+<location filename="../mainwindow.ui" line="1241"/>
+<location filename="../mainwindow.cpp" line="6964"/>
 <source>Custom actions</source>
 <translation>Ekintza pertsonalizatuak</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1260"/>
+<location filename="../mainwindow.ui" line="1261"/>
 <source>main toolbar</source>
 <translation>tresna-barra nagusia</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1294"/>
+<location filename="../mainwindow.ui" line="1295"/>
 <source>&amp;Quit</source>
 <translation>&amp;Irten</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1309"/>
+<location filename="../mainwindow.ui" line="1310"/>
 <source>&amp;Setup note folders</source>
 <translation>&amp;Konfiguratu oharren karpetak</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1318"/>
+<location filename="../mainwindow.ui" line="1319"/>
 <source>&amp;Find note</source>
 <translation>&amp;Bilatu oharra</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1330"/>
+<location filename="../mainwindow.ui" line="1331"/>
 <source>&amp;Remove current note</source>
 <translation>&amp;Kendu uneko oharra</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1354"/>
+<location filename="../mainwindow.ui" line="1355"/>
 <source>&amp;New note</source>
 <translation>&amp;Ohar berria</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1366"/>
+<location filename="../mainwindow.ui" line="1367"/>
 <source>Check for &amp;updates</source>
 <translation>Egiaztatu &amp;eguneratzeak</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1378"/>
+<location filename="../mainwindow.ui" line="1379"/>
 <source>Post questions, feature requests or issues</source>
 <translation>Bidali galderak, funtzio eskaerak edo gaiak</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1389"/>
+<location filename="../mainwindow.ui" line="1390"/>
 <source>Alphabetical</source>
 <translation>Alfabetikoki</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1392"/>
+<location filename="../mainwindow.ui" line="1393"/>
 <source>Sort alphabetical</source>
 <translation>Ordenatu alfabetikoki</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1400"/>
+<location filename="../mainwindow.ui" line="1401"/>
 <source>By date</source>
 <translation>Data arabera</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1403"/>
+<location filename="../mainwindow.ui" line="1404"/>
 <source>Sort by date</source>
 <translation>Data arabera ordenatu</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1427"/>
+<location filename="../mainwindow.ui" line="1428"/>
 <source>Show note &amp;versions</source>
 <translation>Erakutsi ohar &amp;bertsioak</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1430"/>
+<location filename="../mainwindow.ui" line="1431"/>
 <source>Show note versions on server</source>
 <translation>Erakutsi oharren bertsioak zerbitzarian</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1442"/>
+<location filename="../mainwindow.ui" line="1443"/>
 <source>Show trashed notes on server</source>
 <translation>Erakutsi zakarrontziko oharrak zerbitzarian</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1447"/>
-<location filename="../mainwindow.cpp" line="10594"/>
+<location filename="../mainwindow.ui" line="1448"/>
+<location filename="../mainwindow.cpp" line="10738"/>
 <source>Select &amp;all notes</source>
 <translation>Hautatu &amp;ohar guztiak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6750"/>
+<location filename="../mainwindow.cpp" line="6872"/>
 <source>Insert &amp;link</source>
 <translation>Txertatu &amp;esteka</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1468"/>
+<location filename="../mainwindow.ui" line="1469"/>
 <source>&amp;Find in current note</source>
 <translation>&amp;Bilatu uneko oharrean</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1471"/>
+<location filename="../mainwindow.ui" line="1472"/>
 <source>Find text in current note</source>
 <translation>Bilatu testua uneko oharrean</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1484"/>
+<location filename="../mainwindow.ui" line="1485"/>
 <source>&amp;Duplicate text</source>
 <translation>&amp;Bikoiztutako testua</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1496"/>
+<location filename="../mainwindow.ui" line="1497"/>
 <source>&amp;Back in note history</source>
 <translation>&amp;Itzuli oharren historian</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1412"/>
+<location filename="../mainwindow.ui" line="1413"/>
 <source>&amp;Settings</source>
 <translation>&amp;Ezarpenak</translation>
 </message>
@@ -1977,7 +2199,7 @@
 <translation>Bilatu edo sortu oharra</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="8922"/>
+<location filename="../mainwindow.cpp" line="9062"/>
 <source>Add a tag to the selected notes</source>
 <translation>Gehitu etiketa hautatutako oharretan</translation>
 </message>
@@ -1988,7 +2210,7 @@
 </message>
 <message>
 <location filename="../mainwindow.ui" line="886"/>
-<location filename="../mainwindow.cpp" line="6804"/>
+<location filename="../mainwindow.cpp" line="6926"/>
 <source>Export</source>
 <translation>Esportazio</translation>
 </message>
@@ -1998,672 +2220,677 @@
 <translation>Inportazio</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="928"/>
-<location filename="../mainwindow.cpp" line="6785"/>
+<location filename="../mainwindow.ui" line="929"/>
+<location filename="../mainwindow.cpp" line="6907"/>
 <source>Print</source>
 <translation>Inprimatu</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="939"/>
+<location filename="../mainwindow.ui" line="940"/>
 <source>View note</source>
 <translation>Ikusi oharra</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="951"/>
+<location filename="../mainwindow.ui" line="952"/>
 <source>Trash</source>
 <translation>Zakarrontzi</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1019"/>
+<location filename="../mainwindow.ui" line="1020"/>
 <source>&amp;Edit</source>
 <translation>&amp;Editatu</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1023"/>
+<location filename="../mainwindow.ui" line="1024"/>
 <source>Insert</source>
 <translation>Txertatu</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1041"/>
+<location filename="../mainwindow.ui" line="1042"/>
 <source>Format</source>
 <translation>Formatu</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1055"/>
+<location filename="../mainwindow.ui" line="1056"/>
 <source>Extra</source>
 <translation>Aparteko</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1069"/>
+<location filename="../mainwindow.ui" line="1070"/>
 <source>Edit</source>
 <translation>Editatu</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1082"/>
+<location filename="../mainwindow.ui" line="1083"/>
 <source>Versioning</source>
 <translation>Bertsioak</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1093"/>
+<location filename="../mainwindow.ui" line="1094"/>
 <source>Encryption</source>
 <translation>Enkriptatzea</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1105"/>
+<location filename="../mainwindow.ui" line="1106"/>
 <source>Languages</source>
 <translation>Hizkuntzak</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1110"/>
+<location filename="../mainwindow.ui" line="1111"/>
 <source>Spelling backend</source>
 <translation>Atzerapen ortografikoa</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1137"/>
+<location filename="../mainwindow.ui" line="1138"/>
 <source>To&amp;do</source>
 <translation>&amp;Egin</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1143"/>
+<location filename="../mainwindow.ui" line="1144"/>
 <source>&amp;Window</source>
 <translation>&amp;Leiho</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1160"/>
-<location filename="../mainwindow.cpp" line="773"/>
+<location filename="../mainwindow.ui" line="1161"/>
+<location filename="../mainwindow.cpp" line="874"/>
 <source>Workspaces</source>
 <translation>Laneko areak</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1165"/>
+<location filename="../mainwindow.ui" line="1166"/>
 <source>Panels</source>
 <translation>Panelak</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1170"/>
+<location filename="../mainwindow.ui" line="1171"/>
 <source>Toolbars</source>
 <translation>Tresna-barrak</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1175"/>
+<location filename="../mainwindow.ui" line="1176"/>
 <source>Show</source>
 <extracomment>To show or hide stuff</extracomment>
 <translation>Erakutsi</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1190"/>
+<location filename="../mainwindow.ui" line="1191"/>
 <source>Workspace</source>
 <translation>Laneko</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1199"/>
+<location filename="../mainwindow.ui" line="1200"/>
 <source>Jump to</source>
 <translation>Hona jo</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1236"/>
+<location filename="../mainwindow.ui" line="1237"/>
 <source>&amp;Scripting</source>
 <translation>&amp;Scriptgintza</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1342"/>
+<location filename="../mainwindow.ui" line="1343"/>
 <source>About &amp;QOwnNotes…</source>
 <translation>Honi buruz &amp;QOwnNotes…</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1381"/>
+<location filename="../mainwindow.ui" line="1382"/>
 <source>Post questions, feature requests or problems with the help of the issue assistant</source>
 <translation>Bidali galderak, eginbide eskaerak edo arazoak arazo arazoen laguntzarekin</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1439"/>
+<location filename="../mainwindow.ui" line="1440"/>
 <source>Show remote trash</source>
 <translation>Erakutsi urruneko zakarrontzia</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1456"/>
+<location filename="../mainwindow.ui" line="1457"/>
 <source>Insert text &amp;link</source>
 <translation type="unfinished">Insert text &amp;link</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1459"/>
+<location filename="../mainwindow.ui" line="1460"/>
 <source>Ctrl+L</source>
 <translation type="unfinished">Ctrl+L</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1476"/>
-<location filename="../mainwindow.ui" line="1479"/>
+<location filename="../mainwindow.ui" line="1477"/>
+<location filename="../mainwindow.ui" line="1480"/>
 <source>Auto format table</source>
 <translation>Formatu automatikoko taula</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1508"/>
+<location filename="../mainwindow.ui" line="1509"/>
 <source>Forward in note history</source>
 <translation>Birbidali oharren historian</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1520"/>
+<location filename="../mainwindow.ui" line="1521"/>
 <source>Show shortcuts</source>
 <translation>Erakutsi lasterbideak</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1529"/>
+<location filename="../mainwindow.ui" line="1530"/>
 <source>&amp;Knowledge base</source>
 <translation>&amp;Ezagutzaren oinarria</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1538"/>
+<location filename="../mainwindow.ui" line="1539"/>
 <source>Insert current &amp;time</source>
 <translation>Sartu uneko &amp;ordua</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1550"/>
+<location filename="../mainwindow.ui" line="1551"/>
 <source>Show &amp;Todo List</source>
 <translation>Erakutsi &amp;egin zerrenda</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1562"/>
+<location filename="../mainwindow.ui" line="1563"/>
 <source>&amp;Export note as PDF (preview)</source>
 <translation>&amp;Esportatu oharra PDF gisa (aurrebista)</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1565"/>
+<location filename="../mainwindow.ui" line="1566"/>
 <source>Export note as PDF (preview)</source>
 <translation>Esportatu oharra PDF gisa (aurrebista)</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1574"/>
+<location filename="../mainwindow.ui" line="1575"/>
 <source>&amp;Export note as PDF (text)</source>
 <translation>&amp;Esportatu oharra PDF gisa (testua)</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1583"/>
+<location filename="../mainwindow.ui" line="1584"/>
 <source>&amp;Print note (text)</source>
 <translation>&amp;Inprimatu oharra (testua)</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1607"/>
+<location filename="../mainwindow.ui" line="1608"/>
 <source>Insert &amp;image</source>
 <translation>Txertatu &amp;irudia</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1610"/>
+<location filename="../mainwindow.ui" line="1611"/>
 <source>Insert image (the image will be copied to the `media` folder in the current notes folder)</source>
 <translation>Txertatu irudia (uneko oharren karpetan `media` karpetan kopiatuko da irudia)</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1622"/>
+<location filename="../mainwindow.ui" line="1623"/>
 <source>Show &amp;changelog</source>
 <translation>Erakutsi &amp;aldaketen erregistroa</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1631"/>
+<location filename="../mainwindow.ui" line="1632"/>
 <source>&amp;Encrypt note</source>
 <translation>&amp;Enkriptatu oharra</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1640"/>
+<location filename="../mainwindow.ui" line="1641"/>
 <source>Edit encrypted note</source>
 <translation>Editatu enkriptatutako oharra</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1652"/>
+<location filename="../mainwindow.ui" line="1653"/>
 <source>Decrypt note</source>
 <translation>Deskripzioa oharra</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1661"/>
+<location filename="../mainwindow.ui" line="1662"/>
 <source>&amp;Open note in external editor</source>
 <translation>&amp;Ireki ohar kanpoko editorean</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1673"/>
+<location filename="../mainwindow.ui" line="1674"/>
 <source>&amp;Export note as markdown file</source>
 <translation>&amp;Esportatu oharra beheko marka gisa</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1682"/>
+<location filename="../mainwindow.ui" line="1683"/>
 <source>&amp;Get involved</source>
 <translation>&amp;Parte hartu</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1691"/>
+<location filename="../mainwindow.ui" line="1692"/>
 <source>Insert &amp;code block</source>
 <translation>Txertatu &amp;kodea blokea</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1727"/>
+<location filename="../mainwindow.ui" line="1728"/>
 <source>&amp;Distraction free mode</source>
 <translation>&amp;Distracción libre modua</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1730"/>
+<location filename="../mainwindow.ui" line="1731"/>
 <source>Distraction free mode, you can leave it with a button on the bottom right</source>
 <translation>Distracción libre modua, beheko eskuineko botoiarekin utzi dezakezu</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1741"/>
+<location filename="../mainwindow.ui" line="1742"/>
 <source>Show &amp;toolbar</source>
 <translation>Erakutsi &amp;tresna-barra</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1749"/>
+<location filename="../mainwindow.ui" line="1750"/>
 <source>Narrow</source>
 <translation>Estua</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1760"/>
+<location filename="../mainwindow.ui" line="1761"/>
 <source>Medium</source>
 <translation>Ertaineko</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1771"/>
+<location filename="../mainwindow.ui" line="1772"/>
 <source>Wide</source>
 <translation>Zabala</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1782"/>
+<location filename="../mainwindow.ui" line="1783"/>
 <source>Full</source>
 <translation>Osoa</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1794"/>
+<location filename="../mainwindow.ui" line="1795"/>
 <source>Paste html or media</source>
 <translation>Itsatsi html edo multimedia</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1797"/>
-<location filename="../mainwindow.ui" line="1800"/>
+<location filename="../mainwindow.ui" line="1798"/>
+<location filename="../mainwindow.ui" line="1801"/>
 <source>Paste images, notes and html from the clipboard</source>
 <translation>Itsatsi irudiak, oharrak eta html arbeletik</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1812"/>
+<location filename="../mainwindow.ui" line="1813"/>
 <source>Show note in &amp;file manager</source>
 <translation>Erakutsi oharra &amp;fitxategi kudeatzailea</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1824"/>
+<location filename="../mainwindow.ui" line="1825"/>
 <source>Format text &amp;bold</source>
 <translation>Formatu testu &amp;lodia</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1836"/>
+<location filename="../mainwindow.ui" line="1837"/>
 <source>Format text &amp;italic</source>
 <translation>Formatu testu &amp;etzana</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1848"/>
+<location filename="../mainwindow.ui" line="1849"/>
 <source>&amp;Increase note text size</source>
 <translation>&amp;Gehitu oharraren testuaren tamaina</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1860"/>
+<location filename="../mainwindow.ui" line="1861"/>
 <source>&amp;Decrease note text size</source>
 <translation>&amp;Txikitu oharraren testuaren tamaina</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1872"/>
+<location filename="../mainwindow.ui" line="1873"/>
 <source>&amp;Reset note text size</source>
 <translation>&amp;Berrezarri oharraren testuaren tamaina</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1884"/>
+<location filename="../mainwindow.ui" line="1885"/>
 <source>&amp;Add tag to note</source>
 <translation>&amp;Gehitu etiketa markatzeko</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1896"/>
+<location filename="../mainwindow.ui" line="1897"/>
 <source>&amp;Reload note folder</source>
 <translation>&amp;Birkargatu oharren karpeta</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1968"/>
+<location filename="../mainwindow.ui" line="1969"/>
 <source>Show log</source>
 <translation>Erakutsi erregistroa</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1977"/>
+<location filename="../mainwindow.ui" line="1978"/>
 <source>Export note as HTML</source>
 <translation>Esportatu ohar HTML gisa</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1989"/>
-<location filename="../mainwindow.ui" line="1992"/>
+<location filename="../mainwindow.ui" line="1990"/>
+<location filename="../mainwindow.ui" line="1993"/>
 <source>Open the #qownnotes IRC (Kiwi) channel, you have to stay online to get a response</source>
 <translation type="unfinished">Open the #qownnotes IRC (Kiwi) channel, you have to stay online to get a response</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2056"/>
+<location filename="../mainwindow.ui" line="2057"/>
 <source>Cycle text case</source>
 <translation>Zikloaren testu kasua</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2129"/>
+<location filename="../mainwindow.ui" line="2130"/>
 <source>Show note list under tag panel</source>
 <translation>Erakutsi oharren zerrenda etiketa panelean</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2147"/>
+<location filename="../mainwindow.ui" line="2148"/>
 <source>Find notes in all tags / subfolders</source>
 <translation>Bilatu oharrak etiketa / azpikarpeta guztietan</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2168"/>
+<location filename="../mainwindow.ui" line="2169"/>
 <source>Import notes from text files</source>
 <translation>Inportatu oharrak testu-fitxategietatik</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2189"/>
-<location filename="../mainwindow.ui" line="2192"/>
+<location filename="../mainwindow.ui" line="2190"/>
+<location filename="../mainwindow.ui" line="2193"/>
 <source>Open the Telegram group</source>
 <translation>Ireki Telegram taldea</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2204"/>
-<location filename="../mainwindow.ui" line="2207"/>
+<location filename="../mainwindow.ui" line="2205"/>
+<location filename="../mainwindow.ui" line="2208"/>
 <source>Open the QOwnNotes Matrix (Element) room</source>
 <extracomment>"Element" as in the chat service</extracomment>
 <translation type="unfinished">Open the QOwnNotes Matrix (Element) room</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2234"/>
+<location filename="../mainwindow.ui" line="2235"/>
 <source>Unlock panels</source>
 <translation>Desblokeatu panelak</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2243"/>
-<location filename="../mainwindow.cpp" line="11716"/>
+<location filename="../mainwindow.ui" line="2244"/>
+<location filename="../mainwindow.cpp" line="11859"/>
 <source>Remove current workspace</source>
 <translation>Kendu uneko laneko area</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2252"/>
+<location filename="../mainwindow.ui" line="2253"/>
 <source>Add new workspace</source>
 <translation>Gehitu laneko area berria</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2261"/>
+<location filename="../mainwindow.ui" line="2262"/>
 <source>Rename current workspace</source>
 <translation>Aldatu uneko laneko area</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2270"/>
+<location filename="../mainwindow.ui" line="2271"/>
 <source>Switch to previous workspace</source>
 <translation>Aldatu aurreko laneko areara</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2278"/>
+<location filename="../mainwindow.ui" line="2279"/>
 <source>Show all panels</source>
 <translation>Erakutsi panel guztiak</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2287"/>
+<location filename="../mainwindow.ui" line="2288"/>
 <source>Find action</source>
 <translation>Bilatu ekintza</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2290"/>
-<location filename="../mainwindow.ui" line="2293"/>
+<location filename="../mainwindow.ui" line="2291"/>
+<location filename="../mainwindow.ui" line="2294"/>
 <source>Find an action from the menu</source>
 <translation>Bilatu ekintza menuan</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2305"/>
+<location filename="../mainwindow.ui" line="2306"/>
 <source>Insert table</source>
 <translation>Txertatu taula</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2317"/>
-<location filename="../mainwindow.cpp" line="6759"/>
+<location filename="../mainwindow.ui" line="2318"/>
+<location filename="../mainwindow.cpp" line="6881"/>
 <source>Insert block &amp;quote</source>
 <translation>Sartu blokea &amp;aurrekontua</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2325"/>
-<location filename="../mainwindow.ui" line="2328"/>
+<location filename="../mainwindow.ui" line="2326"/>
+<location filename="../mainwindow.ui" line="2329"/>
 <source>Search selected text on the web</source>
 <translation>Bilatu webgunean hautatutako testua</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2336"/>
+<location filename="../mainwindow.ui" line="2337"/>
 <source>Delete line</source>
 <translation>Ezabatu lerroa</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2344"/>
+<location filename="../mainwindow.ui" line="2345"/>
 <source>Delete word</source>
 <translation>Ezabatu hitza</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2352"/>
+<location filename="../mainwindow.ui" line="2353"/>
 <source>Copy note headline</source>
 <translation>Kopiatu oharraren titularra</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2364"/>
-<location filename="../mainwindow.cpp" line="10570"/>
+<location filename="../mainwindow.ui" line="2365"/>
+<location filename="../mainwindow.cpp" line="10714"/>
 <source>Open note in different window</source>
 <translation>Ireki oharra beste leiho batean</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2376"/>
+<location filename="../mainwindow.ui" line="2377"/>
 <source>Save modified notes</source>
 <translation>Gorde aldatutako oharrak</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2387"/>
+<location filename="../mainwindow.ui" line="2388"/>
 <source>Ascending</source>
 <translation>Goruntz</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2395"/>
+<location filename="../mainwindow.ui" line="2396"/>
 <source>Descending</source>
 <translation>Beheranzko</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2404"/>
-<location filename="../mainwindow.cpp" line="10578"/>
+<location filename="../mainwindow.ui" line="2405"/>
+<location filename="../mainwindow.cpp" line="10722"/>
 <source>Show note git versions</source>
 <translation>Erakutsi oharrak git bertsioak</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2413"/>
+<location filename="../mainwindow.ui" line="2414"/>
 <source>Find scripts in script repository</source>
 <translation>Bilatu script-ak script-biltegian</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2425"/>
+<location filename="../mainwindow.ui" line="2426"/>
 <source>Script settings</source>
 <translation>Script-aren ezarpenak</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2434"/>
+<location filename="../mainwindow.ui" line="2435"/>
 <source>Insert attachment</source>
 <translation>Txertatu eranskina</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2461"/>
+<location filename="../mainwindow.ui" line="2462"/>
 <source>Check for script updates</source>
 <translation>Egiaztatu script eguneratzeak</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2470"/>
+<location filename="../mainwindow.ui" line="2471"/>
 <source>Show local trash</source>
 <translation>Erakutsi tokiko zakarrontzia</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2475"/>
-<location filename="../mainwindow.ui" line="2478"/>
+<location filename="../mainwindow.ui" line="2476"/>
+<location filename="../mainwindow.ui" line="2479"/>
 <source>Jump to note edit panel</source>
 <translation>Salto ohar-panelean</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2490"/>
+<location filename="../mainwindow.ui" line="2491"/>
 <source>Manage stored attachments</source>
 <translation type="unfinished">Manage stored attachments</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2495"/>
+<location filename="../mainwindow.ui" line="2496"/>
 <source>Jump to note subfolder panel</source>
 <translation>Jauzi azpikarpeta panelera</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2503"/>
+<location filename="../mainwindow.ui" line="2504"/>
 <source>Jump to tags panel</source>
 <translation>Salto etiketen panelera</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2511"/>
+<location filename="../mainwindow.ui" line="2512"/>
 <source>Jump to note list panel</source>
 <translation>Joan ohar-zerrendaren panela</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2519"/>
+<location filename="../mainwindow.ui" line="2520"/>
 <source>Activate context menu</source>
 <translation>Aktibatu laster-menua</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2527"/>
+<location filename="../mainwindow.ui" line="2528"/>
 <source>Import bookmarks from server</source>
 <translation>Inportatu laster-markak zerbitzaritik</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2532"/>
-<location filename="../mainwindow.ui" line="2535"/>
+<location filename="../mainwindow.ui" line="2533"/>
+<location filename="../mainwindow.ui" line="2536"/>
 <source>Toggle full-screen mode</source>
 <translation>Pantaila osoko modua aldatu</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2546"/>
+<location filename="../mainwindow.ui" line="2547"/>
 <source>Typewriter mode</source>
 <translation>Idazteko modua</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2558"/>
+<location filename="../mainwindow.ui" line="2559"/>
 <source>Check spelling</source>
 <translation>Begiratu ortografia</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2566"/>
-<location filename="../mainwindow.cpp" line="12704"/>
+<location filename="../mainwindow.ui" line="2567"/>
+<location filename="../mainwindow.cpp" line="12853"/>
 <source>Automatically detect</source>
 <translation>Automatikoki hautematea</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2571"/>
+<location filename="../mainwindow.ui" line="2572"/>
 <source>Manage dictionaries</source>
 <translation>Hiztegiak kudeatu</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2579"/>
+<location filename="../mainwindow.ui" line="2580"/>
 <source>Custom</source>
 <translation>Pertsonalizatua</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2582"/>
+<location filename="../mainwindow.ui" line="2583"/>
 <source>5</source>
 <translation>5</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2587"/>
+<location filename="../mainwindow.ui" line="2588"/>
 <source>Show/Hide application</source>
 <translation>Erakutsi / Ezkutatu aplikazioa</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2596"/>
+<location filename="../mainwindow.ui" line="2597"/>
 <source>Previous note tab</source>
 <translation>Aurreko ohar fitxa</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2608"/>
+<location filename="../mainwindow.ui" line="2609"/>
 <source>Next note tab</source>
 <translation>Hurrengo ohar fitxa</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2620"/>
+<location filename="../mainwindow.ui" line="2621"/>
 <source>Close current note tab</source>
 <translation>Itxi uneko ohar fitxa</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2632"/>
+<location filename="../mainwindow.ui" line="2633"/>
 <source>New note in new tab</source>
 <translation>Ohar berria fitxa berrian</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2640"/>
+<location filename="../mainwindow.ui" line="2641"/>
 <source>Toggle note stickiness of current tab</source>
 <translation>Txandakatu ohar baten fitxategiaren itsasgarritasuna</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2649"/>
+<location filename="../mainwindow.ui" line="2650"/>
 <source>Format text underline</source>
 <translation>Formatua azpimarratu testua</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2657"/>
+<location filename="../mainwindow.ui" line="2658"/>
 <source>Jump to navigation panel</source>
 <translation type="unfinished">Jump to navigation panel</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2669"/>
+<location filename="../mainwindow.ui" line="2670"/>
 <source>Insert &amp;note link</source>
 <translation type="unfinished">Insert &amp;note link</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2672"/>
+<location filename="../mainwindow.ui" line="2673"/>
 <source>Ctrl+Shift+L</source>
 <translation type="unfinished">Ctrl+Shift+L</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1907"/>
+<location filename="../mainwindow.ui" line="2682"/>
+<source>Import notes from Joplin</source>
+<translation type="unfinished">Import notes from Joplin</translation>
+</message>
+<message>
+<location filename="../mainwindow.ui" line="1908"/>
 <source>Use &amp;vertical preview layout</source>
 <translation>Erabili aurrebista &amp;bertikalen diseinua</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1910"/>
-<location filename="../mainwindow.ui" line="1913"/>
+<location filename="../mainwindow.ui" line="1911"/>
+<location filename="../mainwindow.ui" line="1914"/>
 <source>The note edit panel will be above the preview panel</source>
 <translation>Ohar editazio panela aurrebista panelaren gainetik egongo da</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1922"/>
+<location filename="../mainwindow.ui" line="1923"/>
 <source>Replace in current note</source>
 <translation>Ordeztu uneko oharrean</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1930"/>
+<location filename="../mainwindow.ui" line="1931"/>
 <source>Autocomplete, solve equation or open URL</source>
 <translation>Osatzea automatikoki, ekuazioa edo URL irekia konpontzeko</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1933"/>
+<location filename="../mainwindow.ui" line="1934"/>
 <source>Solve a simple equation like '(2+3)*6=' in the current line</source>
 <translation>Ebatzi '(2 + 3) * 6 =' ekuazio sinple bat uneko lerroan</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1941"/>
+<location filename="../mainwindow.ui" line="1942"/>
 <source>Select note folder</source>
 <translation>Hautatu ohar-karpeta</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1956"/>
+<location filename="../mainwindow.ui" line="1957"/>
 <source>Reload scripting engine</source>
 <translation>Birkargatu scripting motorra</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2177"/>
+<location filename="../mainwindow.ui" line="2178"/>
 <source>Manage stored image files</source>
 <translation type="unfinished">Manage stored image files</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2219"/>
-<location filename="../mainwindow.ui" line="2222"/>
+<location filename="../mainwindow.ui" line="2220"/>
+<location filename="../mainwindow.ui" line="2223"/>
 <source>Open the qownnotes Gitter room, you need a GitHub or Twitter account to login, but you can get offline messages</source>
 <translation>Ireki qownnotes Gitter gela, GitHub edo Twitter kontua behar duzu saioa hasteko, baina lineaz kanpoko mezuak eskuratu ditzakezu</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="992"/>
+<location filename="../mainwindow.ui" line="993"/>
 <source>Open chat</source>
 <translation>Ireki txata</translation>
 </message>
@@ -2673,100 +2900,100 @@
 <translation>Kontuan izan eragiketak…</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1595"/>
+<location filename="../mainwindow.ui" line="1596"/>
 <source>&amp;Print note (preview)</source>
 <translation>&amp;Inprimatu oharra (aurrebista)</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1703"/>
+<location filename="../mainwindow.ui" line="1704"/>
 <source>Move down in note list</source>
 <translation>Joan behera oharren zerrendan
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1715"/>
+<location filename="../mainwindow.ui" line="1716"/>
 <source>Move up in note list</source>
 <translation>Mugitu gora ohar zerrendan
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2001"/>
+<location filename="../mainwindow.ui" line="2002"/>
 <source>Insert headline from note filename</source>
 <translation>Txertatu goiburua oharren fitxategitik</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2015"/>
+<location filename="../mainwindow.ui" line="2016"/>
 <source>Use softwrap in note editor and preview</source>
 <translation>Erabili softwrap oharraren editorean eta aurrebista</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2023"/>
+<location filename="../mainwindow.ui" line="2024"/>
 <source>Show status bar</source>
 <translation>Erakutsi egoera barra</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2038"/>
+<location filename="../mainwindow.ui" line="2039"/>
 <source>Share note</source>
 <translation>Partekatu oharra</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2068"/>
+<location filename="../mainwindow.ui" line="2069"/>
 <source>Markdown cheatsheet</source>
 <translation>Markdown Cheatsheet</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2077"/>
+<location filename="../mainwindow.ui" line="2078"/>
 <source>Strike out text</source>
 <translation>Irteerako testua</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2088"/>
+<location filename="../mainwindow.ui" line="2089"/>
 <source>Use one column mode</source>
 <translation>Erabili zutabe modua</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2091"/>
-<location filename="../mainwindow.ui" line="2094"/>
+<location filename="../mainwindow.ui" line="2092"/>
+<location filename="../mainwindow.ui" line="2095"/>
 <source>Use a one column minimal mode (like NVAlt)</source>
 <translation>Erabili zutabe bakar bat gutxieneko modua (adibidez, NVAlt)</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2106"/>
+<location filename="../mainwindow.ui" line="2107"/>
 <source>Show menu bar</source>
 <translation>Erakutsi menu-barra</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2118"/>
+<location filename="../mainwindow.ui" line="2119"/>
 <source>Split note at cursor position</source>
 <translation>Zatitu oharra kurtsorearen posizioan</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2138"/>
+<location filename="../mainwindow.ui" line="2139"/>
 <source>Donate</source>
 <translation>Eman</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2159"/>
+<location filename="../mainwindow.ui" line="2160"/>
 <source>Import notes from Evernote</source>
 <translation>Inportatu ohar Evernote-tik</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="2867"/>
+<location filename="../mainwindow.cpp" line="2992"/>
 <source>Note was removed externally!</source>
 <translation>Oharra kanpotik kendu da!</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="2868"/>
+<location filename="../mainwindow.cpp" line="2993"/>
 <source>Current note was removed outside of this application!
 Restore current note?</source>
 <translation>Oraingo oharra aplikazio honetatik kanpo kendu da!
 Berrezarri uneko oharra?</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5489"/>
-<location filename="../mainwindow.cpp" line="5512"/>
-<location filename="../mainwindow.cpp" line="7266"/>
-<location filename="../mainwindow.cpp" line="10660"/>
+<location filename="../mainwindow.cpp" line="5611"/>
+<location filename="../mainwindow.cpp" line="5634"/>
+<location filename="../mainwindow.cpp" line="7405"/>
+<location filename="../mainwindow.cpp" line="10804"/>
 <source>&amp;Cancel</source>
 <translation>&amp;Utzi</translation>
 </message>
@@ -2778,47 +3005,47 @@ Berrezarri uneko oharra?</translation>
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="3104"/>
+<location filename="../mainwindow.cpp" line="3233"/>
 <source>new version %1 available</source>
 <translation>%1 bertsio berria eskuragarri dago</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="3221"/>
+<location filename="../mainwindow.cpp" line="3350"/>
 <source>Abort</source>
 <translation>Abortatu</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="3221"/>
+<location filename="../mainwindow.cpp" line="3350"/>
 <source>Loading notes…</source>
 <translation>Oharrak kargatzen…</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="3435"/>
+<location filename="../mainwindow.cpp" line="3564"/>
 <source>Removed duplicate conflicted database: %1</source>
 <translation>Datu-base gatazkatsu bikoiztua kendu da: %1</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="3436"/>
+<location filename="../mainwindow.cpp" line="3565"/>
 <source>Could not remove duplicate conflicted database: %1</source>
 <translation>Ezin izan da gatazkaren datu bikoiztua kendu: %1</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="3442"/>
+<location filename="../mainwindow.cpp" line="3571"/>
 <source>Removed merged conflicted database: %1</source>
 <translation>Kendu egin da bateratutako datu-base gatazkatua: %1</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="3443"/>
+<location filename="../mainwindow.cpp" line="3572"/>
 <source>Could not remove merged conflicted database: %1</source>
 <translation>Ezin izan da batu gabeko gatazkaren datu basea kendu: %1</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="3458"/>
+<location filename="../mainwindow.cpp" line="3587"/>
 <source>Delete conflicted database copies</source>
 <translation>Ezabatu gatazka datu-basearen kopiak</translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="3481"/>
+<location filename="../mainwindow.cpp" line="3610"/>
 <source>Removed %n conflicted database copies</source>
 <translation>
 <numerusform>%n kendutako datu-basearen kopia kendu da</numerusform>
@@ -2826,62 +3053,62 @@ Berrezarri uneko oharra?</translation>
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="3645"/>
+<location filename="../mainwindow.cpp" line="3774"/>
 <source>Please select the folder where your notes will get stored</source>
 <translation>Hautatu zure oharrak gordeko diren karpeta</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="3671"/>
+<location filename="../mainwindow.cpp" line="3800"/>
 <source>No folder was selected</source>
 <translation>Ez da karpeta hautatu</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="3673"/>
+<location filename="../mainwindow.cpp" line="3802"/>
 <source>You have to select your ownCloud notes folder to make this software work!</source>
 <translation>Zure ownCloud oharren karpeta hautatu behar duzu software hau funtzionatzeko!</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="3675"/>
+<location filename="../mainwindow.cpp" line="3804"/>
 <source>&amp;Retry</source>
 <translation>&amp;Saiatu berriro</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="3675"/>
+<location filename="../mainwindow.cpp" line="3804"/>
 <source>&amp;Exit</source>
 <translation>&amp;Irten</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="4003"/>
+<location filename="../mainwindow.cpp" line="4132"/>
 <source>Remove current note</source>
 <translation>Kendu uneko oharra</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="4004"/>
+<location filename="../mainwindow.cpp" line="4133"/>
 <source>Remove current note: &lt;strong&gt;%1&lt;/strong&gt;?</source>
 <translation>Kendu uneko oharra: &lt;strong&gt;%1&lt;/strong&gt;?</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="4363"/>
+<location filename="../mainwindow.cpp" line="4492"/>
 <source>Please enter the &lt;strong&gt;password&lt;/strong&gt; of this encrypted note.</source>
 <translation>Idatzi enkriptatutako ohar honen &lt;strong&gt; pasahitza &lt;/strong&gt;.</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="4386"/>
+<location filename="../mainwindow.cpp" line="4515"/>
 <source>Note can't be decrypted!</source>
 <translation>Oharra ezin da desenkriptatu!</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="4387"/>
+<location filename="../mainwindow.cpp" line="4516"/>
 <source>It seems that your password is not valid!</source>
 <translation>Badirudi zure pasahitza ez dela baliozkoa!</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="4555"/>
+<location filename="../mainwindow.cpp" line="4684"/>
 <source>Remove selected notes</source>
 <translation>Kendu hautatutako oharrak</translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="4557"/>
+<location filename="../mainwindow.cpp" line="4686"/>
 <source>Remove &lt;strong&gt;%n&lt;/strong&gt; selected note(s)?
 
 If the trash is enabled on your ownCloud server you should be able to restore them from there.</source>
@@ -2895,13 +3122,13 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="4647"/>
-<location filename="../mainwindow.cpp" line="10883"/>
+<location filename="../mainwindow.cpp" line="4776"/>
+<location filename="../mainwindow.cpp" line="11027"/>
 <source>Remove selected folders</source>
 <translation>Kendu hautatutako karpetak</translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="4648"/>
+<location filename="../mainwindow.cpp" line="4777"/>
 <source>Remove &lt;strong&gt;%n&lt;/strong&gt; selected folder(s)?&lt;ul&gt;&lt;li&gt;%1&lt;/li&gt;&lt;/ul&gt;All files and folders in these folders will be removed as well!</source>
 <translation>
 <numerusform>Kendu &lt;strong&gt;%n &lt;/strong&gt; hautatutako karpeta? &lt;ul&gt;&lt;li&gt;%1&lt;/li&gt; &lt;/ul&gt; Karpeta horietako fitxategi eta karpeta guztiak ere kenduko dira!</numerusform>
@@ -2910,17 +3137,17 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="4659"/>
+<location filename="../mainwindow.cpp" line="4788"/>
 <source>Removed note subfolder: %1</source>
 <translation>Oharra azpikarpeta kendu da: %1</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="4679"/>
+<location filename="../mainwindow.cpp" line="4808"/>
 <source>Remove selected tags</source>
 <translation>Kendu hautatutako etiketak</translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="4680"/>
+<location filename="../mainwindow.cpp" line="4809"/>
 <source>Remove &lt;strong&gt;%n&lt;/strong&gt; selected tag(s)? No notes will be removed in this process.</source>
 <translation>
 <numerusform>Ezabatu &lt;strong&gt;%n &lt;/strong&gt; hautatutako etiketa? Prozesu honetan ez da oharrik ezabatuko.</numerusform>
@@ -2928,13 +3155,13 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="4732"/>
-<location filename="../mainwindow.cpp" line="9707"/>
+<location filename="../mainwindow.cpp" line="4861"/>
+<location filename="../mainwindow.cpp" line="9847"/>
 <source>Move selected notes</source>
 <translation>Mugitu hautatutako oharrak</translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="4733"/>
+<location filename="../mainwindow.cpp" line="4862"/>
 <source>Move %n selected note(s) to &lt;strong&gt;%2&lt;/strong&gt;?</source>
 <translation>
 <numerusform>Mugitu %n hautatutako oharra &lt;strong&gt;%2 &lt;/strong&gt; helbidera?</numerusform>
@@ -2942,13 +3169,13 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="4838"/>
-<location filename="../mainwindow.cpp" line="9816"/>
+<location filename="../mainwindow.cpp" line="4967"/>
+<location filename="../mainwindow.cpp" line="9956"/>
 <source>Copy selected notes</source>
 <translation>Kopiatu hautatutako oharrak</translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="4839"/>
+<location filename="../mainwindow.cpp" line="4968"/>
 <source>Copy %n selected note(s) to &lt;strong&gt;%2&lt;/strong&gt;?</source>
 <translation>
 <numerusform>Kopiatu %n hautatutako oharra &lt;strong&gt;%2 &lt;/strong&gt; helbidera?</numerusform>
@@ -2956,13 +3183,13 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="4869"/>
-<location filename="../mainwindow.cpp" line="5018"/>
+<location filename="../mainwindow.cpp" line="4998"/>
+<location filename="../mainwindow.cpp" line="5147"/>
 <source>Done</source>
 <translation>Egina</translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="4870"/>
+<location filename="../mainwindow.cpp" line="4999"/>
 <source>%n note(s) were copied to &lt;strong&gt;%2&lt;/strong&gt;.</source>
 <translation>
 <numerusform>%n oharra &lt;strong&gt;%2 &lt;/strong&gt; -ra kopiatu da.</numerusform>
@@ -2970,12 +3197,12 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="4883"/>
+<location filename="../mainwindow.cpp" line="5012"/>
 <source>Tag selected notes</source>
 <translation>Markatu hautatutako oharrak</translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="4884"/>
+<location filename="../mainwindow.cpp" line="5013"/>
 <source>Tag %n selected note(s) with &lt;strong&gt;%2&lt;/strong&gt;?</source>
 <translation>
 <numerusform>Etiketa %n hautatutako oharra &lt;strong&gt;%2 &lt;/strong&gt; rekin?</numerusform>
@@ -2983,42 +3210,37 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5157"/>
+<location filename="../mainwindow.cpp" line="5288"/>
 <source>Restart application</source>
 <translation>Berrabiarazi aplikazioa</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5163"/>
-<source>You may need to restart the application manually to let the changes take effect.</source>
-<translation>Baliteke aplikazioa eskuz berrabiarazi behar izatea aldaketak eragina izan dezaten.</translation>
-</message>
-<message>
-<location filename="../mainwindow.cpp" line="5168"/>
+<location filename="../mainwindow.cpp" line="5289"/>
 <source>You may need to restart the application to let the changes take effect.</source>
 <translation>Baliteke aplikazioa berrabiarazi behar izatea aldaketak eragina izateko.</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5170"/>
+<location filename="../mainwindow.cpp" line="5292"/>
 <source>Restart</source>
 <translation>Berriro hasi</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5401"/>
+<location filename="../mainwindow.cpp" line="5523"/>
 <source>PDF files</source>
 <translation>PDF fitxategiak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5485"/>
+<location filename="../mainwindow.cpp" line="5607"/>
 <source>Todo lists disabled!</source>
 <translation>Todo zerrendak desgaituta daude!</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5486"/>
+<location filename="../mainwindow.cpp" line="5608"/>
 <source>You have disabled the todo lists.&lt;br /&gt;Please check your &lt;strong&gt;Todo&lt;/strong&gt; configuration in the settings!</source>
 <translation>Zerrenda guztiak desgaitu dituzu. &lt;br /&gt; Egiaztatu zure &lt;strong&gt; Todo &lt;/strong&gt; ren konfigurazioa ezarpenetan!</translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="5738"/>
+<location filename="../mainwindow.cpp" line="5860"/>
 <source>Found &lt;strong&gt;%n&lt;/strong&gt; occurrence(s) of any term of &lt;strong&gt;%1&lt;/strong&gt;</source>
 <translation>
 <numerusform>&lt;strong&gt;%n &lt;/strong&gt; &lt;strong&gt;%1 &lt;/strong&gt; terminoaren agerraldia aurkitu da</numerusform>
@@ -3026,110 +3248,110 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6314"/>
-<location filename="../mainwindow.cpp" line="6335"/>
+<location filename="../mainwindow.cpp" line="6436"/>
+<location filename="../mainwindow.cpp" line="6457"/>
 <source>Note was not found</source>
 <translation>Ez da oharrik aurkitu</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6325"/>
+<location filename="../mainwindow.cpp" line="6447"/>
 <source>Note was not found, create new note &lt;strong&gt;%1&lt;/strong&gt;?</source>
 <translation>Ez da oharra aurkitu, &lt;strong&gt;%1 &lt;/strong&gt; ohar berria sortu?</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6374"/>
+<location filename="../mainwindow.cpp" line="6496"/>
 <source>Failed to create note</source>
 <translation type="unfinished">Failed to create note</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6375"/>
+<location filename="../mainwindow.cpp" line="6497"/>
 <source>Note creation failed</source>
 <translation type="unfinished">Note creation failed</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6563"/>
+<location filename="../mainwindow.cpp" line="6685"/>
 <source>Note folders</source>
 <translation>Oharra karpetak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6686"/>
+<location filename="../mainwindow.cpp" line="6808"/>
 <source>Note versions are currently loaded from your ownCloud server</source>
 <translation>Oharra bertsioak zure ownCloud zerbitzaritik kargatuta daude</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6703"/>
+<location filename="../mainwindow.cpp" line="6825"/>
 <source>Trashed notes are currently loaded from your ownCloud server</source>
 <translation>Zabaltzen diren oharrak ownCloud zerbitzaritik kargatuta daude</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6769"/>
+<location filename="../mainwindow.cpp" line="6891"/>
 <source>Copy code block</source>
 <translation>Kopiatu kodea blokea</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6793"/>
+<location filename="../mainwindow.cpp" line="6915"/>
 <source>Print selected text</source>
 <translation>Inprimatu hautatutako testua</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6799"/>
+<location filename="../mainwindow.cpp" line="6921"/>
 <source>Print selected text (preview)</source>
 <translation>Inprimatu hautatutako testua (aurrebista)</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6817"/>
+<location filename="../mainwindow.cpp" line="6939"/>
 <source>Export selected text as PDF</source>
 <translation>Esportatu hautatutako testua PDF gisa</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6823"/>
+<location filename="../mainwindow.cpp" line="6945"/>
 <source>Export selected text as PDF (preview)</source>
 <translation>Esportatu hautatutako testua PDF gisa (aurrebista)</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7262"/>
+<location filename="../mainwindow.cpp" line="7401"/>
 <source>Your note will be decrypted and stored as plain text again. Keep in mind that the unencrypted note will possibly be synced to your server and sensitive text may be exposed!&lt;br /&gt;Do you want to decrypt your note?</source>
 <translation>Zure oharra desenkriptatu eta testu arrunt gisa gordeko da. Gogoan izan zifratutako oharra zure zerbitzariarekin sinkronizatuko dela eta testu sentikorra ager daiteke! &lt;br /&gt; Zure oharra desenkriptatu nahi al duzu?</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7359"/>
+<location filename="../mainwindow.cpp" line="7498"/>
 <source>Markdown files</source>
 <translation>Markdown fitxategiak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7416"/>
+<location filename="../mainwindow.cpp" line="7555"/>
 <source>Bookmarked note position at slot %1</source>
 <translation>Laster-marken posizioa %1 zirrikituan</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7431"/>
+<location filename="../mainwindow.cpp" line="7570"/>
 <source>Jumped to bookmark position at slot %1</source>
 <translation>Laster-marken posizioan %1 jaitsi da</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7659"/>
-<location filename="../mainwindow.cpp" line="7728"/>
+<location filename="../mainwindow.cpp" line="7798"/>
+<location filename="../mainwindow.cpp" line="7868"/>
 <source>Inserting image</source>
 <translation>Irudia sartuz</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7664"/>
-<location filename="../mainwindow.cpp" line="7732"/>
+<location filename="../mainwindow.cpp" line="7803"/>
+<location filename="../mainwindow.cpp" line="7872"/>
 <source>Done inserting image</source>
 <translation>Erantsi irudia</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7666"/>
+<location filename="../mainwindow.cpp" line="7805"/>
 <source>Inserting attachment</source>
 <translation>Eranskina sartuz</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7671"/>
+<location filename="../mainwindow.cpp" line="7810"/>
 <source>Done inserting attachment</source>
 <translation>Erantsitako fitxategia txertatzea</translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="7683"/>
+<location filename="../mainwindow.cpp" line="7822"/>
 <source>Copied %n note(s) to %1</source>
 <translation>
 <numerusform>%n ohar kopiatu %1era</numerusform>
@@ -3137,7 +3359,7 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="7692"/>
+<location filename="../mainwindow.cpp" line="7832"/>
 <source>Failed to copy %n note(s) (most likely already existing)</source>
 <translation>
 <numerusform>Hutsegitea %n ohar kopiatu (ziurrenik lehendik zegoen)</numerusform>
@@ -3145,7 +3367,7 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="7702"/>
+<location filename="../mainwindow.cpp" line="7842"/>
 <source>Skipped copying of %n note(s) (no markdown or text file or not readable)</source>
 <translation>
 <numerusform>%n oharraren kopia jauzi egin da (ez da marka edo testu-fitxategia edo ez da irakurgarria)</numerusform>
@@ -3153,219 +3375,219 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7715"/>
+<location filename="../mainwindow.cpp" line="7855"/>
 <source>Saving temporary image</source>
 <translation>Aldi baterako irudia gordetzen</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7734"/>
+<location filename="../mainwindow.cpp" line="7874"/>
 <source>Temporary file can't be opened</source>
 <translation>Ezin da aldi baterako fitxategia ireki</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7772"/>
+<location filename="../mainwindow.cpp" line="7912"/>
 <source>Downloading %1</source>
 <translation>%1 deskargatzen</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7967"/>
+<location filename="../mainwindow.cpp" line="8107"/>
 <source>Reset font size to %1 pt</source>
 <comment>Will be shown after the font size is reset by 'Reset note text size'</comment>
 <translation>Berrezarri letra tipo tamaina %1 pt</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="8967"/>
+<location filename="../mainwindow.cpp" line="9107"/>
 <source>Remove tag '%1' from the current note</source>
 <translation>Kendu '%1' etiketa uneko oharretik</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="8968"/>
+<location filename="../mainwindow.cpp" line="9108"/>
 <source>Remove tag '%1' from the selected notes</source>
 <translation>Kendu '%1' etiketa hautatutako oharretatik</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="9199"/>
+<location filename="../mainwindow.cpp" line="9339"/>
 <source>Rename tag</source>
 <translation>Aldatu izena etiketa</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="9200"/>
+<location filename="../mainwindow.cpp" line="9340"/>
 <source>Assign color</source>
 <translation>Esleitu kolorea</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="9201"/>
+<location filename="../mainwindow.cpp" line="9341"/>
 <source>Disable color</source>
 <translation>Desgaitu kolorea</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="9205"/>
+<location filename="../mainwindow.cpp" line="9345"/>
 <source>&amp;Move tags to…</source>
 <translation>&amp;Eraman etiketak…</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="9416"/>
+<location filename="../mainwindow.cpp" line="9556"/>
 <source>Move to the root</source>
 <comment>to move a tag to the current tag in the tag context menu</comment>
 <translation>Eraman erroa</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="9960"/>
+<location filename="../mainwindow.cpp" line="10104"/>
 <source>An url was opened at the current cursor position</source>
 <translation>Uneko Url bat uneko kurtsorearen posizioan ireki zen</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10063"/>
+<location filename="../mainwindow.cpp" line="10207"/>
 <source>No equation was found in front of the cursor</source>
 <translation>Ez da ekuazio aurkitu kurtsorearen aurrean</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10083"/>
+<location filename="../mainwindow.cpp" line="10227"/>
 <source>Result for equation: %1 = %2</source>
 <translation>Ekuazioaren emaitza: %1 = %2</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10188"/>
+<location filename="../mainwindow.cpp" line="10332"/>
 <source>The scripting engine was reloaded</source>
 <translation>Scripting motorra berriro kargatu zen</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10222"/>
+<location filename="../mainwindow.cpp" line="10366"/>
 <source>HTML files</source>
 <translation>HTML fitxategiak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10506"/>
+<location filename="../mainwindow.cpp" line="10650"/>
 <source>Jump to the note's subfolder</source>
 <translation>Oharren azpikarpetara salto egin
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10563"/>
+<location filename="../mainwindow.cpp" line="10707"/>
 <source>Open note in tab</source>
 <translation>Ireki oharra fitxan</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="12271"/>
+<location filename="../mainwindow.cpp" line="12414"/>
 <source>A script update was found!</source>
 <translation>Gidoi eguneratzea aurkitu da!</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="12277"/>
+<location filename="../mainwindow.cpp" line="12420"/>
 <source>Script updates</source>
 <translation>Script eguneratzeak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="12278"/>
+<location filename="../mainwindow.cpp" line="12421"/>
 <source>Updates to your scripts were found in the script repository! Do you want to update them?</source>
 <translation>Scripten eguneratzeak aurkitu dira script-biltegian. Eguneratu nahi dituzu?</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="12293"/>
+<location filename="../mainwindow.cpp" line="12436"/>
 <source>No script updates were found</source>
 <translation>Ez da script-eguneratza aurkitu</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="12937"/>
+<location filename="../mainwindow.cpp" line="13085"/>
 <source>Toggle note stickiness</source>
 <translation>Txandakatu oharren itsaskotasuna</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="12943"/>
+<location filename="../mainwindow.cpp" line="13091"/>
 <source>Close other note tabs</source>
 <translation>Itxi beste fitxen fitxak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10450"/>
-<location filename="../mainwindow.cpp" line="10644"/>
+<location filename="../mainwindow.cpp" line="10594"/>
+<location filename="../mainwindow.cpp" line="10788"/>
 <source>Rename note</source>
 <translation>Aldatu izena berriro</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10452"/>
+<location filename="../mainwindow.cpp" line="10596"/>
 <source>Allows you to rename the filename of the note</source>
 <translation>Oharraren izenaren izena aldatzeko aukera ematen du</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10466"/>
+<location filename="../mainwindow.cpp" line="10610"/>
 <source>&amp;Move notes to…</source>
 <translation>&amp;Mugitu oharrak…</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10467"/>
+<location filename="../mainwindow.cpp" line="10611"/>
 <source>&amp;Copy notes to…</source>
 <translation>&amp;Kopiatu oharrak…</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10510"/>
+<location filename="../mainwindow.cpp" line="10654"/>
 <source>Move notes to subfolder…</source>
 <translation>Mugitu oharrak azpikarpeta…</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10514"/>
+<location filename="../mainwindow.cpp" line="10658"/>
 <source>Copy notes to subfolder…</source>
 <translation>Kopiatu oharrak azpikarpeta…</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10522"/>
+<location filename="../mainwindow.cpp" line="10666"/>
 <source>&amp;Tag selected notes with…</source>
 <translation>&amp;Etiketatu hautatutako oharrak…</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10546"/>
+<location filename="../mainwindow.cpp" line="10690"/>
 <source>&amp;Remove tag from selected notes…</source>
 <translation>&amp;Kendu etiketa hautatutako oharretatik…</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10644"/>
+<location filename="../mainwindow.cpp" line="10788"/>
 <source>Name:</source>
 <translation>Izena:</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10656"/>
+<location filename="../mainwindow.cpp" line="10800"/>
 <source>Note renaming not enabled!</source>
 <translation>Ez da gaiaren izena aldatu!</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10882"/>
+<location filename="../mainwindow.cpp" line="11026"/>
 <source>Rename subfolder</source>
 <translation>Aldatu azpikarpeta</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="11487"/>
+<location filename="../mainwindow.cpp" line="11631"/>
 <source>Create new workspace</source>
 <translation>Sortu laneko area berria</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="11488"/>
-<location filename="../mainwindow.cpp" line="11758"/>
+<location filename="../mainwindow.cpp" line="11632"/>
+<location filename="../mainwindow.cpp" line="11901"/>
 <source>Workspace name:</source>
 <translation>Laneko arearen izena:</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="11613"/>
+<location filename="../mainwindow.cpp" line="11750"/>
 <source>full</source>
 <comment>full workspace</comment>
 <translation>osoa</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="11620"/>
+<location filename="../mainwindow.cpp" line="11757"/>
 <source>minimal</source>
 <comment>minimal workspace</comment>
 <translation>minimal</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="11717"/>
+<location filename="../mainwindow.cpp" line="11860"/>
 <source>Remove the current workspace?</source>
 <translation>Uneko laneko area kendu?</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="11757"/>
+<location filename="../mainwindow.cpp" line="11900"/>
 <source>Rename workspace</source>
 <translation>Berrizendatu laneko area</translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="11939"/>
+<location filename="../mainwindow.cpp" line="12082"/>
 <source>%n chars</source>
 <comment>characters</comment>
 <translation>
@@ -3374,42 +3596,42 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="12210"/>
+<location filename="../mainwindow.cpp" line="12353"/>
 <source>Disallow all note editing</source>
 <translation>Debekatu oharren edizio guztiak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="12452"/>
+<location filename="../mainwindow.cpp" line="12595"/>
 <source>Select text files to import</source>
 <translation>Hautatu inportatu beharreko testu fitxategiak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="12482"/>
+<location filename="../mainwindow.cpp" line="12625"/>
 <source>Importing: %1</source>
 <translation>Inportatzen: %1</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="12547"/>
+<location filename="../mainwindow.cpp" line="12690"/>
 <source>Note headline '%1' was copied to the clipboard</source>
 <translation>Oharra '%1' goiburua arbelean kopiatu da</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="12641"/>
+<location filename="../mainwindow.cpp" line="12784"/>
 <source>Leave full-screen mode</source>
 <translation>Utzi pantaila osoko modua</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="12822"/>
+<location filename="../mainwindow.cpp" line="12970"/>
 <source>Custom editor width</source>
 <translation>Editorearen zabalera pertsonalizatua</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="12822"/>
+<location filename="../mainwindow.cpp" line="12970"/>
 <source>Characters:</source>
 <translation>Pertsonaiak:</translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="8941"/>
+<location filename="../mainwindow.cpp" line="9081"/>
 <source>%n notes selected</source>
 <translation>
 <numerusform>%n ohar hautatu da</numerusform>
@@ -3417,23 +3639,23 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="2449"/>
-<location filename="../mainwindow.cpp" line="12211"/>
+<location filename="../mainwindow.ui" line="2450"/>
+<location filename="../mainwindow.cpp" line="12354"/>
 <source>Allow all note editing</source>
 <translation>Baimendu ohar guztiak editatu</translation>
 </message>
 <message>
-<location filename="../mainwindow.ui" line="1230"/>
+<location filename="../mainwindow.ui" line="1231"/>
 <source>&amp;Tag</source>
 <translation>&amp;Etiketa</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="4958"/>
+<location filename="../mainwindow.cpp" line="5087"/>
 <source>Remove tag from selected notes</source>
 <translation>Kendu etiketa hautatutako oharretan</translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="4959"/>
+<location filename="../mainwindow.cpp" line="5088"/>
 <source>Remove tag &lt;strong&gt;%1&lt;/strong&gt; from %n selected note(s)?</source>
 <translation>
 <numerusform>Hautatu &lt;strong&gt;%1&lt;/strong&gt; etiketa %n hautatutako oharra?</numerusform>
@@ -3441,7 +3663,7 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="5019"/>
+<location filename="../mainwindow.cpp" line="5148"/>
 <source>Tag &lt;strong&gt;%1&lt;/strong&gt; was removed from %n note(s)</source>
 <translation>
 <numerusform>&lt;strong&gt;%1 &lt;/strong&gt; etiketa %n oharrean ezabatu da</numerusform>
@@ -3449,132 +3671,132 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5064"/>
+<location filename="../mainwindow.cpp" line="5193"/>
 <source>Current notes folder: </source>
 <translation>Uneko oharren karpeta: </translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5067"/>
+<location filename="../mainwindow.cpp" line="5196"/>
 <source>Set the notes folder. Current notes folder: </source>
 <translation>Ezarri oharren karpeta. Uneko oharren karpeta:</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5269"/>
+<location filename="../mainwindow.cpp" line="5391"/>
 <source>Print note</source>
 <translation>Inprimatu oharra</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5344"/>
+<location filename="../mainwindow.cpp" line="5466"/>
 <source>Letter</source>
 <translation>Letra</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5374"/>
+<location filename="../mainwindow.cpp" line="5496"/>
 <source>Portrait</source>
 <translation>Erretratua</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5374"/>
+<location filename="../mainwindow.cpp" line="5496"/>
 <source>Landscape</source>
 <translation>Paisaia</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5379"/>
+<location filename="../mainwindow.cpp" line="5501"/>
 <source>Orientation</source>
 <translation>Orientazio</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5379"/>
+<location filename="../mainwindow.cpp" line="5501"/>
 <source>Orientation:</source>
 <translation>Orientazio:</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5402"/>
+<location filename="../mainwindow.cpp" line="5524"/>
 <source>Export current note as PDF</source>
 <translation>Esportatu uneko oharra PDF gisa</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5509"/>
+<location filename="../mainwindow.cpp" line="5631"/>
 <source>You have not selected any todo lists.&lt;br /&gt;Please check your &lt;strong&gt;Todo&lt;/strong&gt; configuration in the settings!</source>
 <translation>Ez duzu aukeratutako zerrenden bat hautatu. &lt;br/&gt; Mesedez, egiaztatu &lt;strong&gt; Todo &lt;/strong&gt; konfigurazioa ezarpenetan!</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6545"/>
+<location filename="../mainwindow.cpp" line="6667"/>
 <source>Open QOwnNotes</source>
 <translation>Ireki QOwnNotes</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6096"/>
-<location filename="../mainwindow.cpp" line="6595"/>
-<location filename="../mainwindow.cpp" line="10446"/>
-<location filename="../mainwindow.cpp" line="10876"/>
+<location filename="../mainwindow.cpp" line="6218"/>
+<location filename="../mainwindow.cpp" line="6717"/>
+<location filename="../mainwindow.cpp" line="10590"/>
+<location filename="../mainwindow.cpp" line="11020"/>
 <source>New note</source>
 <translation>Ohar berria</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6612"/>
+<location filename="../mainwindow.cpp" line="6734"/>
 <source>Recent notes</source>
 <translation>Azken oharrak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6628"/>
+<location filename="../mainwindow.cpp" line="6750"/>
 <source>Show todo lists</source>
 <translation>Erakutsi lanen zerrendak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6640"/>
+<location filename="../mainwindow.cpp" line="6762"/>
 <source>Recent tasks</source>
 <translation>Azken lanak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6661"/>
+<location filename="../mainwindow.cpp" line="6783"/>
 <source>Quit</source>
 <translation>Irten</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="8140"/>
+<location filename="../mainwindow.cpp" line="8280"/>
 <source>show notes from all note subfolders (%1)</source>
 <translation>erakutsi ohar ohar azpikarpeta guztietatik (%1)</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="8163"/>
+<location filename="../mainwindow.cpp" line="8303"/>
 <source>show notes in note root folder (%1)</source>
 <translation>erakutsi oharrak oharren erro karpetan (%1)</translation>
 </message>
 <message>
 <location filename="../mainwindow.ui" line="316"/>
-<location filename="../mainwindow.cpp" line="817"/>
-<location filename="../mainwindow.cpp" line="2143"/>
-<location filename="../mainwindow.cpp" line="8175"/>
+<location filename="../mainwindow.cpp" line="918"/>
+<location filename="../mainwindow.cpp" line="2256"/>
+<location filename="../mainwindow.cpp" line="8315"/>
 <source>Note folder</source>
 <translation>Oharra karpeta</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="9588"/>
-<location filename="../mainwindow.cpp" line="9655"/>
+<location filename="../mainwindow.cpp" line="9728"/>
+<location filename="../mainwindow.cpp" line="9795"/>
 <source>Copy to note folder</source>
 <translation>Kopiatu oharra karpetan</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="9588"/>
-<location filename="../mainwindow.cpp" line="9656"/>
+<location filename="../mainwindow.cpp" line="9728"/>
+<location filename="../mainwindow.cpp" line="9796"/>
 <source>Move to note folder</source>
 <translation>Mugitu oharra karpetan</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="9589"/>
-<location filename="../mainwindow.cpp" line="9657"/>
+<location filename="../mainwindow.cpp" line="9729"/>
+<location filename="../mainwindow.cpp" line="9797"/>
 <source>Copy to this subfolder</source>
 <translation>Kopiatu azpikarpeta honetan</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="9590"/>
-<location filename="../mainwindow.cpp" line="9658"/>
+<location filename="../mainwindow.cpp" line="9730"/>
+<location filename="../mainwindow.cpp" line="9798"/>
 <source>Move to this subfolder</source>
 <translation>Joan azpikarpeta honetara</translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="9702"/>
+<location filename="../mainwindow.cpp" line="9842"/>
 <source>Move %n selected note(s) to note subfolder &lt;strong&gt;%2&lt;/strong&gt;?</source>
 <translation>
 <numerusform>Mugitu %n hautatutako oharra azpikarpeta &lt;strong&gt;%2 &lt;/strong&gt;?</numerusform>
@@ -3582,13 +3804,13 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5170"/>
-<location filename="../mainwindow.cpp" line="12466"/>
+<location filename="../mainwindow.cpp" line="5292"/>
+<location filename="../mainwindow.cpp" line="12609"/>
 <source>Cancel</source>
 <translation>Utzi</translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="9787"/>
+<location filename="../mainwindow.cpp" line="9927"/>
 <source>%n note(s) were moved to note subfolder "%2"</source>
 <translation>
 <numerusform>%n oharra "%2" azpikarpeta mugitu zen</numerusform>
@@ -3596,7 +3818,7 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="9811"/>
+<location filename="../mainwindow.cpp" line="9951"/>
 <source>Copy %n selected note(s) to note subfolder &lt;strong&gt;%2&lt;/strong&gt;?</source>
 <translation>
 <numerusform>Kopiatu %n aukeratu hautatutako oharra azpikarpeta &lt;strong&gt;%2 &lt;/strong&gt;?</numerusform>
@@ -3604,7 +3826,7 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="9878"/>
+<location filename="../mainwindow.cpp" line="10018"/>
 <source>%n note(s) were copied to note subfolder "%2"</source>
 <translation>
 <numerusform>%n oharra "%2" azpikarpeta kopiatu zen</numerusform>
@@ -3612,118 +3834,118 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10568"/>
+<location filename="../mainwindow.cpp" line="10712"/>
 <source>Open note in external editor</source>
 <translation>Ireki ohar kanpoko editorean</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10572"/>
+<location filename="../mainwindow.cpp" line="10716"/>
 <source>Show note in file manager</source>
 <translation>Erakutsi ohar fitxategi kudeatzailean</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10657"/>
+<location filename="../mainwindow.cpp" line="10801"/>
 <source>If you want to rename your note you have to enable the option to allow the note filename to be different from the headline.</source>
 <translation>Zure oharra berriztatzea nahi baduzu, oharren izenburuaren izenburua desberdina izan dadin aukera gaitu behar duzu.</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10877"/>
+<location filename="../mainwindow.cpp" line="11021"/>
 <source>New subfolder</source>
 <translation>Azpikarpeta berria</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10887"/>
+<location filename="../mainwindow.cpp" line="11031"/>
 <source>Show folder in file manager</source>
 <translation>Erakutsi karpeta fitxategi kudeatzailean</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10932"/>
+<location filename="../mainwindow.cpp" line="11076"/>
 <source>Create a new folder</source>
 <translation>Sortu karpeta berri bat</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10933"/>
+<location filename="../mainwindow.cpp" line="11077"/>
 <source>Folder name:</source>
 <translation>Karpetaren izena:</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="8099"/>
+<location filename="../mainwindow.cpp" line="8239"/>
 <source>show all untagged notes (%1)</source>
 <translation>erakutsi gabeko ohar guztiak (%1) erakutsi</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="8101"/>
+<location filename="../mainwindow.cpp" line="8241"/>
 <source>Untagged notes</source>
 <translation>Idatzitako oharrak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10223"/>
+<location filename="../mainwindow.cpp" line="10367"/>
 <source>Export current note as HTML file</source>
 <translation>Esportatu uneko oharra HTML fitxategi gisa</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5353"/>
+<location filename="../mainwindow.cpp" line="5475"/>
 <source>Page size</source>
 <translation>Orriaren tamaina</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="1189"/>
+<location filename="../mainwindow.cpp" line="1290"/>
 <source>quit toolbar</source>
 <translation>irten tresna-barra</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5353"/>
+<location filename="../mainwindow.cpp" line="5475"/>
 <source>Page size:</source>
 <translation>Orriaren tamaina:</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5470"/>
+<location filename="../mainwindow.cpp" line="5592"/>
 <source>QOwnNotes will track anonymous usage data, that helps to decide what parts of QOwnNotes to improve next and to find and fix bugs. You can disable that behaviour in the settings.</source>
 <translation>QOwnNotes-ek erabilera anonimoaren datuen jarraipena egingo du, hurrengo QOwnNotes-en zatiak hobetzen diren erabakitzeko eta akatsak aurkitzeko eta konpontzeko. Portaera hori ezar dezakezu.</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5474"/>
+<location filename="../mainwindow.cpp" line="5596"/>
 <source>&amp;Ok</source>
 <translation>&amp;Ados</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="10456"/>
+<location filename="../mainwindow.cpp" line="10600"/>
 <source>&amp;Remove notes</source>
 <translation>&amp;Kendu oharrak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6750"/>
+<location filename="../mainwindow.cpp" line="6872"/>
 <source>&amp;Link selected text</source>
 <translation>&amp;Lotu hautatutako testua</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="1115"/>
+<location filename="../mainwindow.cpp" line="1216"/>
 <source>Your tasks are being loaded from your server</source>
 <translation>Zereginak zerbitzaritik kargatzen ari dira</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="2798"/>
+<location filename="../mainwindow.cpp" line="2923"/>
 <source>Current note was modified externally</source>
 <translation>Uneko oharra kanpotik aldatu da</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="2881"/>
-<location filename="../mainwindow.cpp" line="6034"/>
+<location filename="../mainwindow.cpp" line="3006"/>
+<location filename="../mainwindow.cpp" line="6156"/>
 <source>Stored current note to disk</source>
 <translation>Gordetako uneko oharra diskoan</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="2899"/>
+<location filename="../mainwindow.cpp" line="3024"/>
 <source>Note was modified externally: %1</source>
 <translation>Oharra kanpotik aldatu da: %1</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="2921"/>
+<location filename="../mainwindow.cpp" line="3046"/>
 <source>Notes directory was modified externally</source>
 <translation>Oharren direktorioa kanpotik aldatu da</translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="2982"/>
+<location filename="../mainwindow.cpp" line="3107"/>
 <source>Stored %n note(s) to disk</source>
 <translation>
 <numerusform>Gordetako %n oharra diskoan</numerusform>
@@ -3731,214 +3953,214 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="8065"/>
+<location filename="../mainwindow.cpp" line="8205"/>
 <source>show all notes (%1)</source>
 <translation>erakutsi ohar guztiak (%1)</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="8068"/>
-<location filename="../mainwindow.cpp" line="8143"/>
+<location filename="../mainwindow.cpp" line="8208"/>
+<location filename="../mainwindow.cpp" line="8283"/>
 <source>All notes</source>
 <translation>Ohar guztiak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="9191"/>
+<location filename="../mainwindow.cpp" line="9331"/>
 <source>&amp;Add tag</source>
 <translation>&amp;Gehitu etiketa</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="9239"/>
+<location filename="../mainwindow.cpp" line="9379"/>
 <source>Tag could not be created!</source>
 <translation>Ezin izan da etiketa sortu!</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="9418"/>
+<location filename="../mainwindow.cpp" line="9558"/>
 <source>Move to this tag</source>
 <translation>Eraman etiketa honetara</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="9453"/>
+<location filename="../mainwindow.cpp" line="9593"/>
 <source>Tag this</source>
 <translation>Etiketatu hau</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="9478"/>
+<location filename="../mainwindow.cpp" line="9618"/>
 <source>Cannot move tag '%1' to this tag</source>
 <translation>Ezin da '%1' etiketa etiketa honetara eraman</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="9527"/>
+<location filename="../mainwindow.cpp" line="9667"/>
 <source>Moved tag '%1' to new tag</source>
 <translation>Etiketa berria '%1' eraman da</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="8405"/>
+<location filename="../mainwindow.cpp" line="8545"/>
 <source>show all notes tagged with '%1' (%2)</source>
 <translation>erakutsi '%1' etiketatutako ohar guztiak (%2)</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="9202"/>
+<location filename="../mainwindow.cpp" line="9342"/>
 <source>&amp;Remove tags</source>
 <translation>&amp;Kendu etiketak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5508"/>
+<location filename="../mainwindow.cpp" line="5630"/>
 <source>No selected todo lists!</source>
 <translation>Ez da aukeratutako lan zerrendak!</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="578"/>
+<location filename="../mainwindow.cpp" line="599"/>
 <source>Action not found!</source>
 <translation type="unfinished">Action not found!</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="579"/>
+<location filename="../mainwindow.cpp" line="600"/>
 <source>Could not find menu action &lt;code&gt;%1&lt;/code&gt;! Did you spell it correctly?</source>
 <translation type="unfinished">Could not find menu action &lt;code&gt;%1&lt;/code&gt;! Did you spell it correctly?</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="786"/>
+<location filename="../mainwindow.cpp" line="887"/>
 <source>Subfolders</source>
 <translation>Azpikarpetak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="798"/>
+<location filename="../mainwindow.cpp" line="899"/>
 <source>Tags</source>
 <translation>Etiketa</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="807"/>
+<location filename="../mainwindow.cpp" line="908"/>
 <source>Note search</source>
 <translation>Bilaketa oharrak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="836"/>
+<location filename="../mainwindow.cpp" line="937"/>
 <source>Note list</source>
 <translation>Oharren zerrenda</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="861"/>
+<location filename="../mainwindow.cpp" line="962"/>
 <source>Note edit</source>
 <translation>Oharra editatu</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="873"/>
+<location filename="../mainwindow.cpp" line="974"/>
 <source>Note tags</source>
 <translation>Ohar ezazu etiketak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="884"/>
+<location filename="../mainwindow.cpp" line="985"/>
 <source>Note preview</source>
 <translation>Oharraren aurrebista</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="892"/>
+<location filename="../mainwindow.cpp" line="993"/>
 <source>Log</source>
 <translation>Login</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="901"/>
+<location filename="../mainwindow.cpp" line="1002"/>
 <source>Scripting</source>
 <translation>Scriptgintza</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="1156"/>
+<location filename="../mainwindow.cpp" line="1257"/>
 <source>formatting toolbar</source>
 <translation>formatu tresna-barra</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="1165"/>
+<location filename="../mainwindow.cpp" line="1266"/>
 <source>inserting toolbar</source>
 <translation>tresna-barra txertatzea</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="1172"/>
+<location filename="../mainwindow.cpp" line="1273"/>
 <source>encryption toolbar</source>
 <translation>enkriptatze tresna barra</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="1179"/>
+<location filename="../mainwindow.cpp" line="1280"/>
 <source>window toolbar</source>
 <translation>leihoaren tresna-barra</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="1184"/>
+<location filename="../mainwindow.cpp" line="1285"/>
 <source>custom action toolbar</source>
 <translation>ekintza pertsonalizatuaren tresna-barra</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="1204"/>
+<location filename="../mainwindow.cpp" line="1305"/>
 <source>Workspace selector</source>
 <translation>Laneko arearen hautatzailea</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="1354"/>
+<location filename="../mainwindow.cpp" line="1455"/>
 <source>Show %1 panel</source>
 <translation>Erakutsi %1 panela</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="1399"/>
+<location filename="../mainwindow.cpp" line="1500"/>
 <source>Show %1</source>
 <translation>Erakutsi %1</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="1722"/>
+<location filename="../mainwindow.cpp" line="1827"/>
 <source>Leave distraction free mode</source>
 <translation>Leave full-screen mode</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="1904"/>
+<location filename="../mainwindow.cpp" line="2017"/>
 <source>Switch to note folder</source>
 <translation>Aldatu ohar karpeta</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="2299"/>
+<location filename="../mainwindow.cpp" line="2412"/>
 <source>show notes in folder '%1' (%2)</source>
 <translation>erakutsi oharrak '%1' karpetan (%2)</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="2516"/>
+<location filename="../mainwindow.cpp" line="2629"/>
 <source>Toolbar could not be loaded without name</source>
 <translation>Tresna-barra ezin da izenik gabe kargatu</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="2825"/>
+<location filename="../mainwindow.cpp" line="2950"/>
 <source>Overwriting external changes of: %1</source>
 <translation>Gainidatzi kanpoko aldaketak: %1</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="2846"/>
+<location filename="../mainwindow.cpp" line="2971"/>
 <source>Loading external changes from: %1</source>
 <translation>Kanpoko aldaketak kargatzen: %1</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="2882"/>
-<location filename="../mainwindow.cpp" line="6035"/>
+<location filename="../mainwindow.cpp" line="3007"/>
+<location filename="../mainwindow.cpp" line="6157"/>
 <source>Current note could not be stored to disk</source>
 <translation>Uneko oharra ezin izan da diskoan gorde</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="3061"/>
+<location filename="../mainwindow.cpp" line="3190"/>
 <source>Read-only</source>
 <translation>Irakurtzeko soilik</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="3063"/>
+<location filename="../mainwindow.cpp" line="3192"/>
 <source>Note editing is disabled, click to enable</source>
 <translation>Kontuaren edizioa desgaituta dago, egin klik gaitzeko</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="3080"/>
+<location filename="../mainwindow.cpp" line="3209"/>
 <source>Line numbers</source>
 <translation>Lerro zenbakiak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="3090"/>
+<location filename="../mainwindow.cpp" line="3219"/>
 <source>Click here to see what has changed and to be able to update to the latest version</source>
 <translation>Egin klik hemen zer aldatu den ikusteko eta azken bertsiora eguneratu ahal izateko</translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="3460"/>
+<location filename="../mainwindow.cpp" line="3589"/>
 <source>Proceed with automatic deletion of &lt;strong&gt;%n&lt;/strong&gt; conflicted database copies that may block your ownCloud sync process?</source>
 <translation>
 <numerusform>OwnCloud sinkronizazio prozesua blokeatu dezakeen &lt;strong&gt;%n&lt;/strong&gt; datu baseko kopia automatikoki ezabatu nahi duzu?</numerusform>
@@ -3946,7 +4168,7 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="4942"/>
+<location filename="../mainwindow.cpp" line="5071"/>
 <source>%n note(s) were tagged with "%2"</source>
 <translation>
 <numerusform>%n oharra "%2" etiketa zen</numerusform>
@@ -3954,7 +4176,7 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message numerus="yes">
-<location filename="../mainwindow.cpp" line="5734"/>
+<location filename="../mainwindow.cpp" line="5856"/>
 <source>Found &lt;strong&gt;%n&lt;/strong&gt; occurrence(s) of &lt;strong&gt;%1&lt;/strong&gt;</source>
 <translation>
 <numerusform>&lt;strong&gt;%n &lt;/strong&gt; &lt;strong&gt;%1 &lt;/strong&gt; gertaera aurkitu da</numerusform>
@@ -3962,77 +4184,77 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6096"/>
+<location filename="../mainwindow.cpp" line="6218"/>
 <source>Note headline</source>
 <translation>Kontuan titularra</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6315"/>
+<location filename="../mainwindow.cpp" line="6437"/>
 <source>Could not find note.&lt;br /&gt;Unable to automatically create note at location, because subfolders are disabled for the current note folder.</source>
 <translation type="unfinished">Could not find note.&lt;br /&gt;Unable to automatically create note at location, because subfolders are disabled for the current note folder.</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6329"/>
+<location filename="../mainwindow.cpp" line="6451"/>
 <source>Note was not found, create new note &lt;strong&gt;%1&lt;/strong&gt; at path &lt;strong&gt;%2&lt;/strong&gt;?</source>
 <translation type="unfinished">Note was not found, create new note &lt;strong&gt;%1&lt;/strong&gt; at path &lt;strong&gt;%2&lt;/strong&gt;?</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="6756"/>
+<location filename="../mainwindow.cpp" line="6878"/>
 <source>Block &amp;quote selected text</source>
 <comment>Action to apply a block quote formatting to the selected text</comment>
 <translation>Blokeatu &amp;hautatu aurrekontua</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7784"/>
+<location filename="../mainwindow.cpp" line="7924"/>
 <source>Downloading images finished</source>
 <translation>Irudiak deskargatzen amaitu dira</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7939"/>
+<location filename="../mainwindow.cpp" line="8079"/>
 <source>Increased font size to %1 pt</source>
 <translation>Letra-tamaina handitu %1 pt</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7956"/>
+<location filename="../mainwindow.cpp" line="8096"/>
 <source>Decreased font size to %1 pt</source>
 <translation>Letra-tamaina txikitu %1 pt</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="5474"/>
-<location filename="../mainwindow.cpp" line="5489"/>
-<location filename="../mainwindow.cpp" line="5512"/>
-<location filename="../mainwindow.cpp" line="10660"/>
+<location filename="../mainwindow.cpp" line="5596"/>
+<location filename="../mainwindow.cpp" line="5611"/>
+<location filename="../mainwindow.cpp" line="5634"/>
+<location filename="../mainwindow.cpp" line="10804"/>
 <source>Open &amp;settings</source>
 <translation>Ireki &amp;ezarpenak</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="1719"/>
-<location filename="../mainwindow.cpp" line="12618"/>
+<location filename="../mainwindow.cpp" line="1824"/>
+<location filename="../mainwindow.cpp" line="12761"/>
 <source>leave</source>
 <translation>utzi</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7205"/>
+<location filename="../mainwindow.cpp" line="7327"/>
 <source>Please enter your &lt;strong&gt;password&lt;/strong&gt; to encrypt the note.&lt;br /&gt;Keep in mind that you have to &lt;strong&gt;remember&lt;/strong&gt; your password to read the content of the note&lt;br /&gt; and that you can &lt;strong&gt;only&lt;/strong&gt; do that &lt;strong&gt;in QOwnNotes&lt;/strong&gt;!</source>
 <translation>Idatzi zure &lt;strong&gt; pasahitza &lt;/strong&gt; oharra enkriptatzeko. &lt;br/&gt;Kontuan izan &lt;strong&gt; gogoratu &lt;/strong&gt; zure pasahitza oharraren edukia irakurtzeko &lt;br /&gt; eta &lt;strong&gt; soilik &lt;/strong&gt; hori egin dezakezula &lt;strong&gt; QOwnNotes &lt;/ strong &lt;/ strong &lt;/strong. &gt;!</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7261"/>
+<location filename="../mainwindow.cpp" line="7400"/>
 <source>Decrypt note and store it as plain text</source>
 <translation>Deskripta ezazu oharra eta gorde testu arrunt gisa</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7266"/>
+<location filename="../mainwindow.cpp" line="7405"/>
 <source>&amp;Decrypt</source>
 <translation>&amp;Desenkriptatu</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7291"/>
+<location filename="../mainwindow.cpp" line="7430"/>
 <source>&lt;br /&gt;You will be able to edit your encrypted note.</source>
 <translation>&lt;br/&gt; Zure enkriptatutako oharra editatu ahal izango duzu.</translation>
 </message>
 <message>
-<location filename="../mainwindow.cpp" line="7360"/>
+<location filename="../mainwindow.cpp" line="7499"/>
 <source>Export current note as Markdown file</source>
 <translation>Esportatu uneko oharra Markdown fitxategi gisa</translation>
 </message>
@@ -4040,7 +4262,7 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 <context>
 <name>NavigationWidget</name>
 <message>
-<location filename="../widgets/navigationwidget.cpp" line="116"/>
+<location filename="../widgets/navigationwidget.cpp" line="134"/>
 <source>headline %1</source>
 <translation>%1 titularra</translation>
 </message>
@@ -4129,12 +4351,12 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 <translation>Esportatu HTML gordinak sortutakoak</translation>
 </message>
 <message>
-<location filename="../widgets/notepreviewwidget.cpp" line="323"/>
+<location filename="../widgets/notepreviewwidget.cpp" line="365"/>
 <source>HTML files</source>
 <translation>HTML fitxategiak</translation>
 </message>
 <message>
-<location filename="../widgets/notepreviewwidget.cpp" line="324"/>
+<location filename="../widgets/notepreviewwidget.cpp" line="366"/>
 <source>Export preview as raw HTML file</source>
 <translation>Esportatu aurrebista HTML fitxategi gordin gisa</translation>
 </message>
@@ -4142,160 +4364,160 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 <context>
 <name>OwnCloudService</name>
 <message>
-<location filename="../services/owncloudservice.cpp" line="235"/>
+<location filename="../services/owncloudservice.cpp" line="237"/>
 <source>incorrect</source>
 <translation type="unfinished">incorrect</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="237"/>
-<location filename="../services/owncloudservice.cpp" line="535"/>
+<location filename="../services/owncloudservice.cpp" line="239"/>
+<location filename="../services/owncloudservice.cpp" line="537"/>
 <source>not connected</source>
 <translation type="unfinished">not connected</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="252"/>
+<location filename="../services/owncloudservice.cpp" line="254"/>
 <source>Username / password error</source>
 <translation>Erabiltzaile / pasahitzaren errorea</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="253"/>
+<location filename="../services/owncloudservice.cpp" line="255"/>
 <source>Your calendar username or password is incorrect!</source>
 <translation>Zure egutegiko erabiltzaile izena edo pasahitza okerra da!</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="313"/>
 <location filename="../services/owncloudservice.cpp" line="315"/>
-<location filename="../services/owncloudservice.cpp" line="325"/>
+<location filename="../services/owncloudservice.cpp" line="317"/>
 <location filename="../services/owncloudservice.cpp" line="327"/>
-<location filename="../services/owncloudservice.cpp" line="431"/>
-<location filename="../services/owncloudservice.cpp" line="485"/>
-<location filename="../services/owncloudservice.cpp" line="500"/>
-<location filename="../services/owncloudservice.cpp" line="508"/>
-<location filename="../services/owncloudservice.cpp" line="526"/>
+<location filename="../services/owncloudservice.cpp" line="329"/>
+<location filename="../services/owncloudservice.cpp" line="433"/>
+<location filename="../services/owncloudservice.cpp" line="487"/>
+<location filename="../services/owncloudservice.cpp" line="502"/>
+<location filename="../services/owncloudservice.cpp" line="510"/>
+<location filename="../services/owncloudservice.cpp" line="528"/>
 <source>ok</source>
 <translation type="unfinished">ok</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="318"/>
+<location filename="../services/owncloudservice.cpp" line="320"/>
 <source>not correct</source>
 <translation type="unfinished">not correct</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="331"/>
+<location filename="../services/owncloudservice.cpp" line="333"/>
 <source>not detected</source>
 <translation type="unfinished">not detected</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="434"/>
-<location filename="../services/owncloudservice.cpp" line="529"/>
+<location filename="../services/owncloudservice.cpp" line="436"/>
+<location filename="../services/owncloudservice.cpp" line="531"/>
 <source>not found</source>
 <translation type="unfinished">not found</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="471"/>
 <location filename="../services/owncloudservice.cpp" line="473"/>
+<location filename="../services/owncloudservice.cpp" line="475"/>
 <source>unknown</source>
 <translation type="unfinished">unknown</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="482"/>
+<location filename="../services/owncloudservice.cpp" line="484"/>
 <source>version %1 too low</source>
 <translation type="unfinished">version %1 too low</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="503"/>
-<location filename="../services/owncloudservice.cpp" line="511"/>
+<location filename="../services/owncloudservice.cpp" line="505"/>
+<location filename="../services/owncloudservice.cpp" line="513"/>
 <source>not enabled</source>
 <translation type="unfinished">not enabled</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="585"/>
+<location filename="../services/owncloudservice.cpp" line="587"/>
 <source>API app version too low</source>
 <translation>API aplikazioen bertsioa oso baxua da</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="586"/>
+<location filename="../services/owncloudservice.cpp" line="588"/>
 <source>Please consider updating your QOwnNotesAPI app on your server, your app version %1 is too low and may cause troubles in QOwnNotes.</source>
 <translation>Mesedez, zure QOwnNotesAPI aplikazioa zure zerbitzarian eguneratu, %1 bertsioaren bertsio txikia da eta arazoak sor ditzake QOwnNotes-en.</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="1199"/>
+<location filename="../services/owncloudservice.cpp" line="1201"/>
 <source>ownCloud server connection error</source>
 <translation>ownCloud zerbitzariaren konexio errorea</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="1204"/>
+<location filename="../services/owncloudservice.cpp" line="1206"/>
 <source>ownCloud server error: &lt;strong&gt;%1&lt;/strong&gt;&lt;br /&gt;Please check your ownCloud configuration.</source>
 <translation>ownCloud zerbitzariaren errorea: &lt;strong&gt;%1 &lt;/strong&gt; &lt;br /&gt; Mesedez, egiaztatu your ownCloud konfigurazioa.</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="1224"/>
+<location filename="../services/owncloudservice.cpp" line="1226"/>
 <source>You need to setup your ownCloud server!</source>
 <translation>OwnCloud zerbitzaria konfiguratu behar duzu!</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="1236"/>
+<location filename="../services/owncloudservice.cpp" line="1238"/>
 <source>Open &amp;settings</source>
 <translation>Ireki &amp;ezarpenak</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="1236"/>
+<location filename="../services/owncloudservice.cpp" line="1238"/>
 <source>&amp;Cancel</source>
 <translation>&amp;Utzi</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="1295"/>
+<location filename="../services/owncloudservice.cpp" line="1297"/>
 <source>Done with loading note versions</source>
 <translation>Kontuaren bertsioak kargatuta</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="1340"/>
+<location filename="../services/owncloudservice.cpp" line="1342"/>
 <source>No versions found</source>
 <translation>Ez da bertsio aurkitu</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="1341"/>
+<location filename="../services/owncloudservice.cpp" line="1343"/>
 <source>There are no versions for this note or the note wasn't found on the server.</source>
 <translation>Ez dago ohar honen bertsioik edo oharra ez da zerbitzarian aurkitu.</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="1361"/>
+<location filename="../services/owncloudservice.cpp" line="1363"/>
 <source>Done with loading trashed notes</source>
 <translation>Zabaldu oharrak kargatzean</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="1406"/>
+<location filename="../services/owncloudservice.cpp" line="1408"/>
 <source>No trashed notes</source>
 <translation>Ez da zaborrik oharrik</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="1407"/>
+<location filename="../services/owncloudservice.cpp" line="1409"/>
 <source>No trashed notes were found on the server.</source>
 <translation>Ez da zaborrik oharrik aurkitu zerbitzarian.</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="1429"/>
-<location filename="../services/owncloudservice.cpp" line="1456"/>
+<location filename="../services/owncloudservice.cpp" line="1431"/>
+<location filename="../services/owncloudservice.cpp" line="1458"/>
 <source>Error while loading todo lists!</source>
 <translation>Errorea todo zerrendak kargatzean!</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="1430"/>
+<location filename="../services/owncloudservice.cpp" line="1432"/>
 <source>Your CalDAV server didn't reply anything!</source>
 <translation>CalDAV zerbitzariak ez du ezer erantzun!</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="1457"/>
+<location filename="../services/owncloudservice.cpp" line="1459"/>
 <source>Error message from your CalDAV server: &lt;strong&gt;%1&lt;/strong&gt;</source>
 <translation>Zure CalDAV zerbitzariaren errorea: &lt;strong&gt;%1&lt;/strong&gt;</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="2145"/>
+<location filename="../services/owncloudservice.cpp" line="2147"/>
 <source>No bookmarks</source>
 <translation>Ez dago laster-markarik</translation>
 </message>
 <message>
-<location filename="../services/owncloudservice.cpp" line="2146"/>
+<location filename="../services/owncloudservice.cpp" line="2148"/>
 <source>No bookmarks were found on the server.</source>
 <translation>Zerbitzarian ez da laster-marka aurkitu.</translation>
 </message>
@@ -4356,17 +4578,17 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 <translation>Ohar</translation>
 </message>
 <message>
-<location filename="../entities/note.cpp" line="2600"/>
+<location filename="../entities/note.cpp" line="2640"/>
 <source>Could not read image file: %1</source>
 <translation>Ezin izan da irudi fitxategia irakurri: %1</translation>
 </message>
 <message>
-<location filename="../entities/note.cpp" line="3221"/>
+<location filename="../entities/note.cpp" line="3261"/>
 <source>Note file path changed</source>
 <translation>Ohar-fitxategiaren bidea aldatu da</translation>
 </message>
 <message numerus="yes">
-<location filename="../entities/note.cpp" line="3222"/>
+<location filename="../entities/note.cpp" line="3262"/>
 <source>A change of the note path was detected. Would you like to replace all occurrences of &lt;strong&gt;%1&lt;/strong&gt; links with &lt;strong&gt;%2&lt;/strong&gt; and links with filename &lt;strong&gt;%3&lt;/strong&gt; with &lt;strong&gt;%4&lt;/strong&gt; in &lt;strong&gt;%n&lt;/strong&gt; note file(s)?</source>
 <translation>
 <numerusform>Ohar-fitxategiaren bidean aldaketa bat antzeman da. &lt;strong&gt;%1&lt;/strong&gt; estekaren agerraldi guztiak &lt;strong&gt;%2&lt;/strong&gt; estekarekin ordezkatu nahiko zenuke eta &lt;strong&gt;%3&lt;/strong&gt; fitxategi-izenak &lt;strong&gt;%4&lt;/strong&gt; izenekin &lt;strong&gt;%n&lt;/strong&gt; ohar-fitxategian?</numerusform>
@@ -4374,7 +4596,7 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 </translation>
 </message>
 <message numerus="yes">
-<location filename="../entities/note.cpp" line="3788"/>
+<location filename="../entities/note.cpp" line="3842"/>
 <source>…and %n more note(s)</source>
 <translation>
 <numerusform>... eta %n ohar gehiago</numerusform>
@@ -4403,24 +4625,44 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 <translation>Ez erakutsi berriro!</translation>
 </message>
 <message>
-<location filename="../utils/gui.cpp" line="977"/>
+<location filename="../utils/gui.cpp" line="988"/>
 <source>Double-click to unstick note from tab</source>
 <translation>Egin klik bikoitza oharretik desaktibatzeko</translation>
 </message>
 <message>
-<location filename="../utils/gui.cpp" line="978"/>
+<location filename="../utils/gui.cpp" line="989"/>
 <source>Double-click to stick note to tab</source>
 <translation>Egin klik bikoitza oharrera fitxan</translation>
 </message>
 <message>
-<location filename="../utils/gui.cpp" line="1020"/>
+<location filename="../utils/gui.cpp" line="1031"/>
 <source>&lt;strong&gt;%1&lt;/strong&gt;&lt;br /&gt;last modified: %2</source>
 <translation type="unfinished">&lt;strong&gt;%1&lt;/strong&gt;&lt;br /&gt;last modified: %2</translation>
 </message>
 <message>
-<location filename="../utils/gui.cpp" line="1025"/>
+<location filename="../utils/gui.cpp" line="1036"/>
 <source>&lt;br /&gt;path: %1</source>
 <translation type="unfinished">&lt;br /&gt;path: %1</translation>
+</message>
+<message>
+<location filename="../utils/gui.cpp" line="1064"/>
+<source>Dark mode detected</source>
+<translation type="unfinished">Dark mode detected</translation>
+</message>
+<message>
+<location filename="../utils/gui.cpp" line="1065"/>
+<source>Your Windows system seems to use the dark mode. Do you also want to turn on dark mode in QOwnNotes?</source>
+<translation type="unfinished">Your Windows system seems to use the dark mode. Do you also want to turn on dark mode in QOwnNotes?</translation>
+</message>
+<message>
+<location filename="../utils/gui.cpp" line="1077"/>
+<source>Light mode detected</source>
+<translation type="unfinished">Light mode detected</translation>
+</message>
+<message>
+<location filename="../utils/gui.cpp" line="1078"/>
+<source>Your Windows system seems to use the light mode. Do you also want to turn off dark mode in QOwnNotes?</source>
+<translation type="unfinished">Your Windows system seems to use the light mode. Do you also want to turn off dark mode in QOwnNotes?</translation>
 </message>
 <message>
 <location filename="../utils/git.cpp" line="76"/>
@@ -4433,9 +4675,19 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 <translation type="unfinished">The command &lt;code&gt;%1&lt;/code&gt; with arguments &lt;code&gt;%2&lt;/code&gt; failed!</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="4251"/>
+<location filename="../dialogs/settingsdialog.cpp" line="4280"/>
 <source>New connection</source>
 <translation>Konexio berria</translation>
+</message>
+<message>
+<location filename="../dialogs/settingsdialog.cpp" line="4461"/>
+<source>Login flow succeeded</source>
+<translation type="unfinished">Login flow succeeded</translation>
+</message>
+<message>
+<location filename="../dialogs/settingsdialog.cpp" line="4462"/>
+<source>Username and password were set successfully!</source>
+<translation type="unfinished">Username and password were set successfully!</translation>
 </message>
 <message>
 <location filename="../entities/cloudconnection.cpp" line="291"/>
@@ -4443,17 +4695,17 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 <translation>Lehenetsia</translation>
 </message>
 <message>
-<location filename="../main.cpp" line="263"/>
+<location filename="../main.cpp" line="268"/>
 <source>Note folder not found!</source>
 <translation>Ohar karpeta ez da aurkitu!</translation>
 </message>
 <message>
-<location filename="../main.cpp" line="264"/>
+<location filename="../main.cpp" line="269"/>
 <source>Your note folder was not found any more! Do you want to select a new one?</source>
 <translation>Zure ohar karpeta ez da gehiago aurkitu! Berri bat aukeratu nahi duzu?</translation>
 </message>
 <message>
-<location filename="../main.cpp" line="271"/>
+<location filename="../main.cpp" line="276"/>
 <source>Please select the folder where your notes will get stored to</source>
 <translation>Hautatu zure oharrak non gordeko diren karpeta</translation>
 </message>
@@ -4496,31 +4748,61 @@ Zakarrontzia zure ownCloud zerbitzarian gaituta badago, hortik leheneratu behark
 <numerusform>%n note(s) are using this image. Would you also like to rename those images in the note(s)?</numerusform>
 </translation>
 </message>
+<message>
+<location filename="../dialogs/joplinimportdialog.cpp" line="28"/>
+<source>Turned on note subfolders for the current note folder to be able to import folders.</source>
+<translation type="unfinished">Turned on note subfolders for the current note folder to be able to import folders.</translation>
+</message>
+<message>
+<location filename="../services/owncloudservice.cpp" line="2264"/>
+<location filename="../services/owncloudservice.cpp" line="2279"/>
+<source>Login flow failed</source>
+<translation type="unfinished">Login flow failed</translation>
+</message>
+<message>
+<location filename="../services/owncloudservice.cpp" line="2265"/>
+<source>Nextcloud login flow v2 could not be initiated. Make sure the server url is correct and you are using a Nextcloud server!&lt;br /&gt;&lt;br /&gt;If your are still having issues please create an app password by hand on your server's admin page.</source>
+<translation type="unfinished">Nextcloud login flow v2 could not be initiated. Make sure the server url is correct and you are using a Nextcloud server!&lt;br /&gt;&lt;br /&gt;If your are still having issues please create an app password by hand on your server's admin page.</translation>
+</message>
+<message>
+<location filename="../services/owncloudservice.cpp" line="2280"/>
+<source>Could not parse login url!</source>
+<translation type="unfinished">Could not parse login url!</translation>
+</message>
+<message>
+<location filename="../utils/misc.cpp" line="929"/>
+<source>
+
+Note that for the next launch of the application the single app instance mode will be disabled, so that the application can be restarted.</source>
+<translation type="unfinished">
+
+Note that for the next launch of the application the single app instance mode will be disabled, so that the application can be restarted.</translation>
+</message>
 </context>
 <context>
 <name>QOwnNotesMarkdownTextEdit</name>
 <message>
-<location filename="../widgets/qownnotesmarkdowntextedit.cpp" line="604"/>
+<location filename="../widgets/qownnotesmarkdowntextedit.cpp" line="634"/>
 <source>No suggestions for %1</source>
 <translation>Ez da iradokizunik %1 erako</translation>
 </message>
 <message>
-<location filename="../widgets/qownnotesmarkdowntextedit.cpp" line="616"/>
+<location filename="../widgets/qownnotesmarkdowntextedit.cpp" line="646"/>
 <source>Ignore</source>
 <translation>Ez ikusi</translation>
 </message>
 <message>
-<location filename="../widgets/qownnotesmarkdowntextedit.cpp" line="617"/>
+<location filename="../widgets/qownnotesmarkdowntextedit.cpp" line="647"/>
 <source>Add to Dictionary</source>
 <translation>Gehitu hiztegian</translation>
 </message>
 <message>
-<location filename="../widgets/qownnotesmarkdowntextedit.cpp" line="674"/>
+<location filename="../widgets/qownnotesmarkdowntextedit.cpp" line="704"/>
 <source>Note editing disabled</source>
 <translation>Oharra editatzea desgaituta</translation>
 </message>
 <message>
-<location filename="../widgets/qownnotesmarkdowntextedit.cpp" line="675"/>
+<location filename="../widgets/qownnotesmarkdowntextedit.cpp" line="705"/>
 <source>Note editing is currently disabled, do you want to allow it again?</source>
 <translation>Oharra editatzea gaituta dago, berriro baimendu nahi al duzu?</translation>
 </message>
@@ -4722,12 +5004,12 @@ Karpeta eta fitxategia idatzi al dira?</translation>
 <translation>Ezin da ohar-karpeten datu basea ireki</translation>
 </message>
 <message>
-<location filename="../services/databaseservice.cpp" line="916"/>
+<location filename="../services/databaseservice.cpp" line="929"/>
 <source>Cannot open database</source>
 <translation>Ezin da datu-basea ireki</translation>
 </message>
 <message>
-<location filename="../services/databaseservice.cpp" line="917"/>
+<location filename="../services/databaseservice.cpp" line="930"/>
 <source>Unable to establish a database connection with note folder database to merge '%1'.
 Are the folder and the file writeable?</source>
 <translation>Ezin da datu-basea konexio bat ezarri ohar-karpetaren datu-basearekin "%1" batzeko.
@@ -4949,7 +5231,7 @@ Hala ere instalatu nahi duzu?</translation>
 <name>SettingsDialog</name>
 <message>
 <location filename="../dialogs/settingsdialog.ui" line="26"/>
-<location filename="../dialogs/settingsdialog.ui" line="4315"/>
+<location filename="../dialogs/settingsdialog.ui" line="4376"/>
 <source>Settings</source>
 <translation>Ezarpenak</translation>
 </message>
@@ -4994,74 +5276,74 @@ Hala ere instalatu nahi duzu?</translation>
 <translation>Zure ownCloud zerbitzaria</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1100"/>
+<location filename="../dialogs/settingsdialog.ui" line="1101"/>
 <source>ownCloud server url:</source>
 <translation>ownCloud zerbitzariaren Urla:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1122"/>
+<location filename="../dialogs/settingsdialog.ui" line="1123"/>
 <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Please enter the URL of your ownCloud server, for example: &lt;span style=" font-style:italic;"&gt;https://cloud.yourserver.com&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
 <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt; &lt;p&gt; Mesedez, sartu ownCloud zerbitzariaren URLa, adibidez: &lt;span style = "font-style: italic;"&gt; https://cloud.yourserver.com &lt;/ span &gt; &lt;/ p&gt; &lt;/ body&gt; &lt;/ html&gt;</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1160"/>
+<location filename="../dialogs/settingsdialog.ui" line="1161"/>
 <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Please enter the username on your ownCloud server.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
 <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt; &lt;p&gt; Sartu erabiltzaile-izena ownCloud zerbitzarian. &lt;/p&gt; &lt;/body&gt; &lt;/html&gt;</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1195"/>
+<location filename="../dialogs/settingsdialog.ui" line="1196"/>
 <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Please enter the password for your username.&lt;br/&gt;Currently the password will be stored encrypted with the other settings, but is not very secure.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
 <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt; &lt;p&gt; Sartu zure erabiltzaile izenaren pasahitza. &lt;br/&gt; Une honetan pasahitza beste ezarpenekin enkriptatuko da, baina ez da oso segurua. &lt;/p&gt; &lt;/ body &gt; &lt;/ html&gt;</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1266"/>
+<location filename="../dialogs/settingsdialog.ui" line="1267"/>
 <source>connection to web server</source>
 <translation>web zerbitzariarekin konexioa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1283"/>
+<location filename="../dialogs/settingsdialog.ui" line="1284"/>
 <source>ownCloud server detected</source>
 <translation>ownCloud zerbitzaria detektatu da</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1317"/>
+<location filename="../dialogs/settingsdialog.ui" line="1318"/>
 <source>connection to QOwnNotesAPI</source>
 <translation>QOwnNotesAPIrako konexioa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1300"/>
+<location filename="../dialogs/settingsdialog.ui" line="1301"/>
 <source>username and password correct</source>
 <translation>erabiltzaile izena eta pasahitza zuzenak dira</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1256"/>
-<location filename="../dialogs/settingsdialog.ui" line="1273"/>
-<location filename="../dialogs/settingsdialog.ui" line="1290"/>
-<location filename="../dialogs/settingsdialog.ui" line="1307"/>
-<location filename="../dialogs/settingsdialog.ui" line="1324"/>
-<location filename="../dialogs/settingsdialog.ui" line="1341"/>
-<location filename="../dialogs/settingsdialog.ui" line="1358"/>
-<location filename="../dialogs/settingsdialog.cpp" line="336"/>
+<location filename="../dialogs/settingsdialog.ui" line="1257"/>
+<location filename="../dialogs/settingsdialog.ui" line="1274"/>
+<location filename="../dialogs/settingsdialog.ui" line="1291"/>
+<location filename="../dialogs/settingsdialog.ui" line="1308"/>
+<location filename="../dialogs/settingsdialog.ui" line="1325"/>
+<location filename="../dialogs/settingsdialog.ui" line="1342"/>
+<location filename="../dialogs/settingsdialog.ui" line="1359"/>
+<location filename="../dialogs/settingsdialog.cpp" line="340"/>
 <source>unknown</source>
 <translation>ezezaguna</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1223"/>
+<location filename="../dialogs/settingsdialog.ui" line="1224"/>
 <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Click here to test the connection to your ownCloud server.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
 <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt; &lt;p&gt; Egin klik hemen ownCloud zerbitzariarekin konexioa probatzeko. &lt;/p&gt; &lt;/body&gt; &lt;/html&gt;</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1334"/>
+<location filename="../dialogs/settingsdialog.ui" line="1335"/>
 <source>versions app enabled on server</source>
 <translation>zerbitzarian bertsio aplikazioa gaituta</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1351"/>
+<location filename="../dialogs/settingsdialog.ui" line="1352"/>
 <source>trash app enabled on server</source>
 <translation>zabortegia aplikazioa zerbitzarian gaituta</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1368"/>
+<location filename="../dialogs/settingsdialog.ui" line="1369"/>
 <source>notes path found on server</source>
 <translation>oharrak bidea aurkitu da zerbitzarian</translation>
 </message>
@@ -5096,7 +5378,7 @@ Hala ere instalatu nahi duzu?</translation>
 <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt; &lt;p&gt; OwnCloud core apps bi behar dituzu &lt;span style = "font-weight: 600;"&gt; Versions &lt;/span&gt; eta &lt;span style = "font-weight: 600; "&gt; Ezabatutako fitxategiak &lt;/span&gt; gaituta ownCloud zerbitzarian (lehenetsia izan behar luke). &lt;/p&gt; &lt;/body&gt; &lt;/html&gt;</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1000"/>
+<location filename="../dialogs/settingsdialog.ui" line="1001"/>
 <source>Error Message</source>
 <translation>Akatsa Mezua</translation>
 </message>
@@ -5106,42 +5388,42 @@ Hala ere instalatu nahi duzu?</translation>
 <translation>Sarea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1451"/>
+<location filename="../dialogs/settingsdialog.ui" line="1477"/>
 <source>Proxy Settings</source>
 <translation>Proxy ezarpenak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1457"/>
+<location filename="../dialogs/settingsdialog.ui" line="1483"/>
 <source>No Proxy</source>
 <translation>Proxy ez</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1467"/>
+<location filename="../dialogs/settingsdialog.ui" line="1493"/>
 <source>Use system proxy</source>
 <translation>Erabili sistema proxy-a</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1474"/>
+<location filename="../dialogs/settingsdialog.ui" line="1500"/>
 <source>Specify proxy manually as</source>
 <translation>Zehaztu proxy eskuz</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1499"/>
+<location filename="../dialogs/settingsdialog.ui" line="1525"/>
 <source>Host</source>
 <translation>Ostalaria</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1550"/>
+<location filename="../dialogs/settingsdialog.ui" line="1576"/>
 <source>Proxy server requires authentication</source>
 <translation>Proxy zerbitzariak autentifikazioa behar du</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1607"/>
+<location filename="../dialogs/settingsdialog.ui" line="1633"/>
 <source>SSL Settings</source>
 <translation>SSL ezarpenak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1613"/>
+<location filename="../dialogs/settingsdialog.ui" line="1639"/>
 <source>Ignore SSL errors</source>
 <translation>Ezikusi SSL erroreak</translation>
 </message>
@@ -5151,7 +5433,7 @@ Hala ere instalatu nahi duzu?</translation>
 <translation>Egin</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1868"/>
+<location filename="../dialogs/settingsdialog.ui" line="1894"/>
 <source>Default ownCloud calendar</source>
 <translation>Default ownCloud egutegia</translation>
 </message>
@@ -5161,65 +5443,65 @@ Hala ere instalatu nahi duzu?</translation>
 <translation>Interfaz</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1838"/>
+<location filename="../dialogs/settingsdialog.ui" line="1864"/>
 <source>Other CalDAV server</source>
 <translation>Beste CalDAV zerbitzaria</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3006"/>
+<location filename="../dialogs/settingsdialog.ui" line="3032"/>
 <source>Only some colors will be adapted, your desktop theme will control the rest. You need to restart the application to let these changes take action.</source>
 <translation>Kolore batzuk bakarrik egokituko dira, zure mahaigainaren gaia gainerakoak kontrolatuko ditu. Aplikazioa berrabiarazi behar duzu aldaketa horiek ekiteko.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3009"/>
+<location filename="../dialogs/settingsdialog.ui" line="3035"/>
 <source>Optimize preview colors for dark mode desktop themes</source>
 <translation>Optimizatu aurrebista-koloreak modu iluneko mahaigain gaietan</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2996"/>
+<location filename="../dialogs/settingsdialog.ui" line="3022"/>
 <source>This enables the dark mode, interface and icons will be modified. You need to restart the application to let these changes take action.</source>
 <translation>Honek modu iluna, interfazea eta ikonoak aldatuko dira. Aplikazioa berrabiarazi behar duzu aldaketa horiek ekiteko.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2999"/>
+<location filename="../dialogs/settingsdialog.ui" line="3025"/>
 <source>Enable dark mode</source>
 <translation>Gaitu modu iluna</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3025"/>
-<location filename="../dialogs/settingsdialog.ui" line="3035"/>
-<location filename="../dialogs/settingsdialog.ui" line="3066"/>
-<location filename="../dialogs/settingsdialog.ui" line="3076"/>
+<location filename="../dialogs/settingsdialog.ui" line="3051"/>
+<location filename="../dialogs/settingsdialog.ui" line="3061"/>
+<location filename="../dialogs/settingsdialog.ui" line="3092"/>
+<location filename="../dialogs/settingsdialog.ui" line="3102"/>
 <source>You need to restart the application to let this setting take effect</source>
 <translation>Aplikazioa berrabiarazi behar duzu ezarpen honek eragina izan dezan</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3105"/>
+<location filename="../dialogs/settingsdialog.ui" line="3131"/>
 <source>Item sizes in the main window</source>
 <translation>Elementuen tamaina leiho nagusian</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5098"/>
+<location filename="../dialogs/settingsdialog.ui" line="5159"/>
 <source>Markdown highlighting</source>
 <translation>Markdown nabarmenduz</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5104"/>
+<location filename="../dialogs/settingsdialog.ui" line="5165"/>
 <source>Enable markdown highlighting</source>
 <translation>Gaitu markaketa nabarmentzea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2162"/>
+<location filename="../dialogs/settingsdialog.ui" line="2188"/>
 <source>Interface language</source>
 <translation>Interfazearen hizkuntza</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2192"/>
+<location filename="../dialogs/settingsdialog.ui" line="2218"/>
 <source>Automatic</source>
 <translation>Automatikoa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2327"/>
+<location filename="../dialogs/settingsdialog.ui" line="2353"/>
 <source>English</source>
 <translation>English</translation>
 </message>
@@ -5229,119 +5511,121 @@ Hala ere instalatu nahi duzu?</translation>
 <translation>Lasterbideak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4553"/>
-<location filename="../dialogs/settingsdialog.ui" line="4846"/>
+<location filename="../dialogs/settingsdialog.ui" line="4614"/>
+<location filename="../dialogs/settingsdialog.ui" line="4907"/>
 <source>Default font:</source>
 <translation>Letra-tipo lehenetsia:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4595"/>
-<location filename="../dialogs/settingsdialog.ui" line="4787"/>
+<location filename="../dialogs/settingsdialog.ui" line="4656"/>
+<location filename="../dialogs/settingsdialog.ui" line="4848"/>
 <source>Code font:</source>
 <translation>Kodearen letra-tipoa:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3264"/>
+<location filename="../dialogs/settingsdialog.ui" line="3290"/>
 <source>Main window shortcuts</source>
 <translation>Leiho nagusiaren lasterbideak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3857"/>
+<location filename="../dialogs/settingsdialog.ui" line="3924"/>
 <source>Do this at your own risk!</source>
 <translation>Egin hori zure ardurapean!</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3860"/>
+<location filename="../dialogs/settingsdialog.ui" line="3927"/>
 <source>Ignore all external note folder changes</source>
 <translation>Ez ikusi egin kanpoko oharren karpeta aldaketak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4453"/>
+<location filename="../dialogs/settingsdialog.ui" line="4514"/>
 <source>Use GitHub line breaks</source>
 <translation>Erabili GitHub lineako jauziak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2305"/>
+<location filename="../dialogs/settingsdialog.ui" line="2331"/>
 <source>German</source>
 <translation>Alemaniako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2382"/>
+<location filename="../dialogs/settingsdialog.ui" line="2408"/>
 <source>French</source>
 <translation>Frantziako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2646"/>
+<location filename="../dialogs/settingsdialog.ui" line="2672"/>
 <source>Polish</source>
 <translation>Poloniako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2668"/>
+<location filename="../dialogs/settingsdialog.ui" line="2694"/>
 <source>Portuguese</source>
 <translation>Portugesa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2613"/>
+<location filename="../dialogs/settingsdialog.ui" line="2639"/>
 <source>Dutch</source>
 <translation>Holandako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2580"/>
+<location filename="../dialogs/settingsdialog.ui" line="2606"/>
 <source>Hungarian</source>
 <translation>Hungariako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2338"/>
+<location filename="../dialogs/settingsdialog.ui" line="2364"/>
 <source>Spanish</source>
 <translation>Espainiako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2970"/>
+<location filename="../dialogs/settingsdialog.ui" line="2996"/>
 <source>Dark mode</source>
 <translation>Modu iluna</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1667"/>
+<location filename="../dialogs/settingsdialog.ui" line="1693"/>
 <source>Disable tracking of usage data</source>
 <translation>Desgaitu erabilera datuen jarraipena</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1711"/>
+<location filename="../dialogs/settingsdialog.ui" line="1737"/>
 <source>Usage tracking is done on a private Piwik server.</source>
 <translation>Erabileraren jarraipena Piwik zerbitzari pribatu batean egiten da.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1771"/>
+<location filename="../dialogs/settingsdialog.ui" line="1797"/>
 <source>Disable heartbeat</source>
 <translation>Desgaitu taupadak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2701"/>
+<location filename="../dialogs/settingsdialog.ui" line="2727"/>
 <source>Russian</source>
 <translation>Errusiako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1620"/>
+<location filename="../dialogs/settingsdialog.ui" line="1646"/>
 <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You might want to consider getting a free SSL certificate from &lt;a href="https://letsencrypt.org/"&gt;Let's encrypt&lt;/a&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
 <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt; &lt;p&gt; Ziurta dezakezu SSL ziurtagiria doan eskuratzean &lt;a href="https://letsencrypt.org/"&gt; enkriptatu &lt;/a&gt;. &lt;/p&gt; &lt;/ body&gt; &lt;/ html&gt;</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2181"/>
+<location filename="../dialogs/settingsdialog.ui" line="2207"/>
 <source>If you change the language you have to restart the application for the changes to take action.</source>
 <translation>Hizkuntza aldatzen baduzu, aplikazioak aldatzeko aplikazioa berrabiarazi behar duzu.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3686"/>
+<location filename="../dialogs/settingsdialog.ui" line="3746"/>
+<location filename="../dialogs/settingsdialog.ui" line="3821"/>
 <source>You need to reload the scripting engine if you modify a script file</source>
 <translation>Scripting motorra birkargatu behar duzu script fitxategia aldatzen baduzu</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3689"/>
+<location filename="../dialogs/settingsdialog.ui" line="3749"/>
+<location filename="../dialogs/settingsdialog.ui" line="3824"/>
 <source>Reload scripting engine</source>
 <translation>Birkargatu scripting motorra</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3679"/>
+<location filename="../dialogs/settingsdialog.ui" line="3739"/>
 <source>Validate script</source>
 <translation>Balidatu script-a</translation>
 </message>
@@ -5351,122 +5635,117 @@ Hala ere instalatu nahi duzu?</translation>
 <translation>Orokor</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3851"/>
+<location filename="../dialogs/settingsdialog.ui" line="3918"/>
 <source>Notes</source>
 <translation>Oharrak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3877"/>
+<location filename="../dialogs/settingsdialog.ui" line="3944"/>
 <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If checked you will always be notified about external modifications, even if current note wasn't edited in the last minute. Recommended is &lt;span style=" font-style:italic;"&gt;unchecked&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
 <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt; &lt;p&gt; Egiaztatuta, kanpoko aldaketen berri emango zaizu, azken uneko oharra azkeneko aldiz editatu ez bada ere. Gomendatzen da &lt;span style = "font-style: italic;"&gt; desmarkatu &lt;/span&gt;. &lt;/p&gt; &lt;/body&gt; &lt;/html&gt;</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3973"/>
-<location filename="../dialogs/settingsdialog.ui" line="5339"/>
-<location filename="../dialogs/settingsdialog.ui" line="5884"/>
+<location filename="../dialogs/settingsdialog.ui" line="4040"/>
+<location filename="../dialogs/settingsdialog.ui" line="5407"/>
+<location filename="../dialogs/settingsdialog.ui" line="5952"/>
 <source>You might run into sync troubles with older versions of ownCloud sync when going far below 10 sec.
 Just test yourself if you get sync conflicts and set a higher value if so.</source>
 <translation>Sinkronizazio arazoak eduki ditzakezu ownCloud sinkronizazioaren bertsio zaharragoekin, 10 segundo baino askoz urrunago joaten zarenean.
 Just probatu zeure burua sinkronizazio gatazkak lortzen badituzu eta balio handiagoa ezartzen baduzu.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2602"/>
+<location filename="../dialogs/settingsdialog.ui" line="2628"/>
 <source>Japanese</source>
 <translation>Japoniako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3977"/>
+<location filename="../dialogs/settingsdialog.ui" line="4044"/>
 <source>note save interval time [sec]</source>
 <translation>oharra tarte denbora gorde [sec]</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3880"/>
+<location filename="../dialogs/settingsdialog.ui" line="3947"/>
 <source>Notify about all external modifications of the current note</source>
 <translation>Jakinarazi uneko oharraren kanpoko aldaketei buruz</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4344"/>
-<location filename="../dialogs/settingsdialog.cpp" line="2297"/>
-<location filename="../dialogs/settingsdialog.cpp" line="2305"/>
-<location filename="../dialogs/settingsdialog.cpp" line="4321"/>
-<location filename="../dialogs/settingsdialog.cpp" line="4326"/>
+<location filename="../dialogs/settingsdialog.ui" line="4405"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2310"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2318"/>
+<location filename="../dialogs/settingsdialog.cpp" line="4350"/>
+<location filename="../dialogs/settingsdialog.cpp" line="4355"/>
 <source>Database</source>
 <translation>Datu basearen</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4350"/>
+<location filename="../dialogs/settingsdialog.ui" line="4411"/>
 <source>Reinitialize Database</source>
 <translation>Berrerabilitu datu-basea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4283"/>
+<location filename="../dialogs/settingsdialog.ui" line="4344"/>
 <source>Clear application data and exit</source>
 <translation>Garbitu aplikazioaren datuak eta irten</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4289"/>
+<location filename="../dialogs/settingsdialog.ui" line="4350"/>
 <source>This button allows you to clear all settings, remove the local todo database and exit QOwnNotes.</source>
 <translation>Botoi honek ezarpen guztiak garbitu ahal izango dituzu, tokiko todo datu-basea kendu eta QOwnNotes irteteko.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4299"/>
-<location filename="../dialogs/settingsdialog.cpp" line="2371"/>
+<location filename="../dialogs/settingsdialog.ui" line="4360"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2384"/>
 <source>Clear app data and exit</source>
 <translation>Garbitu aplikazioaren datuak eta irten</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4078"/>
+<location filename="../dialogs/settingsdialog.ui" line="4145"/>
 <source>Update dialog</source>
 <translation>Eguneratu elkarrizketa-koadroa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4158"/>
-<source>Default note file extension</source>
-<translation>Lehenetsitako ohar fitxategi luzapena</translation>
-</message>
-<message>
-<location filename="../dialogs/settingsdialog.ui" line="4243"/>
+<location filename="../dialogs/settingsdialog.ui" line="4304"/>
 <source>External editor</source>
 <translation>Kanpoko editorea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4256"/>
+<location filename="../dialogs/settingsdialog.ui" line="4317"/>
 <source>path to external editor, leave empty for default</source>
 <translation>kanpoko editorerako bidea, hutsik utzi lehenespenez</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4266"/>
-<location filename="../dialogs/settingsdialog.ui" line="5418"/>
+<location filename="../dialogs/settingsdialog.ui" line="4327"/>
+<location filename="../dialogs/settingsdialog.ui" line="5486"/>
 <source>set external editor</source>
 <translation>ezarri kanpoko editorea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1636"/>
+<location filename="../dialogs/settingsdialog.ui" line="1662"/>
 <source>App metrics</source>
 <translation>Aplikazioaren neurriak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1654"/>
+<location filename="../dialogs/settingsdialog.ui" line="1680"/>
 <source>Anonymous usage data helps to decide what parts of QOwnNotes to improve next and to find and fix bugs. Please disable it only if you really can't live with it.</source>
 <translation>Erabilera anonimoaren datuek QOwnNotes-en zein atal hobetu nahi duten erabakitzen laguntzen du eta akatsak aurkitzeko eta konpondu. Mesedez, desgaitu ezazu benetan ezin baduzu berarekin bizi.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1686"/>
+<location filename="../dialogs/settingsdialog.ui" line="1712"/>
 <source>This data includes anonymous information about what features of the app are used.</source>
 <translation>Datu hauek aplikazioaren ezaugarriei buruzko informazio anonimoa biltzen dute.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1740"/>
+<location filename="../dialogs/settingsdialog.ui" line="1766"/>
 <source>App heartbeat</source>
 <translation>App heartbeat</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1758"/>
+<location filename="../dialogs/settingsdialog.ui" line="1784"/>
 <source>A small heartbeat request is sent periodically while QOwnNotes is running. Make a developer happy by letting him know that someone is using QOwnNotes.</source>
 <translation>Bihotz-eskaera txiki eskaera bat aldizka bidaltzen da QOwnNotes exekutatzen ari den bitartean. Egin developer bat pozik norbaitek QOwnNotes erabiltzen ari dela jakin dezan.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2492"/>
+<location filename="../dialogs/settingsdialog.ui" line="2518"/>
 <source>Italian</source>
 <translation>Italiako</translation>
 </message>
@@ -5476,17 +5755,17 @@ Just probatu zeure burua sinkronizazio gatazkak lortzen badituzu eta balio handi
 <translation>Scriptgintza</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3333"/>
+<location filename="../dialogs/settingsdialog.ui" line="3359"/>
 <source>Your scripts</source>
 <translation>Zure script-ak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3417"/>
+<location filename="../dialogs/settingsdialog.ui" line="3443"/>
 <source>&amp;Remove script</source>
 <translation>&amp;Kendu script-a</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3696"/>
+<location filename="../dialogs/settingsdialog.ui" line="3756"/>
 <source>Click here to select your QML script</source>
 <translation>Egin klik hemen zure QML script-a hautatzeko</translation>
 </message>
@@ -5568,7 +5847,7 @@ Just probatu zeure burua sinkronizazio gatazkak lortzen badituzu eta balio handi
 </message>
 <message>
 <location filename="../dialogs/settingsdialog.ui" line="785"/>
-<location filename="../dialogs/settingsdialog.ui" line="3507"/>
+<location filename="../dialogs/settingsdialog.ui" line="3690"/>
 <source>Name:</source>
 <translation>Izena:</translation>
 </message>
@@ -5608,56 +5887,56 @@ Just probatu zeure burua sinkronizazio gatazkak lortzen badituzu eta balio handi
 <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Zure oharrak sinkronizatzeko oraindik &lt;a href="https://owncloud.org/"&gt;&lt;span style=" font-weight:600"&gt;ownCloud sinkronizazio klientea&lt;/span&gt;&lt;/a&gt; beharko duzu (edo mahaigaineko beste sinkronizazio kliente bat)!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1033"/>
+<location filename="../dialogs/settingsdialog.ui" line="1034"/>
 <source>Select a connection to edit</source>
 <translation>Hautatu konexio bat editatzeko</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1040"/>
-<location filename="../dialogs/settingsdialog.ui" line="1043"/>
+<location filename="../dialogs/settingsdialog.ui" line="1041"/>
+<location filename="../dialogs/settingsdialog.ui" line="1044"/>
 <source>Add connection</source>
 <translation>Gehitu konexioa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1054"/>
-<location filename="../dialogs/settingsdialog.ui" line="1057"/>
+<location filename="../dialogs/settingsdialog.ui" line="1055"/>
+<location filename="../dialogs/settingsdialog.ui" line="1058"/>
 <source>Remove connection</source>
 <translation>Kendu konexioa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1138"/>
-<location filename="../dialogs/settingsdialog.ui" line="1925"/>
+<location filename="../dialogs/settingsdialog.ui" line="1139"/>
+<location filename="../dialogs/settingsdialog.ui" line="1951"/>
 <source>Username:</source>
 <translation>Erabiltzaile izena:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1163"/>
+<location filename="../dialogs/settingsdialog.ui" line="1164"/>
 <source>Your ownCloud username</source>
 <translation>Zure ownCloud erabiltzaile izena</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1173"/>
-<location filename="../dialogs/settingsdialog.ui" line="1960"/>
+<location filename="../dialogs/settingsdialog.ui" line="1174"/>
+<location filename="../dialogs/settingsdialog.ui" line="1986"/>
 <source>Password:</source>
 <translation>Pasahitza:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1201"/>
+<location filename="../dialogs/settingsdialog.ui" line="1202"/>
 <source>Your ownCloud password</source>
 <translation>Zure ownCloud pasahitza</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1229"/>
+<location filename="../dialogs/settingsdialog.ui" line="1230"/>
 <source>&amp;Connect to ownCloud server</source>
 <translation>&amp;Konektatu ownCloud zerbitzarira</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1249"/>
+<location filename="../dialogs/settingsdialog.ui" line="1250"/>
 <source>Connection status</source>
 <translation>Konexio egoera</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1071"/>
+<location filename="../dialogs/settingsdialog.ui" line="1072"/>
 <source>Connection name:</source>
 <translation>Konexioaren izena:</translation>
 </message>
@@ -5674,386 +5953,396 @@ Just probatu zeure burua sinkronizazio gatazkak lortzen badituzu eta balio handi
 </translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1404"/>
+<location filename="../dialogs/settingsdialog.ui" line="1405"/>
 <source>Enable QOwnNotesAPI app</source>
 <translation>Gaitu QOwnNotesAPI aplikazioa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1810"/>
+<location filename="../dialogs/settingsdialog.ui" line="1428"/>
+<source>The login flow v2 only works with Nextcloud, not with ownCloud. If you have troubles you need to create an app password by hand.</source>
+<translation type="unfinished">The login flow v2 only works with Nextcloud, not with ownCloud. If you have troubles you need to create an app password by hand.</translation>
+</message>
+<message>
+<location filename="../dialogs/settingsdialog.ui" line="1431"/>
+<source>Login to Nextcloud to grant access</source>
+<translation type="unfinished">Login to Nextcloud to grant access</translation>
+</message>
+<message>
+<location filename="../dialogs/settingsdialog.ui" line="1836"/>
 <source>Todo settings</source>
 <translation>Todo ezarpenak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1816"/>
+<location filename="../dialogs/settingsdialog.ui" line="1842"/>
 <source>Enable todo calendar support</source>
 <translation>Gaitu guztia egutegiaren laguntza</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2001"/>
+<location filename="../dialogs/settingsdialog.ui" line="2027"/>
 <source>Which cloud connection do you want to use?</source>
 <translation>Zer hodeiko konexio erabili nahi duzu?</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2013"/>
+<location filename="../dialogs/settingsdialog.ui" line="2039"/>
 <source>Select the calendars you want to use for the Todo list</source>
 <translation>Hautatu erabili nahi dituzun egutegiak Todo zerrendan</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2088"/>
+<location filename="../dialogs/settingsdialog.ui" line="2114"/>
 <source>Todo list settings</source>
 <translation>Guztiaren zerrenda ezarpenak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2094"/>
+<location filename="../dialogs/settingsdialog.ui" line="2120"/>
 <source>Saving an item also closes the Todo list</source>
 <translation>Elementu bat gordetzeak Denak zerrenda ixten du</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2206"/>
+<location filename="../dialogs/settingsdialog.ui" line="2232"/>
 <source>Indonesian</source>
 <translation>Indonesian</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2228"/>
+<location filename="../dialogs/settingsdialog.ui" line="2254"/>
 <source>Bengali</source>
 <translation>Bengali</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2239"/>
+<location filename="../dialogs/settingsdialog.ui" line="2265"/>
 <source>Bosnian</source>
 <translation>Bosniako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2250"/>
+<location filename="../dialogs/settingsdialog.ui" line="2276"/>
 <source>Bulgarian</source>
 <translation>Bulgariera</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2261"/>
+<location filename="../dialogs/settingsdialog.ui" line="2287"/>
 <source>Catalan</source>
 <translation>Katalanez</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2272"/>
+<location filename="../dialogs/settingsdialog.ui" line="2298"/>
 <source>Cebuano</source>
 <translation>Cebuano</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2294"/>
+<location filename="../dialogs/settingsdialog.ui" line="2320"/>
 <source>Danish</source>
 <translation>Danimarkako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2316"/>
+<location filename="../dialogs/settingsdialog.ui" line="2342"/>
 <source>Basque</source>
 <translation>Euskal</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2349"/>
+<location filename="../dialogs/settingsdialog.ui" line="2375"/>
 <source>Estonian</source>
 <translation>Estoniera</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2360"/>
+<location filename="../dialogs/settingsdialog.ui" line="2386"/>
 <source>Filipino</source>
 <translation>Filipinarra</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2371"/>
+<location filename="../dialogs/settingsdialog.ui" line="2397"/>
 <source>Finnish</source>
 <translation>Finlandiako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2393"/>
+<location filename="../dialogs/settingsdialog.ui" line="2419"/>
 <source>Irish</source>
 <translation>Irlandar</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2404"/>
+<location filename="../dialogs/settingsdialog.ui" line="2430"/>
 <source>Galician</source>
 <translation>Galiziako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2415"/>
+<location filename="../dialogs/settingsdialog.ui" line="2441"/>
 <source>Greek</source>
 <translation>Greziako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2426"/>
+<location filename="../dialogs/settingsdialog.ui" line="2452"/>
 <source>Hausa</source>
 <translation>Hausa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2437"/>
+<location filename="../dialogs/settingsdialog.ui" line="2463"/>
 <source>Hebrew</source>
 <translation>Hebreera</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2448"/>
+<location filename="../dialogs/settingsdialog.ui" line="2474"/>
 <source>Hindi</source>
 <translation>Hindi</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2470"/>
+<location filename="../dialogs/settingsdialog.ui" line="2496"/>
 <source>Hiligaynon</source>
 <translation>Hiligaynon</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2481"/>
+<location filename="../dialogs/settingsdialog.ui" line="2507"/>
 <source>Icelandic</source>
 <translation>Islandiera</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2503"/>
+<location filename="../dialogs/settingsdialog.ui" line="2529"/>
 <source>Korean</source>
 <translation>Koreera</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2514"/>
+<location filename="../dialogs/settingsdialog.ui" line="2540"/>
 <source>Kurdish</source>
 <translation>Kurduen</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2536"/>
+<location filename="../dialogs/settingsdialog.ui" line="2562"/>
 <source>Latvian</source>
 <translation>Letoniako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2547"/>
+<location filename="../dialogs/settingsdialog.ui" line="2573"/>
 <source>Lithuanian</source>
 <translation>Lituaniera</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2558"/>
+<location filename="../dialogs/settingsdialog.ui" line="2584"/>
 <source>Macedonian</source>
 <translation>Mazedoniera</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2591"/>
+<location filename="../dialogs/settingsdialog.ui" line="2617"/>
 <source>Norwegian</source>
 <translation>Norvegiako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2635"/>
+<location filename="../dialogs/settingsdialog.ui" line="2661"/>
 <source>Uzbek</source>
 <translation>Uzbekera</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2679"/>
+<location filename="../dialogs/settingsdialog.ui" line="2705"/>
 <source>Punjabi</source>
 <translation>Punjabera</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2624"/>
+<location filename="../dialogs/settingsdialog.ui" line="2650"/>
 <source>Persian</source>
 <translation>Persian</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2690"/>
+<location filename="../dialogs/settingsdialog.ui" line="2716"/>
 <source>Romanian</source>
 <translation>Errumaniera</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2712"/>
+<location filename="../dialogs/settingsdialog.ui" line="2738"/>
 <source>Serbian</source>
 <translation>Serbian</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2723"/>
+<location filename="../dialogs/settingsdialog.ui" line="2749"/>
 <source>Albanian</source>
 <translation>Albaniera</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2756"/>
+<location filename="../dialogs/settingsdialog.ui" line="2782"/>
 <source>Slovak</source>
 <translation>Eslovakiako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2767"/>
+<location filename="../dialogs/settingsdialog.ui" line="2793"/>
 <source>Slovenian</source>
 <translation>Esloveniako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2778"/>
+<location filename="../dialogs/settingsdialog.ui" line="2804"/>
 <source>Swedish</source>
 <translation>Suediako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2789"/>
+<location filename="../dialogs/settingsdialog.ui" line="2815"/>
 <source>Tagalog</source>
 <translation>Tagalog</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2822"/>
+<location filename="../dialogs/settingsdialog.ui" line="2848"/>
 <source>Turkish</source>
 <translation>Turkiera</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2855"/>
+<location filename="../dialogs/settingsdialog.ui" line="2881"/>
 <source>Urdu</source>
 <translation>Urdu</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2888"/>
+<location filename="../dialogs/settingsdialog.ui" line="2914"/>
 <source>Chinese Simplified</source>
 <translation>Txinera sinplifikatua</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2899"/>
+<location filename="../dialogs/settingsdialog.ui" line="2925"/>
 <source>Chinese Traditional</source>
 <translation>Txinatar tradizionala</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2979"/>
+<location filename="../dialogs/settingsdialog.ui" line="3005"/>
 <source>Enable dark mode application icon and tray icon</source>
 <translation>Gaitu modu ilunaren aplikazioaren ikonoa eta erretiluko ikonoa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2986"/>
+<location filename="../dialogs/settingsdialog.ui" line="3012"/>
 <source>You might also want to choose another editor color schema in the editor settings in dark mode.</source>
 <translation>Agian modu ilunaren editore ezarpenetan beste editore koloreko eskema aukeratu nahiko duzu.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3089"/>
+<location filename="../dialogs/settingsdialog.ui" line="3115"/>
 <source>Enable dark mode icon theme</source>
 <translation>Gaitu modu iluna ikonoaren gaia</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3019"/>
+<location filename="../dialogs/settingsdialog.ui" line="3045"/>
 <source>System tray</source>
 <translation>Sistema erretilua</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3028"/>
+<location filename="../dialogs/settingsdialog.ui" line="3054"/>
 <source>Show system tray icon</source>
 <translation>Erakutsi sistemaren bandejako ikonoa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3038"/>
+<location filename="../dialogs/settingsdialog.ui" line="3064"/>
 <source>Start application hidden</source>
 <translation>Hasi aplikazioa ezkutatuta</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3048"/>
+<location filename="../dialogs/settingsdialog.ui" line="3074"/>
 <source>Interface style</source>
 <translation>Interfaze estiloa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3079"/>
+<location filename="../dialogs/settingsdialog.ui" line="3105"/>
 <source>Enforce system icon theme</source>
 <translation>Aplikatu sistema ikonoaren gaia</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3185"/>
+<location filename="../dialogs/settingsdialog.ui" line="3211"/>
 <source>Override interface font size</source>
 <translation>Ezarri interfazearen letra-tamaina</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3194"/>
+<location filename="../dialogs/settingsdialog.ui" line="3220"/>
 <source>Interface font size:</source>
 <translation>Interfazearen letra-tamaina:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3406"/>
+<location filename="../dialogs/settingsdialog.ui" line="3432"/>
 <source>&amp;Add script…</source>
 <translation>&amp;Gehitu script-a…</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4052"/>
+<location filename="../dialogs/settingsdialog.ui" line="4119"/>
 <source>Use legacy way to link to notes, images and attachments</source>
 <translation>Erabili oharretara irudiak eta eranskinak estekatzeko modu zaharkitua</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3897"/>
+<location filename="../dialogs/settingsdialog.ui" line="3964"/>
 <source>When opening notes the cursor position inside the note will now be restored to the position when the note was last visited in the current session</source>
 <translation>Oharrak irekitzean oharraren barruan dagoen kurtsorearen posizioa posizioan berreskuratuko da, uneko saioan azken aldiz bisitatu zenean</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3867"/>
+<location filename="../dialogs/settingsdialog.ui" line="3934"/>
 <source>By default the headline will generated automatically</source>
 <translation>Lehenespenez, titularra automatikoki sortuko da</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3870"/>
+<location filename="../dialogs/settingsdialog.ui" line="3937"/>
 <source>The shortcut to create a new note asks for a headline</source>
 <translation>Ohar berri bat sortzeko lasterbidea izenburu bat eskatzen du</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3936"/>
+<location filename="../dialogs/settingsdialog.ui" line="4003"/>
 <source>Automatically close the note folder database to prevent problems with sync tools</source>
 <translation>Automatikoki itxi ohar-karpeten datu-basea sinkronizazio tresnekin arazoak ekiditeko</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3939"/>
+<location filename="../dialogs/settingsdialog.ui" line="4006"/>
 <source>Automatically close the note folder database</source>
 <translation>Itxi automatikoki ohar-karpeten datu-basea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4100"/>
+<location filename="../dialogs/settingsdialog.ui" line="4167"/>
 <source>Search engine</source>
 <translation>Bilatzailea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4122"/>
+<location filename="../dialogs/settingsdialog.ui" line="4189"/>
 <source>Message boxes</source>
 <translation>Mezu kutxak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4128"/>
-<location filename="../dialogs/settingsdialog.cpp" line="3991"/>
+<location filename="../dialogs/settingsdialog.ui" line="4195"/>
+<location filename="../dialogs/settingsdialog.cpp" line="4027"/>
 <source>Reset message boxes</source>
 <translation>Berrezarri mezu-koadroak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4321"/>
-<location filename="../dialogs/settingsdialog.cpp" line="4057"/>
-<location filename="../dialogs/settingsdialog.cpp" line="4081"/>
+<location filename="../dialogs/settingsdialog.ui" line="4382"/>
+<location filename="../dialogs/settingsdialog.cpp" line="4093"/>
+<location filename="../dialogs/settingsdialog.cpp" line="4114"/>
 <source>Import settings</source>
 <translation>Inportatu ezarpenak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4328"/>
-<location filename="../dialogs/settingsdialog.cpp" line="4023"/>
+<location filename="../dialogs/settingsdialog.ui" line="4389"/>
+<location filename="../dialogs/settingsdialog.cpp" line="4059"/>
 <source>Export settings</source>
 <translation>Esportatu ezarpenak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4476"/>
+<location filename="../dialogs/settingsdialog.ui" line="4537"/>
 <source>Open issue assistant</source>
 <translation>Ireki arazoen laguntzailea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4443"/>
+<location filename="../dialogs/settingsdialog.ui" line="4504"/>
 <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The best way to post issues is to use the issue assistant by pressing the &lt;span style=" font-weight:600;"&gt;Open issue assistant&lt;/span&gt; button on the bottom.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
 <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt; &lt;p&gt; Gai bat bidaltzeko modurik onena arazoa erabiltzea da &lt;span style = "font-weight: 600;&gt; sakatuz&gt;Ireki beheko laguntzaile &lt;/span&gt; botoia behean. &lt;/p&gt; &lt;/body&gt; &lt;/html&gt;</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4708"/>
+<location filename="../dialogs/settingsdialog.ui" line="4769"/>
 <source>Ignore code font size to allow zooming</source>
 <translation>Ez ikusi egin kodeen letra-tipoaren tamaina zooma handitzeko</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4702"/>
+<location filename="../dialogs/settingsdialog.ui" line="4763"/>
 <source>Rendering</source>
 <translation>Bihurtzean</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4722"/>
+<location filename="../dialogs/settingsdialog.ui" line="4783"/>
 <source>Enable underline rendering</source>
 <translation>Gaitu azpimarrak errendatzea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5132"/>
+<location filename="../dialogs/settingsdialog.ui" line="5193"/>
 <source>Fully highlight blockquotes</source>
 <translation>Nabarmendu blokeatze guztiz</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5202"/>
+<location filename="../dialogs/settingsdialog.ui" line="5250"/>
 <source>Note-edit cursor width:</source>
 <translation>Oharra editatu kurtsorearen zabalera:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5151"/>
+<location filename="../dialogs/settingsdialog.ui" line="5212"/>
 <source>Enable Vim mode (some QOwnNotes shortcuts will not work)</source>
 <translation>Gaitu Vim modua (QOwnNotes lasterbide batzuk ez dira funtzionatuko)</translation>
 </message>
@@ -6073,12 +6362,12 @@ Just probatu zeure burua sinkronizazio gatazkak lortzen badituzu eta balio handi
 <translation>Ireki zeureCloud zerbitzariaren aplikazioaren pasahitza orria</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2569"/>
+<location filename="../dialogs/settingsdialog.ui" line="2595"/>
 <source>Māori</source>
 <translation>Māori</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2217"/>
+<location filename="../dialogs/settingsdialog.ui" line="2243"/>
 <source>Malay</source>
 <translation>Malay</translation>
 </message>
@@ -6088,615 +6377,650 @@ Just probatu zeure burua sinkronizazio gatazkak lortzen badituzu eta balio handi
 <translation type="unfinished">Web application</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1417"/>
+<location filename="../dialogs/settingsdialog.ui" line="819"/>
+<source>This also allows note files to be renamed</source>
+<translation type="unfinished">This also allows note files to be renamed</translation>
+</message>
+<message>
+<location filename="../dialogs/settingsdialog.ui" line="1418"/>
 <source>If your password doesn't work, create an app password (button on the right)</source>
 <translation type="unfinished">If your password doesn't work, create an app password (button on the right)</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2168"/>
+<location filename="../dialogs/settingsdialog.ui" line="1442"/>
+<source>Cancel Nextcloud login</source>
+<translation type="unfinished">Cancel Nextcloud login</translation>
+</message>
+<message>
+<location filename="../dialogs/settingsdialog.ui" line="2194"/>
 <source>If you want to help to translate QOwnNotes or update an existing translation please read: &lt;a href="%1"&gt;How can I help to translate QOwnNotes?&lt;/a&gt;</source>
 <translation>QOwnNotes itzultzen lagundu nahi baduzu edo lehendik dagoen itzulpena eguneratzen irakurri: &lt;a href="%1"&gt; Nola lagun dezaket QOwnNotes itzultzen? &lt;/a&gt;</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2525"/>
+<location filename="../dialogs/settingsdialog.ui" line="2551"/>
 <source>Khmer</source>
 <translation>Khmer</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2734"/>
+<location filename="../dialogs/settingsdialog.ui" line="2760"/>
 <source>Shona</source>
 <translation>Shona</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2745"/>
+<location filename="../dialogs/settingsdialog.ui" line="2771"/>
 <source>Sinhala</source>
 <translation>Sinhala</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2800"/>
+<location filename="../dialogs/settingsdialog.ui" line="2826"/>
 <source>Thai</source>
 <translation>Thai</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2811"/>
+<location filename="../dialogs/settingsdialog.ui" line="2837"/>
 <source>Vietnamese</source>
 <translation>Vietnamera</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2833"/>
+<location filename="../dialogs/settingsdialog.ui" line="2859"/>
 <source>Xhosa</source>
 <translation>Xhosa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2866"/>
+<location filename="../dialogs/settingsdialog.ui" line="2892"/>
 <source>Yiddish</source>
 <translation>Yiddish</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2877"/>
+<location filename="../dialogs/settingsdialog.ui" line="2903"/>
 <source>Zulu</source>
 <translation>Zulu</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2933"/>
+<location filename="../dialogs/settingsdialog.ui" line="2959"/>
 <source>Search for language</source>
 <translation>Hizkuntza bilatu
 </translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3296"/>
+<location filename="../dialogs/settingsdialog.ui" line="3322"/>
 <source>Action name</source>
 <translation>Ekintzaren izena
 </translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3301"/>
+<location filename="../dialogs/settingsdialog.ui" line="3327"/>
 <source>Local shortcut</source>
 <translation>Tokiko lasterbidea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3306"/>
+<location filename="../dialogs/settingsdialog.ui" line="3332"/>
 <source>Global shortcut</source>
 <translation>Zuzeneko lasterbidea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3907"/>
+<location filename="../dialogs/settingsdialog.ui" line="3974"/>
 <source>Disable this if you want to launch the application without opening a note</source>
 <translation>Desgaitu hau aplikazioa abiarazi nahi baduzu oharrik ireki gabe</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3910"/>
+<location filename="../dialogs/settingsdialog.ui" line="3977"/>
 <source>Open last accessed note at application startup</source>
 <translation>Ireki azken sarbidea aplikazioaren abiaraztean</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4357"/>
+<location filename="../dialogs/settingsdialog.ui" line="4225"/>
+<source>Note file extensions</source>
+<translation type="unfinished">Note file extensions</translation>
+</message>
+<message>
+<location filename="../dialogs/settingsdialog.ui" line="4263"/>
+<source>Files with the listed file extensions will be recognized as notes, the selected file extension will be used for new notes.</source>
+<translation type="unfinished">Files with the listed file extensions will be recognized as notes, the selected file extension will be used for new notes.</translation>
+</message>
+<message>
+<location filename="../dialogs/settingsdialog.ui" line="4273"/>
+<source>Add a new note file extension</source>
+<translation type="unfinished">Add a new note file extension</translation>
+</message>
+<message>
+<location filename="../dialogs/settingsdialog.ui" line="4287"/>
+<source>Remove selected note file extension</source>
+<translation type="unfinished">Remove selected note file extension</translation>
+</message>
+<message>
+<location filename="../dialogs/settingsdialog.ui" line="4418"/>
 <source>Checks the disk database integrity and fixes problems</source>
 <translation type="unfinished">Checks the disk database integrity and fixes problems</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4360"/>
+<location filename="../dialogs/settingsdialog.ui" line="4421"/>
 <source>Check integrity</source>
 <translation type="unfinished">Check integrity</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4367"/>
+<location filename="../dialogs/settingsdialog.ui" line="4428"/>
 <source>Be warned that reinitializing the database will also remove your cached todo items and configured note folders and scripts!</source>
 <translation type="unfinished">Be warned that reinitializing the database will also remove your cached todo items and configured note folders and scripts!</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4450"/>
+<location filename="../dialogs/settingsdialog.ui" line="4511"/>
 <source>GitHub doesn't need two spaces at the end of the line to do a line break</source>
 <translation>GitHub-ek ez ditu bi espazio behar lerroaren amaieran lerro jauzia egiteko</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4473"/>
+<location filename="../dialogs/settingsdialog.ui" line="4534"/>
 <source>This is the best way to open an issue</source>
 <translation>Hau da gai bat irekitzeko modurik onena</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4487"/>
+<location filename="../dialogs/settingsdialog.ui" line="4548"/>
 <source>Please use this in the issue tracker</source>
 <translation>Mesedez, erabili hau zenbakien jarraitzailean</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4490"/>
+<location filename="../dialogs/settingsdialog.ui" line="4551"/>
 <source>&amp;Copy debug information to clipboard</source>
 <translation>&amp;Kopiatu arazketaren informazioa arbelean</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4501"/>
+<location filename="../dialogs/settingsdialog.ui" line="4562"/>
 <source>Please don't use this in the issue tracker</source>
 <translation>Mesedez, ez erabili hau arazoen jarraitzailean</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4729"/>
+<location filename="../dialogs/settingsdialog.ui" line="4790"/>
 <source>Use editor highlighting styles also for the preview</source>
 <translation>Erabili editorearen nabarmentzeko estiloak ere aurrebista ikusteko</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4752"/>
+<location filename="../dialogs/settingsdialog.ui" line="4813"/>
 <source>Exporting</source>
 <translation>Esportatzen</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4758"/>
+<location filename="../dialogs/settingsdialog.ui" line="4819"/>
 <source>Use internal export styling for the PDF export and printing of the preview</source>
 <translation>Erabili barne esportazio estiloa PDF esportatzeko eta aurrebista inprimatzeko</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5066"/>
+<location filename="../dialogs/settingsdialog.ui" line="5127"/>
 <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You might want to take a look at all available &lt;a href="http://docs.qownnotes.org/en/latest/editor/time-formats/"&gt;time formats&lt;/a&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
 <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Agian erabilgarri dauden &lt;a href="http://docs.qownnotes.org/en/latest/editor/time-formats/"&gt;denbora formatu&lt;/a&gt; guztiak ikusi nahi dituzu.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5236"/>
+<location filename="../dialogs/settingsdialog.ui" line="5226"/>
 <source>Disable cursor blinking</source>
 <translation>Desgaitu kurtsorea keinuka</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5243"/>
+<location filename="../dialogs/settingsdialog.ui" line="5233"/>
 <source>Automatically remove trailing spaces in the note text</source>
 <translation>Kendu oharreko testuaren amaierako espazioak automatikoki</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5253"/>
+<location filename="../dialogs/settingsdialog.ui" line="5311"/>
+<source>Show line numbers</source>
+<translation type="unfinished">Show line numbers</translation>
+</message>
+<message>
+<location filename="../dialogs/settingsdialog.ui" line="5321"/>
 <source>Tabs and Indents</source>
 <translation>Fitxak eta koska</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5261"/>
+<location filename="../dialogs/settingsdialog.ui" line="5329"/>
 <source>Use tab character instead of spaces</source>
 <translation>Erabili fitxa karaktereak lekuen ordez</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5268"/>
+<location filename="../dialogs/settingsdialog.ui" line="5336"/>
 <source>Indent:</source>
 <translation>Koska:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5648"/>
-<location filename="../dialogs/settingsdialog.ui" line="5657"/>
+<location filename="../dialogs/settingsdialog.ui" line="5716"/>
+<location filename="../dialogs/settingsdialog.ui" line="5725"/>
 <source>Regular expressions of note subfolders to ignore, separated by ";"</source>
 <translation>Ohar ez diren karpeten adierazpen erregularrak ";" bereizita;
 </translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5651"/>
+<location filename="../dialogs/settingsdialog.ui" line="5719"/>
 <source>Ignored subfolders</source>
 <translation>Ezikusi azpikarpetak
 </translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5667"/>
+<location filename="../dialogs/settingsdialog.ui" line="5735"/>
 <source>Reset ignored subfolders</source>
 <translation>Berrezarri karpetak alde batera utzi
 </translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5703"/>
+<location filename="../dialogs/settingsdialog.ui" line="5771"/>
 <source>Restore open note tabs at application startup and when note folders are switched</source>
 <translation>Leheneratu ohar fitxak irekita aplikazioaren abiapuntuan eta ohar karpeta aldatzen denean</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5788"/>
+<location filename="../dialogs/settingsdialog.ui" line="5856"/>
 <source>Hide 'Note count' with tags (increases performance)</source>
 <translation>Fshih 'numërimin e shënimet' me etiketa (rritje performancën)</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5824"/>
+<location filename="../dialogs/settingsdialog.ui" line="5892"/>
 <source>Show the number of matches in each note</source>
 <translation>Erakutsi nota bakoitzeko partida kopurua</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6229"/>
+<location filename="../dialogs/settingsdialog.ui" line="6326"/>
 <source>You can use the &lt;a href="%1"&gt;QOwnNotes Web App&lt;/a&gt; to be able to insert photos into QOwnNotes on your desktop.</source>
 <translation type="unfinished">You can use the &lt;a href="%1"&gt;QOwnNotes Web App&lt;/a&gt; to be able to insert photos into QOwnNotes on your desktop.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6245"/>
+<location filename="../dialogs/settingsdialog.ui" line="6342"/>
 <source>QOwnNotes web application</source>
 <translation type="unfinished">QOwnNotes web application</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6251"/>
+<location filename="../dialogs/settingsdialog.ui" line="6432"/>
 <source>Server URL:</source>
 <translation type="unfinished">Server URL:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6265"/>
+<location filename="../dialogs/settingsdialog.ui" line="6489"/>
+<source>Show QR code</source>
+<translation type="unfinished">Show QR code</translation>
+</message>
+<message>
+<location filename="../dialogs/settingsdialog.ui" line="6381"/>
 <source>Security token:</source>
 <translation type="unfinished">Security token:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6272"/>
+<location filename="../dialogs/settingsdialog.ui" line="6439"/>
 <source>You need to enter this token in the QOwnNotes web application to be able to talk to your QOwnNotes desktop application.</source>
 <translation type="unfinished">You need to enter this token in the QOwnNotes web application to be able to talk to your QOwnNotes desktop application.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6296"/>
+<location filename="../dialogs/settingsdialog.ui" line="6371"/>
 <source>A web socket connetion to this server will be opened to act as bridge between the QOwnNotes web application and the QOwnNotes desktop application.</source>
 <translation type="unfinished">A web socket connetion to this server will be opened to act as bridge between the QOwnNotes web application and the QOwnNotes desktop application.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6322"/>
+<location filename="../dialogs/settingsdialog.ui" line="6449"/>
 <source>Copy security token to clipboard</source>
 <translation type="unfinished">Copy security token to clipboard</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6336"/>
+<location filename="../dialogs/settingsdialog.ui" line="6402"/>
 <source>Generate new security token</source>
 <translation type="unfinished">Generate new security token</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6350"/>
+<location filename="../dialogs/settingsdialog.ui" line="6463"/>
 <source>Reset the URL to default</source>
 <translation type="unfinished">Reset the URL to default</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6370"/>
+<location filename="../dialogs/settingsdialog.ui" line="6292"/>
 <source>QOwnNotes web application support</source>
 <translation type="unfinished">QOwnNotes web application support</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6376"/>
+<location filename="../dialogs/settingsdialog.ui" line="6298"/>
 <source>Enable web application support</source>
 <translation type="unfinished">Enable web application support</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5479"/>
+<location filename="../dialogs/settingsdialog.ui" line="5547"/>
 <source>Note list panel</source>
 <translation>Ohartu zerrendako panela</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5485"/>
+<location filename="../dialogs/settingsdialog.ui" line="5553"/>
 <source>Show notes in the note list with preview</source>
 <translation>Erakutsi oharrak oharren zerrendan aurrebista erabiliz</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5558"/>
+<location filename="../dialogs/settingsdialog.ui" line="5626"/>
 <source>Instead of a note list use a note tree with all the subfolders (if they are turned on for the note folder)</source>
 <translation>Ohar-zerrenda erabili beharrean, erabili azpikarpeta guztiekin ohar-zuhaitza (ohar-karpeta aktibatuta badago)</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5834"/>
+<location filename="../dialogs/settingsdialog.ui" line="5902"/>
 <source>Note folder panel</source>
 <translation>Ohar karpeta panela</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5840"/>
+<location filename="../dialogs/settingsdialog.ui" line="5908"/>
 <source>Show note folders as buttons instead of in a select box</source>
 <translation>Erakutsi nota karpetak botoia gisa hautatutako koadroan beharrean</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5982"/>
+<location filename="../dialogs/settingsdialog.ui" line="6050"/>
 <source>Panels can be turned on and off in the &lt;i&gt;Window / Panels&lt;/i&gt; main menu and you can also configure different &lt;i&gt;Workspaces&lt;/i&gt; for different panel configurations.</source>
 <translation>Panelak &lt;i&gt; Leihoak / Panelak &lt;/i&gt; menu nagusian aktibatu eta desaktibatu daitezke eta &lt;i&gt; Languneak &lt;/i&gt; desberdinak konfigura ditzakezu konfigurazio desberdinetarako.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6059"/>
+<location filename="../dialogs/settingsdialog.ui" line="6127"/>
 <source>Bookmarks</source>
 <translation>Bookmarks</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6065"/>
+<location filename="../dialogs/settingsdialog.ui" line="6133"/>
 <source>Notes with this tag will be used for fetching bookmarks</source>
 <translation>Etiketa honekin oharrak laster-markak eskuratzeko erabiliko dira</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6068"/>
+<location filename="../dialogs/settingsdialog.ui" line="6136"/>
 <source>Tag name for bookmarks notes</source>
 <translation>Etiketa izenen laster marken oharrak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6075"/>
+<location filename="../dialogs/settingsdialog.ui" line="6143"/>
 <source>Bookmarks tag:</source>
 <translation>Laster-markak etiketa:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6082"/>
+<location filename="../dialogs/settingsdialog.ui" line="6150"/>
 <source>By default the browser extension will show all links of the current note. You can also make it show special bookmark links of notes with a certain tag. For more information about the bookmark link syntax click &lt;a href="%1"&gt;here&lt;/a&gt;.</source>
 <translation>Lehenespenez, nabigatzailearen luzapena uneko oharraren estekak erakutsiko ditu. Laster-marka esteken esteka bereziak ere egin ditzakezu etiketa jakin batekin. Laster-marken esteka sintaxiari buruzko informazio gehiago nahi baduzu, egin klik &lt;a href="%1"&gt; hemen &lt;/a&gt; sakatuta.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6095"/>
+<location filename="../dialogs/settingsdialog.ui" line="6163"/>
 <source>Bookmarks note name:</source>
 <translation>Laster markak oharraren izena:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6102"/>
+<location filename="../dialogs/settingsdialog.ui" line="6170"/>
 <source>This note will be used for adding new bookmarks from the browser extension</source>
 <translation>Ohar hau nabigatzailearen luzapenetik laster-marka berriak gehitzeko erabiliko da</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6105"/>
+<location filename="../dialogs/settingsdialog.ui" line="6173"/>
 <source>Note name for adding new bookmarks</source>
 <translation>Oharra izena laster-marka berriak gehitzeko</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6115"/>
+<location filename="../dialogs/settingsdialog.ui" line="6183"/>
 <source>Web socket server</source>
 <translation>Web socket zerbitzaria</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6121"/>
+<location filename="../dialogs/settingsdialog.ui" line="6189"/>
 <source>Socket server port:</source>
 <translation>Socket zerbitzariaren ataka:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6141"/>
+<location filename="../dialogs/settingsdialog.ui" line="6209"/>
 <source>Reset the socket server port</source>
 <translation type="unfinished">Reset the socket server port</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6155"/>
-<location filename="../dialogs/settingsdialog.ui" line="6282"/>
+<location filename="../dialogs/settingsdialog.ui" line="6223"/>
+<location filename="../dialogs/settingsdialog.ui" line="6388"/>
 <source>Show security token</source>
 <translation>Erakutsi segurtasun token-a</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6191"/>
+<location filename="../dialogs/settingsdialog.ui" line="6259"/>
 <source>Web socket server support</source>
 <translation>Webgune socket zerbitzariaren laguntza</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6197"/>
+<location filename="../dialogs/settingsdialog.ui" line="6265"/>
 <source>Enable socket server</source>
 <translation>Gaitu socket zerbitzaria</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="6172"/>
+<location filename="../dialogs/settingsdialog.ui" line="6240"/>
 <source>Install the &lt;a href="%1"&gt;Web Companion browser extension&lt;/a&gt; from the &lt;a href="%2"&gt;Chrome Web Store&lt;/a&gt; or &lt;a href="%3"&gt;Firefox Add-ons page&lt;/a&gt; to use QOwnNotes as web clipper.</source>
 <translation>Instalatu &lt;a href="%1"&gt; Web Laguntzailea nabigatzailea luzapena &lt;/a&gt; &lt;a href="%2"&gt; Chrome Web denda &lt;/a&gt; edo &lt;a href="%3"&gt; Firefox Gehigarria QOwnNotes webguneak erabiltzeko web orria erabiltzeko orria &lt;/a&gt;.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="819"/>
-<source>Allow the note file name to be different from the headline.&lt;br&gt;Beware that ownCloud Notes needs the file name to be the same as the headline!</source>
-<translation>Baimendu oharren fitxategiaren izena goiburua ez izatea.&lt;br&gt;Kontuz ownCloud Notes-ek fitxategiaren izenburua titularraren berdina izan behar duela!</translation>
-</message>
-<message>
-<location filename="../dialogs/settingsdialog.ui" line="5687"/>
+<location filename="../dialogs/settingsdialog.ui" line="5755"/>
 <source>Note edit panel</source>
 <translation>Oharra editatu panela</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5693"/>
+<location filename="../dialogs/settingsdialog.ui" line="5761"/>
 <source>If this is disabled you are able to create more complex panel layouts, but all panels will be resized if the window is resized</source>
 <translation>Hau desgaituta badago paneleko diseinu konplexuagoak sortu ahal izango dituzu, baina panel guztiak tamainaz aldatuko dira leihoa tamainaz aldatuko balitz</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5696"/>
+<location filename="../dialogs/settingsdialog.ui" line="5764"/>
 <source>Use the note edit panel as fixed central widget to be resized if the window or other panels are resized</source>
 <translation>Erabili ohar editazio panela finkoa widget gisa aldatu beharreko leihoa edo beste panelak tamainaz aldatzen badira</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5811"/>
+<location filename="../dialogs/settingsdialog.ui" line="5879"/>
 <source>Note search panel</source>
 <translation>Oharra bilaketa-panela</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5817"/>
+<location filename="../dialogs/settingsdialog.ui" line="5885"/>
 <source>Disable auto-completion of previous searches</source>
 <translation>Desgaitu aurreko bilaketen automatikoki</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5713"/>
+<location filename="../dialogs/settingsdialog.ui" line="5781"/>
 <source>Navigation panel</source>
 <translation>Nabigazio panela</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5719"/>
+<location filename="../dialogs/settingsdialog.ui" line="5787"/>
 <source>Hide navigation item search bar</source>
 <translation>Ezkutatu nabigazio-elementuen bilaketa-barra</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5854"/>
+<location filename="../dialogs/settingsdialog.ui" line="5922"/>
 <source>Local trash settings</source>
 <translation>Tokiko zakarrontzien ezarpenak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5888"/>
+<location filename="../dialogs/settingsdialog.ui" line="5956"/>
 <source>Remove trashed notes after:</source>
 <translation>Kendu zakarrontziak:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5895"/>
+<location filename="../dialogs/settingsdialog.ui" line="5963"/>
 <source> days</source>
 <extracomment>seconds</extracomment>
 <translation>egun</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5914"/>
+<location filename="../dialogs/settingsdialog.ui" line="5982"/>
 <source>Automatically remove trashed notes after a certain time</source>
 <translation>Kendu automatikoki zakarrontzien oharrak denbora jakin baten ondoren</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5940"/>
+<location filename="../dialogs/settingsdialog.ui" line="6008"/>
 <source>Local trash support</source>
 <translation>Tokiko zakarrontziko euskarria</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5946"/>
+<location filename="../dialogs/settingsdialog.ui" line="6014"/>
 <source>Enable local trash</source>
 <translation>Gaitu zaborra lokala</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5963"/>
+<location filename="../dialogs/settingsdialog.ui" line="6031"/>
 <source>Layout selector</source>
 <translation>Diseinu-hautatzailea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5969"/>
+<location filename="../dialogs/settingsdialog.ui" line="6037"/>
 <source>You can set a new layout here. Keep in mind that you always can modify the position of the panels with the &lt;i&gt;Unlock panels&lt;/i&gt; button.</source>
 <translation>Diseinu berri bat hemen ezar dezakezu. Gogoan izan beti panelen posizioa alda dezakezu &lt;i&gt; Desblokeatu panelak &lt;/i&gt; botoiarekin.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5178"/>
+<location filename="../dialogs/settingsdialog.ui" line="5274"/>
 <source>Reset the cursor width</source>
 <translation>Kurtsorearen zabalera berrezarri</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5353"/>
+<location filename="../dialogs/settingsdialog.ui" line="5421"/>
 <source>External git log command to show the git versions of a note</source>
 <translation>Git log kanpoko komandoa ohar baten git bertsioak erakusteko</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5359"/>
+<location filename="../dialogs/settingsdialog.ui" line="5427"/>
 <source>Enter a command to be used to show a git log (like for example "gitk")</source>
 <extracomment>Please don't translate "%notePath%"</extracomment>
 <translation>Sartu git log bat erakusteko komando bat (adibidez "gitk")</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5379"/>
+<location filename="../dialogs/settingsdialog.ui" line="5447"/>
 <source>If you use this setting you will get a new menu entry to show the git versions if you right-click a note.</source>
 <extracomment>Please don't translate "%notePath%"</extracomment>
 <translation>Ezarpen hau erabiltzen baduzu, menuko sarrera berri bat jasoko duzu git bertsioak erakusteko, eskuineko botoiarekin klik egiten baduzu ohar batean.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5499"/>
+<location filename="../dialogs/settingsdialog.ui" line="5567"/>
 <source>Show all notes of a tag including the notes of their children-tags</source>
 <translation>Erakutsi etiketa baten oharrak haurren etiketen oharrak barne</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5492"/>
+<location filename="../dialogs/settingsdialog.ui" line="5560"/>
 <source>Show all notes in a folder including their subfolders (only works if subfolders are turned on)</source>
 <translation>Erakutsi ohar guztiak karpeta batean, haien azpikarpetak barne (azpikarpetak aktibatuta daudenean bakarrik funtzionatzen du)</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5229"/>
+<location filename="../dialogs/settingsdialog.ui" line="5219"/>
 <source>Highlight the current line</source>
 <translation>Nabarmendu uneko lerroa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5446"/>
+<location filename="../dialogs/settingsdialog.ui" line="5514"/>
 <source>Don't forget to enable git support for your note folders and to configure your name and email address for your git client, for example with these terminal commands:</source>
 <translation>Ez ahaztu zure oharren karpeten git euskarria gaitzea eta zure izena eta helbide elektronikoa zure git bezeroarentzako konfiguratu, adibidez terminal komando hauekin:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5729"/>
+<location filename="../dialogs/settingsdialog.ui" line="5797"/>
 <source>Tags panel</source>
 <translation>Etiketa panelak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5532"/>
-<location filename="../dialogs/settingsdialog.ui" line="5611"/>
-<location filename="../dialogs/settingsdialog.ui" line="5758"/>
+<location filename="../dialogs/settingsdialog.ui" line="5600"/>
+<location filename="../dialogs/settingsdialog.ui" line="5679"/>
+<location filename="../dialogs/settingsdialog.ui" line="5826"/>
 <source>Order</source>
 <translation>Agindua</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5541"/>
-<location filename="../dialogs/settingsdialog.ui" line="5617"/>
-<location filename="../dialogs/settingsdialog.ui" line="5764"/>
+<location filename="../dialogs/settingsdialog.ui" line="5609"/>
+<location filename="../dialogs/settingsdialog.ui" line="5685"/>
+<location filename="../dialogs/settingsdialog.ui" line="5832"/>
 <source>Ascending</source>
 <translation>Goruntz</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5548"/>
-<location filename="../dialogs/settingsdialog.ui" line="5624"/>
-<location filename="../dialogs/settingsdialog.ui" line="5771"/>
+<location filename="../dialogs/settingsdialog.ui" line="5616"/>
+<location filename="../dialogs/settingsdialog.ui" line="5692"/>
+<location filename="../dialogs/settingsdialog.ui" line="5839"/>
 <source>Descending</source>
 <translation>Beheranzko</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5506"/>
-<location filename="../dialogs/settingsdialog.ui" line="5581"/>
-<location filename="../dialogs/settingsdialog.ui" line="5735"/>
+<location filename="../dialogs/settingsdialog.ui" line="5574"/>
+<location filename="../dialogs/settingsdialog.ui" line="5649"/>
+<location filename="../dialogs/settingsdialog.ui" line="5803"/>
 <source>Sort</source>
 <translation>Ordenatzeko</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5222"/>
+<location filename="../dialogs/settingsdialog.ui" line="5260"/>
 <source>Only use editor width setting in distraction free mode</source>
 <translation>Erabili soilik editorearen zabalera ezarpena distrazio gabe moduan</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5512"/>
-<location filename="../dialogs/settingsdialog.ui" line="5587"/>
-<location filename="../dialogs/settingsdialog.ui" line="5741"/>
+<location filename="../dialogs/settingsdialog.ui" line="5580"/>
+<location filename="../dialogs/settingsdialog.ui" line="5655"/>
+<location filename="../dialogs/settingsdialog.ui" line="5809"/>
 <source>Alphabetical</source>
 <translation>Alfabetikoki</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5748"/>
+<location filename="../dialogs/settingsdialog.ui" line="5816"/>
 <source>By last change / use</source>
 <translation>Azken aldaketa / erabilera</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5781"/>
+<location filename="../dialogs/settingsdialog.ui" line="5849"/>
 <source>Hide 'Find or create tag' search</source>
 <translation>Ezkutatu 'Bilatu edo sortu etiketa' bilaketa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5568"/>
+<location filename="../dialogs/settingsdialog.ui" line="5636"/>
 <source>Note subfolders panel</source>
 <translation>Ohartu azpikarpeten panela</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5574"/>
+<location filename="../dialogs/settingsdialog.ui" line="5642"/>
 <source>Show with full path</source>
 <translation>Erakutsi bide-izen osoa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5519"/>
-<location filename="../dialogs/settingsdialog.ui" line="5594"/>
+<location filename="../dialogs/settingsdialog.ui" line="5587"/>
+<location filename="../dialogs/settingsdialog.ui" line="5662"/>
 <source>By last change</source>
 <translation>Azken aldaketaren arabera</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5604"/>
+<location filename="../dialogs/settingsdialog.ui" line="5672"/>
 <source>Show root folder name</source>
 <translation>Erakutsi root karpeta izena</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5634"/>
+<location filename="../dialogs/settingsdialog.ui" line="5702"/>
 <source>Hide 'Find or create note subfolder' search</source>
 <translation>Ezkutatu Bilatu edo sortu oharren azpikarpetaren bilaketa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5641"/>
+<location filename="../dialogs/settingsdialog.ui" line="5709"/>
 <source>Display note subfolders as full tree</source>
 <translation>Bistaratu oharren azpikarpetak zuhaitz osoa bezala</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2907"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2926"/>
 <source>Search script repository</source>
 <translation>Bilatu scriptaren biltegia</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5369"/>
+<location filename="../dialogs/settingsdialog.ui" line="5437"/>
 <source>You optionally can use "%notePath%" for the path of the note.</source>
 <extracomment>Please don't translate "%notePath%"</extracomment>
 <translation>Aukeran "%notePath%" erabil dezakezu oharraren bideorako.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5392"/>
+<location filename="../dialogs/settingsdialog.ui" line="5460"/>
 <source>Git client</source>
 <translation>Git bezeroa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5408"/>
+<location filename="../dialogs/settingsdialog.ui" line="5476"/>
 <source>Path to git executable:</source>
 <translation>Exekutagarriaren bide-izena:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5398"/>
+<location filename="../dialogs/settingsdialog.ui" line="5466"/>
 <source>Path to git client, leave empty for default</source>
 <translation>Bezeroarentzako bide-izena, utzi hutsik lehenespenez</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5317"/>
+<location filename="../dialogs/settingsdialog.ui" line="5385"/>
 <source>Commit interval</source>
 <translation>Erantzun tartea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5323"/>
+<location filename="../dialogs/settingsdialog.ui" line="5391"/>
 <source>sec</source>
 <extracomment>seconds</extracomment>
 <translation>sec</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5343"/>
+<location filename="../dialogs/settingsdialog.ui" line="5411"/>
 <source>git commit interval time [sec]</source>
 <translation>git konpromisoa tarteko denbora [sec]</translation>
 </message>
@@ -6716,303 +7040,303 @@ Just probatu zeure burua sinkronizazio gatazkak lortzen badituzu eta balio handi
 <translation>Arakatzailearen luzapena</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1832"/>
+<location filename="../dialogs/settingsdialog.ui" line="1858"/>
 <source>Which calendar backend do you want to use?</source>
 <translation>Zein egutegi motorra erabili nahi duzu?</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1865"/>
+<location filename="../dialogs/settingsdialog.ui" line="1891"/>
 <source>For most current ownCloud and Nextcloud installations</source>
 <translation>OwnCloud eta Nextcloud egungo instalazio gehienetarako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1845"/>
+<location filename="../dialogs/settingsdialog.ui" line="1871"/>
 <source>For older versions of ownCloud where the default setting doesn't work</source>
 <translation>OwnCloud-en bertsio zaharragoentzako ezarpen lehenetsiak ez du funtzionatzen</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1848"/>
+<location filename="../dialogs/settingsdialog.ui" line="1874"/>
 <source>Legacy ownCloud calendar</source>
 <translation>Legacy ownCloud egutegia</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1881"/>
+<location filename="../dialogs/settingsdialog.ui" line="1907"/>
 <source>CalDAV server settings</source>
 <translation>CalDAV zerbitzariaren ezarpenak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1890"/>
+<location filename="../dialogs/settingsdialog.ui" line="1916"/>
 <source>Calendar base url:</source>
 <translation>Egutegia oinarrizko URLa:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1912"/>
+<location filename="../dialogs/settingsdialog.ui" line="1938"/>
 <source>Please enter the CalDAV base url to your calendar.</source>
 <translation>Mesedez, sartu CalDAV oinarrizko URLa zure egutegian.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1982"/>
+<location filename="../dialogs/settingsdialog.ui" line="2008"/>
 <source>Please enter the password for your CalDAV username.&lt;br/&gt;Currently the password will be stored encrypted with the other settings, but is not very secure.</source>
 <translation>Mesedez, sartu zure CalDAV erabiltzaile izenaren pasahitza. &lt;br/&gt; Une honetan pasahitza beste ezarpenekin enkriptatuko da, baina ez da oso segurua.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2283"/>
+<location filename="../dialogs/settingsdialog.ui" line="2309"/>
 <source>Czech</source>
 <translation>Txekiar</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2657"/>
+<location filename="../dialogs/settingsdialog.ui" line="2683"/>
 <source>Brazilian Portuguese</source>
 <translation>Brasilgo portugesa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2844"/>
+<location filename="../dialogs/settingsdialog.ui" line="2870"/>
 <source>Ukrainian</source>
 <translation>Ukrainian</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3808"/>
+<location filename="../dialogs/settingsdialog.ui" line="3875"/>
 <source>The name</source>
 <translation>Izena</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4032"/>
+<location filename="../dialogs/settingsdialog.ui" line="4099"/>
 <source>Maximum height:</source>
 <translation>Gehienezko altuera:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4005"/>
+<location filename="../dialogs/settingsdialog.ui" line="4072"/>
 <source>Maximum width:</source>
 <translation>Gehienezko zabalera:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3946"/>
+<location filename="../dialogs/settingsdialog.ui" line="4013"/>
 <source>Scale images down when inserted into notes</source>
 <translation>Eskalatu irudiak oharrak txertatzean</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2459"/>
+<location filename="../dialogs/settingsdialog.ui" line="2485"/>
 <source>Croatian</source>
 <translation>Kroaziako</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3723"/>
+<location filename="../dialogs/settingsdialog.ui" line="3783"/>
 <source>Path to your QML file</source>
 <translation>Zure QML fitxategiaren bidea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3514"/>
+<location filename="../dialogs/settingsdialog.ui" line="3697"/>
 <source>Script name</source>
 <translation>Script-aren izena</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3536"/>
+<location filename="../dialogs/settingsdialog.ui" line="3558"/>
 <source>Description:</source>
 <translation>Deskribapena:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3618"/>
+<location filename="../dialogs/settingsdialog.ui" line="3640"/>
 <source>Version:</source>
 <translation>Bertsioa:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3579"/>
+<location filename="../dialogs/settingsdialog.ui" line="3601"/>
 <source>Repository:</source>
 <translation>Biltegi:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3556"/>
+<location filename="../dialogs/settingsdialog.ui" line="3578"/>
 <source>Author(s):</source>
 <translation>Egilea(k):</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3953"/>
+<location filename="../dialogs/settingsdialog.ui" line="4020"/>
 <source>Check this if you want to accept all external modifications while you are editing the current note.</source>
 <translation>Begiratu hau uneko oharra editatzen duzun bitartean kanpoko aldaketak onartu nahi badituzu.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3956"/>
+<location filename="../dialogs/settingsdialog.ui" line="4023"/>
 <source>Accept all external modifications of the current note</source>
 <translation>Onartu uneko oharraren kanpoko aldaketak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3890"/>
+<location filename="../dialogs/settingsdialog.ui" line="3957"/>
 <source>Use UNIX newline instead of native newline characters</source>
 <translation>Erabili UNIX lerroa bertako lineako karaktere berrien ordez</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3900"/>
+<location filename="../dialogs/settingsdialog.ui" line="3967"/>
 <source>Restore cursor position when opening a note</source>
 <translation>Leheneratu kurtsorearen posizioa ohar bat irekitzean</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4890"/>
+<location filename="../dialogs/settingsdialog.ui" line="4951"/>
 <source>Apply toolbar configuration</source>
 <translation>Aplikatu tresna-barra konfigurazioa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4904"/>
+<location filename="../dialogs/settingsdialog.ui" line="4965"/>
 <source>Reset toolbars</source>
 <translation>Berrezarri tresna-barrak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4932"/>
+<location filename="../dialogs/settingsdialog.ui" line="4993"/>
 <source>Enable logging to file</source>
 <translation>Gaitu erregistroa fitxategian</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4939"/>
+<location filename="../dialogs/settingsdialog.ui" line="5000"/>
 <source>Clear log file</source>
 <translation>Garbitu log fitxategia</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4950"/>
+<location filename="../dialogs/settingsdialog.ui" line="5011"/>
 <source>Fake old version number to trigger update</source>
 <translation>Eguneraketa aktibatzeko bertsio aurreko zenbaki faltsua</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4978"/>
+<location filename="../dialogs/settingsdialog.ui" line="5039"/>
 <source>Log file path:</source>
 <translation>Log fitxategiaren bidea:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5040"/>
+<location filename="../dialogs/settingsdialog.ui" line="5101"/>
 <source>Here you can set your own time format for inserting the current time into a note.</source>
 <translation>Hemen zure denbora-formatua zehaztu dezakezu uneko ordua ohar batean txertatzeko.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5043"/>
+<location filename="../dialogs/settingsdialog.ui" line="5104"/>
 <source>Insert current time</source>
 <translation>Sartu uneko ordua</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5049"/>
+<location filename="../dialogs/settingsdialog.ui" line="5110"/>
 <source>Time format:</source>
 <translation>Denbora formatua:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5056"/>
+<location filename="../dialogs/settingsdialog.ui" line="5117"/>
 <source>Enter your custom time format, like "dd.MM.yyyy hh:mm"</source>
 <translation>Sartu zure denbora-formatu pertsonalizatua, adibidez "dd.MM.yyyy hh: mm"</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5145"/>
+<location filename="../dialogs/settingsdialog.ui" line="5206"/>
 <source>Editor options</source>
 <translation>Editorearen aukerak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5158"/>
+<location filename="../dialogs/settingsdialog.ui" line="5267"/>
 <source>Enable automatic closing of brackets and markdown formatting characters</source>
 <translation>Gaitu parentesi eta markaketa formatuaren karaktereen itxi automatikoa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5212"/>
+<location filename="../dialogs/settingsdialog.ui" line="5301"/>
 <source>You have to use the backspace key to remove the opening character</source>
 <translation>Atzera-tekla erabili behar duzu hasierako karakterea kentzeko</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="5215"/>
+<location filename="../dialogs/settingsdialog.ui" line="5304"/>
 <source>Enable automatic removal of matching closing characters</source>
 <translation>Gaitu itxi diren karaktereen kentzea automatikoa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1915"/>
+<location filename="../dialogs/settingsdialog.ui" line="1941"/>
 <source>Your CalDAV calendar base url</source>
 <translation>Zure CalDAV egutegia oinarrizko Urla</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1947"/>
+<location filename="../dialogs/settingsdialog.ui" line="1973"/>
 <source>Please enter the username of your CalDAV server.</source>
 <translation>Mesedez sartu CalDAV zerbitzariaren erabiltzailea.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1950"/>
+<location filename="../dialogs/settingsdialog.ui" line="1976"/>
 <source>Your CalDAV username</source>
 <translation>Zure CalDAV erabiltzaile izena</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="1988"/>
+<location filename="../dialogs/settingsdialog.ui" line="2014"/>
 <source>Your CalDAV password</source>
 <translation>Zure CalDAV pasahitza</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2035"/>
+<location filename="../dialogs/settingsdialog.ui" line="2061"/>
 <source>This causes all todo list items to be reloaded from your server the next time you open your todo dialog.</source>
 <translation>Horrek guztiak egiten du zerrendako elementu guztiak zerbitzaritik berriro kargatzea zure hurrengo elkarrizketa-koadroa irekitzen duzun hurrengo aldian.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2038"/>
+<location filename="../dialogs/settingsdialog.ui" line="2064"/>
 <source>Empty calendar item cache</source>
 <translation>Hustu egutegiko elementuen cachea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2061"/>
+<location filename="../dialogs/settingsdialog.ui" line="2087"/>
 <source>Click here to reload the list of calendars from your calendar server.</source>
 <translation>Egin klik hemen egutegiko zerbitzaritik egutegien zerrenda berriro kargatzeko.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2067"/>
+<location filename="../dialogs/settingsdialog.ui" line="2093"/>
 <source>&amp;Reload calendar list</source>
 <translation>&amp;Kargatu egutegi zerrenda</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2976"/>
-<location filename="../dialogs/settingsdialog.ui" line="3086"/>
+<location filename="../dialogs/settingsdialog.ui" line="3002"/>
+<location filename="../dialogs/settingsdialog.ui" line="3112"/>
 <source>You may need to restart the application to let these changes take effect</source>
 <translation>Baliteke aplikazioa berrabiarazi behar izatea aldaketa horiek eragina izan dezaten</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3121"/>
+<location filename="../dialogs/settingsdialog.ui" line="3147"/>
 <source>Toolbar icon size:</source>
 <translation>Tresna barra ikonoaren tamaina:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3111"/>
+<location filename="../dialogs/settingsdialog.ui" line="3137"/>
 <source>List and tree item height:</source>
 <translation>Zerrenda eta zuhaitzaren altuera altuera:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3144"/>
+<location filename="../dialogs/settingsdialog.ui" line="3170"/>
 <source>Reset the icon size</source>
 <translation>Berrezarri ikonoaren tamaina</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3158"/>
+<location filename="../dialogs/settingsdialog.ui" line="3184"/>
 <source>Reset the item height</source>
 <translation>Berrezarri elementuaren altuera</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4715"/>
+<location filename="../dialogs/settingsdialog.ui" line="4776"/>
 <source>View text right to left (RTL)</source>
 <translation>Ikusi testua eskuinetik ezkerrera (RTL)</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3282"/>
+<location filename="../dialogs/settingsdialog.ui" line="3308"/>
 <source>Search for shortcut</source>
 <translation>Bilatu lasterbidea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2078"/>
+<location filename="../dialogs/settingsdialog.ui" line="2104"/>
 <source>Ignore calendars that don't support todo items</source>
 <translation>Ez ikusi elementu guztiak onartzen ez dituzten egutegiak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="2910"/>
+<location filename="../dialogs/settingsdialog.ui" line="2936"/>
 <source>Arabic</source>
 <translation>Arabiera</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3060"/>
+<location filename="../dialogs/settingsdialog.ui" line="3086"/>
 <source>Icons</source>
 <translation>Ikonoak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3069"/>
+<location filename="../dialogs/settingsdialog.ui" line="3095"/>
 <source>Use internal icon theme instead of system icon theme</source>
 <translation>Erabili barne ikonoen gaia sistemako ikonoen gaiaren ordez</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3672"/>
+<location filename="../dialogs/settingsdialog.ui" line="3732"/>
 <source>Script path:</source>
 <translation>Scriptaren bidea:</translation>
 </message>
@@ -7027,79 +7351,59 @@ Just probatu zeure burua sinkronizazio gatazkak lortzen badituzu eta balio handi
 <translation>Baimendu ohar fitxategiaren izenburuak ez izatea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3963"/>
+<location filename="../dialogs/settingsdialog.ui" line="4030"/>
 <source>Check this if you want to ignore all external modifications while you are editing the current note.</source>
 <translation>Begiratu hau uneko oharra editatzen ari zaren bitartean kanpoko aldaketak baztertu nahi badituzu.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3966"/>
+<location filename="../dialogs/settingsdialog.ui" line="4033"/>
 <source>Ignore all external modifications of the current note</source>
 <translation>Ez ikusi egin uneko oharraren kanpoko aldaketa guztiak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="3887"/>
+<location filename="../dialogs/settingsdialog.ui" line="3954"/>
 <source>You can use this for example under Windows if you have troubles with newlines in the ownCloud / Nextcloud notes app</source>
 <translation>Hau adibidez Windowsen azpian erabil dezakezu linearen bertsioarekin arazoak badituzu ownCloud / Nextcloud aplikazioetako aplikazioekin</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4062"/>
+<location filename="../dialogs/settingsdialog.ui" line="4129"/>
 <source>App instance</source>
 <translation>App instantzia</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4068"/>
+<location filename="../dialogs/settingsdialog.ui" line="4135"/>
 <source>Only allow one app instance at the same time</source>
 <translation>Aplikazio instantzia bakarra baimendu aldi berean</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4164"/>
-<source>Add a custom file extension</source>
-<translation>Gehitu fitxategi luzapen pertsonalizatua</translation>
-</message>
-<message>
-<location filename="../dialogs/settingsdialog.ui" line="4178"/>
-<source>Remove a custom file extension</source>
-<translation>Kendu fitxategi luzapen pertsonalizatua</translation>
-</message>
-<message>
-<location filename="../dialogs/settingsdialog.ui" line="4217"/>
-<source>If you add custom extensions just type in the extension, like "taskpaper".</source>
-<translation>Luzapen pertsonalizatuak gehitzen badituzu, idatzi luzapena, adibidez "taskpaper".</translation>
-</message>
-<message>
-<location filename="../dialogs/settingsdialog.ui" line="4221"/>
-<source>Text file (txt)</source>
-<translation>Testu fitxategia (txt)</translation>
-</message>
-<message>
-<location filename="../dialogs/settingsdialog.ui" line="4249"/>
+<location filename="../dialogs/settingsdialog.ui" line="4310"/>
 <source>Path to external editor:</source>
 <translation>Kanpoko editorearen bide-izena:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4084"/>
+<location filename="../dialogs/settingsdialog.ui" line="4151"/>
 <source>Don't show the update dialog automatically</source>
 <translation>Ez erakutsi eguneratze elkarrizketa automatikoki</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4547"/>
-<location filename="../dialogs/settingsdialog.ui" line="4774"/>
+<location filename="../dialogs/settingsdialog.ui" line="4608"/>
+<location filename="../dialogs/settingsdialog.ui" line="4835"/>
 <source>Fonts</source>
 <translation>Tipoak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4570"/>
-<location filename="../dialogs/settingsdialog.ui" line="4612"/>
-<location filename="../dialogs/settingsdialog.ui" line="4797"/>
-<location filename="../dialogs/settingsdialog.ui" line="4825"/>
+<location filename="../dialogs/settingsdialog.ui" line="4631"/>
+<location filename="../dialogs/settingsdialog.ui" line="4673"/>
+<location filename="../dialogs/settingsdialog.ui" line="4858"/>
+<location filename="../dialogs/settingsdialog.ui" line="4886"/>
 <source>Set a new font</source>
 <translation>Ezarri letra-tipo berria</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4581"/>
-<location filename="../dialogs/settingsdialog.ui" line="4626"/>
-<location filename="../dialogs/settingsdialog.ui" line="4811"/>
-<location filename="../dialogs/settingsdialog.ui" line="4856"/>
+<location filename="../dialogs/settingsdialog.ui" line="4642"/>
+<location filename="../dialogs/settingsdialog.ui" line="4687"/>
+<location filename="../dialogs/settingsdialog.ui" line="4872"/>
+<location filename="../dialogs/settingsdialog.ui" line="4917"/>
 <source>Reset font</source>
 <translation>Berrezarri letra-tipoa</translation>
 </message>
@@ -7109,59 +7413,59 @@ Just probatu zeure burua sinkronizazio gatazkak lortzen badituzu eta balio handi
 <translation>Araztu</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4411"/>
-<location filename="../dialogs/settingsdialog.cpp" line="2316"/>
-<location filename="../dialogs/settingsdialog.cpp" line="4300"/>
+<location filename="../dialogs/settingsdialog.ui" line="4472"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2329"/>
+<location filename="../dialogs/settingsdialog.cpp" line="4329"/>
 <source>Debug information</source>
 <translation>Araztu informazioa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4417"/>
+<location filename="../dialogs/settingsdialog.ui" line="4478"/>
 <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You can &lt;span style=" font-weight:600;"&gt;copy and paste&lt;/span&gt; this text (or parts of this text) in an &lt;span style=" font-weight:600;"&gt;issue&lt;/span&gt; on the &lt;a href="https://github.com/pbek/QOwnNotes/issues"&gt;QOwnNotes issues page&lt;/a&gt; if you have &lt;span style=" font-weight:600;"&gt;questions or troubles&lt;/span&gt; with QOwnNotes. Data that is too sensitive is hidden in this information.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
 <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt; &lt;p&gt; &lt;span style = "font-weight: 600;"&gt; kopiatu eta itsatsi &lt;/span&gt; testu hau (edo testu honen zatiak) &lt;span style = "font-weight: 600;"&gt; alea &lt;/span&gt; &lt;a href="https://github.com/pbek/QOwnNotes/issues"&gt; QOwnNotes arazoen orria &lt;/a&gt; &lt;span style = "font-weight: 600;"&gt; galderak edo arazoak &lt;/span&gt; QOwnNotes-ekin. Gehiegi sentikorra den datuak ezkutatuta dago informazio honetan. &lt;/p&gt; &lt;/body&gt; &lt;/html&gt;</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.ui" line="4504"/>
+<location filename="../dialogs/settingsdialog.ui" line="4565"/>
 <source>&amp;Save debug information</source>
 <translation>&amp;Gorde arazketa informazioa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="507"/>
+<location filename="../dialogs/settingsdialog.cpp" line="506"/>
 <source>hostname of proxy server</source>
 <translation>proxy zerbitzariaren ostalari izena</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="508"/>
+<location filename="../dialogs/settingsdialog.cpp" line="507"/>
 <source>username for proxy server</source>
 <translation>proxy zerbitzariaren erabiltzaile izena</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="509"/>
+<location filename="../dialogs/settingsdialog.cpp" line="508"/>
 <source>password for proxy server</source>
 <translation>proxy zerbitzariaren pasahitza</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="511"/>
+<location filename="../dialogs/settingsdialog.cpp" line="510"/>
 <source>HTTP(S) proxy</source>
 <translation>HTTP(S) proxy</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="512"/>
+<location filename="../dialogs/settingsdialog.cpp" line="511"/>
 <source>SOCKS5 proxy</source>
 <translation>SOCKS5 proxy</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="1505"/>
+<location filename="../dialogs/settingsdialog.cpp" line="1512"/>
 <source>Automatic (needs restart)</source>
 <translation>Automatikoa (berrabiarazi behar da)</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="1816"/>
+<location filename="../dialogs/settingsdialog.cpp" line="1823"/>
 <source>Shortcut already assigned</source>
 <translation>Lortutako lasterbidea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2019"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2026"/>
 <source>The connection was made successfully!
 Server version: %1
 QOwnNotesAPI version: %2</source>
@@ -7170,7 +7474,7 @@ Zerbitzariaren bertsioa:%1
 QOwnNotesAPI bertsioa:%2</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2032"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2039"/>
 <source>There was an error connecting to the ownCloud Server!
 You also need to have the QOwnNotesAPI app installed and enabled!
 
@@ -7181,332 +7485,347 @@ Halaber, QOwnNotesAPI aplikazioa instalatuta eta gaituta izan behar duzu!
 Konexioko errore mezua: </translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2317"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2319"/>
+<source>The Database was reinitialized. Please restart the application now!</source>
+<translation type="unfinished">The Database was reinitialized. Please restart the application now!</translation>
+</message>
+<message>
+<location filename="../dialogs/settingsdialog.cpp" line="2330"/>
 <source>Please don't use this in the issue tracker, copy the debug information text directly into the issue.</source>
 <translation>Mesedez, ez erabili hau alearen jarraitzailean, kopiatu arazoaren informazio testua zenbakian zuzenean.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2324"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2337"/>
 <source>Markdown files</source>
 <translation>Markdown fitxategiak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2352"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2365"/>
 <source>Disable usage tracking</source>
 <translation>Desgaitu erabilera jarraipena</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2353"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2366"/>
 <source>Anonymous usage data helps to decide what parts of QOwnNotes to improve next and to find and fix bugs.&lt;br /&gt;Please disable it only if you really can't live with it.&lt;br /&gt;&lt;br /&gt;Really disable usage tracking?</source>
 <translation>Erabilera anonimoaren datuek QOwnNotes-en zein atal hobetu nahi duten erabakitzen laguntzen du eta akatsak aurkitzeko eta konpondu. &lt;br/&gt; Mesedez, desgaitu ezazu benetan ezin baduzu berarekin bizi. &lt;br/&gt; &lt;br/&gt;Benetan desgaitu erabilera jarraipena?</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2580"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2599"/>
 <source>new folder</source>
 <translation>karpeta berria</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2614"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2633"/>
 <source>Remove note folder</source>
 <translation>Kendu ohar-karpeta</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2615"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2634"/>
 <source>Remove the current note folder &lt;strong&gt;%1&lt;/strong&gt;?</source>
 <translation>Kendu uneko oharren karpeta &lt;strong&gt;%1 &lt;/strong&gt;?</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2696"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2715"/>
 <source>Please select the folder where your notes will get stored to</source>
 <translation>Hautatu zure oharrak non gordeko diren karpeta</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2731"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2750"/>
 <source>Loading folders from server</source>
 <translation>Zerbitzarien karpetak kargatzen</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2746"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2765"/>
 <source>No more folders were found in the current folder</source>
 <translation>Uneko karpetan ez da karpetarik aurkitu</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2819"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2838"/>
 <source>Loading folders in '%1' from server</source>
 <translation>Karpetak '%1' zerbitzaritik kargatzen</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2892"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2911"/>
 <source>Take a look at the &lt;a href="%1"&gt;Scripting documentation&lt;/a&gt; to get started fast.</source>
 <translation>Begiratu &lt;a href="%1"&gt; Scripting dokumentazioa &lt;/a&gt; azkar hasteko.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2896"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2915"/>
 <source>If you need access to a certain functionality in QOwnNotes please open an issue on the &lt;a href="%1"&gt; QOwnNotes issue page&lt;/a&gt;.</source>
 <translation>QOwnNotes-en funtzio jakin baterako sarbidea behar baduzu, ireki arazo bat &lt;a href="%1"&gt; QOwnNotes-en argitaratze orria &lt;/a&gt;.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2918"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2937"/>
 <source>Check for script updates</source>
 <translation>Egiaztatu script eguneratzeak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2925"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2944"/>
 <source>Add local script</source>
 <translation>Gehitu script lokala</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2929"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2948"/>
 <source>Add an existing, local script</source>
 <translation>Gehitu lehendik dagoen script lokal bat</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="4022"/>
-<location filename="../dialogs/settingsdialog.cpp" line="4080"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3293"/>
+<source>Please enter a new note file extension:</source>
+<translation type="unfinished">Please enter a new note file extension:</translation>
+</message>
+<message>
+<location filename="../dialogs/settingsdialog.cpp" line="3327"/>
+<source>Markdown file</source>
+<translation type="unfinished">Markdown file</translation>
+</message>
+<message>
+<location filename="../dialogs/settingsdialog.cpp" line="3329"/>
+<source>Plain text file</source>
+<translation type="unfinished">Plain text file</translation>
+</message>
+<message>
+<location filename="../dialogs/settingsdialog.cpp" line="3347"/>
+<source>Remove note file extension</source>
+<translation type="unfinished">Remove note file extension</translation>
+</message>
+<message>
+<location filename="../dialogs/settingsdialog.cpp" line="4058"/>
+<location filename="../dialogs/settingsdialog.cpp" line="4113"/>
 <source>INI files</source>
 <translation>INI fitxategiak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="4058"/>
+<location filename="../dialogs/settingsdialog.cpp" line="4094"/>
 <source>Do you really want to import settings? Your current settings will get removed and not every setting may get restored, like the note folder settings and which scripts you were using. You also will need to adjust some settings, especially across platforms, but your notes will stay intact!</source>
 <translation>Benetan ezarpenak inportatu nahi dituzu? Uneko ezarpenak kenduko dira eta ezarpen guztiek ezingo dute zaharberrituko, ohar karpeta ezarpenak eta zein script erabiltzen ari zaren bezala. Ezarpen batzuk ere egokitu beharko dituzu, batez ere plataformetan, baina zure oharrak oso-osorik mantenduko dira!</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="4068"/>
-<source>The application will be quit after the import.</source>
-<translation>Aplikazioa inportatu egingo da.</translation>
-</message>
-<message>
-<location filename="../dialogs/settingsdialog.cpp" line="4069"/>
+<location filename="../dialogs/settingsdialog.cpp" line="4101"/>
 <source>The application will be restarted after the import.</source>
 <translation>Aplikazioa inportatu ondoren berrabiaraziko da.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="4301"/>
+<location filename="../dialogs/settingsdialog.cpp" line="4330"/>
 <source>The debug information was copied to the clipboard.</source>
 <translation>Arazketaren informazioa arbelean kopiatu zen.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="4322"/>
+<location filename="../dialogs/settingsdialog.cpp" line="4351"/>
 <source>The integrity of the disk database is valid.</source>
 <translation type="unfinished">The integrity of the disk database is valid.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="4327"/>
+<location filename="../dialogs/settingsdialog.cpp" line="4356"/>
 <source>The integrity of the disk database is not valid!</source>
 <translation type="unfinished">The integrity of the disk database is not valid!</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2912"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2931"/>
 <source>Find a script in the script repository</source>
 <translation>Bilatu script bat script-biltegian</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="295"/>
+<location filename="../dialogs/settingsdialog.cpp" line="299"/>
 <source>Menu bar</source>
 <translation>Menuaren barra</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="296"/>
+<location filename="../dialogs/settingsdialog.cpp" line="300"/>
 <source>Show menu bar item</source>
 <translation>Erakutsi menu-barra elementua</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="1689"/>
-<location filename="../dialogs/settingsdialog.cpp" line="1741"/>
+<location filename="../dialogs/settingsdialog.cpp" line="1696"/>
+<location filename="../dialogs/settingsdialog.cpp" line="1748"/>
 <source>Undefined shortcut</source>
 <translation>Zehaztu gabeko lasterbidea
 </translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="1693"/>
-<location filename="../dialogs/settingsdialog.cpp" line="1745"/>
+<location filename="../dialogs/settingsdialog.cpp" line="1700"/>
+<location filename="../dialogs/settingsdialog.cpp" line="1752"/>
 <source>Assign a new shortcut</source>
 <translation>Esleitu lasterbide berria
 </translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="1694"/>
-<location filename="../dialogs/settingsdialog.cpp" line="1746"/>
+<location filename="../dialogs/settingsdialog.cpp" line="1701"/>
+<location filename="../dialogs/settingsdialog.cpp" line="1753"/>
 <source>Reset to default shortcut</source>
 <translation>Berrezarri lasterbide lehenetsira
 </translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="1712"/>
+<location filename="../dialogs/settingsdialog.cpp" line="1719"/>
 <source>Clear shortcut</source>
 <translation>Zuzendu lasterbidea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="1817"/>
+<location filename="../dialogs/settingsdialog.cpp" line="1824"/>
 <source>The shortcut &lt;strong&gt;%1&lt;/strong&gt; is already assigned to &lt;strong&gt;%2&lt;/strong&gt;! Do you want to jump to the shortcut?</source>
 <translation>&lt;strong&gt;%1&lt;/strong&gt; lasterbidea &lt;strong&gt;%2&lt;/strong&gt; -ra esleitutakoa da! Lasterbidea nahi al duzu?</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3005"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3024"/>
 <source>Remove script</source>
 <translation>Kendu script-a</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3006"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3025"/>
 <source>Remove the current script &lt;strong&gt;%1&lt;/strong&gt;?</source>
 <translation>Kendu uneko script &lt;strong&gt;%1 &lt;/strong&gt; script-a?</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3056"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3075"/>
 <source>QML files</source>
 <translation>QML fitxategiak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3057"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3076"/>
 <source>Please select your QML file</source>
 <translation>Hautatu QML fitxategia</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3146"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3166"/>
 <source>Open repository</source>
 <translation>Ireki biltegia</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3204"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3224"/>
 <source>Your script seems to be valid</source>
 <translation>Zure script-a balio duela dirudi</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3205"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3225"/>
 <source>There were script errors:
 %1</source>
 <translation>Script-ak akatsak zeuden:
 %1</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3273"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3293"/>
 <source>File extension</source>
 <translation>Fitxategiaren luzapena</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3273"/>
-<source>Enter your custom file extension:</source>
-<translation>Sartu zure fitxategi luzapen pertsonalizatua:</translation>
+<location filename="../dialogs/settingsdialog.cpp" line="3348"/>
+<source>Do you really want to remove the note file extension &lt;strong&gt;%1&lt;/strong&gt;? You will not see files with this extension in the note list any more!</source>
+<translation type="unfinished">Do you really want to remove the note file extension &lt;strong&gt;%1&lt;/strong&gt;? You will not see files with this extension in the note list any more!</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3602"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3638"/>
 <source>Calendar cache emptied</source>
 <translation>Egutegia cache hustua</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3603"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3639"/>
 <source>Your calendar cache was emptied.</source>
 <translation>Zure egutegi cache hustu zen.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3684"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3720"/>
 <source>Reset toolbars and exit</source>
 <translation>Berrezarri tresna-barrak eta irten</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3685"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3721"/>
 <source>Do you really want to reset all toolbars? The application will be closed in the process, the default toolbars will be restored when you start it again.</source>
 <translation>Benetan tresna-barra guztiak berrezarri nahi dituzu? Aplikazioa prozesuan itxita egongo da, tresna-barra lehenetsiak berriro leheneratuko dira.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3689"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3725"/>
 <source>Reset and &amp;exit</source>
 <translation>Berrezarri &amp;irten</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3847"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3883"/>
 <source>Log file cleared</source>
 <translation>Erregistro fitxategia garbitu da</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3848"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3884"/>
 <source>The log file &lt;strong&gt;%1&lt;/strong&gt; was cleared.</source>
 <translation>&lt;strong&gt;%1&lt;/strong&gt; log fitxategia garbitu egin da.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3884"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3920"/>
 <source>Executable files</source>
 <translation>Exekutagarriak diren fitxategiak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3885"/>
-<location filename="../dialogs/settingsdialog.cpp" line="3887"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3921"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3923"/>
 <source>All files</source>
 <translation>Fitxategi guztiak</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3895"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3931"/>
 <source>Please select the path of your git executable</source>
 <translation>Mesedez hautatu zure git exekutagarriaren bidea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="3992"/>
+<location filename="../dialogs/settingsdialog.cpp" line="4028"/>
 <source>Do you really want to reset the overrides of all message boxes?</source>
 <translation>Ziur zaude mezu-kaxen guztien gainidazpenak berrezarri nahi dituzula?</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2306"/>
-<source>The Database was reinitialized.</source>
-<translation>Datu-basea berriro hasi da.</translation>
-</message>
-<message>
-<location filename="../dialogs/settingsdialog.cpp" line="103"/>
+<location filename="../dialogs/settingsdialog.cpp" line="107"/>
 <source>New script</source>
 <translation>Script berria</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="107"/>
+<location filename="../dialogs/settingsdialog.cpp" line="111"/>
 <source>You can download your git client here: &lt;a href="%url"&gt;Git for Windows&lt;/a&gt;</source>
 <translation>Zure git bezeroa deskarga dezakezu hemen: &lt;a href="%url"&gt; Git for Windows &lt;/a&gt;</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="462"/>
+<location filename="../dialogs/settingsdialog.cpp" line="461"/>
 <source>enabled</source>
 <translation>gaituta</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="462"/>
+<location filename="../dialogs/settingsdialog.cpp" line="461"/>
 <source>disabled</source>
 <translation>desgaituta</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="464"/>
+<location filename="../dialogs/settingsdialog.cpp" line="463"/>
 <source>Portable mode is currently:</source>
 <translation>Modu eramangarria gaur egun:</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="467"/>
+<location filename="../dialogs/settingsdialog.cpp" line="466"/>
 <source>In portable mode</source>
 <translation>Modu eramangarrian</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="468"/>
+<location filename="../dialogs/settingsdialog.cpp" line="467"/>
 <source>the internal sqlite database and the settings will be stored inside a &lt;code&gt;Data&lt;/code&gt; folder at the binary's location</source>
 <translation>barneko sqlite datu-basea eta ezarpenak &lt;code&gt; Datu &lt;/code&gt; karpeta batean gordeko dira binarioaren kokalekuan</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="471"/>
+<location filename="../dialogs/settingsdialog.cpp" line="470"/>
 <source>the settings will be stored in an ini file</source>
 <translation>ezarpenak ini fitxategian gordeko dira</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="473"/>
+<location filename="../dialogs/settingsdialog.cpp" line="472"/>
 <source>the note folders, script paths and path to an external editor will be automatically stored relative to the &lt;code&gt;Data&lt;/code&gt; folder so that the correct note folders, scripts and external editor will be loaded regardless where your QOwnNotes installation is currently located</source>
 <translation>ohar-karpetak, script-en bideek eta kanpoko editoreari bide-izenak automatikoki gordeko dira &lt;code&gt; Datu &lt;/code&gt; karpetari dagokionez, beraz, ohar zuzenak, gidoiak eta kanpoko editorea kargatuko dira QOwnNotes-en instalazioa non dagoen kokatuta dagoen</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="483"/>
+<location filename="../dialogs/settingsdialog.cpp" line="482"/>
 <source>It will be activated if you run QOwnNotes with the parameter &lt;code&gt;--portable&lt;/code&gt;.</source>
 <translation>QOwnNotes &lt;code&gt; --portable &lt;/code&gt; parametroarekin exekutatzen baduzu, aktibatuko da.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2325"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2338"/>
 <source>Save debug information</source>
 <translation>Gorde arazketa informazioa</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2372"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2385"/>
 <source>Do you really want to clear all settings, remove the database and exit QOwnNotes?
 
 Your notes will stay intact!</source>
@@ -7515,34 +7834,34 @@ Your notes will stay intact!</source>
 Zure oharrak osorik egongo dira!</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2375"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2388"/>
 <source>Clear and &amp;exit</source>
 <translation>Garbitu eta &amp;irten</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2301"/>
-<location filename="../dialogs/settingsdialog.cpp" line="2375"/>
-<location filename="../dialogs/settingsdialog.cpp" line="3689"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2314"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2388"/>
+<location filename="../dialogs/settingsdialog.cpp" line="3725"/>
 <source>&amp;Cancel</source>
 <translation>&amp;Utzi</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="489"/>
+<location filename="../dialogs/settingsdialog.cpp" line="488"/>
 <source>You will find a &lt;code&gt;QOwnNotesPortable.bat&lt;/code&gt; in your release path to start QOwnNotes in portable mode.</source>
 <translation>Zure kodeketa-bidea aurkituko duzu QOwnNotesPortable.bat &lt;/code&gt; &lt;code&gt; QOwnNotesPortable.bat &lt;/code&gt; moduan, QOwnNotes modu eramangarrian hasteko.</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2298"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2311"/>
 <source>Do you really want to clear the local database? This will also remove your configured note folders and your cached todo items!</source>
 <translation>Benetan nahi duzu datu-basea ezabatzea? Honek zure konfiguratutako ohar-karpetak eta zure cacheko elementu guztiak kenduko ditu!</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2301"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2314"/>
 <source>Clear &amp;database</source>
 <translation>Garbitu &amp;datu-basea</translation>
 </message>
 <message>
-<location filename="../dialogs/settingsdialog.cpp" line="2486"/>
+<location filename="../dialogs/settingsdialog.cpp" line="2505"/>
 <source>Select editor application</source>
 <translation>Hautatu editorearen aplikazioa</translation>
 </message>
@@ -8185,6 +8504,7 @@ Zure oharrak osorik egongo dira!</translation>
 </message>
 <message>
 <location filename="../dialogs/tododialog.ui" line="157"/>
+<location filename="../dialogs/tododialog.ui" line="329"/>
 <source>Summary</source>
 <translation>Laburpen</translation>
 </message>
@@ -8199,7 +8519,17 @@ Zure oharrak osorik egongo dira!</translation>
 <translation>Ohar…</translation>
 </message>
 <message>
-<location filename="../dialogs/tododialog.cpp" line="105"/>
+<location filename="../dialogs/tododialog.ui" line="349"/>
+<source>This doesn't work for sub-items, because they may be hidden by the parent item!</source>
+<translation type="unfinished">This doesn't work for sub-items, because they may be hidden by the parent item!</translation>
+</message>
+<message>
+<location filename="../dialogs/tododialog.ui" line="352"/>
+<source>Show only items due today</source>
+<translation type="unfinished">Show only items due today</translation>
+</message>
+<message>
+<location filename="../dialogs/tododialog.cpp" line="120"/>
 <source>Save and insert into note</source>
 <translation>Gorde eta sartu oharrean</translation>
 </message>
@@ -8230,6 +8560,11 @@ Zure oharrak osorik egongo dira!</translation>
 </message>
 <message>
 <location filename="../dialogs/tododialog.ui" line="334"/>
+<source>Due date</source>
+<translation type="unfinished">Due date</translation>
+</message>
+<message>
+<location filename="../dialogs/tododialog.ui" line="342"/>
 <source>select your todo list</source>
 <translation>hautatu zure zerrenda</translation>
 </message>
@@ -8239,17 +8574,17 @@ Zure oharrak osorik egongo dira!</translation>
 <translation>Gorde uneko guztia</translation>
 </message>
 <message>
-<location filename="../dialogs/tododialog.cpp" line="110"/>
+<location filename="../dialogs/tododialog.cpp" line="125"/>
 <source>Save the current todo item and insert a link to it into the current note</source>
 <translation>Gorde uneko guztia eta sartu lotura bat uneko oharrarekin</translation>
 </message>
 <message>
-<location filename="../dialogs/tododialog.cpp" line="119"/>
+<location filename="../dialogs/tododialog.cpp" line="134"/>
 <source>Import the current todo item as new note</source>
 <translation>Inportatu uneko guztia elementu ohar berri gisa</translation>
 </message>
 <message>
-<location filename="../dialogs/tododialog.cpp" line="115"/>
+<location filename="../dialogs/tododialog.cpp" line="130"/>
 <source>Import as note</source>
 <translation>Inportatu ohar gisa</translation>
 </message>
@@ -8264,54 +8599,54 @@ Zure oharrak osorik egongo dira!</translation>
 <translation>Zerrendako elementu guztiak zerbitzaritik kargatzen ari dira</translation>
 </message>
 <message>
-<location filename="../dialogs/tododialog.cpp" line="130"/>
+<location filename="../dialogs/tododialog.cpp" line="145"/>
 <source>Reload from server</source>
 <translation>Zerbitzaritik birkargatu</translation>
 </message>
 <message>
-<location filename="../dialogs/tododialog.cpp" line="134"/>
+<location filename="../dialogs/tododialog.cpp" line="149"/>
 <source>Reload tasks from server</source>
 <translation>Birkargatu zeregin zerbitzaritik</translation>
 </message>
 <message>
-<location filename="../dialogs/tododialog.cpp" line="138"/>
+<location filename="../dialogs/tododialog.cpp" line="153"/>
 <source>Clear cache and reload</source>
 <translation>Garbitu cachea eta birkargatu</translation>
 </message>
 <message>
-<location filename="../dialogs/tododialog.cpp" line="143"/>
+<location filename="../dialogs/tododialog.cpp" line="158"/>
 <source>Clear calendar cache and reload tasks from server</source>
 <translation>Garbitu egutegia cachea eta birkargatu zeregin zerbitzaritik</translation>
 </message>
 <message>
-<location filename="../dialogs/tododialog.cpp" line="582"/>
+<location filename="../dialogs/tododialog.cpp" line="621"/>
 <source>Remove todo item</source>
 <translation>Kendu guztia elementua</translation>
 </message>
 <message>
-<location filename="../dialogs/tododialog.cpp" line="583"/>
+<location filename="../dialogs/tododialog.cpp" line="622"/>
 <source>Remove the selected todo item?
 This cannot be undone!</source>
 <translation>Kendu hautatutako guztia elementua?
 Hau ezin da desegin!</translation>
 </message>
 <message>
-<location filename="../dialogs/tododialog.cpp" line="867"/>
+<location filename="../dialogs/tododialog.cpp" line="906"/>
 <source>Create sub-task</source>
 <translation>Krijoni nën-detyrë</translation>
 </message>
 <message>
-<location filename="../dialogs/tododialog.cpp" line="874"/>
+<location filename="../dialogs/tododialog.cpp" line="913"/>
 <source>Create new sub-task</source>
 <translation>Krijoni nën-detyrë të re</translation>
 </message>
 <message>
-<location filename="../dialogs/tododialog.cpp" line="874"/>
+<location filename="../dialogs/tododialog.cpp" line="913"/>
 <source>Name:</source>
 <translation>Izena:</translation>
 </message>
 <message>
-<location filename="../dialogs/tododialog.cpp" line="875"/>
+<location filename="../dialogs/tododialog.cpp" line="914"/>
 <source>New sub-task</source>
 <translation>Nën-detyrë e re</translation>
 </message>
@@ -8561,136 +8896,184 @@ Hau ezin da desegin!</translation>
 <translation>%p% deskargatu</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="49"/>
+<location filename="../dialogs/updatedialog.cpp" line="51"/>
 <source>&amp;Update</source>
 <translation>&amp;Eguneratu</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="60"/>
-<source>&amp;Download latest</source>
-<translation>&amp;Deskargatu azkenekoa</translation>
-</message>
-<message>
-<location filename="../dialogs/updatedialog.cpp" line="58"/>
+<location filename="../dialogs/updatedialog.cpp" line="48"/>
 <source>Just download</source>
 <translation>Deskargatu besterik ez</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="73"/>
+<location filename="../dialogs/updatedialog.cpp" line="64"/>
+<source>&amp;Download latest</source>
+<translation type="unfinished">&amp;Download latest</translation>
+</message>
+<message>
+<location filename="../dialogs/updatedialog.cpp" line="74"/>
 <source>&amp;Skip version</source>
 <translation>&amp;Jauzi bertsioa</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="81"/>
+<location filename="../dialogs/updatedialog.cpp" line="82"/>
 <source>&amp;Disable dialog</source>
 <translation>&amp;Desgaitu elkarrizketa</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="82"/>
+<location filename="../dialogs/updatedialog.cpp" line="83"/>
 <source>Don't show this dialog automatically</source>
 <translation>Ez erakutsi elkarrizketa hau automatikoki</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="90"/>
+<location filename="../dialogs/updatedialog.cpp" line="91"/>
 <source>&amp;Cancel</source>
 <translation>&amp;Utzi</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="245"/>
+<location filename="../dialogs/updatedialog.cpp" line="244"/>
 <source>Download error</source>
 <translation>Deskargatu errorea</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="246"/>
+<location filename="../dialogs/updatedialog.cpp" line="245"/>
 <source>Error while downloading:
 %1</source>
 <translation>Errorea deskargatzean:
 %1</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="248"/>
+<location filename="../dialogs/updatedialog.cpp" line="247"/>
 <source>network error: %1</source>
 <translation>sareko errorea: %1</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="270"/>
-<location filename="../dialogs/updatedialog.cpp" line="291"/>
-<location filename="../dialogs/updatedialog.cpp" line="385"/>
+<location filename="../dialogs/updatedialog.cpp" line="269"/>
+<location filename="../dialogs/updatedialog.cpp" line="290"/>
+<location filename="../dialogs/updatedialog.cpp" line="384"/>
+<location filename="../dialogs/updatedialog.cpp" line="461"/>
+<location filename="../dialogs/updatedialog.cpp" line="471"/>
 <source>File error</source>
 <translation>Fitxategiaren errorea</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="271"/>
-<location filename="../dialogs/updatedialog.cpp" line="386"/>
+<location filename="../dialogs/updatedialog.cpp" line="270"/>
+<location filename="../dialogs/updatedialog.cpp" line="385"/>
 <source>Could not open temporary file:
 %1</source>
 <translation>Ezin izan da aldi baterako fitxategia ireki:
 %1</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="292"/>
+<location filename="../dialogs/updatedialog.cpp" line="291"/>
 <source>Could not store downloaded file:
 %1</source>
 <translation>Ezin izan da deskargatutako fitxategia gorde:
 %1</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="343"/>
+<location filename="../dialogs/updatedialog.cpp" line="342"/>
 <source>Do you want to update and restart QOwnNotes?</source>
 <translation>QOwnNotes eguneratu eta berrabiarazi nahi duzu?</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="359"/>
-<location filename="../dialogs/updatedialog.cpp" line="444"/>
-<location filename="../dialogs/updatedialog.cpp" line="452"/>
-<location filename="../dialogs/updatedialog.cpp" line="461"/>
-<location filename="../dialogs/updatedialog.cpp" line="470"/>
-<location filename="../dialogs/updatedialog.cpp" line="480"/>
-<location filename="../dialogs/updatedialog.cpp" line="489"/>
+<location filename="../dialogs/updatedialog.cpp" line="358"/>
+<location filename="../dialogs/updatedialog.cpp" line="508"/>
+<location filename="../dialogs/updatedialog.cpp" line="516"/>
+<location filename="../dialogs/updatedialog.cpp" line="525"/>
+<location filename="../dialogs/updatedialog.cpp" line="534"/>
+<location filename="../dialogs/updatedialog.cpp" line="544"/>
+<location filename="../dialogs/updatedialog.cpp" line="553"/>
 <source>Error</source>
 <translation>Akatsa</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="360"/>
+<location filename="../dialogs/updatedialog.cpp" line="359"/>
 <source>Could not find updater file:
 %1</source>
 <translation>Ezin izan da eguneratze fitxategia aurkitu:
 %1</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="445"/>
+<location filename="../dialogs/updatedialog.cpp" line="439"/>
+<location filename="../dialogs/updatedialog.cpp" line="451"/>
+<source>Permission error</source>
+<translation type="unfinished">Permission error</translation>
+</message>
+<message>
+<location filename="../dialogs/updatedialog.cpp" line="440"/>
+<source>Your QOwnNotes executable '%1' is not writeable! It must be writeable by the current user in order to be updated.</source>
+<translation type="unfinished">Your QOwnNotes executable '%1' is not writeable! It must be writeable by the current user in order to be updated.</translation>
+</message>
+<message>
+<location filename="../dialogs/updatedialog.cpp" line="452"/>
+<source>The temporary file '%1' could not be made executable! You need to replace '%2' yourself.</source>
+<translation type="unfinished">The temporary file '%1' could not be made executable! You need to replace '%2' yourself.</translation>
+</message>
+<message>
+<location filename="../dialogs/updatedialog.cpp" line="462"/>
+<source>Your old QOwnNotes executable '%1' could not be removed! You need to replace it yourself with '%2'.</source>
+<translation type="unfinished">Your old QOwnNotes executable '%1' could not be removed! You need to replace it yourself with '%2'.</translation>
+</message>
+<message>
+<location filename="../dialogs/updatedialog.cpp" line="472"/>
+<source>Your old QOwnNotes executable '%1' could not be overwritten be replaced by the new file '%2'! You need to replace it yourself.</source>
+<translation type="unfinished">Your old QOwnNotes executable '%1' could not be overwritten be replaced by the new file '%2'! You need to replace it yourself.</translation>
+</message>
+<message>
+<location filename="../dialogs/updatedialog.cpp" line="480"/>
+<source>Restart application</source>
+<translation type="unfinished">Restart application</translation>
+</message>
+<message>
+<location filename="../dialogs/updatedialog.cpp" line="481"/>
+<source>You now can restart the application to complete the update process.</source>
+<translation type="unfinished">You now can restart the application to complete the update process.</translation>
+</message>
+<message>
+<location filename="../dialogs/updatedialog.cpp" line="483"/>
+<source>Restart</source>
+<translation type="unfinished">Restart</translation>
+</message>
+<message>
+<location filename="../dialogs/updatedialog.cpp" line="483"/>
+<source>Cancel</source>
+<translation type="unfinished">Cancel</translation>
+</message>
+<message>
+<location filename="../dialogs/updatedialog.cpp" line="509"/>
 <source>Updater script '%1' doesn't exist!</source>
 <translation>Updater script '%1' ez da existitzen!</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="453"/>
+<location filename="../dialogs/updatedialog.cpp" line="517"/>
 <source>Updater unzip executable '%1' doesn't exist!</source>
 <translation>Updater '%1' unzip exekutagarria ez da existitzen!</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="462"/>
-<location filename="../dialogs/updatedialog.cpp" line="471"/>
+<location filename="../dialogs/updatedialog.cpp" line="526"/>
+<location filename="../dialogs/updatedialog.cpp" line="535"/>
 <source>Could not copy updater script '%1' to '%2'!</source>
 <translation>Ezin izan da '%1' eguneratzearen script-a '%2' kopiatu!</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="481"/>
+<location filename="../dialogs/updatedialog.cpp" line="545"/>
 <source>Couldn't find updater script: %1</source>
 <translation>Ezin izan da eguneratzearen script-a aurkitu: %1</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="490"/>
+<location filename="../dialogs/updatedialog.cpp" line="554"/>
 <source>Couldn't find unzip executable: %1</source>
 <translation>Ezin izan da deskonprimitu exekutagarria aurkitu: %1</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="342"/>
-<location filename="../dialogs/updatedialog.cpp" line="495"/>
+<location filename="../dialogs/updatedialog.cpp" line="341"/>
+<location filename="../dialogs/updatedialog.cpp" line="559"/>
 <source>Proceed with update</source>
 <translation>Jarraitu eguneratzearekin</translation>
 </message>
 <message>
-<location filename="../dialogs/updatedialog.cpp" line="496"/>
+<location filename="../dialogs/updatedialog.cpp" line="560"/>
 <source>The download is now finished. Do you want to update and restart QOwnNotes?</source>
 <translation>Deskarga amaitu da. QOwnNotes eguneratu eta berrabiarazi nahi duzu?</translation>
 </message>
@@ -8963,47 +9346,47 @@ Hau ezin da desegin!</translation>
 <context>
 <name>main</name>
 <message>
-<location filename="../main.cpp" line="96"/>
+<location filename="../main.cpp" line="97"/>
 <source>Runs the application in portable mode.</source>
 <translation>Runs the application in portable mode.</translation>
 </message>
 <message>
-<location filename="../main.cpp" line="102"/>
+<location filename="../main.cpp" line="103"/>
 <source>Prints out a dump of the settings and other information about the application and environment in GitHub Markdown and exits the application.</source>
 <translation>Ezarpenen iraungitze bat eta GitHub Markdown aplikazioari eta ingurumenari buruzko bestelako informazioa inprimatzen du eta aplikazioa amaitzen da.</translation>
 </message>
 <message>
-<location filename="../main.cpp" line="111"/>
+<location filename="../main.cpp" line="112"/>
 <source>Allows multiple instances of QOwnNotes to be started even if disallowed in the settings.</source>
 <translation>QOwnNotes-en hainbat instantzia abiaraztea baimentzen du, nahiz eta ezarpenetan ez onartzea.</translation>
 </message>
 <message>
-<location filename="../main.cpp" line="118"/>
+<location filename="../main.cpp" line="119"/>
 <source>Clears the settings and runs the application.</source>
 <translation>Ezarpenak garbitu eta aplikazioa exekutatzen du.</translation>
 </message>
 <message>
-<location filename="../main.cpp" line="124"/>
+<location filename="../main.cpp" line="125"/>
 <source>Runs the application in a different context for settings and internal files.</source>
 <translation>Aplikazioa beste testuinguru batean exekutatzen du ezarpenak eta barne fitxategiak.</translation>
 </message>
 <message>
-<location filename="../main.cpp" line="133"/>
+<location filename="../main.cpp" line="134"/>
 <source>Triggers a menu action after the application was started.</source>
 <translation type="unfinished">Triggers a menu action after the application was started.</translation>
 </message>
 <message>
-<location filename="../main.cpp" line="553"/>
+<location filename="../main.cpp" line="558"/>
 <source>Single application mode is not supported on your system!</source>
 <translation>Aplikazio bakar modua ez da zure sisteman onartzen!</translation>
 </message>
 <message>
-<location filename="../main.cpp" line="563"/>
+<location filename="../main.cpp" line="572"/>
 <source>Another instance of QOwnNotes was already started! You can turn off the single instance mode in the settings or use the parameter --allow-multiple-instances.</source>
 <translation>QOwnNotes-en beste instantzia bat hasi zen dagoeneko! Instantzia bakarreko modua desaktibatu dezakezu ezarpenetan edo erabili parametroa - baimendu - instantzia anitz.</translation>
 </message>
 <message>
-<location filename="../main.cpp" line="591"/>
+<location filename="../main.cpp" line="623"/>
 <source>A second instance of QOwnNotes was attempted to be started!</source>
 <translation>QOwnNotes-en bigarren instantzia saiatu zen abiarazteko!</translation>
 </message>

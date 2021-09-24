@@ -4,11 +4,15 @@
 
 Van egy Evernote importáló párbeszédpanel, amelyet elérhet a `Jegyzet / Import` menüben.
 
+## Joplin
+
+Van egy Joplin import párbeszédablak, amelyet a `Jegyzet / Importálás` menüben érhet el.
+
 ## Tomboy
 
 A Tomboy Notes programot a [Trombone](https://github.com/samba/trombone) nevű szkript segítségével importálhatja.
 
-Lehetséges, hogy telepíti a python2-t a szkript működéséhez. Konvertálja a Tomboy-jegyzeteit egy Evernote `.enex` fájlba, amelyet aztán importálhat a QOwnNotes fájlba.
+Esetleg telepítse a python2-t a szkript működéséhez. Konvertálja a Tomboy-jegyzeteit egy Evernote `.enex` fájlba, amelyet aztán importálhat a QOwnNotes fájlba.
 
 Aki ezt meg akarja tenni, először ellenőrizze, hogy telepítve van-e a Python2, és érdemes lehet a `python-is-python2` -t is telepíteni (ezt később eltávolíthatja):
 
@@ -25,7 +29,7 @@ sudo make
 sudo make install
 ```
 
-Ezután CD-t abba a mappába, ahol a jegyzetei vannak:
+Ezután cd-t abba a mappába, ahol a jegyzetei vannak:
 
 ```bash
  cd ~/.local/share/tomboy/

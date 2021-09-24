@@ -54,8 +54,9 @@ class TodoDialog : public MasterDialog {
                                                   QTreeWidgetItem *previous);
     void on_todoItemTreeWidget_itemChanged(QTreeWidgetItem *item, int column);
     void on_todoItemTreeWidget_customContextMenuRequested(QPoint pos);
+    void on_showDueTodayItemsOnlyCheckBox_clicked();
 
-   private:
+private:
     Ui::TodoDialog *ui;
     MainWindow *_mainWindow;
     QSplitter *mainSplitter;
@@ -80,6 +81,8 @@ class TodoDialog : public MasterDialog {
     bool eventFilter(QObject *obj, QEvent *event);
 
     void jumpToTodoListItem();
+   private slots:
+    void updateCalendarItem(CalendarItem item);
 };
 
 #endif    // TODODIALOG_H

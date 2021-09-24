@@ -38,6 +38,8 @@
 #include <QStyleFactory>
 #include <QTextBrowser>
 #include <QToolBar>
+#include <QTimer>
+#include <QJsonDocument>
 #include <utility>
 
 #include "build_number.h"
@@ -93,6 +95,8 @@ SettingsDialog::SettingsDialog(int page, QWidget *parent)
         ui->settingsStackedWidget->addWidget(scrollArea);
     }
 
+    ui->loginFlowCancelButton->hide();
+    ui->qrCodeWidget->hide();
     ui->connectionTestLabel->hide();
     ui->darkModeInfoLabel->hide();
     ui->connectButton->setDefault(true);
@@ -406,11 +410,6 @@ void SettingsDialog::replaceOwnCloudText() const {
         Utils::Misc::replaceOwnCloudText(
             ui->noteFolderRemotePathLineEdit->toolTip()));
 
-    // general settings
-    ui->allowDifferentNoteFileNameCheckBox->setToolTip(
-        Utils::Misc::replaceOwnCloudText(
-            ui->allowDifferentNoteFileNameCheckBox->toolTip()));
-
     // task settings
     ui->defaultOwnCloudCalendarRadioButton->setText(
         Utils::Misc::replaceOwnCloudText(
@@ -704,7 +703,7 @@ void SettingsDialog::storeSettings() {
                       ui->noteSaveIntervalTime->value());
     settings.setValue(
         QStringLiteral("defaultNoteFileExtension"),
-        getSelectedListWidgetValue(ui->defaultNoteFileExtensionListWidget));
+        ui->defaultNoteFileExtensionListWidget->currentItem()->text());
     settings.setValue(QStringLiteral("localTrash/supportEnabled"),
                       ui->localTrashEnabledCheckBox->isChecked());
     settings.setValue(QStringLiteral("localTrash/autoCleanupEnabled"),
@@ -768,6 +767,8 @@ void SettingsDialog::storeSettings() {
                       ui->autoBracketRemovalCheckBox->isChecked());
     settings.setValue(QStringLiteral("Editor/removeTrailingSpaces"),
                       ui->removeTrailingSpacesCheckBox->isChecked());
+    settings.setValue(QStringLiteral("Editor/showLineNumbers"),
+                      ui->showLineNumbersInEditorCheckBox->isChecked());
     settings.setValue(QStringLiteral("Editor/highlightCurrentLine"),
                       ui->highlightCurrentLineCheckBox->isChecked());
     settings.setValue(QStringLiteral("Editor/editorWidthInDFMOnly"),
@@ -873,10 +874,9 @@ void SettingsDialog::storeSettings() {
 
     // store the custom note file extensions
     QStringList customNoteFileExtensionList;
-    for (int i = 2; i < ui->defaultNoteFileExtensionListWidget->count(); i++) {
+    for (int i = 0; i < ui->defaultNoteFileExtensionListWidget->count(); i++) {
         QListWidgetItem *item = ui->defaultNoteFileExtensionListWidget->item(i);
-
-        customNoteFileExtensionList.append(item->whatsThis());
+        customNoteFileExtensionList.append(item->text());
     }
     customNoteFileExtensionList.removeDuplicates();
     settings.setValue(QStringLiteral("customNoteFileExtensionList"),
@@ -1167,6 +1167,8 @@ void SettingsDialog::readSettings() {
             .toBool());
     ui->removeTrailingSpacesCheckBox->setChecked(
         settings.value(QStringLiteral("Editor/removeTrailingSpaces")).toBool());
+    ui->showLineNumbersInEditorCheckBox->setChecked(
+        settings.value(QStringLiteral("Editor/showLineNumbers")).toBool());
     ui->highlightCurrentLineCheckBox->setChecked(
         settings.value(QStringLiteral("Editor/highlightCurrentLine"), true)
             .toBool());
@@ -1386,8 +1388,13 @@ void SettingsDialog::readSettings() {
         addCustomNoteFileExtension(fileExtension);
     }
 
-    selectListWidgetValue(ui->defaultNoteFileExtensionListWidget,
-                          Note::defaultNoteFileExtension());
+    auto noteFileExtensionItems = ui->defaultNoteFileExtensionListWidget->
+              findItems(Note::defaultNoteFileExtension(), Qt::MatchExactly);
+
+    if (noteFileExtensionItems.count() > 0) {
+        ui->defaultNoteFileExtensionListWidget->setCurrentItem(
+            noteFileExtensionItems.at(0));
+    }
 
     bool ignoreSSLErrors =
         settings.value(QStringLiteral("networking/ignoreSSLErrors"), true)
@@ -2216,6 +2223,9 @@ void SettingsDialog::on_noteTextEditButton_clicked() {
         // store the font settings
         storeFontSettings();
 
+        // we will need a restart after changing the font
+        needRestart();
+
         // update the text items after the font was changed
         ui->editorFontColorWidget->updateAllTextItems();
     }
@@ -2232,6 +2242,9 @@ void SettingsDialog::on_noteTextEditCodeButton_clicked() {
 
         // store the font settings
         storeFontSettings();
+
+        // we will need a restart after changing the font
+        needRestart();
 
         // update the text items after the font was changed
         ui->editorFontColorWidget->updateAllTextItems();
@@ -2303,7 +2316,7 @@ void SettingsDialog::on_reinitializeDatabaseButton_clicked() {
         NoteFolder::migrateToNoteFolders();
 
         Utils::Gui::information(this, tr("Database"),
-                                tr("The Database was reinitialized."),
+                                tr("The Database was reinitialized. Please restart the application now!"),
                                 QStringLiteral("database-reinitialized"));
     }
 }
@@ -2414,6 +2427,9 @@ void SettingsDialog::on_noteTextEditResetButton_clicked() {
     // store the font settings
     storeFontSettings();
 
+    // we will need a restart after changing the font
+    needRestart();
+
     // update the text items after the font was changed
     ui->editorFontColorWidget->updateAllTextItems();
 }
@@ -2427,6 +2443,9 @@ void SettingsDialog::on_noteTextEditCodeResetButton_clicked() {
 
     // store the font settings
     storeFontSettings();
+
+    // we will need a restart after changing the font
+    needRestart();
 
     // update the text items after the font was changed
     ui->editorFontColorWidget->updateAllTextItems();
@@ -2558,7 +2577,7 @@ void SettingsDialog::on_noteFolderListWidget_currentItemChanged(
         ui->noteFolderShowSubfoldersCheckBox->setChecked(
             _selectedNoteFolder.isShowSubfolders());
         ui->allowDifferentNoteFileNameCheckBox->setChecked(
-            _selectedNoteFolder.settingsValue(QStringLiteral("allowDifferentNoteFileName")).toBool());
+            _selectedNoteFolder.settingsValue(QStringLiteral("allowDifferentNoteFileName"), true).toBool());
         ui->noteFolderGitCommitCheckBox->setChecked(
             _selectedNoteFolder.isUseGit());
         Utils::Gui::setComboBoxIndexByUserData(
@@ -3130,6 +3149,7 @@ void SettingsDialog::reloadCurrentScriptPage() {
         ui->scriptPathButton->setDisabled(isScriptFromRepository);
         ui->scriptRepositoryItemFrame->setVisible(isScriptFromRepository);
         ui->localScriptItemFrame->setHidden(isScriptFromRepository);
+        ui->repositoryScriptItemFrame->setHidden(!isScriptFromRepository);
         ui->scriptNameLineEdit->setHidden(isScriptFromRepository);
         ui->scriptNameLineEditLabel->setHidden(isScriptFromRepository);
 
@@ -3270,7 +3290,7 @@ void SettingsDialog::on_addCustomNoteFileExtensionButton_clicked() {
     bool ok;
     QString fileExtension;
     fileExtension = QInputDialog::getText(
-        this, tr("File extension"), tr("Enter your custom file extension:"),
+        this, tr("File extension"), tr("Please enter a new note file extension:"),
         QLineEdit::Normal, fileExtension, &ok);
 
     if (!ok) {
@@ -3292,15 +3312,23 @@ void SettingsDialog::on_addCustomNoteFileExtensionButton_clicked() {
  * Adds a custom note file extension
  */
 QListWidgetItem *SettingsDialog::addCustomNoteFileExtension(
-    const QString &fileExtension) {
-    if (listWidgetValueExists(ui->defaultNoteFileExtensionListWidget,
-                              fileExtension)) {
+    QString fileExtension) {
+    fileExtension = fileExtension.trimmed();
+
+    if (ui->defaultNoteFileExtensionListWidget->findItems(
+            fileExtension, Qt::MatchExactly).count() > 0) {
         return Q_NULLPTR;
     }
 
     auto *item = new QListWidgetItem(fileExtension);
     item->setFlags(item->flags() | Qt::ItemIsEditable);
-    item->setWhatsThis(fileExtension);
+
+    if (fileExtension == "md") {
+        item->setToolTip(tr("Markdown file"));
+    } else if (fileExtension == "txt") {
+        item->setToolTip(tr("Plain text file"));
+    }
+
     ui->defaultNoteFileExtensionListWidget->addItem(item);
 
     return item;
@@ -3310,7 +3338,24 @@ QListWidgetItem *SettingsDialog::addCustomNoteFileExtension(
  * Removes a custom file extension
  */
 void SettingsDialog::on_removeCustomNoteFileExtensionButton_clicked() {
-    delete (ui->defaultNoteFileExtensionListWidget->currentItem());
+    if (ui->defaultNoteFileExtensionListWidget->count() <= 1) {
+        return;
+    }
+
+    auto *item = ui->defaultNoteFileExtensionListWidget->currentItem();
+
+    if (Utils::Gui::question(this, tr("Remove note file extension"),
+             tr("Do you really want to remove the note file extension "
+                        "<strong>%1</strong>? You will not see files with this "
+                        "extension in the note list any more!").arg(item->text()),
+            QStringLiteral("remove-note-file-extension")) != QMessageBox::Yes) {
+        return;
+    }
+
+    delete item;
+
+    ui->removeCustomNoteFileExtensionButton->setEnabled(
+        ui->defaultNoteFileExtensionListWidget->count() > 1);
 }
 
 /**
@@ -3320,21 +3365,12 @@ void SettingsDialog::on_defaultNoteFileExtensionListWidget_itemChanged(
     QListWidgetItem *item) {
     // make sure the file extension doesn't start with a point
     QString fileExtension =
-        Utils::Misc::removeIfStartsWith(item->text(), QStringLiteral("."));
+        Utils::Misc::removeIfStartsWith(item->text(), QStringLiteral("."))
+            .trimmed();
 
     if (fileExtension != item->text()) {
         item->setText(fileExtension);
     }
-
-    item->setWhatsThis(fileExtension);
-}
-
-/**
- * Disables the remove custom file extension button for the first two rows
- */
-void SettingsDialog::on_defaultNoteFileExtensionListWidget_currentRowChanged(
-    int currentRow) {
-    ui->removeCustomNoteFileExtensionButton->setEnabled(currentRow > 1);
 }
 
 void SettingsDialog::on_darkModeCheckBox_toggled() {
@@ -3767,7 +3803,7 @@ void SettingsDialog::on_searchLineEdit_textChanged(const QString &arg1) {
             }
         }
 
-        // show and hide items according of if index was found in pageIndexList
+        // show and hide items according to if index was found in pageIndexList
         Q_FOREACH (QTreeWidgetItem *item, allItems) {
             // get stored index of list widget item
             int pageIndex = item->whatsThis(0).toInt();
@@ -4061,12 +4097,9 @@ void SettingsDialog::on_importSettingsButton_clicked() {
                       "scripts you were using. "
                       "You also will need to adjust some settings, especially "
                       "across platforms, but your notes will stay intact!") +
-                   "\n\n";
-    bool singleApplication = qApp->property("singleApplication").toBool();
-
-    text += singleApplication
-                ? tr("The application will be quit after the import.")
-                : tr("The application will be restarted after the import.");
+                   "\n\n" +
+                   tr("The application will be restarted after the import.") +
+                   Utils::Misc::appendSingleAppInstanceTextIfNeeded();
 
     if (QMessageBox::question(this, title, text,
                               QMessageBox::Yes | QMessageBox::No,
@@ -4101,11 +4134,7 @@ void SettingsDialog::on_importSettingsButton_clicked() {
     // make sure no settings get written after quitting
     qApp->setProperty("clearAppDataAndExit", true);
 
-    if (singleApplication) {
-        qApp->quit();
-    } else {
-        Utils::Misc::restartApplication();
-    }
+    Utils::Misc::restartApplication();
 }
 
 void SettingsDialog::on_issueAssistantPushButton_clicked() {
@@ -4352,4 +4381,109 @@ void SettingsDialog::on_webAppGenerateTokenButton_clicked() {
 void SettingsDialog::on_enableWebApplicationCheckBox_toggled() {
     bool checked = ui->enableWebApplicationCheckBox->isChecked();
     ui->webAppFrame->setEnabled(checked);
+}
+
+void SettingsDialog::on_showLineNumbersInEditorCheckBox_toggled(bool checked) {
+    if (checked && !ui->editorWidthInDFMOnlyCheckBox->isChecked()) {
+        const QSignalBlocker blocker(ui->editorWidthInDFMOnlyCheckBox);
+        ui->editorWidthInDFMOnlyCheckBox->setChecked(true);
+    }
+}
+
+void SettingsDialog::on_editorWidthInDFMOnlyCheckBox_toggled(bool checked) {
+    if (!checked && ui->showLineNumbersInEditorCheckBox->isChecked()) {
+        const QSignalBlocker blocker(ui->showLineNumbersInEditorCheckBox);
+        ui->showLineNumbersInEditorCheckBox->setChecked(false);
+    }
+}
+
+void SettingsDialog::on_webAppTokenLineEdit_textChanged(const QString &arg1) {
+    ui->qrCodeWidget->setText(QStringLiteral("qontoken://") + arg1);
+}
+
+void SettingsDialog::on_showQRCodeButton_clicked() {
+    ui->showQRCodeButton->hide();
+    ui->qrCodeWidget->show();
+}
+
+void SettingsDialog::on_scriptReloadEngineButton2_clicked() {
+    on_scriptReloadEngineButton_clicked();
+}
+
+void SettingsDialog::on_loginFlowButton_clicked() {
+    QJsonObject pollData;
+
+    // Initiate the Nextcloud Login flow v2
+    if (!OwnCloudService::initiateLoginFlowV2(
+            ui->serverUrlEdit->text(), pollData)) {
+        return;
+    }
+
+    ui->loginFlowButton->hide();
+    ui->loginFlowCancelButton->show();
+
+    auto pollUrl = pollData.value(QStringLiteral("endpoint")).toString();
+    auto token = pollData.value(QStringLiteral("token")).toString();
+
+    auto timer = new QTimer(this);
+    _loginFlowPollCount = 0;
+
+    connect(timer, &QTimer::timeout, this, [this, pollUrl, token, timer] {
+        _loginFlowPollCount++;
+
+        // If the cancel button was hidden by pressing it we want to stop the timer
+        // After 720 retries (one hour) we also stop
+        if (ui->loginFlowCancelButton->isHidden() || _loginFlowPollCount > 720) {
+            timer->stop();
+            delete timer;
+
+            return;
+        }
+
+        auto postData = QString("token=" + token).toLocal8Bit();
+        auto data = Utils::Misc::downloadUrl(pollUrl, true, postData);
+
+//        qDebug() << __func__ << " - 'data': " << data;
+
+        // Wait until there is a JSON result
+        if (!data.startsWith('{')) {
+            return;
+        }
+
+        timer->stop();
+
+        // Parse login data
+        auto jsonObject = QJsonDocument::fromJson(data).object();
+        ui->serverUrlEdit->setText(jsonObject.value(QStringLiteral("server")).toString());
+        ui->userNameEdit->setText(jsonObject.value(QStringLiteral("loginName")).toString());
+        ui->passwordEdit->setText(jsonObject.value(QStringLiteral("appPassword")).toString());
+
+        QMessageBox::information(this, QObject::tr("Login flow succeeded"),
+                             QObject::tr("Username and password were set successfully!"));
+
+        ui->loginFlowButton->show();
+        ui->loginFlowCancelButton->hide();
+        delete timer;
+    });
+
+    // We want to poll for the login data every 5 seconds
+    timer->start(5000);
+}
+
+void SettingsDialog::on_loginFlowCancelButton_clicked() {
+    // Hide the login flow cancel button so the login flow timer will be stopped
+    ui->loginFlowCancelButton->hide();
+    ui->loginFlowButton->show();
+}
+
+/**
+ * Disables the remove custom file extension button is only one item is left
+ *
+ * Needs an additional check when an item is deleted, because that seems to
+ * happen after the selection is changed!
+ */
+void SettingsDialog::on_defaultNoteFileExtensionListWidget_itemSelectionChanged()
+{
+    ui->removeCustomNoteFileExtensionButton->setEnabled(
+        ui->defaultNoteFileExtensionListWidget->count() > 1);
 }

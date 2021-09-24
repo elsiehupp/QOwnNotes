@@ -158,6 +158,7 @@ SOURCES += main.cpp\
     dialogs/sharedialog.cpp \
     widgets/fontcolorwidget.cpp \
     dialogs/evernoteimportdialog.cpp \
+    dialogs/joplinimportdialog.cpp \
     dialogs/storedimagesdialog.cpp \
     dialogs/storedattachmentsdialog.cpp \
     dialogs/actiondialog.cpp \
@@ -170,18 +171,21 @@ SOURCES += main.cpp\
     widgets/scriptsettingwidget.cpp \
     api/scriptapi.cpp \
     widgets/label.cpp \
+    widgets/qrcodewidget.cpp \
     widgets/lineedit.cpp \
     widgets/qtexteditsearchwidget.cpp \
     widgets/scriptlistwidget.cpp \
     widgets/notefolderlistwidget.cpp \
     widgets/notetreewidgetitem.cpp \
+    widgets/todoitemtreewidget.cpp \
     widgets/layoutwidget.cpp \
     dialogs/serverbookmarksimportdialog.cpp \
     dialogs/websockettokendialog.cpp \
     dialogs/imagedialog.cpp \
     dialogs/commandbar.cpp \
     models/commandmodel.cpp \
-    libraries/fuzzy/kfuzzymatcher.cpp
+    libraries/fuzzy/kfuzzymatcher.cpp \
+    libraries/qr-code-generator/QrCode.cpp
 
 HEADERS  += mainwindow.h \
     build_number.h \
@@ -253,6 +257,7 @@ HEADERS  += mainwindow.h \
     dialogs/sharedialog.h \
     widgets/fontcolorwidget.h \
     dialogs/evernoteimportdialog.h \
+    dialogs/joplinimportdialog.h \
     dialogs/storedimagesdialog.h \
     dialogs/storedattachmentsdialog.h \
     dialogs/actiondialog.h \
@@ -269,18 +274,21 @@ HEADERS  += mainwindow.h \
     widgets/scriptsettingwidget.h \
     api/scriptapi.h \
     widgets/label.h \
+    widgets/qrcodewidget.h \
     widgets/lineedit.h \
     widgets/qtexteditsearchwidget.h \
     widgets/scriptlistwidget.h \
     widgets/notefolderlistwidget.h \
     widgets/notetreewidgetitem.h \
+    widgets/todoitemtreewidget.h \
     widgets/layoutwidget.h \
     dialogs/serverbookmarksimportdialog.h \
     dialogs/websockettokendialog.h \
     dialogs/imagedialog.h \
     dialogs/commandbar.h \
     models/commandmodel.h \
-    libraries/fuzzy/kfuzzymatcher.h
+    libraries/fuzzy/kfuzzymatcher.h \
+    libraries/qr-code-generator/QrCode.hpp
 
 FORMS    += mainwindow.ui \
     dialogs/attachmentdialog.ui \
@@ -302,6 +310,7 @@ FORMS    += mainwindow.ui \
     dialogs/sharedialog.ui \
     widgets/fontcolorwidget.ui \
     dialogs/evernoteimportdialog.ui \
+    dialogs/joplinimportdialog.ui \
     dialogs/storedimagesdialog.ui \
     dialogs/storedattachmentsdialog.ui \
     dialogs/actiondialog.ui \
@@ -331,7 +340,7 @@ include(libraries/piwiktracker/piwiktracker.pri)
 include(libraries/botan/botan.pri)
 include(libraries/qkeysequencewidget/qkeysequencewidget/qkeysequencewidget.pri)
 include(libraries/qttoolbareditor/toolbar_editor.pri)
-include(libraries/fakevim/fakevim/fakevim.pri)
+include(libraries/fakevim/fakevim.pri)
 include(libraries/singleapplication/singleapplication.pri)
 include(libraries/sonnet/src/core/sonnet-core.pri)
 include(libraries/qhotkey/qhotkey.pri)

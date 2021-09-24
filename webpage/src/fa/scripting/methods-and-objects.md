@@ -200,6 +200,31 @@ var markdown = script.insertMediaFile("/path/to/your/image.png");
 
 شاید بخواهید به مثال [scribble.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/scribble.qml) نگاهی بیندازید.
 
+درج پرونده پیوست در پوشه پیوست ها
+--------------------------------------------------------
+
+### فراخوانی شگرد و پارامترها
+```cpp
+ * QML wrapper to insert an attachment file into the `attachments` folder and
+ * returning the attachment url or the markdown text of the attachment
+ * relative to the current note
+ *
+ * @param {QString} attachmentFilePath
+ * @param {QString} fileName to use in the markdown
+ * @param {bool} returnUrlOnly if true only the attachment url will be returned
+ * (default false)
+ * @return {QString} the attachment markdown or url
+ */
+QString ScriptingService::insertAttachmentFile(const QString &attachmentFilePath,
+                                               const QString &fileName,
+                                               bool returnUrlOnly);
+```
+
+### مثال
+```js
+var markdown = script.insertAttachmentFile("/path/to/your/file.png");
+```
+
 بازسازی پیش نمایش یادداشت
 -----------------------------
 
@@ -220,7 +245,7 @@ script.regenerateNotePreview();
 
 شاید بخواهید به مثال [scribble.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/scribble.qml) نگاهی بیندازید.
 
-ثبت فعالیت سفارشی
+Registering a custom action
 ---------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -269,10 +294,10 @@ script.registerCustomAction("mycustomaction1", "Menu text", "Button text", "/usr
 سپس در صورت تمایل می توانید از شناسه با تابع `customActionInvoked`در اسکریپتی نظیر [custom-actions.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/custom-actions.qml) استفاده کنید.
 
 ::: tip
-You can also trigger a custom action after the application was started with the parameter `--action customAction_<identifier>`. For more information please take a look at [Trigger menu actions after startup](../getting-started/cli-parameters.md#trigger-menu-actions-after-startup).
+شما همچنین می توانید عملیات سفارشی را پس از شروع به کار برنامه با پارامتر `--action customAction_<identifier>` راه اندازی کنید. برای کسب اطلاعات بیشتر لطفاً به [راه اندازی منو اکشن ها بعد از شروع به کار](../getting-started/cli-parameters.md#trigger-menu-actions-after-startup) مراجعه نمایید.
 :::
 
-ثبت برچسب
+Registering a label
 -------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -295,13 +320,13 @@ script.registerLabel("long-label", "another very long text, another very long te
 script.registerLabel("counter-label");
 ```
 
-The labels will be visible in the scripting dock widget.
+برچسب ها در ابزارک لنگرگاه اسکریپت نویسی قابل رؤیت هستند.
 
-You can use both plain text or html in the labels. The text will be selectable and links can be clicked.
+شما می توانید هم از متن ساده و هم html در برچسب ها استفاده کنید. متن قابل انتخاب بوده و می توان روی پیوندها کلیک کرد.
 
-You may then want to take a look at the example script [scripting-label-demo.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/scripting-label-demo.qml).
+سپس به عنوان مثال می توانید اسکریپت [scripting-label-demo.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/scripting-label-demo.qml) را ملاحظه کنید.
 
-تنظیم متن برچسب ثبت شده
+Setting the text of a registered label
 --------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -320,11 +345,11 @@ void ScriptingService::setLabelText(QString identifier, QString text);
 script.setLabelText("counter-label", "counter text");
 ```
 
-You can use both plain text or html in the labels. The text will be selectable and links can be clicked.
+شما می توانید هم از متن ساده و هم html در برچسب ها استفاده کنید. متن قابل انتخاب بوده و می توان روی پیوندها کلیک کرد.
 
-You may then want to take a look at the example script [scripting-label-demo.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/scripting-label-demo.qml).
+سپس به عنوان مثال می توانید اسکریپت [scripting-label-demo.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/scripting-label-demo.qml) را ملاحظه کنید.
 
-ایجاد یادداشت جدید
+Creating a new note
 -------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -342,7 +367,7 @@ void ScriptingService::createNote(QString text);
 script.createNote("My note headline\n===\n\nMy text");
 ```
 
-You may want to take a look at the example [custom-actions.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/custom-actions.qml).
+شاید بخواهید به مثال [custom-actions.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/custom-actions.qml) نگاهی بیندازید.
 
 ::: tip
 If you turned off that your note headline determines the note filename then you have to rename your note file yourself afterwards, like this:
@@ -353,7 +378,7 @@ note.renameNoteFile('your-filename');
 ```
 :::
 
-دسترسی به تخته برش
+Accessing the clipboard
 -----------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -374,7 +399,7 @@ var clipboardHtml = script.clipboard(true);
 
 You may want to take a look at the example [custom-actions.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/custom-actions.qml).
 
-نوشتن متن برای ویرایش متن یادداشت
+Write text to the note text edit
 --------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -397,7 +422,7 @@ You might want to look at the custom action `transformTextRot13` in the example 
 
 You can use this together with `noteTextEditSelectAll` to overwrite the whole text of the current note.
 
-خواندن متن منتخب در ویرایش متن یادداشت
+Read the selected text in the note text edit
 --------------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -418,7 +443,7 @@ var text = script.noteTextEditSelectedText();
 
 You might want to look at the custom action `transformTextRot13` in the example [custom-actions.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/custom-actions.qml).
 
-خواندن کل متن در ویرایش متن یادداشت
+Select all text in the note text edit
 -------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -436,7 +461,7 @@ script.noteTextEditSelectAll();
 
 You can use this together with `noteTextEditWrite` to overwrite the whole text of the current note.
 
-انتخاب خط کنونی در ویرایش متن یادداشت
+Select the current line in the note text edit
 ---------------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -452,7 +477,7 @@ void ScriptingService::noteTextEditSelectCurrentLine();
 script.noteTextEditSelectCurrentLine();
 ```
 
-انتخاب کلمه کنونی در ویرایش متن یادداشت
+Select the current word in the note text edit
 ---------------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -468,7 +493,7 @@ void ScriptingService::noteTextEditSelectCurrentWord();
 script.noteTextEditSelectCurrentWord();
 ```
 
-تنظیم متن منتخب کنونی در ویرایش متن یادداشت
+Set the currently selected text in the note text edit
 -----------------------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -490,7 +515,7 @@ script.noteTextEditSetSelection(
     script.noteTextEditSelectionEnd() + 1);
 ```
 
-قرار گرفتن در موقعیت شروع انتخاب کنونی در ویرایش متن یادداشت
+Get the start position of the current selection in the note text edit
 ---------------------------------------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -506,7 +531,7 @@ int ScriptingService::noteTextEditSelectionStart();
 script.log(script.noteTextEditSelectionStart());
 ```
 
-قرار گرفتن در موقعیت پایانی انتخاب کنونی در ویرایش متن یادداشت
+Get the end position of the current selection in the note text edit
 -------------------------------------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -522,7 +547,7 @@ int ScriptingService::noteTextEditSelectionEnd();
 script.log(script.noteTextEditSelectionEnd());
 ```
 
-تنظیم نشانگر متن در ویرایش یادداشت کنونی نسبت به موقعیت معین
+Set the text cursor in the note text edit to a certain position
 ---------------------------------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -546,7 +571,7 @@ script.noteTextEditSetCursorPosition(10);
 script.noteTextEditSetCursorPosition(-1);
 ```
 
-قرارگیری موقعیت کنونی نشانگر متن در ویرایش متن یادداشت
+Get the current position of the text cursor in the note text edit
 -----------------------------------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -563,7 +588,7 @@ int ScriptingService::noteTextEditCursorPosition();
 script.log(script.noteTextEditCursorPosition());
 ```
 
-خواندن کلمه کنونی از ویرایش متن یادداشت
+Read the current word from the note text edit
 ---------------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -587,7 +612,7 @@ var text = script.noteTextEditCurrentWord();
 
 You may want to take a look at the example [autocompletion.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/autocompletion.qml).
 
-بررسی اینکه آیا پلتفرم لینوکس، سیستم عامل X یا ویندوز است
+Check whether platform is Linux, OS X or Windows
 ------------------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -604,7 +629,7 @@ if (script.platformIsLinux()) {
 }
 ```
 
-برچسب گذاری یادداشت کنونی
+Tag the current note
 --------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -625,7 +650,7 @@ script.tagCurrentNote("favorite");
 
 You might want to look at the custom action `favoriteNote` in the example [favorite-note.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/favorite-note.qml).
 
-ایجاد یا فراهم‌سازی برچسب با لیست خرده نشانه نام آن 
+Create or fetch a tag by its name breadcrumb list
 -------------------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -650,7 +675,7 @@ TagApi *ScriptingService::getTagByNameBreadcrumbList(
 var tag = script.getTagByNameBreadcrumbList(["level1", "level2", "level3"]);
 ```
 
-جستجوی برچسب ها بر اساس نام
+Search for tags by name
 -----------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -672,7 +697,7 @@ var tags = script.searchTagsByName("game");
 
 You may want to take a look at the example [autocompletion.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/autocompletion.qml).
 
-جستجوی یادداشت ها بر اساس متن یادداشت
+Search for notes by note text
 -----------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -701,7 +726,7 @@ noteIds.forEach(function (noteId){
 
 You may want to take a look at the example [unique-note-id.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/unique-note-id.qml).
 
-افزودن برگه سبک نگارش سفارشی
+Add a custom stylesheet
 -----------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -722,13 +747,25 @@ script.addStyleSheet("QTreeWidget#noteTreeWidget {font-size: 30px;}");
 
 You may want to take a look at the example [custom-stylesheet.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/custom-stylesheet.qml).
 
-You can get the object names from the `*.ui` files, for example [mainwindow.ui](https://github.com/pbek/QOwnNotes/blob/develop/src/mainwindow.ui).
+شما می توانید اسامی ابزاره ها را از پرونده های `*.ui` پیدا کنید؛ مثلاً پنجره اصلی معادل [mainwindow.ui](https://github.com/pbek/QOwnNotes/blob/develop/src/mainwindow.ui) می باشد.
+
+مستندات Qt (مانند [QMainWindow](https://doc.qt.io/qt-5/qmainwindow.html)) می تواند به شما کمک کند تا نحوه ارتباط ابزاره ها را با یکدیگر مشاهده کنید (`Inherits` را در صفحات جستجو کنید).
+
+ابزاره پایه برای تقریباً همه چیز [QWidget](https://doc.qt.io/qt-5/qwidget.html) است. So just styling `QWidget` with for example `QWidget {background-color: black; color: white;}` would mean everything has a black background color and a white foreground color.
+
+::: tip
+The [style.qss](https://github.com/pbek/QOwnNotes/blob/develop/src/libraries/qdarkstyle/style.qss) of [qdarkstyle](https://github.com/pbek/QOwnNotes/blob/develop/src/libraries/qdarkstyle) might also be a good reference for styles you can change.
+:::
 
 Take a look at [Style Sheet Reference](http://doc.qt.io/qt-5/stylesheet-reference.html) for a reference of what styles are available.
 
 If you want to inject styles into html preview to alter the way notes are previewed please look at [notetomarkdownhtmlhook](hooks.html#notetomarkdownhtmlhook).
 
-بارگذاری مجدد موتور اسکریپت نویسی
+::: tip
+If you actually want to see how the dialogs look and what the names are you could download [Qt Creator](https://www.qt.io/product/development-tools) and open the `*.ui` files in it.
+:::
+
+Reloading the scripting engine
 ------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -745,7 +782,7 @@ void ScriptingService::reloadScriptingEngine();
 script.reloadScriptingEngine();
 ```
 
-فراهم‌سازی یادداشت بر اساس نام پرونده آن
+Fetching a note by its file name
 --------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -767,7 +804,7 @@ NoteApi* ScriptingService::fetchNoteByFileName(QString fileName,
 script.fetchNoteByFileName("my note.md");
 ```
 
-فراهم سازی یادداشت بر اساس شناسه کاربری آن
+Fetching a note by its id
 -------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -789,7 +826,7 @@ script.fetchNoteById(243);
 
 You may want to take a look at the example [export-notes-as-one-html.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/export-notes-as-one-html.qml).
 
-بررسی امکان وجود یادداشت بر اساس نام پرونده آن
+Checking if a note exists by its file name
 ------------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -815,7 +852,7 @@ script.noteExistsByFileName("my note.md", note.id);
 
 You may want to take a look at the example [use-tag-names-in-filename.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/use-tag-names-in-filename.qml).
 
-رونوشت برداری از متن به تخته برش
+Copying text into the clipboard
 -------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -837,7 +874,7 @@ script.setClipboardText("text to copy");
 
 You may want to take a look at the example [selected-markdown-to-bbcode.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/selected-markdown-to-bbcode.qml).
 
-پرش به یادداشت
+Jumping to a note
 -----------------
 
 ### فراخوانی شگرد و پارامترها
@@ -858,7 +895,7 @@ script.setCurrentNote(note);
 
 You may want to take a look at the example [journal-entry.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/journal-entry.qml).
 
-پرش به زیر پوشه یادداشت
+Jumping to a note subfolder
 ---------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -887,7 +924,7 @@ script.jumpToNoteSubFolder("a sub folder/sub");
 You can create a new note subfolder in the current subfolder by calling [`mainWindow.createNewNoteSubFolder`](classes.html#example-2).
 :::
 
-نمایش صندوق پیغام اطلاعات
+Showing an information message box
 ----------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -907,7 +944,7 @@ void ScriptingService::informationMessageBox(QString text, QString title);
 script.informationMessageBox("The text I want to show", "Some optional title");
 ```
 
-نمایش صندوق پیغام پرسش
+Showing a question message box
 ------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -941,7 +978,7 @@ For information about buttons see [StandardButton](https://doc.qt.io/qt-5/qmessa
 
 You may also want to take a look at the example [input-dialogs.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/input-dialogs.qml).
 
-نمایش کادر گفتگوی گشودن پرونده
+Showing an open file dialog
 ---------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -964,10 +1001,10 @@ QString ScriptingService::getOpenFileName(QString caption, QString dir,
 var fileName = script.getOpenFileName("Please select an image", "/home/user/images", "Images (*.png *.xpm *.jpg)");
 ```
 
-نمایش کادر گفتگوی ذخیره پرونده
+Showing a save file dialog
 --------------------------
 
-### فراخوانی شگرد و پارامترها
+### Method call and parameters
 ```cpp
 /**
  * Shows a save file dialog
@@ -989,14 +1026,14 @@ var fileName = script.getSaveFileName("Please select HTML file to save", "output
 
 You may want to take a look at the example [export-notes-as-one-html.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/export-notes-as-one-html.qml).
 
-ثبت متغیرهای تنظیمات اسکریپت
+Registering script settings variables
 -------------------------------------
 
 You need to define your settings variables as properties in your script and register them in a property named `settingsVariables`.
 
 The user can then set these properties in the script settings.
 
-### مثال
+### Example
 ```js
 // you have to define your registered variables so you can access them later
 property string myString;
@@ -1080,7 +1117,7 @@ function registerSettingsVariables() {
 
 You may also want to take a look at the example [variables.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/variables.qml).
 
-ذخیره سازی و بارگذاری متغیرهای ماندگار
+Storing and loading persistent variables
 ----------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -1121,7 +1158,7 @@ Please make sure to use a meaningful prefix in your key like `PersistentVariable
 
 You may also want to take a look at the example [persistent-variables.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/persistent-variables.qml).
 
-بارگذاری متغیرهای تنظیمات برنامه
+Loading application settings variables
 --------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -1145,7 +1182,7 @@ script.log(script.getApplicationSettingsVariable("gitExecutablePath"));
 
 Keep in mind that settings actually can be empty, you have to take care about that yourself. `defaultValue` is only used if the setting doesn't exist at all.
 
-ایجاد فهرست حافظه نهان
+Creating a cache directory
 --------------------------
 
 You can cache files at the default cache location of your system.
@@ -1167,12 +1204,12 @@ QString ScriptingService::cacheDir(const QString &subDir) const;
 var cacheDirForScript = script.cacheDir("my-script-id");
 ```
 
-پاکسازی فهرست حافظه نهان
+Clearing a cache directory
 --------------------------
 
 You can clear the cache files of your script by passing its name to clearCacheDir().
 
-### فراخوانی شگرد و پارامترها
+### Method call and parameters
 ```cpp
 /**
  * Clears the cache directory for a script
@@ -1183,13 +1220,13 @@ You can clear the cache files of your script by passing its name to clearCacheDi
 bool ScriptingService::clearCacheDir(const QString &subDir) const;
 ```
 
-### مثال
+### Example
 ```js
 // clear cache directory of my-script-id 
 script.clearCacheDir("my-script-id");
 ```
 
-خواندن مسیر به فهرست اسکریپت
+Reading the path to the directory of your script
 ------------------------------------------------
 
 If you need to get the path to the directory where your script is placed to for example load other files you have to register a `property string scriptDirPath;`. This property will be set with the path to the script's directory.
@@ -1209,7 +1246,7 @@ Script {
 }
 ```
 
-تبدیل جداکننده های مسیر به موارد محلی
+Converting path separators to native ones
 -----------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -1233,7 +1270,7 @@ QString ScriptingService::toNativeDirSeparators(QString path);
 script.log(script.toNativeDirSeparators("c:/winnt/system32"));
 ```
 
-تبدیل جداکننده های مسیر از موارد محلی
+Converting path separators from native ones
 -------------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -1255,7 +1292,7 @@ QString ScriptingService::fromNativeDirSeparators(QString path);
 script.log(script.fromNativeDirSeparators("c:\\winnt\\system32"));
 ```
 
-دریافت جداکننده فهرست محلی
+Getting the native directory separator
 --------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -1274,7 +1311,7 @@ QString ScriptingService::dirSeparator();
 script.log(script.dirSeparator());
 ```
 
-دریافت لیستی از مسیرهای همه یادداشت های منتخب
+Getting a list of the paths of all selected notes
 -------------------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -1295,7 +1332,7 @@ script.log(script.selectedNotesPaths());
 
 You may want to take a look at the example [external-note-diff.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/external-note-diff.qml).
 
-دریافت لیستی از شناسه های کاربری همه یادداشت های منتخب
+Getting a list of the ids of all selected notes
 -----------------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -1316,7 +1353,7 @@ script.log(script.selectedNotesIds());
 
 You may want to take a look at the example [export-notes-as-one-html.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/export-notes-as-one-html.qml).
 
-راه اندازی منو اکشن
+Triggering a menu action
 ------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -1346,7 +1383,7 @@ You may want to take a look at the example [disable-readonly-mode.qml](https://g
 You can get the object names of the menu action from [mainwindow.ui](https://github.com/pbek/QOwnNotes/blob/develop/src/mainwindow.ui). Just search for the English menu title. Note that these texts can change over time.
 :::
 
-گشودن کادر گفتگوی ورود با صندوق انتخاب
+Opening an input dialog with a select box
 -----------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -1375,7 +1412,7 @@ script.log(result);
 
 You may want to take a look at the example [input-dialogs.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/input-dialogs.qml).
 
-گشودن کادر گفتگوی ورود با ویرایش خط
+Opening an input dialog with a line edit
 ----------------------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -1399,7 +1436,7 @@ var result = script.inputDialogGetText(
 script.log(result);
 ```
 
-بررسی امکان وجود پرونده
+Checking if a file exists
 -------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -1418,7 +1455,7 @@ var result = script.fileExists(filePath);
 script.log(result);
 ```
 
-خواندن متن از پرونده
+Reading text from a file
 ------------------------
 
 ### فراخوانی شگرد و پارامترها
@@ -1442,10 +1479,10 @@ if(script.fileExists(filePath)){
 ```
 
 
-نوشتن متن در پرونده
+Writing text to a file
 ----------------------
 
-### فراخوانی شگرد و پارامترها
+### Method call and parameters
 ```cpp
 /**
  * Writes a text to a file
@@ -1458,7 +1495,7 @@ if(script.fileExists(filePath)){
 bool ScriptingService::writeToFile(const QString &filePath, const QString &data, bool createParentDirs);
 ```
 
-### مثال
+### Example
 ```js
 var result = script.writeToFile(filePath, html);
 script.log(result);
@@ -1466,7 +1503,7 @@ script.log(result);
 
 You may want to take a look at the example [export-notes-as-one-html.qml](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples/export-notes-as-one-html.qml).
 
-کار با وب سوکت ها
+Working with websockets
 -----------------------
 
 You can remote control QOwnNotes by using `WebSocketServer`.

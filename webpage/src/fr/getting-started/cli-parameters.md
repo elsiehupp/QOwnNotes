@@ -12,7 +12,8 @@ Vous pouvez utiliser ces paramètres sur l'interface de ligne de commande:
 | `--allow-multiple-instances` | Permet de démarrer plusieurs instances de QOwnNotes même si elles ne sont pas autorisées dans les paramètres                                |
 | `--action <name>`      | Triggers a menu action after the application was started (see below)                                                                        |
 
-Si vous rencontrez des problèmes avec votre installation de QOwnNotes, vous voudrez peut-être commencer l'application avec de nouveaux paramètres sans perdre vos paramètres actuels en utilisant le paramètre `--session`.
+::: tip
+If you run into troubles with your installation of QOwnNotes you may want start the application with fresh settings without losing your current settings by using the `--session` parameter.
 
 ```bash
 QOwnNotes --session test
@@ -27,28 +28,28 @@ Vous pouvez exécuter l'application sur l'interface de ligne de commande différ
 | macOS             | `/Applications/QOwnNotes.app/Contents/MacOS/QOwnNotes`                             |
 | Windows           | `QOwnNotes.exe`                                                                    |
 
-## Trigger menu actions after startup
+## Déclencher des actions de menu après le démarrage
 
-With the parameter `--action <name>` you can trigger menu actions after the application was started.
+Avec le paramètre `--action <name>` vous pouvez déclencher des actions de menu après le démarrage de l'application.
 
-For example to open the todo list dialog after startup use:
+Par exemple, pour ouvrir la boîte de dialogue de la liste de tâches après le démarrage, utilisez :
 
 ```bash
 QOwnNotes --action actionShow_Todo_List
 ```
 
 ::: tip
-You can get the object names of the menu action from [mainwindow.ui](https://github.com/pbek/QOwnNotes/blob/develop/src/mainwindow.ui). Just search for the English menu title. Note that these texts can change over time.
+Vous pouvez obtenir les noms d'objet de l'action de menu à partir de [mainwindow.ui](https://github.com/pbek/QOwnNotes/blob/develop/src/mainwindow.ui). Recherchez simplement le titre du menu en anglais. Notez que ces textes peuvent changer avec le temps.
 :::
 
-To trigger [scripting actions](../scripting/methods-and-objects.md#registering-a-custom-action) use `customAction_` followed by the identifier of the custom action. The identifier of the custom action is the first parameter of the `script.registerCustomAction` call in the script.
+To trigger [scripting actions](../scripting/methods-and-objects.md#registering-a-custom-action) use `customAction_` followed by the identifier of the custom action. L'identifiant de l'action personnalisée est le premier paramètre de l'appel `script.registerCustomAction` dans le script.
 
-For example to run the custom action `myAction` start QOwnNotes like this:
+Par exemple, pour exécuter l'action personnalisée `myAction`, lancez QOwnNotes comme ceci :
 
 ```bash
 QOwnNotes --action customAction_myAction
 ```
 
 ::: tip
-If you run QOwnNotes a second time with the action parameter and only have allowed one application instance, then the menu action will be triggered in the first instance.
+Si vous exécutez QOwnNotes une deuxième fois avec le paramètre d'action et que vous n'avez autorisé qu'une seule instance d'application, l'action de menu sera déclenchée dans la première instance.
 :::

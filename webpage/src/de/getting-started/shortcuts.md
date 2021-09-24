@@ -40,9 +40,9 @@
 - <kbd>Alt</kbd> + <kbd>⇧</kbd> + <kbd>I</kbd> öffnet das Skript-Repository-Dialogfeld
 - <kbd>F4</kbd> springt zum Notizenbearbeitungsfeld
 - <kbd>F5</kbd> springt zur Notizenliste
-- <kbd>F6</kbd> jumps to the note subfolder panel
-- <kbd>F7</kbd> jumps to the tags panel
-- <kbd>F8</kbd> jumps to the navigation panel
+- <kbd>F6</kbd> springt zum Unterordnerfenster für Notizen
+- <kbd>F7</kbd> springt zum Tag-Panel
+- <kbd>F8</kbd> springt zum Navigationsbereich
 - <kbd>F10</kbd> aktiviert das Kontextmenü des aktuellen Widgets
 - <kbd>F11</kbd> schaltet den Vollbildmodus um
 - <kbd>Alt</kbd> + <kbd>⇧</kbd> + <kbd>H</kbd> kopiert die Überschrift der aktuellen Notiz
@@ -68,40 +68,40 @@
     - <kbd>Strg</kbd> + <kbd>Alt</kbd> + <kbd>Ab</kbd> macht dasselbe
 - <kbd>Alt</kbd> + <kbd>Rücktaste</kbd> löscht die aktuelle Zeile
 - <kbd>Strg</kbd> + <kbd>Rücktaste</kbd> löscht das aktuelle Wort
-- <kbd>Ctrl</kbd> + <kbd>L</kbd> opens a dialog to add a text link (also works on selected text)
-- <kbd>Ctrl</kbd> + <kbd>⇧</kbd> + <kbd>L</kbd> opens a dialog to add note link
-- <kbd>Ctrl</kbd> + <kbd>T</kbd> inserts the current date in ISO 8601 format
-- <kbd>Ctrl</kbd> + <kbd>⇧</kbd> + <kbd>I</kbd> inserts an image (the image will be copied to the `media` folder in the current notes folder)
-- <kbd>Ctrl</kbd> + <kbd>⇧</kbd> + <kbd>X</kbd> inserts an attachment (the file will be copied to the `attachments` folder in the current notes folder)
-- <kbd>Alt</kbd> + <kbd>⇧</kbd> + <kbd>T</kbd> inserts a table
-- <kbd>Ctrl</kbd> + <kbd>⇧</kbd> + <kbd>C</kbd> inserts a code block at the current position
-- <kbd>Ctrl</kbd> + <kbd>⇧</kbd> + <kbd>B</kbd> inserts a block quote at the current position
-- <kbd>Ctrl</kbd> + <kbd>B</kbd> formats the selected text bold
-- <kbd>Ctrl</kbd> + <kbd>I</kbd> formats the selected text italic
-- <kbd>Ctrl</kbd> + <kbd>U</kbd> formats the selected text underline
-- <kbd>Alt</kbd> + <kbd>⇧</kbd> + <kbd>S</kbd> strikes out the selected text
-- <kbd>Ctrl</kbd> + <kbd>⇧</kbd> + <kbd>U</kbd> cycles through the cases of the selected text
-- <kbd>Tab</kbd> indents the selected text (also works on multiple lines)
-    - <kbd>⇧</kbd> + <kbd>Tab</kbd> un-indents the selected text
-- <kbd>Tab</kbd> after an unordered list character indents the list item
-    - <kbd>⇧</kbd> + <kbd>Tab</kbd> after an unordered list character un-indents the list item
-- <kbd>Return</kbd> in lists creates a new list item
-- <kbd>Alt</kbd> + <kbd>Left</kbd> jumps back in the note history
-    - <kbd>Alt</kbd> + <kbd>Right</kbd> jumps forward in the note history
-- <kbd>Ctrl</kbd> + <kbd>⇧</kbd> + <kbd>1..9</kbd> sets a note bookmark on bookmark slot 1..9
-- <kbd>Ctrl</kbd> + <kbd>0..9</kbd> jumps to the note bookmark on bookmark slot 0..9
-- <kbd>Ctrl</kbd> + <kbd>+</kbd> increases the note text font size by one point
-- <kbd>Ctrl</kbd> + <kbd>-</kbd> decreases the note text font size by one point
-- <kbd>Ctrl</kbd> + <kbd>0</kbd> resets the note text font size
-- <kbd>Ctrl</kbd> + <kbd>Space</kbd> tries to solve simple equations like `(4+5)*3=` in front of the cursor, auto-completes text or opens urls
-- <kbd>Ctrl</kbd> + <kbd>⇧</kbd> + <kbd>H</kbd> inserts a headline from the note filename at the top of the note
-- <kbd>Alt</kbd> + <kbd>⇧</kbd> + <kbd>X</kbd> splits the current note into two notes at the current cursor position
-- <kbd>Alt</kbd> + <kbd>⇧</kbd> + <kbd>W</kbd> searches for the selected text on the web
-- <kbd>Ctrl</kbd> + <kbd>Up</kbd> scrolls the content up
-- <kbd>Ctrl</kbd> + <kbd>Down</kbd> scrolls the content down
-- <kbd>Ctrl</kbd> + <kbd>⇧</kbd> + <kbd>Down</kbd> moves the current line down
-- <kbd>Ctrl</kbd> + <kbd>⇧</kbd> + <kbd>Up</kbd> moves the current line up
-- <kbd>⇧</kbd> + <kbd>Return</kbd> adds two spaces and a newline character to force a markdown newline
+- <kbd>Strg</kbd> + <kbd>L</kbd> öffnet einen Dialog zum Hinzufügen eines Textlinks (funktioniert auch bei markiertem Text)
+- <kbd>Strg</kbd> + <kbd>⇧</kbd> + <kbd>L</kbd> öffnet einen Dialog zum Hinzufügen eines Notizlinks
+- <kbd>Strg</kbd> + <kbd>T</kbd> fügt das aktuelle Datum im ISO 8601-Format ein
+- <kbd>Strg</kbd> + <kbd>⇧</kbd> + <kbd>I</kbd> fügt ein Bild ein (das Bild wird in den Ordner `media` im aktuellen Notizenordner kopiert)
+- <kbd>Strg</kbd> + <kbd>⇧</kbd> + <kbd>X</kbd> fügt einen Anhang ein (die Datei wird in den Ordner `Anhänge` des aktuellen Notizenordners kopiert)
+- <kbd>Alt</kbd> + <kbd>⇧</kbd> + <kbd>T</kbd> fügt eine Tabelle ein
+- <kbd>Strg</kbd> + <kbd>⇧</kbd> + <kbd>C</kbd> fügt an der aktuellen Position einen Codeblock ein
+- <kbd>Strg</kbd> + <kbd>⇧</kbd> + <kbd>B</kbd> fügt an der aktuellen Position ein Blockzitat ein
+- <kbd>Strg</kbd> + <kbd>B</kbd> formatiert den ausgewählten Text fett
+- <kbd>Strg</kbd> + <kbd>I</kbd> formatiert den ausgewählten Text kursiv
+- <kbd>Strg</kbd> + <kbd>U</kbd> formatiert den ausgewählten Text unterstrichen
+- <kbd>Alt</kbd> + <kbd>⇧</kbd> + <kbd>S</kbd> streicht den ausgewählten Text durch
+- <kbd>Strg</kbd> + <kbd>⇧</kbd> + <kbd>U</kbd> durchläuft die Buchstaben des ausgewählten Textes
+- <kbd>Tab</kbd> rückt den ausgewählten Text ein (funktioniert auch für mehrere Zeilen)
+    - <kbd>⇧</kbd> + <kbd>Tab</kbd> hebt die Einrückung für den ausgewählten Text auf
+- <kbd>Tab</kbd> rückt das Listenelement nach einem ungeordneten Listenzeichen ein
+    - <kbd>⇧</kbd> + <kbd>Tab</kbd> hebt das Listenelement nach einem ungeordneten Listenzeichen auf
+- <kbd>Eingabe</kbd> in Listen erstellt ein neues Listenelement
+- <kbd>Alt</kbd> + <kbd>Links</kbd> springt im Notenverlauf ein Element rückwärts
+    - <kbd>Alt</kbd> + <kbd>Rechts</kbd> springt im Notenverlauf ein Element vorwärts
+- <kbd>Strg</kbd> + <kbd>⇧</kbd> + <kbd>1..9</kbd> setzt ein Notizenlesezeichen auf Lesezeichenplatz 1..9
+- <kbd>Strg</kbd> + <kbd>0..9</kbd> springt zum Notizen-Lesezeichen im Lesezeichen-Slot 0..9
+- <kbd>Strg</kbd> + <kbd>0..9</kbd> springt zum Notizenlesezeichen im Lesezeichen-Slot 0..9
+- <kbd>Strg</kbd> + <kbd>-</kbd> verringert die Schriftgröße des Notizentextes um einen Punkt
+- <kbd>Strg</kbd> + <kbd>0</kbd> setzt die Schriftgröße des Notizentextes zurück
+- Versucht, einfache Gleichungen wie `(4+5)*3=` vor dem Cursor zu lösen, vervollständigt Text automatisch oder öffnet URLs
+- <kbd>Ctrl</kbd> + <kbd>⇧</kbd> + <kbd>H</kbd>  fügt eine Überschrift aus dem Dateinamen der Notiz oben in der Notiz ein
+- <kbd>Alt</kbd> + <kbd>⇧</kbd> + <kbd>X</kbd>  teilt die aktuelle Notiz an der aktuellen Cursorposition in zwei Notizen auf
+- <kbd>Alt</kbd> + <kbd>⇧</kbd> + <kbd>W</kbd> sucht im Web nach dem ausgewählten Text
+- <kbd>Strg</kbd> + <kbd>Nach oben</kbd> scrollt den Inhalt nach oben
+- <kbd>Strg</kbd> + <kbd>Nach unten</kbd> scrollt den Inhalt nach unten
+- <kbd>Strg</kbd> + <kbd>⇧</kbd> + <kbd>Nach unten</kbd> verschiebt die aktuelle Zeile nach unten
+- <kbd>Strg</kbd> + <kbd>⇧</kbd> + <kbd>Nach oben</kbd> verschiebt die aktuelle Zeile nach oben
+- <kbd>⇧</kbd> + <kbd>Eingabe</kbd> fügt zwei Leerzeichen und ein Zeilenumbruchzeichen hinzu, um einen Markdown-Zeilenumbruch zu erzwingen
 
 ### Im Notizvorschaufenster
 
@@ -156,9 +156,9 @@
 - <kbd>Strg</kbd> + <kbd>⇧</kbd> + <kbd>I</kbd> öffnet den Skript-Repository-Dialog
 - <kbd>F4</kbd> springt zum Notizenbearbeitungsfeld
 - <kbd>F5</kbd> springt zur Notizenliste
-- <kbd>F6</kbd> jumps to the note subfolder panel
-- <kbd>F7</kbd> jumps to the tags panel
-- <kbd>F8</kbd> jumps to the navigation panel
+- <kbd>F6</kbd> springt zum Unterordnerfenster für Notizen
+- <kbd>F7</kbd> springt zum Tag-Panel
+- <kbd>F8</kbd> springt zum Navigationsbereich
 - <kbd>F10</kbd> aktiviert das Kontextmenü des aktuellen Widgets
 - <kbd>⌘</kbd> + <kbd>F11</kbd> schaltet den Vollbildmodus um
 - <kbd>Strg</kbd> + <kbd>⇧</kbd> + <kbd>H</kbd> kopiert die Überschrift der aktuellen Notiz
@@ -177,203 +177,54 @@
 
 - <kbd>⌘</kbd> + <kbd>Klicken Sie</kbd> auf einen Link, um ihn zu öffnen
 - Mit <kbd>⌘</kbd> + <kbd>F</kbd> können Sie in der aktuellen Notiz suchen
-    - Verwenden Sie die Tasten <kbd> Auf </kbd> und <kbd> Ab </kbd> oder <kbd> F3 </kbd> und <kbd> ⇧ </ 0> + <kbd> F3 </kbd>, um zum  vorherigen und nächsten Treffer zu springen</p></li> 
-      
-      <li>
-        <p spaces-before="0">
-          <kbd>Esc</kbd> schließt die Suchleiste
-        </p>
-      </li></ul></li> 
-      
-      <li>
-        Mit <kbd>⌘</kbd> + <kbd>R</kbd> können Sie in der aktuellen Notiz suchen und ersetzen
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>D</kbd> dupliziert die aktuelle Zeile oder den ausgewählten Text <ul>
-          <li>
-            <kbd>⌘</kbd> + <kbd>Strg</kbd> + <kbd>Ab</kbd> macht dasselbe
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>Rücktaste</kbd> löscht die aktuelle Zeile
-      </li>
-      
-      <li>
-        <kbd>Strg</kbd> + <kbd>Rücktaste</kbd> löscht das aktuelle Wort
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>L</kbd> opens a dialog to add a text link (also works on selected text)
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>L</kbd> opens a dialog to add note link
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>T</kbd> inserts the current date in ISO 8601 format
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>I</kbd> inserts an image (the image will be copied to the <code>media</code> folder in the current notes folder)
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>X</kbd> inserts an attachment (the file will be copied to the <code>attachments</code> folder in the current notes folder)
-      </li>
-      
-      <li>
-        <kbd>Ctrl</kbd> + <kbd>⇧</kbd> + <kbd>T</kbd> inserts a table
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>C</kbd> inserts a code block at the current position
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>B</kbd> inserts a block quote at the current position
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>B</kbd> formats the selected text bold
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>I</kbd> formats the selected text italic
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>U</kbd> formats the selected text underline
-      </li>
-      
-      <li>
-        <kbd>Ctrl</kbd> + <kbd>⇧</kbd> + <kbd>S</kbd> strikes out the selected text
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>U</kbd> cycles through the cases of the selected text
-      </li>
-      
-      <li>
-        <kbd>Tab</kbd> indents the selected text (also works on multiple lines) <ul>
-          <li>
-            <kbd>⇧</kbd> + <kbd>Tab</kbd> un-indents the selected text
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <p spaces-before="0">
-          <kbd>Tab</kbd> after an unordered list character indents the list item
-        </p>
-        <ul>
-          <li>
-            <kbd>⇧</kbd> + <kbd>Tab</kbd> after an unordered list character un-indents the list item
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <p spaces-before="0">
-          <kbd>Return</kbd> in lists creates a new list item
-        </p>
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>Ctrl</kbd> + <kbd>Left</kbd> jumps back in the note history <ul>
-          <li>
-            <kbd>⌘</kbd> + <kbd>Ctrl</kbd> + <kbd>Right</kbd> jumps forward in the note history
-          </li>
-        </ul>
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>1..9</kbd> sets a note bookmark on bookmark slot 1..9
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>0..9</kbd> jumps to the note bookmark on bookmark slot 0..9
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>+</kbd> increases the note text font size by one point
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>-</kbd> decreases the note text font size by one point
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>0</kbd> resets the note text font size
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>Space</kbd> tries to solve simple equations like <code>(4+5)*3=</code> in the current line in front of the cursor, auto-completes text or opens urls
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>H</kbd> inserts a headline from the note filename at the top of the note
-      </li>
-      
-      <li>
-        <kbd>Ctrl</kbd> + <kbd>⇧</kbd> + <kbd>X</kbd> splits the current note into two notes at the current cursor position
-      </li>
-      
-      <li>
-        <kbd>Ctrl</kbd> + <kbd>⇧</kbd> + <kbd>W</kbd> searches for the selected text on the web
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>Up</kbd> scrolls the content up
-      </li>
-      
-      <li>
-        <kbd>⌘</kbd> + <kbd>Down</kbd> scrolls the content down
-      </li>
-      
-      <li>
-        <kbd>⇧</kbd> + <kbd>Return</kbd> adds two spaces and a newline character to force a markdown newline
-      </li></ul>
+    - Verwenden Sie die Tasten <kbd> Auf </kbd> und <kbd> Ab </kbd> oder <kbd> F3 </kbd> und <kbd> ⇧ </kbd> + <kbd> F3 </kbd>, um zum  vorherigen und nächsten Treffer zu springen
+    - <kbd>Esc</kbd> schließt die Suchleiste
+- Mit <kbd>⌘</kbd> + <kbd>R</kbd> können Sie in der aktuellen Notiz suchen und ersetzen
+- <kbd>⌘</kbd> + <kbd>D</kbd> dupliziert die aktuelle Zeile oder den ausgewählten Text
+    - <kbd>⌘</kbd> + <kbd>Strg</kbd> + <kbd>Ab</kbd> macht dasselbe
+- <kbd>⌘</kbd> + <kbd>Rücktaste</kbd> löscht die aktuelle Zeile
+- <kbd>Strg</kbd> + <kbd>Rücktaste</kbd> löscht das aktuelle Wort
+- <kbd>⌘</kbd> + <kbd>L</kbd> öffnet einen Dialog zum Hinzufügen eines Textlinks (funktioniert auch bei markiertem Text)
+- <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>L</kbd> öffnet einen Dialog zum Hinzufügen eines Notizlinks
+- <kbd> ⌘ </kbd> + <kbd> T </kbd> fügt das aktuelle Datum im ISO 8601-Format ein
+- <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>I</kbd> fügt ein Bild ein (das Bild wird in den Ordner `media` im aktuellen Notizenordner kopiert)
+- <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>X</kbd> fügt einen Anhang ein (Die Datei wird in den Ordner `attachments` im aktuellen Notizenordner kopiert.)
+- <kbd>Strg</kbd> + <kbd>⇧</kbd> + <kbd>T</kbd> fügt eine Tabelle ein
+- <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>C</kbd>  fügt an der aktuellen Position einen Codeblock ein
+- <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>B</kbd> fügt an der aktuellen Position ein Blockzitat ein
+- <kbd>⌘</kbd> + <kbd>B</kbd> formatiert den ausgewählten Text fett
+- <kbd>⌘</kbd> + <kbd>I</kbd> formatiert den ausgewählten Text kursiv
+- <kbd>⌘</kbd> + <kbd>U</kbd> formatiert den ausgewählten Text unterstrichen
+- <kbd>Strg</kbd> + <kbd>⇧</kbd> + <kbd>S</kbd> streicht den ausgewählten Text durch
+- <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>U</kbd> durchläuft die Buchstaben des ausgewählten Textes
+- <kbd>Tab</kbd> rückt den ausgewählten Text ein (funktioniert auch für mehrere Zeilen)
+    - <kbd>⇧</kbd> + <kbd>Tab</kbd> hebt die Einrückung für den ausgewählten Text auf
+- <kbd>Tab</kbd> rückt das Listenelement nach einem ungeordneten Listenzeichen ein
+    - <kbd>⇧</kbd> + <kbd>Tab</kbd> hebt das Listenelement nach einem ungeordneten Listenzeichen auf
+- <kbd>Eingabe</kbd> in Listen erstellt ein neues Listenelement
+- <kbd>⌘</kbd> + <kbd>Strg</kbd> + <kbd>Links</kbd> springt im Notizenverlauf ein Element rückwärts
+    - <kbd>⌘</kbd> + <kbd>Strg</kbd> + <kbd>Rechts</kbd> springt im Notizenverlauf vorwärts
+- <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>1..9</kbd> setzt ein Notizen-Lesezeichen auf Lesezeichenplatz 1..9
+- <kbd>⌘</kbd> + <kbd>0..9</kbd> springt zum Notizen-Lesezeichen im Lesezeichen-Slot 0..9
+- <kbd>⌘</kbd> + <kbd>+</kbd> erhöht die Schriftgröße des Notizentextes um einen Punkt
+- <kbd>⌘</kbd> + <kbd>-</kbd> verringert die Schriftgröße des Notizentextes um einen Punkt
+- <kbd>⌘</kbd> + <kbd>0</kbd> setzt die Schriftgröße des Notizentextes zurück
+- <kbd>⌘</kbd> + <kbd>Leerzeichen</kbd> versucht, einfache Gleichungen wie `(4+5)*3=` in der aktuellen Zeile vor dem Cursor zu lösen. Vervollständigt Text oder öffnet URLs
+- <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>H</kbd> fügt eine Überschrift aus dem Dateinamen der Notiz oben in der Notiz ein
+- <kbd>Strg</kbd> + <kbd>⇧</kbd> + <kbd>X</kbd> teilt die aktuelle Notiz an der aktuellen Cursorposition in zwei Notizen auf
+- <kbd>Ctrl</kbd> + <kbd>⇧</kbd> + <kbd>W</kbd> searches for the selected text on the web
+- <kbd>⌘</kbd> + <kbd>Up</kbd> scrolls the content up
+- <kbd>⌘</kbd> + <kbd>Down</kbd> scrolls the content down
+- <kbd>⇧</kbd> + <kbd>Return</kbd> adds two spaces and a newline character to force a markdown newline
 
-<h3 spaces-before="0">
-  Im Notizvorschaufenster
-</h3>
+### Im Notizvorschaufenster
 
-<ul>
-  <li>
-    <p spaces-before="0">
-      Mit <kbd>⌘</kbd> + <kbd>F</kbd> können Sie in der aktuellen Notiz suchen
-    </p>
-    <ul>
-      <li>
-        <p spaces-before="0">
-          Verwenden Sie die Tasten <kbd>Auf</kbd> und <kbd>Ab</kbd> oder <kbd>F3</kbd> und <kbd>⇧</kbd> + <kbd>F3</kbd> Tasten, um zum vorherigen und nächsten Treffer zu springen
-        </p>
-      </li>
-      <li>
-        <p spaces-before="0">
-          <kbd>Esc</kbd> schließt die Suchleiste
-        </p>
-      </li>
-    </ul>
-  </li>
-</ul>
+- Mit <kbd>⌘</kbd> + <kbd>F</kbd> können Sie in der aktuellen Notiz suchen
+    - Verwenden Sie die Tasten <kbd>Auf</kbd> und <kbd>Ab</kbd> oder <kbd>F3</kbd> und <kbd>⇧</kbd> + <kbd>F3</kbd> Tasten, um zum vorherigen und nächsten Treffer zu springen
+    - <kbd>Esc</kbd> schließt die Suchleiste
 
-<h3 spaces-before="0">
-  In der Todo-Liste
-</h3>
+### In der Todo-Liste
 
-<ul>
-  <li>
-    <kbd>⌘</kbd> + <kbd>S</kbd> speichert das aktuelle Aufgabenelement
-  </li>
-  <li>
-    <kbd>⌘</kbd> + <kbd>I</kbd> speichert das aktuelle Aufgabenelement und fügt es in die aktuelle Notiz ein
-  </li>
-  <li>
-    <kbd>⌘</kbd> + <kbd>R</kbd> entfernt das aktuelle Aufgabenelement
-  </li>
-</ul>
+- <kbd>⌘</kbd> + <kbd>S</kbd> speichert das aktuelle Aufgabenelement
+- <kbd>⌘</kbd> + <kbd>I</kbd> speichert das aktuelle Aufgabenelement und fügt es in die aktuelle Notiz ein
+- <kbd>⌘</kbd> + <kbd>R</kbd> entfernt das aktuelle Aufgabenelement

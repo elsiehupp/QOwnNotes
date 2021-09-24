@@ -8,15 +8,15 @@ import QOwnNotesTypes 1.0
 
 Script {
     /**
-        * Will be run when the scripting engine initializes
+        * Sarà eseguito quando il motore di scripting parte
         */
     function init() {
-        script.log("Hello world!");
+        script.log("Ciao mondo!");
     }
 }
 ```
 
-Potete spostare questi documenti QML dovunque preferite e **aggiungerli a QOwnNotes** aggiungendoli nelle **impostazioni di scripting** (tramite il bottone `Aggiungi script`/`Aggiungi script locale`).
+Potete mettere questi documenti QML ovunque preferite e **aggiungerli a QOwnNotes** tramite le **impostazioni di scripting** (c'è un bottone `Aggiungi script`/`Aggiungi script locale`).
 
 ::: tip
 Dai un'occhiata agli [script di esempio](https://github.com/pbek/QOwnNotes/blob/develop/docs/scripting/examples) per iniziare velocemente.
@@ -33,5 +33,5 @@ Se vuoi proporre uno script per il **repository di script** segui le istruzioni 
 Se hai bisogno di accedere a una determinata funzionalità in QOwnNotes o hai domande o idee, apri un problema nella [pagina del problema QOwnNotes](https://github.com/pbek/QOwnNotes/issues).
 
 ::: tip
-Per la registrazione è possibile utilizzare il comando `script.log()` per accedere al widget di registro.
+Per il tracciamento puoi usare il comando `script.log()` per accedere al widget di registro.
 :::

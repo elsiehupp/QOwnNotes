@@ -4,6 +4,10 @@
 
 Er is een Evernote-importdialoog die u kunt bereiken in het menu `Notitie / Importeren`.
 
+## Joplin
+
+Er is een Joplin-importdialoogvenster dat u kunt bereiken in het menu `Opmerking / Import`.
+
 ## Tomboy
 
 U kunt uw Tomboy-notities importeren met behulp van een script genaamd [Trombone](https://github.com/samba/trombone).

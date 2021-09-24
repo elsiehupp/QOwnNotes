@@ -2,10 +2,34 @@
 
 There are QOwnNotes repositories for **Fedora 28 and higher**.
 
+## On systems with config-manager dnf plugin
+
+Run the following shell commands as root to add the repository.
+
+```bash
+dnf config-manager --add-repo http://download.opensuse.org/repositories/home:/pbek:/QOwnNotes/Fedora_\$releasever/
+
+dnf makecache
+dnf install qownnotes
+```
+
+::: tip
+You may need to accept the repo key before you can download from it.
+
+If you have troubles import the key yourself with:
+
+```bash
+rpm --import http://download.opensuse.org/repositories/home:/pbek:/QOwnNotes/Fedora_34/repodata/repomd.xml.key
+```
+:::
+
+## Legacy install method
+
+Use this method if your Fedora version doesn't support the `config-manager` dnf plugin, run these commands as root.
+
 Run the following shell commands as root to trust the repository.
 
 ```bash
-su -
 rpm --import http://download.opensuse.org/repositories/home:/pbek:/QOwnNotes/Fedora_34/repodata/repomd.xml.key
 ```
 
@@ -26,4 +50,4 @@ dnf clean expire-cache
 dnf install qownnotes
 ```
 
-[Direct Download](https://build.opensuse.org/package/binaries/home:pbek:QOwnNotes/desktop/Fedora_34) (this example link is for Fedora 34)
+[Direct Download](https://download.opensuse.org/repositories/home:/pbek:/QOwnNotes/Fedora_34) (this example link is for Fedora 34)

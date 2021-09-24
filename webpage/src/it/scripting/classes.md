@@ -1,6 +1,6 @@
 # Classi esposte
 
-Note
+Nota
 ----
 
 ### Proprietà e metodi
@@ -29,7 +29,7 @@ class NoteApi {
 };
 ```
 
-Puoi utilizzare i metodi di [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) per lavorare con `fileCreated` o `fileLastModified`.
+Puoi usare i metodi di [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) per lavorare con `fileCreated` o `fileLastModified`.
 
 ### Esempio
 ```js
@@ -73,7 +73,7 @@ noteSubFolder.fetchNoteSubFoldersByParentId(parentId).forEach(function(nsf) {
 });
 ```
 
-Tag
+Etichetta (Tag)
 ---
 
 ### Proprietà e metodi

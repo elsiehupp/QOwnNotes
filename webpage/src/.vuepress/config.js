@@ -10,8 +10,10 @@ const contactNavItems = [
   { text: 'Telegram Channel', link: 'https://t.me/QOwnNotes' },
   { text: 'Matrix/Element.io Room', link: 'https://app.element.io/#/room/#qownnotes:matrix.org' },
   { text: 'Gitter Chat', link: 'https://gitter.im/qownnotes/qownnotes' },
-  { text: 'IRC Channel', link: 'https://kiwiirc.com/client/irc.freenode.net/#qownnotes' },
-  { text: 'IRC Log', link: 'https://quodlibet.duckdns.org/irc/qownnotes/latest.log.html' },
+  { text: 'IRC Channel', link: 'https://web.libera.chat/#qownnotes' },
+  { text: 'Mastodon', link: 'https://social.qownnotes.org/@qownnotes' },
+  { text: 'Twitter', link: 'https://twitter.com/QOwnNotes' },
+  { text: 'Facebook', link: 'https://www.facebook.com/QOwnNotes' },
 ];
 
 const gettingStartedNavItems = [
@@ -106,6 +108,8 @@ module.exports = {
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css' }],
     ['link', { rel: 'alternate', title: 'QOwnNotes Releases RSS', type: 'application/rss+xml', href: 'https://feeds.feedburner.com/QOwnNotesReleases' }],
     ['link', { rel: 'alternate', title: 'QOwnNotes Blog RSS', type: 'application/rss+xml', href: 'https://feeds.feedburner.com/QOwnNotesBlog' }],
+    ['link', { rel: 'me', href: 'https://social.qownnotes.org/@patrizio' }],
+    ['link', { rel: 'me', href: 'https://social.qownnotes.org/@qownnotes' }],
     // ['link', { rel: 'stylesheet', href: `https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css` }],
     // ['script', { src: `https://cdn.jsdelivr.net/npm/vue/dist/vue.js` }],
     // ['script', { src: `https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js` }],
@@ -712,5 +716,16 @@ module.exports = {
   ],
   markdown: {
     lineNumbers: true
+  },
+  chainWebpack: (config, isServer) => {
+    config.module.rules.delete('images')
+    config.module
+        .rule('images')
+        .test(/\.(png|jpe?g|gif|webp)(\?.*)?$/)
+        .use('file-loader')
+        .loader('file-loader')
+        .options({
+          name: `assets/img/[name].[ext]` // we don't want a hash in the image filename, so we can use the image as og:image
+        })
   }
 }

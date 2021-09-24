@@ -21,19 +21,19 @@ Wenn der Befehl `sudo pacman-key --lsign-key F2205FB121DF142B31450865A3BA514562A
 
 ```bash
 gpg /path/to/downloaded/home_pbek_QOwnNotes_Arch_Extra.key
-gpg: WARNING: no command supplied.  Trying to guess what you mean ...
+gpg: WARNING: no command supplied.  Versuche zu erraten, was du meinst...
 pub   rsa2048 2019-07-31 [SC] [expires: 2021-10-10]
       F2205FB121DF142B31450865A3BA514562A835DB
 uid           home:pbek OBS Project <home:pbek@build.opensuse.org>
 ```
 
-You can now synchronize your package database and install the package with `pacman`:
+Sie können nun Ihre Paketdatenbank synchronisieren und das Paket mit `pacman` installieren:
 
 ```bash
 sudo pacman -Syy qownnotes
 ```
 
-[Direkter Download](https://build.opensuse.org/package/binaries/home:pbek:QOwnNotes/desktop/Arch_Extra)
+[Direkter Download](https://download.opensuse.org/repositories/home:/pbek:/QOwnNotes/Arch_Extra)
 
 ::: tip
 Natürlich können Sie dieses Repository auch mit anderen Arch Linux-basierten Distributionen wie Manjaro verwenden.

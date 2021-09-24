@@ -3,19 +3,19 @@
 <template>
 <v-carousel cycle show-arrows-on-hover>
   <v-carousel-item>
-    <img src="/screenshots/screenshot.png" alt="QOwnNotes screenshot" />
+    <img src="/screenshots/screenshot.png" alt="Captura de pantalla de QOwnNotes" />
     <div class="sheet">
-      Edit your notes with markdown highlighting, colored tags and subfolders
+      Edite sus notas con resaltado de rebajas, etiquetas de colores y subcarpetas
     </div>
   </v-carousel-item>
   <v-carousel-item>
-    <img src="/screenshots/screenshot-minimal.png" alt="Minimal view" />
+    <img src="/screenshots/screenshot-minimal.png" alt="Vista mínima" />
     <div class="sheet">
-      Minimal default user interface that can be stripped even more
+      Interfaz de usuario mínima predeterminada que se puede quitar aún más
     </div>
   </v-carousel-item>
   <v-carousel-item>
-    <img src="/screenshots/screenshot-vertical.png" alt="Vertical view" />
+    <img src="/screenshots/screenshot-vertical.png" alt="Vista vertical" />
     <div class="sheet">
       Vea sus notas en una vista de rebaja vertical moviendo los paneles
     </div>
@@ -149,7 +149,8 @@
 
 ## Características
 - Puede usar sus **archivos de texto o rebajas existentes**, sin necesidad de importar la mayoría de las veces
-- **Importación de Evernote**
+- QOwnNotes está escrito en C ++ y optimizado para **bajo consumo de recursos** (sin CPU y aplicación de Electron que consume mucha memoria)
+- **Importación de Evernote y Joplin**
 - **Compatible** con la aplicación Notes de **Nextcloud / ownCloud** y **mobil** y Nextcloud Text
 - Soporte para **compartir notas** en su servidor **ownCloud** / **Nextcloud**
 - Administre sus **listas de tareas** de Nextcloud / ownCloud (**tareas de Nextcloud** o **Tasks Plus** / **Calendar Plus**) o use otro **servidor CalDAV** para sincronizar sus tareas con
@@ -157,24 +158,26 @@
 - **Las notas enviadas a la papelera** se pueden **restaurar** desde su servidor **Nextcloud / ownCloud**
 - **Los cambios externos** de los archivos de notas son **supervisados** (las notas o la lista de notas se vuelven a cargar)
 - Soporte para **etiquetado jerárquico de notas** y **subcarpetas de notas**
-- **Cifrado** opcional de notas (AES-256 está integrado o puede utilizar métodos de cifrado personalizados como **[ Keybase.io](https://keybase.io/)** ([encryption-keybase.qml](https://github.com/pbek/QOwnNotes/blob/develop/doc/scripting/encryption-keybase.qml)) o **PGP** ([encriptación-pgp.qml](https://github.com/pbek/QOwnNotes/blob/develop/doc/scripting/encryption-pgp.qml)))
+- **Cifrado** opcional de notas, (AES-256 está integrado o puede utilizar métodos de cifrado personalizados como **[ Keybase.io](https://keybase.io/)** ([encryption-keybase.qml](https://github.com/pbek/QOwnNotes/blob/develop/doc/scripting/encryption-keybase.qml)) o **PGP** ([encriptación-pgp.qml](https://github.com/pbek/QOwnNotes/blob/develop/doc/scripting/encryption-pgp.qml))
 - La **carpeta de notas** se puede **elegir libremente** (se pueden utilizar varias carpetas de notas)
 - **La búsqueda de subcadena** de notas es posible y los resultados de la búsqueda se resaltan en las notas
-- [Extensión del navegador](browser-extension.md) para agregar notas del texto seleccionado, hacer capturas de pantalla o administrar sus marcadores
+- [**Extensión del navegador**](browser-extension.md) para **agregar notas del texto seleccionado**, **hacer capturas de pantalla** o **administrar sus marcadores**
 - <0 Soporte de corrección ortográfica</strong></a>
 - **Modo portátil** para llevar QOwnNotes en memorias USB
 - **Soporte de secuencias de comandos** y un [**repositorio de secuencias de comandos**](https://github.com/qownnotes/scripts) en línea donde puede instalar secuencias de comandos dentro de la aplicación
 - **Modo Vim**
+- [Aplicación web](web-app.md) para **insertar fotos desde su teléfono móvil** en la nota actual en QOwnNotes en su escritorio
 
 
-## Appearance
+## Apariencia
+- **Markdown resaltando** de notas y un **modo de vista previa de Markdown**
 - **Soporte de tema de modo oscuro**
 - **Soporte de temas** para la sintaxis de rebajas **resaltando**
 - Todos los paneles **pueden colocarse donde desee**, incluso pueden **flotar** o **apilar** (totalmente acoplables)
 - Soporte para **iconos de tema de escritorio gratuito**, puede usar QOwnNotes con sus **iconos de escritorio nativos** y con su **tema de escritorio oscuro favorito**
 - **Modo sin distracciones**, **Modo de pantalla completa** y **Modo de máquina de escribir**
+- **Números de línea**
 - **Las diferencias** entre la nota actual y la nota modificada externamente se **se muestran** en un diálogo
-- **Markdown resaltando** de notas y un **modo de vista previa de Markdown**
 
 ## Lenguajes
 - **Disponible en más de 60 idiomas diferentes** como inglés, alemán, francés, polaco, chino, japonés, ruso, portugués, húngaro, holandés y español

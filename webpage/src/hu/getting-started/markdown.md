@@ -15,7 +15,9 @@ Használja a fejléceket a szövegek strukturálásához.
 ###### H6
 ```
 
-::: tip A **Navigációs panel** mutatja a címsorok felépítését. :::
+::: tip
+A **Navigációs panel** mutatja a címsorok felépítését.
+:::
 
 Alternatív megoldásként H1 és H2 esetében aláhúzás-stílus stílus:
 
@@ -27,7 +29,9 @@ Alt-H2
 ------
 ```
 
-::: tip Alapértelmezés szerint a QOwnNotes létrehozza a jegyzet **fájlnevét** az **1 fejlécből** (h1). :::
+::: tip
+Alapértelmezés szerint a QOwnNotes létrehozza a jegyzet **fájlnevét** az **1 fejlécből** (h1).
+:::
 
 ## Hangsúly
 
@@ -37,7 +41,9 @@ Kiemelés, más néven dőlt betű, *csillaggal*.
 Erős hangsúly, más néven félkövér, **csillaggal**.
 ```
 
-::: tip Használhatja a [parancsikont](./shortcuts.md) <kbd>Ctrl + B</kbd> a félkövér szöveg készítéséhez, és a <kbd>Ctrl + I</kbd> dőlt betűséhez. :::
+::: tip
+Használhatja a [parancsikont](./shortcuts.md) <kbd>Ctrl + B</kbd> a félkövér szöveg készítéséhez, és a <kbd>Ctrl + I</kbd> dőlt betűséhez.
+:::
 
 ## Aláhúzás
 
@@ -47,7 +53,9 @@ Van egy opcionális beállítás is, amely lehetővé teszi az aláhúzás megje
 _underline_
 ```
 
-::: tip A szöveg aláhúzásához használhatja a [parancsikont](./shortcuts.md) <kbd>Ctrl + U</kbd>. :::
+::: tip
+A szöveg aláhúzásához használhatja a [parancsikont](./shortcuts.md) <kbd>Ctrl + U</kbd>.
+:::
 
 ## Kihúz
 
@@ -55,9 +63,11 @@ _underline_
 ~~strike out~~
 ```
 
-::: tip Használhatja az [parancsikon](./shortcuts.md) <kbd>Alt + Shift + S</kbd> a szöveg törléséhez. :::
+::: tip
+Használhatja az [parancsikon](./shortcuts.md) <kbd>Alt + Shift + S</kbd> a szöveg törléséhez.
+:::
 
-## Lists
+## Listák
 
 A listák létrehozásának számos módja van.
 
@@ -66,7 +76,7 @@ A listák létrehozásának számos módja van.
 2. Egy másik elem
   * Rendezetlen allista.
 1. A tényleges számok nem számítanak, csak az, hogy ez egy szám
-  1. Rendezett allista
+  1. Rendezett allista (csak a szerkesztőben működik, az előnézetben nem)
 4. És még egy elem.
 
 * A rendezetlen lista csillagokat használhat
@@ -74,7 +84,9 @@ A listák létrehozásának számos módja van.
 + Vagy pluszok
 ```
 
-::: tip Ha megnyomja az <kbd>Enter</kbd> gombot a lista végén, akkor egy új listaelem jön létre. :::
+::: tip
+Ha megnyomja az <kbd>Enter</kbd> gombot a lista végén, akkor egy új listaelem jön létre.
+:::
 
 ## Linkek
 
@@ -93,11 +105,13 @@ http://www.example.com or <http://www.example.com>
 [1]: https://www.qownnotes.org
 ```
 
-::: tip Használhatja a [parancsikont](./shortcuts.md) <kbd>Ctrl + L</kbd> **hozzon létre linkeket weboldalakra vagy egyéb jegyzetekre**.
+::: tip
+Használhatja a [parancsikont](./shortcuts.md) <kbd>Ctrl + L</kbd> **hozzon létre linkeket weboldalakra vagy egyéb jegyzetekre**.
 
 A <kbd>Ctrl + Shift + X</kbd> használatával megjelenik egy párbeszédpanel, amely segít **csatolni a mellékleteket** a jegyzetbe.
 
-Nyomja meg a <kbd>Ctrl + szóköz</kbd> billentyűt, miközben a kurzor a jegyzet szerkesztésében egy linken van, hogy kövesse a linket. :::
+Nyomja meg a <kbd>Ctrl + szóköz</kbd> billentyűt, miközben a kurzor a jegyzet szerkesztésében egy linken van, hogy kövesse a linket.
+:::
 
 ### Könyvjelzők
 
@@ -115,9 +129,11 @@ A képek beágyazhatók a QOwnNotes programba. Megjelennek az előnézetben.
 ![alt text](media/my-image.jpg)
 ```
 
-::: tip Használhatja a [parancsikont](./shortcuts.md) <kbd>Ctrl + Shift + I</kbd> a kép beszúrásához egy jegyzetbe. A kép a vágólapon is lehet, a párbeszédpanel észleli és előnézetet mutat.
+::: tip
+Használhatja a [parancsikont](./shortcuts.md) <kbd>Ctrl + Shift + I</kbd> a kép beszúrásához egy jegyzetbe. A kép a vágólapon is lehet, a párbeszédpanel észleli és előnézetet mutat.
 
-A vágólapról közvetlenül beilleszthet egy képet a jegyzetébe a <kbd>Ctrl + Shift + V</kbd> gombbal. :::
+A vágólapról közvetlenül beilleszthet egy képet a jegyzetébe a <kbd>Ctrl + Shift + V</kbd> gombbal.
+:::
 
 
 ## Beépített kód és kódblokkok
@@ -126,7 +142,9 @@ A vágólapról közvetlenül beilleszthet egy képet a jegyzetébe a <kbd>Ctrl 
 A soron belüli `kód` rendelkezik `back-tics`-el.
 ```
 
-::: tip Használhatja a [parancsikont](./shortcuts.md) <kbd>Ctrl + Shift + C</kbd> a kiválasztott szöveges szövegen vagy közvetlenül a szöveg belsejében, hogy létrehozzon egy inline kódblokkot. :::
+::: tip
+Használhatja a [parancsikont](./shortcuts.md) <kbd>Ctrl + Shift + C</kbd> a kiválasztott szöveges szövegen vagy közvetlenül a szöveg belsejében, hogy létrehozzon egy inline kódblokkot.
+:::
 
 A kódblokkok vagy három hátsó pipával ellátott vonalakkal vannak elhatárolva, vagy négy szóközzel vannak behúzva.
 
@@ -161,19 +179,21 @@ Van néhány szintaxis kiemelés a kódblokkokkal a QOwnNotes-ban.
 "bash
 # Kommentár vagyok
 cd Notes
+```
 ~~~
-~~~
+
 A jelenleg támogatott nyelvek (és kódblokk-azonosítók) a következők:
-* BASh szkriptek, `bash`
+
+* BASh scripting, `bash`
 * C, `c`
-* C ++, `cpp`
-* C ++, `cxx`
-* C ++, `c ++ '
-* C #, `c #`
+* C++, `cpp`
+* C++, `cxx`
+* C++, `c++`
+* C#, `c#`
 * CMake, `cmake`
-* C #, `csharp`
+* C#, `csharp`
 * CSS, `css`
-* Menj, menj
+* Go, `go`
 * HTML, `html`
 * INI, `ini`
 * Java, `java`
@@ -185,17 +205,16 @@ A jelenleg támogatott nyelvek (és kódblokk-azonosítók) a következők:
 * Python, `py`
 * Python, `python`
 * QML, `qml`
-* Rozsda, `rozsda`
-* Shell szkriptek, `sh`
+* Rust, `rust`
+* Shell scripting, `sh`
 * SQL, `sql`
 * TypeScript, `ts`
-* TypeScript, `gépírás`
+* TypeScript, `typescript`
 * V, `v`
 * Vex, `vex`
 * XML, `xml`
 * YAML, `yml`
 * YAML, `yaml`
-
 
 ## Táblázatok
 
@@ -220,9 +239,11 @@ Használhatja az inline Markdown funkciót is.
 | 1 | 2 | 3 |
 ~~~
 
-::: tip Nyomja meg az <kbd>Alt + Shift + T</kbd> billentyűkombinációt egy párbeszédpanel aktiválásához, amely segíthet táblázatok létrehozásában. Akár CSV fájlokat is importálhat abban a párbeszédpanelen.
+::: tip
+Nyomja meg az <kbd>Alt + Shift + T</kbd> billentyűkombinációt egy párbeszédpanel aktiválásához, amely segíthet táblázatok létrehozásában. Akár CSV fájlokat is importálhat abban a párbeszédpanelen.
 
-Használja a <kbd>Ctrl + szóköz</kbd>t egy jelölési táblázatban az automatikus formázáshoz. :::
+Használja a <kbd>Ctrl + szóköz</kbd>t egy jelölési táblázatban az automatikus formázáshoz.
+:::
 
 ## Idézetek
 
@@ -235,9 +256,11 @@ Idézet szünet.
 > Ez egy nagyon hosszú sor, amelyet még mindig megfelelően idézünk, amikor megtörik. Ó, fiú, írjunk tovább, hogy megbizonyosodjunk arról, hogy ez elég hosszú ahhoz, hogy mindenkinek beburkolhasson. Ó, *beteheti* a **Markdown**-t egy blokk idézetbe. 
 ```
 
-::: tip Azt mondhatja a QOwnNotes-nak, hogy a *Szerkesztő beállításai*-ban jelölje ki teljesen a blokk idézeteket vagy csak a blokk idézet karaktert.
+::: tip
+Azt mondhatja a QOwnNotes-nak, hogy a *Szerkesztő beállításai*-ban jelölje ki teljesen a blokk idézeteket vagy csak a blokk idézet karaktert.
 
-Használhatja a [parancsikont](./shortcuts.md) <kbd>Ctrl + Shift + B</kbd> a szöveg blokk idézetként történő megjelölésére. :::
+Használhatja a [parancsikont](./shortcuts.md) <kbd>Ctrl + Shift + B</kbd> a szöveg blokk idézetként történő megjelölésére.
+:::
 
 ## Vízszintes vonal
 
@@ -274,21 +297,25 @@ Ez a sor egy külön bekezdést is elkezd, de ...
 Ezt a sort csak két zárójel és egyetlen új sor választja el, tehát külön sor az *ugyanabban a bekezdésben*.
 ```
 
-::: tip A szóközöket a szerkesztő alapértelmezés szerint kiemeli. :::
+::: tip
+A szóközöket a szerkesztő alapértelmezés szerint kiemeli.
+:::
 
 ## Hozzászólások
 
 A jegyzet nem jelenik meg az előnézetben.
 
 ```markdown
-[comment]: # (This comment will not appear in the preview)
+[comment]: # (Ez a megjegyzés nem jelenik meg az előnézetben)
 
-<!-- HTML comments are also hidden -->
+<!-- A HTML megjegyzések is el vannak rejtve -->
 ```
 
-::: tipp A jegyzetek vezető html megjegyzésblokkja az automatikus jegyzetfájl-generálás során sem kerül figyelembe. :::
+::: tip
+A jegyzetek vezető html megjegyzésblokkja az automatikus jegyzetfájl-generálás során sem kerül figyelembe.
+:::
 
-## Checkbox lists
+## Jelölőnégyzet -listák
 
 Létrehozhat egyszerű todo listákat jelölőnégyzet listákkal.
 
@@ -297,7 +324,9 @@ Létrehozhat egyszerű todo listákat jelölőnégyzet listákkal.
 - [ ] todo
 ```
 
-::: tip Az előnézetben bejelölheti / eltávolíthatja a jelölőnégyzeteket. :::
+::: tip
+Az előnézetben bejelölheti / eltávolíthatja a jelölőnégyzeteket.
+:::
 
 ## Frontmatter
 

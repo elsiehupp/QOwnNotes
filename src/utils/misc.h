@@ -15,10 +15,12 @@
 #pragma once
 
 #include <QDataStream>
+#include <QHttpMultiPart>
 #include <QPrinter>
 #include <QString>
 #include <QStringList>
 #include <QVector>
+
 #include "threads/scriptthread.h"
 
 struct TerminalCmd;
@@ -94,9 +96,10 @@ QString logFilePath();
 QString transformLineFeeds(QString text);
 QString replaceOwnCloudText(QString text, bool useShortText = false);
 void restartApplication();
+QString appendSingleAppInstanceTextIfNeeded(QString text = "");
 void needRestart();
 bool downloadUrlToFile(const QUrl &url, QFile *file);
-QByteArray downloadUrl(const QUrl &url);
+QByteArray downloadUrl(const QUrl &url, bool usePost = false, QByteArray postData = nullptr);
 QString genericCSS();
 QHash<int, SearchEngine> getSearchEnginesHashMap();
 int getDefaultSearchEngineId();
@@ -148,6 +151,11 @@ QString previewCodeFontString();
 bool fileExists(const QString &path);
 QString removeAcceleratorMarker(const QString &label_);
 QString fileExtensionForMimeType(const QString &mimeType);
+QByteArray friendlyUserAgentString();
+QLatin1String platform();
+void switchToDarkOrLightMode(bool darkMode);
+void switchToDarkMode();
+void switchToLightMode();
 }    // namespace Misc
 }    // namespace Utils
 

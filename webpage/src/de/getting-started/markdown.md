@@ -76,7 +76,7 @@ Es gibt viele Möglichkeiten, Listen zu erstellen.
 2. Ein weiterer Eintrag
    * Ungeordnete Unterliste.
 1. Tatsächliche Zahlen spielen keine Rolle, nur dass es eine Zahl ist!
-   1. Geordnete Unterliste
+   1. Geordnete Unterliste (funktioniert nur im Editor, nicht in der Vorschau)
 4. Und noch ein Eintrag.
 
 * Ungeordnete Liste kann Sternchen verwenden
@@ -179,9 +179,11 @@ Es gibt auch einige Syntaxhervorhebungen mit Codeblöcken in QOwnNotes.
 ```bash
 # Ich bin ein Kommentar
 cd Notes
+```
 ~~~
-~~~
+
 Currently supported languages (and code block identifiers) are:
+
 * BASh scripting, `bash`
 * C, `c`
 * C++, `cpp`
@@ -214,7 +216,6 @@ Currently supported languages (and code block identifiers) are:
 * YAML, `yml`
 * YAML, `yaml`
 
-
 ## Tables
 
 Tables aren't part of the core Markdown spec, but the QOwnNotes preview supports them. 
@@ -232,9 +233,9 @@ Es müssen mindestens 3 Striche vorhanden sein, die jede Kopfzelle trennen.
 
 Sie können auch Inline-Markdown verwenden.
 
-| Markdown | Less | Pretty |
+| Abschlag | Weniger | Hübsch |
 | --- | --- | --- |
-| *Still* | `renders` | **nicely** |
+| `Rendert` | *immer noch* | **schön** |
 | 1 | 2 | 3 |
 ~~~
 

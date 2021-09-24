@@ -24,6 +24,9 @@ TodoDialog::TodoDialog(MainWindow *mainWindow, const QString &taskUid,
     ui->setupUi(this);
     setupUi();
 
+    connect(ui->todoItemTreeWidget, &TodoItemTreeWidget::calendarItemUpdated, this,
+            &TodoDialog::updateCalendarItem);
+
     // init the description edit search frame
     ui->descriptionEdit->initSearchFrame(ui->descriptionEditSearchFrame);
 
@@ -38,6 +41,18 @@ TodoDialog::TodoDialog(MainWindow *mainWindow, const QString &taskUid,
     // jump to a task
     if (!taskUid.isEmpty()) {
         jumpToTask(taskUid);
+    }
+}
+
+void TodoDialog::updateCalendarItem(CalendarItem item) {
+    OwnCloudService *ownCloud = OwnCloudService::instance();
+    bool result = ownCloud->updateICSDataOfCalendarItem(&item);
+
+    qDebug() << __func__ << " - 'result': " << result;
+
+    if (result) {
+        // post the calendar item to the server (and reload note tree)
+        ownCloud->postCalendarItemToServer(item, this);
     }
 }
 
@@ -166,6 +181,11 @@ void TodoDialog::refreshUi() {
             settings.value(QStringLiteral("TodoDialog/showCompletedItems"))
                 .toBool();
         ui->showCompletedItemsCheckBox->setChecked(showCompletedItems);
+
+        bool showDueTodayItemsOnly =
+            settings.value(QStringLiteral("TodoDialog/showDueTodayItemsOnly"))
+                .toBool();
+        ui->showDueTodayItemsOnlyCheckBox->setChecked(showDueTodayItemsOnly);
     }
 
     int index = CalendarItem::getCurrentCalendarIndex();
@@ -263,10 +283,21 @@ void TodoDialog::reloadTodoListItems() {
         while (itr.hasNext()) {
             CalendarItem calItem = itr.next();
 
-            // skip completed items if the "show completed items" checkbox
+            // skip completed items if the "Show completed items" checkbox
             // is not checked
-            if (!ui->showCompletedItemsCheckBox->checkState()) {
+            if (!ui->showCompletedItemsCheckBox->isChecked()) {
                 if (calItem.isCompleted()) {
+                    continue;
+                }
+            }
+
+            // skip items that are not due today if the "Show only items due today"
+            // checkbox is checked
+            if (ui->showDueTodayItemsOnlyCheckBox->isChecked()) {
+                const auto alarmDate = calItem.getAlarmDate().date();
+                const auto todayDate = QDate::currentDate();
+
+                if (todayDate != alarmDate) {
                     continue;
                 }
             }
@@ -286,6 +317,8 @@ void TodoDialog::reloadTodoListItems() {
             item->setData(0, Qt::UserRole + 1, relatedUid);
             item->setCheckState(
                 0, calItem.isCompleted() ? Qt::Checked : Qt::Unchecked);
+            item->setText(1, calItem.getAlarmDate().toString());
+            item->setData(1, Qt::DisplayRole, calItem.getAlarmDate());
             item->setFlags(Qt::ItemIsDragEnabled | Qt::ItemIsDropEnabled |
                            Qt::ItemIsEnabled | Qt::ItemIsUserCheckable |
                            Qt::ItemIsSelectable);
@@ -325,6 +358,10 @@ void TodoDialog::reloadTodoListItems() {
             }
         }
     }
+
+    ui->todoItemTreeWidget->resizeColumnToContents(0);
+    ui->todoItemTreeWidget->resizeColumnToContents(1);
+
 
     // set the current row of the task list to the first row
     jumpToTodoListItem();
@@ -418,6 +455,8 @@ void TodoDialog::storeSettings() {
                       this->mainSplitter->saveState());
     settings.setValue(QStringLiteral("TodoDialog/showCompletedItems"),
                       ui->showCompletedItemsCheckBox->checkState());
+    settings.setValue(QStringLiteral("TodoDialog/showDueTodayItemsOnly"),
+                      ui->showDueTodayItemsOnlyCheckBox->checkState());
     settings.setValue(QStringLiteral("TodoDialog/todoListSelectorSelectedItem"),
                       ui->todoListSelector->currentText());
 }
@@ -879,4 +918,8 @@ void TodoDialog::on_todoItemTreeWidget_customContextMenuRequested(QPoint pos) {
             }
         }
     }
+}
+
+void TodoDialog::on_showDueTodayItemsOnlyCheckBox_clicked() {
+    on_showCompletedItemsCheckBox_clicked();
 }

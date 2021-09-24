@@ -1,6 +1,6 @@
 # Parametri dell'interfaccia della riga di comando
 
-È possibile utilizzare questi parametri sull'interfaccia della riga di comando:
+È possibile usare questi parametri sull'interfaccia della riga di comando:
 
 | Parametro                    | Descrizione                                                                                                                       |
 | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -10,7 +10,7 @@
 | `--dump-settings`            | Esporta in formato Markdown l'elenco delle impostazioni e altre informazioni su applicazione e ambiente ed esce dall'applicazione |
 | `--session <name>`     | Esegue l'applicazione in un contesto differente per le impostazioni e i file interni                                              |
 | `--allow-multiple-instances` | Consente di avviare più istanze di QOwnNotes anche se non consentito nelle impostazioni                                           |
-| `--action <name>`      | Triggers a menu action after the application was started (see below)                                                              |
+| `--action <name>`      | Attiva un'azione di menu dopo l'avvio dell'applicazione (vedi sotto)                                                              |
 
 ::: tip
 Se si verificano problemi con l'installazione di QOwnNotes, è possibile avviare l'applicazione con nuove impostazioni senza perdere le impostazioni correnti utilizzando il parametro `--session`.
@@ -28,28 +28,28 @@ QOwnNotes --session test
 | macOS             | `/Applications/QOwnNotes.app/Contents/MacOS/QOwnNotes` |
 | Windows           | `QOwnNotes.exe`                                        |
 
-## Trigger menu actions after startup
+## Attiva le azioni del menu dopo l'avvio
 
-With the parameter `--action <name>` you can trigger menu actions after the application was started.
+Con il parametro `--action <name>` è possibile attivare azioni di menu dopo l'avvio dell'applicazione.
 
-For example to open the todo list dialog after startup use:
+Ad esempio, per aprire la finestra di dialogo dell'elenco delle cose da fare dopo l'avvio si può usare:
 
 ```bash
 QOwnNotes --action actionShow_Todo_List
 ```
 
 ::: tip
-You can get the object names of the menu action from [mainwindow.ui](https://github.com/pbek/QOwnNotes/blob/develop/src/mainwindow.ui). Just search for the English menu title. Note that these texts can change over time.
+Puoi ottenere i nomi degli oggetti dell'azione del menu da [mainwindow.ui](https://github.com/pbek/QOwnNotes/blob/develop/src/mainwindow.ui). Basta cercare il titolo del menu in inglese. Nota che questi testi possono cambiare nel tempo.
 :::
 
-To trigger [scripting actions](../scripting/methods-and-objects.md#registering-a-custom-action) use `customAction_` followed by the identifier of the custom action. The identifier of the custom action is the first parameter of the `script.registerCustomAction` call in the script.
+Per attivare le [azioni scripting](../scripting/methods-and-objects.md#registering-a-custom-action) usa `customAction_` seguito dall'identificativo dell'azione personalizzata. L'identificativo dell'azione personalizzata è il primo parametro della chiamata a `script.registerCustomAction` nello script.
 
-For example to run the custom action `myAction` start QOwnNotes like this:
+Per esempio, per eseguire l'azione personalizzata `myAction` esegui QOwnNotes così:
 
 ```bash
 QOwnNotes --action customAction_myAction
 ```
 
 ::: tip
-If you run QOwnNotes a second time with the action parameter and only have allowed one application instance, then the menu action will be triggered in the first instance.
+Se esegui QOwnNotes una seconda volta con un parametro action e hai permesso una sola istanza dell'applicazione, allora l'azione di menu sarà attivata solo nella prima istanza.
 :::

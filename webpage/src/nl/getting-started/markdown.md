@@ -76,7 +76,7 @@ Er zijn veel manieren om lijsten te maken.
 2. Een ander item
    * Ongeordende sublijst.
 1. Werkelijke cijfers doen er niet toe, alleen dat het een nummer is
-   1. Geordende sublijst
+   1. Geordende sublijst (werkt alleen in de editor, niet in de preview)
 4. En nog een item.
 
 * Ongeordende lijst kan asterisken gebruiken
@@ -179,19 +179,21 @@ Er is ook enige syntaxisaccentuering met codeblokken in QOwnNotes.
 ```bash
 # I am a comment
 cd Notes
+```
 ~~~
-~~~
+
 Momenteel ondersteunde talen (en codeblok-ID's) zijn:
+
 * BASh scripting, `bash`
 * C, `c`
-* C ++, `cpp`
-* C ++, `cxx`
-* C ++, `c ++`
-* C #, `c #`
+* C++, `cpp`
+* C++, `cxx`
+* C++, `c++`
+* C#, `c#`
 * CMake, `cmake`
-* C #, `csharp`
+* C#, `csharp`
 * CSS, `css`
-* Ga, `ga`
+* Go, `go`
 * HTML, `html`
 * INI, `ini`
 * Java, `java`
@@ -203,21 +205,21 @@ Momenteel ondersteunde talen (en codeblok-ID's) zijn:
 * Python, `py`
 * Python, `python`
 * QML, `qml`
-* Roest, `roest`
+* Rust, `rust`
 * Shell scripting, `sh`
 * SQL, `sql`
 * TypeScript, `ts`
-* TypeScript, `typoscript`
+* TypeScript, `typescript`
 * V, `v`
-* Kwaad, `kwelling`
+* Vex, `vex`
 * XML, `xml`
 * YAML, `yml`
 * YAML, `yaml`
 
+## Tables
 
-## Tabellen
-
-Tabellen maken geen deel uit van de kernspecificatie van Markdown, maar het QOwnNotes-voorbeeld ondersteunt ze. 
+Tabellen maken geen deel uit van de belangrijkste Markdown-specificaties, maar de QOwnNotes-preview ondersteunt ze.
+ 
 
 ```markdown
 Colons can be used to align columns.
